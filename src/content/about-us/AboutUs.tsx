@@ -1,9 +1,10 @@
 import MainLayout from "layouts/MainLayout";
+import AboutUsContent from "./components/AboutUsContent";
 
 const AboutUs:React.FC = () => {
   return (
    <MainLayout>
-      <div>About us</div>
+      <AboutUsContent/>
     </MainLayout>
   )
 }
