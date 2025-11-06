@@ -7,5 +7,4 @@ const AboutUs:React.FC = () => {
     </MainLayout>
   )
 }
-
 export default AboutUs;
