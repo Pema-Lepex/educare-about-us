@@ -7,9 +7,9 @@ interface MainLayoutProps {
 }
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col hide-scrollbar">
       <div className="mb-20"><MainNavigation /></div>
-      <main className="flex-grow">{children}</main>
+      <main className="flex-grow hide-scrollbar">{children}</main>
       <MainFooter />
     </div>
   );

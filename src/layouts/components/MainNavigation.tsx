@@ -12,7 +12,7 @@ const MainNavigation: React.FC = () => {
             <ul key={index} className="inline-block ml-4">
               <li
                 onClick={() => navigate(menu.ref)}
-                className="md:text-lg sm:text-base text-sm font-medium text-gray-600 dark:text-gray-300 cursor-pointer hover:text-gray-900 dark:hover:text-white hover:font-extrabold transition-opacity duration-300"
+                className="md:text-lg sm:text-base mx-1 text-sm font-medium text-gray-600 dark:text-gray-300 cursor-pointer hover:text-gray-900 dark:hover:text-white hover:font-extrabold transition-opacity duration-300"
               >
                 {menu.title}
               </li>

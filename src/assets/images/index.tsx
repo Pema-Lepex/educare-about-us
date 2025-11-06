@@ -1,0 +1,16 @@
+export {default as about1} from "./about1.jpg";
+export {default as about2} from "./about2.jpg";
+export {default as basicDzongka} from "./BASIC DZO.svg";
+export {default as bronze} from "./Bronze.png";
+export {default as classIV} from "./CLASS VI.svg";
+export {default as DCDDImage} from "./DCDD.png";
+export {default as gakyidLobdra} from "./GAKYID LOBDRA.svg";
+export {default as gold} from "./Gold.png";
+export {default as mobilelanding} from "./MobileLanding.jpg";
+export {default as RMA} from "./RMA.png";
+export {default as sliver} from "./Sliver.png";
+export {default as noInternet} from "./no_internet.png";
+export {default as stripe} from "./stripe.png";
+export {default as system} from "./system.svg";
+export * from './landingPage'; 
+export * from './logo'; 
