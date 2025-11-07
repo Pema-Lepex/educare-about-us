@@ -216,3 +216,13 @@
 // };
 
 // export default TeamContent;
+export const departments = [
+  "All",
+  "Management",
+  "Content Creator",
+  "Technologies",
+  "Bg Artist",
+  "2D Animator",
+  "3D Animators",
+  "Production Team",
+];  
