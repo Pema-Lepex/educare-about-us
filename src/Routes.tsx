@@ -13,7 +13,7 @@ const AppRoutes: React.FC = () => {
       <Routes>
         <Route path="*" element={<PageNotFound />} />
          <Route path="/" element={<Home />} />
-         <Route path="/about-us" element={<AboutUs />} />
+         <Route path="/about" element={<AboutUs />} />
          <Route path="/impact" element={<Impact />} />
          <Route path="/why-choose-us" element={<WhyChooseUs />} />
          <Route path="/leadership" element={<Leadership />} />

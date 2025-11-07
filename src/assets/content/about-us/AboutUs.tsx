@@ -42,3 +42,9 @@ export const AboutContent2: React.FC = () => {
     </>
   );
 };
+
+export const PersonalizedLearningContent = {
+  title: "A Personalized Learning resource for All Ages",
+  content:
+    "With practice exercises, instructional videos, and a personalized learning dashboard, Educare empowers learners to study at their own pace, both in and out of the classroom. Covering subjects from kindergarten through early college, including, Educare focuses on skill mastery to help learners build the strong foundations they need to succeed in higher education and in their careers.",
+};
