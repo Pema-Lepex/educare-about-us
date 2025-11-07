@@ -1,5 +1,7 @@
 import { PageNotFound } from "components";
 import AboutUs from "modules/about-us/AboutUs";
+import FreeToolsForDCDDUsersPage from "modules/about-us/FreeToolsForDCDDUsersPage";
+import MembershipPage from "modules/about-us/MembershipPage";
 import Blog from "modules/blog/Blog";
 import Home from "modules/home/Home";
 import Impact from "modules/impact/Impact";
@@ -14,6 +16,8 @@ const AppRoutes: React.FC = () => {
         <Route path="*" element={<PageNotFound />} />
          <Route path="/" element={<Home />} />
          <Route path="/about" element={<AboutUs />} />
+         <Route path="/about-free-dcdd-users" element={<FreeToolsForDCDDUsersPage />} />
+         <Route path="/about-membership" element={<MembershipPage />} />
          <Route path="/impact" element={<Impact />} />
          <Route path="/why-choose-us" element={<WhyChooseUs />} />
          <Route path="/leadership" element={<Leadership />} />

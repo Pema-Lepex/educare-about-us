@@ -39,7 +39,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(({ hidden = false },
           <img
             src={blueLogo}
             alt="Educare Logo"
-            className="inline h-6 w-auto mr-2"
+            className="inline md:h-6 h-4 w-auto mr-2"
           />
         </div>
         <div className="hidden lg:flex space-x-6">

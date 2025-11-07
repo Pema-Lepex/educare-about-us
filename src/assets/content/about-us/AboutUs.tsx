@@ -1,3 +1,6 @@
+import { bronze, gold, landing1, landing2, landing3, sliver } from "assets/images";
+import { FeedBackCarouselProps, MemebershipProps } from "props/Commonprops";
+
 export const AboutContent1: React.FC = () => {
   return (
     <>
@@ -48,3 +51,60 @@ export const PersonalizedLearningContent = {
   content:
     "With practice exercises, instructional videos, and a personalized learning dashboard, Educare empowers learners to study at their own pace, both in and out of the classroom. Covering subjects from kindergarten through early college, including, Educare focuses on skill mastery to help learners build the strong foundations they need to succeed in higher education and in their careers.",
 };
+
+ export const feedBack: FeedBackCarouselProps[] = [
+    {
+      id: 1,
+      img: landing1,
+      title: "Beautiful Landscape",
+      feedBack: "The way the app uses animations to explain complex chemical reactions is brilliant! My team grasped the concepts much faster than they did with traditional textbooks. The learning videos are also high quality.",
+      author: "Tashi Dorji",
+    },
+    {
+      id: 2,
+      img: landing2,
+      title: "City Night Lights",
+      feedBack: "We've seen a real uptick in engagement thanks to the gamified challenges. The competitive element makes mandatory training fun, and the short learning videos are perfect for quick refreshers between tasks",
+      author: "Jigme Wangchuk",
+    },
+    {
+      id: 3,
+      img: landing3,
+      title: "Mountain Adventure",
+      feedBack: "The balance between in-depth video lessons and quick, reinforcing games is perfect. I particularly appreciate that the content is easy to navigate. Adding a few more advanced strategy scenarios would be the only improvement.",
+      author: "Sonam Choden",
+    },
+  ];
+
+  export const memebershipDetails:MemebershipProps[] = [
+    {
+      memebrshipType: "Bronze",
+      imageSrc: bronze,
+      yearlyCost: "Nu.399",
+      halfYearlyCost: "Nu.1995",
+      monthlyCost: "Nu.3990",
+      benefits: [
+        "RA", "NR", "AS", "GL",  "CHEYCHEY accessible"
+      ],
+    },
+    {
+      memebrshipType: "Silver",
+      imageSrc: sliver,
+      yearlyCost: "Nu.449",
+      halfYearlyCost: "Nu.2245",
+      monthlyCost: "Nu.4490",
+      benefits: [
+        "RA", "NR", "AS", "GL",  "CHEYCHEY","BD", "Class IV - VI Tutorials accessible"
+      ],
+    },
+    {
+      memebrshipType: "Gold",
+      imageSrc: gold,
+      yearlyCost: "Nu.499",
+      halfYearlyCost: "Nu.2495",
+      monthlyCost: "nNu.4990",
+      benefits: [
+       "RA", "NR", "AS", "GL",  "CHEYCHEY","BD", "Class IV - XII Tutorials accessible"
+      ],
+    },
+  ];

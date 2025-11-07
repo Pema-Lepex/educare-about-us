@@ -1,47 +1,26 @@
-import {
-  about1,
-  about2,
-  landing1,
-  landing10,
-  landing2,
-  landing3,
-  landing4,
-  landing5,
-  landing6,
-  landing7,
-  landing8,
-  landing9,
-  missionVideo,
-} from "assets";
-import {
-  AboutContent1,
-  AboutContent2,
-  PersonalizedLearningContent,
-} from "assets/content/about-us/AboutUs";
+import { landing2, landing4, missionVideo, RightArrowIcon } from "assets";
 import { EducareMissionContent } from "assets/content/VissionAndMission";
-import { CommonHeader, CommonParagraph } from "components";
-import HorizontalScroller from "./HorizontalScroller";
+import HorizontalScroller from "./sections/HorizontalScroller";
 import { Media } from "props/Commonprops";
+import PersonalizedLearningSection from "./sections/PersonalizedLearningSection";
+import DCDDUserSection from "./sections/DCDDUserSection";
+import MembershipSection from "./sections/MembershipSection";
+import FeedBackCarousel from "./FeedBackCarousel";
+import { Menus } from "layouts/components/ManuList";
+import { CommonHeader } from "components";
+import { useNavigate } from "react-router-dom";
 
 const AboutUsContent: React.FC = () => {
-  const listOfImages = [
-    landing1,
-    landing2,
-    landing3,
-    landing4,
-    landing5,
-    landing6,
-    landing7,
-    landing8,
-    landing9,
-    landing10,
-  ];
+   const navigate = useNavigate();
   const listOfMedia: Media[] = [
     { type: "video", src: missionVideo },
     { type: "image", src: landing2 },
     { type: "video", src: missionVideo },
     { type: "image", src: landing4 },
   ];
+  const handleNavigate = (path: string) => {
+    navigate(path);
+  };
   return (
     <div>
       <section className="relative space-y-4">
@@ -67,57 +46,27 @@ const AboutUsContent: React.FC = () => {
           </div>
         </div>
       </section>
-      <section className="px-4 sm:px-8 md:px-16 lg:px-24 py-16 bg-primary-50">
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:items-start gap-10">
-          <div className="flex-1 text-center lg:text-left space-y-6">
-            <CommonHeader>{PersonalizedLearningContent.title}</CommonHeader>
-            <CommonParagraph>
-              {PersonalizedLearningContent.content}
-            </CommonParagraph>
-          </div>
-          <div className="flex-1 grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {listOfImages.slice(0, 8).map((src, index) => (
-              <div
-                key={index}
-                className="overflow-hidden rounded-lg shadow-md transform transition duration-500 hover:scale-105 hover:rotate-1 hover:shadow-xl"
-                style={{
-                  animation: `fadeIn 0.5s ease forwards`,
-                  animationDelay: `${index * 0.1}s`,
-                }}
-              >
-                <img
-                  className="w-full h-40 sm:h-30 md:h-40 object-cover"
-                  src={src}
-                  alt={`Gallery image ${index + 1}`}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <PersonalizedLearningSection />
       <HorizontalScroller mediaList={listOfMedia} />
-      <section className="m-10 space-y-4">
-        <div className=" flex justify-center my-4 space-x-2">
-          <div className="w-1/2 space-y-4">
-            <img
-              src={about1}
-              alt="About Us"
-              className="w-full h-auto rounded-lg shadow-md"
-            />
-            <CommonParagraph>
-              <AboutContent1 />
-            </CommonParagraph>
-          </div>
-          <div className="w-1/2 space-y-4">
-            <img
-              src={about2}
-              alt="About Us"
-              className="w-full h-auto rounded-lg shadow-md"
-            />
-            <CommonParagraph>
-              <AboutContent2 />
-            </CommonParagraph>
-          </div>
+      <DCDDUserSection />
+      <HorizontalScroller mediaList={listOfMedia} />
+      <MembershipSection />
+      <FeedBackCarousel />
+      <section className="my-10 text-center">
+        <CommonHeader>Learn More About Educare</CommonHeader>
+        <div className="flex flex-wrap justify-center gap-4 p-4">
+          {Menus.filter(menu => menu.title.toLowerCase() !== "about").map((menu, index) => (
+            <button
+              key={index}
+               onClick={() => handleNavigate(menu.ref)} 
+              className="border border-gray-300 rounded-lg px-6 py-3 text-lg font-semibold 
+                 text-gray-800 hover:bg-primary-100 hover:text-primary-700 
+                 transition duration-200 ease-in-out shadow-sm 
+                 flex items-center justify-center"
+            >
+              {menu.title} <RightArrowIcon className="ml-2 size-[20px]" />
+            </button>
+          ))}
         </div>
       </section>
     </div>
