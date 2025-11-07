@@ -12,6 +12,7 @@ export { default as sliver } from "./Sliver.png";
 export { default as noInternet } from "./no_internet.png";
 export { default as stripe } from "./stripe.png";
 export { default as system } from "./system.svg";
+export { default as missionImage } from "./mission.avif";
 export * from "./landingPage";
 export * from "./logo";
 export * as headImages from "./team/head";

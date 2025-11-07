@@ -1,19 +1,23 @@
-import { landing3 } from 'assets';
-import React from 'react';
+import { landing3 } from "assets";
+import { EducareVisionContent } from "assets/content/VissionAndMission";
+import { LearnMoreButton } from "components";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const HomeContent: React.FC = () => {
+  const navigate = useNavigate();
+  const handleClickedLearnMore = () => {
+    navigate("/about");
+  }
   return (
     <div
       className="p-10 min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url(${landing3})` }} 
+      style={{ backgroundImage: `url(${landing3})` }}
     >
-      <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-xl max-w-2xl mx-auto text-center"> 
-        <h1 className="text-5xl font-bold text-gray-900">Welcome to the Home Page</h1>
-        <p className="mt-4 text-lg text-gray-700">
-          This is the home page of our application. Here you can find various
-          resources and links to navigate through the site. Feel free to explore
-          and learn more about what we have to offer!
-        </p>
+      <div className="max-w-5xl mx-auto text-center text-white space-y-10">
+        <h1 className="text-xl font-bold">{EducareVisionContent.title}</h1>
+        <p className="text-4xl font-bold">"{EducareVisionContent.content}"</p>
+        <LearnMoreButton  onClick={()=>handleClickedLearnMore()} className="hover:border-primary-500 hover:text-primary-600 text-white"/>
       </div>
     </div>
   );

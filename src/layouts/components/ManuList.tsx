@@ -1,9 +1,9 @@
 
 export const Menus = [
   {
-    title: "About Us",
+    title: "About",
     icon: "",
-    ref: "/about-us",
+    ref: "/about",
   },
   {
     title: "Impact",

@@ -37,6 +37,7 @@ export {default as DownloadIcon} from "./DownLOadIcon";
 export {default as CloudUploadIcon} from "./CloudUploadIcon";
 export {default as QuestionMarkCircleIcon} from "./QuestionMarkCircleIcon";
 export {default as EyeIcon} from "./EyeIcon";
+export {default as LeftArrowIcon} from "./LeftArrowIcon";
 export {default as EyeSlashIcon} from "./EyeSlashIcon";
 export {default as AddIcon} from "./AddIcon";
 export {default as ArchiveBoxIcon} from "./ArchiveBoxIcon";
