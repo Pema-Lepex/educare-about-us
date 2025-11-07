@@ -20,6 +20,8 @@ import {
 } from "assets/content/about-us/AboutUs";
 import { EducareMissionContent } from "assets/content/VissionAndMission";
 import { CommonHeader, CommonParagraph } from "components";
+import HorizontalScroller from "./HorizontalScroller";
+import { Media } from "props/Commonprops";
 
 const AboutUsContent: React.FC = () => {
   const listOfImages = [
@@ -33,6 +35,12 @@ const AboutUsContent: React.FC = () => {
     landing8,
     landing9,
     landing10,
+  ];
+  const listOfMedia: Media[] = [
+    { type: "video", src: missionVideo },
+    { type: "image", src: landing2 },
+    { type: "video", src: missionVideo },
+    { type: "image", src: landing4 },
   ];
   return (
     <div>
@@ -59,7 +67,7 @@ const AboutUsContent: React.FC = () => {
           </div>
         </div>
       </section>
-      <section className="px-4 sm:px-8 md:px-16 lg:px-24 py-16 bg-gray-50">
+      <section className="px-4 sm:px-8 md:px-16 lg:px-24 py-16 bg-primary-50">
         <div className="flex flex-col lg:flex-row items-center justify-center lg:items-start gap-10">
           <div className="flex-1 text-center lg:text-left space-y-6">
             <CommonHeader>{PersonalizedLearningContent.title}</CommonHeader>
@@ -71,10 +79,14 @@ const AboutUsContent: React.FC = () => {
             {listOfImages.slice(0, 8).map((src, index) => (
               <div
                 key={index}
-                className="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                className="overflow-hidden rounded-lg shadow-md transform transition duration-500 hover:scale-105 hover:rotate-1 hover:shadow-xl"
+                style={{
+                  animation: `fadeIn 0.5s ease forwards`,
+                  animationDelay: `${index * 0.1}s`,
+                }}
               >
                 <img
-                  className="w-full h-40 sm:h-30 md:h-40 object-cover transform hover:scale-105 transition-transform duration-500"
+                  className="w-full h-40 sm:h-30 md:h-40 object-cover"
                   src={src}
                   alt={`Gallery image ${index + 1}`}
                 />
@@ -83,6 +95,7 @@ const AboutUsContent: React.FC = () => {
           </div>
         </div>
       </section>
+      <HorizontalScroller mediaList={listOfMedia} />
       <section className="m-10 space-y-4">
         <div className=" flex justify-center my-4 space-x-2">
           <div className="w-1/2 space-y-4">
