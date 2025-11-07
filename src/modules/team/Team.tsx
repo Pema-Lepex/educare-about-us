@@ -1,5 +1,5 @@
 import MainLayout from "layouts/MainLayout";
-import TeamContent from "./components/TeamContent";
+import TeamContent from "./components/test";
 
 const Team: React.FC = () => {
   return (

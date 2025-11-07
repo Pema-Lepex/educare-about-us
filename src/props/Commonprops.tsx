@@ -11,10 +11,17 @@ export interface MemebershipProps {
   benefits: string[];
 }
 
-export interface FeedBackCarouselProps  {
-    id: number;
-    img: string;
-    title: string;
-    feedBack: string;
-    author: string;
-};
+export interface FeedBackCarouselProps {
+  id: number;
+  img: string;
+  title: string;
+  feedBack: string;
+  author: string;
+}
+
+export interface TeamProps {
+  id: number;
+  img?: string;
+  name: string;
+  position: string;
+}

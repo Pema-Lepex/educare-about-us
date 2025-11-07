@@ -5,7 +5,7 @@ interface TeamNavigationProps {
   onChange: (dept: string) => void;
 }
 
-const departments = [
+export const departments = [
   "All",
   "Management",
   "Content creater",
