@@ -10,3 +10,10 @@ export const AboutContent1: React.FC = () => {
     </>
   );
 };
+
+export const member1: React.FC = () => {
+  return (
+    <>
+    </>
+  );
+};       
