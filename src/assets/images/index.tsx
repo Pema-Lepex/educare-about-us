@@ -13,6 +13,8 @@ export { default as noInternet } from "./no_internet.png";
 export { default as stripe } from "./stripe.png";
 export { default as system } from "./system.svg";
 export { default as missionImage } from "./mission.avif";
+export { default as playStoreImage } from "./playstore.png";
+export { default as appleStoreImage } from "./applestore.png";
 export * from "./landingPage";
 export * from "./logo";
 export * from "./team/2d";
