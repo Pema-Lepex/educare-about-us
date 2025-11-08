@@ -25,3 +25,5 @@ export interface TeamProps {
   name: string;
   position: string;
 }
+
+
