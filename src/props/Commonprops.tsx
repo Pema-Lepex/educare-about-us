@@ -32,6 +32,14 @@ export interface ContentProvidedDetailsProps {
   description1: string;
   benefits?: string[];
 }
+export interface LeaderProps {
+  id: number;
+  name: string;
+  image: string;  
+  position: string;
+  intro_note: string;
+  description: string;
+}
 
 export interface TeamProps {
   id: number;
