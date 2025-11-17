@@ -18,6 +18,28 @@ export interface FeedBackCarouselProps {
   feedBack: string;
   author: string;
 }
+export interface WhyChooseUsShortDetailsProps {
+  id: number;
+  title: string;
+  icon: string;
+  description1: string;
+  description2: string;
+}
+export interface ContentProvidedDetailsProps {
+  id: number;
+  title: string;
+  image: string;
+  description1: string;
+  benefits?: string[];
+}
+export interface LeaderProps {
+  id: number;
+  name: string;
+  image: string;  
+  position: string;
+  intro_note: string;
+  description: string;
+}
 
 export interface TeamProps {
   id: number;

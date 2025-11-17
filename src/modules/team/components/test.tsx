@@ -36,6 +36,26 @@ const getDepartmentTeam = (department: TeamEnum): TeamProps[] => {
   }
 };
 
+const getMembers = head;
+console.log(getMembers);
+
+//   if (activeDepartment === "All") {
+//     featuredMembers = mapTeamWithImages(head).slice(0, 2);
+
+//     otherMembers = [
+//       ...mapTeamWithImages(management.slice(0, 1), managementImages),
+//       ...mapTeamWithImages(content.slice(0, 1), contentImages),
+//       ...mapTeamWithImages(tech.slice(0, 1), techImages),
+//       ...mapTeamWithImages(bgArtist.slice(0, 1), bgArtistImages),
+//       ...mapTeamWithImages(ainmator2d.slice(0, 1), animator2dImages),
+//       ...mapTeamWithImages(animator3d.slice(0, 1), animator3dImages),
+//       ...mapTeamWithImages(production.slice(0, 1), productionImages)
+//     ];
+//   } else {
+//     featuredMembers = allTeamMembers.slice(0, 2);
+//     otherMembers = allTeamMembers.slice(2);
+//   }
+
 const TeamContent: React.FC = () => {
   const [openTeam, setOpenTeam] = useState<TeamEnum>(TeamEnum.ALL);
 
