@@ -18,6 +18,7 @@ export { default as ThakurSPowdyel } from "./Thakur S Powdyel.jpeg";
 export * from "./landingPage";
 export * from "./logo";
 export * from "./team/2d";
+export * from "./blog";
 export { default as teamBg } from "./team/bg-1.jpg";
 export { default as teamMember } from "./team/download (1).jpeg";
 export { default as teamMember1 } from "./team/download (2).jpeg";

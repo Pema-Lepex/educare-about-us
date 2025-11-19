@@ -1,5 +1,4 @@
 export enum TeamEnum {
-  ALL = "All",
   MANAGEMENT = "Management",
   CONTENT_CREATOR = "Content Creator",
   TECHNOLOGIES = "Technologies",
