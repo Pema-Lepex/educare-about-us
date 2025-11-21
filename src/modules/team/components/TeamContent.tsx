@@ -171,7 +171,7 @@ const TeamContent: React.FC = () => {
             </div>
             
             {/* Description */}
-            <div className="flex items-center">
+            <div className="flex items-center mx-4">
               <div className="text-gray-600 text-lg leading-relaxed">
                 {head[0].description}
               </div>
@@ -209,7 +209,7 @@ const TeamContent: React.FC = () => {
             </div>
 
             {/* Description */}
-            <div className="flex items-center">
+            <div className="flex items-center mx-4">
               <div className="text-gray-600 text-lg leading-relaxed">
                 {head[1].description}
               </div>
@@ -219,7 +219,8 @@ const TeamContent: React.FC = () => {
 
         {/* NAVIGATION */}
         <div className="w-full flex justify-center mb-12">
-          <nav className="flex gap-8 text-gray-600">
+          <nav className="w-full flex flex-wrap gap-4 sm:gap-6 md:gap-8 
+                text-gray-600 justify-center text-sm sm:text-base">
             {departments.map(dept => (
               <button
                 key={dept}
@@ -247,7 +248,7 @@ const TeamContent: React.FC = () => {
 
         {/* Head Cards */}
         {headMembers.length > 0 && (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14 p-4">
             {headMembers.map((member, index) => (
               <HeadCard member={member} key={index} />
             ))}
@@ -256,7 +257,7 @@ const TeamContent: React.FC = () => {
         
         {/* Regular Team Cards Grid */}
         {regularMembers.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
             {regularMembers.map((member, index) => (
               <TeamCard member={member} key={index} />
             ))}
