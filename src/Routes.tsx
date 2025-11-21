@@ -3,6 +3,7 @@ import AboutUs from "modules/about-us/AboutUs";
 import FreeToolsForDCDDUsersPage from "modules/about-us/FreeToolsForDCDDUsersPage";
 import MembershipPage from "modules/about-us/MembershipPage";
 import Blog from "modules/blog/Blog";
+import Detail from "modules/blog/Detail";
 import Home from "modules/home/Home";
 import ThakurSPowdyel from "modules/impact/components/ThakurSPowdyel";
 import Impact from "modules/impact/Impact";
@@ -16,17 +17,28 @@ const AppRoutes: React.FC = () => {
     <Router>
       <Routes>
         <Route path="*" element={<PageNotFound />} />
-         <Route path="/" element={<Home />} />
-         <Route path="/about" element={<AboutUs />} />
-         <Route path="/about-free-dcdd-users" element={<FreeToolsForDCDDUsersPage />} />
-         <Route path="/about-membership" element={<MembershipPage />} />
-         <Route path="/impact" element={<Impact />} />
-         <Route path="/impact-Thakur-S-Powdyel-clip" element={<ThakurSPowdyel />} />
-         <Route path="/why-choose-us" element={<WhyChooseUs />} />
-         <Route path="/why-choose-us-we-offer" element={<WeOfferPage />} />
-         <Route path="/leadership" element={<Leadership />} />
-         <Route path="/team" element={<Team />} />
-         <Route path="/blog" element={<Blog />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route
+          path="/about-free-dcdd-users"
+          element={<FreeToolsForDCDDUsersPage />}
+        />
+        <Route
+          path="/about-free-dcdd-users"
+          element={<FreeToolsForDCDDUsersPage />}
+        />
+        <Route path="/about-membership" element={<MembershipPage />} />
+        <Route path="/impact" element={<Impact />} />
+        <Route
+          path="/impact-Thakur-S-Powdyel-clip"
+          element={<ThakurSPowdyel />}
+        />
+        <Route path="/why-choose-us" element={<WhyChooseUs />} />
+        <Route path="/why-choose-us-we-offer" element={<WeOfferPage />} />
+        <Route path="/leadership" element={<Leadership />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/detail/:id" element={<Detail />} />
       </Routes>
     </Router>
   );

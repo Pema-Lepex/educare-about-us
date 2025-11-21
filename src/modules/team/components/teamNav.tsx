@@ -6,9 +6,8 @@ interface TeamNavigationProps {
 }
 
 export const departments = [
-  "All",
   "Management",
-  "Content creater",
+  "Content Creator",
   "Technologies",
   "Bg Artist",
   "2D Animator",

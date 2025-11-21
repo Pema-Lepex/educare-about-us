@@ -35,7 +35,7 @@ export interface ContentProvidedDetailsProps {
 export interface LeaderProps {
   id: number;
   name: string;
-  image: string;  
+  image: string;
   position: string;
   intro_note: string;
   description: string;
@@ -46,4 +46,13 @@ export interface TeamProps {
   img?: string;
   name: string;
   position: string;
+  description: string;
+}
+
+export interface BlogProps {
+  id: number;
+  title: string;
+  subject: string;
+  content: string;
+  image?: string;
 }
