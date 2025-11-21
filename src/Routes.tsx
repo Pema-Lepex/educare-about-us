@@ -19,7 +19,6 @@ const AppRoutes: React.FC = () => {
          <Route path="/" element={<Home />} />
          <Route path="/about" element={<AboutUs />} />
          <Route path="/about-free-dcdd-users" element={<FreeToolsForDCDDUsersPage />} />
-         <Route path="/about-free-dcdd-users" element={<FreeToolsForDCDDUsersPage />} />
          <Route path="/about-membership" element={<MembershipPage />} />
          <Route path="/impact" element={<Impact />} />
          <Route path="/impact-Thakur-S-Powdyel-clip" element={<ThakurSPowdyel />} />
