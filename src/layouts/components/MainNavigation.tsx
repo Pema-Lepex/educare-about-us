@@ -32,7 +32,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
         className="fixed top-0 w-full bg-white dark:bg-bgColor-900 shadow-md dark:shadow-gray-800 z-50 transition-transform duration-300 "
         style={{ transform: hidden ? "translateY(-100%)" : "translateY(0)" }}
       >
-        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="mx-auto px-4 py-4 flex items-center justify-between">
           <div onClick={() => handleNavigate("/")} className="cursor-pointer">
             <img
               src={blueLogo}
