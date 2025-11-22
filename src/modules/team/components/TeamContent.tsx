@@ -36,13 +36,13 @@ const TeamCard: React.FC<{ member: TeamProps }> = ({ member }) => {
   return (
     <div className="relative group rounded-2xl overflow-hidden shadow hover:shadow-xl transition-all duration-300 bg-white cursor-pointer">
       {/* Main Card Content */}
-      <div className="relative z-10 bg-white">
+      <div className="relative z-10 bg-white flex flex-col justify-end items-center">
         <img
           src={member.img}
           alt={member.name}
-          className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
+          className="w-56 h-56  transition-transform duration-300 group-hover:scale-105 rounded-full"
         />
-        <div className="p-5">
+        <div className="p-5 text-center">
           <h4 className="text-xl font-semibold text-gray-900">
             {member.name}
           </h4>
@@ -128,7 +128,7 @@ const TeamContent: React.FC = () => {
 
   return (
     <>
-      <section className="w-full px-4 sm:px-10 md:px-10 lg:px-20 py-16 bg-white">
+      {/* <section className="w-full px-4 sm:px-10 md:px-10 lg:px-20 py-16 bg-white">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Our Team
@@ -148,13 +148,12 @@ const TeamContent: React.FC = () => {
             {Description.description}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* TEAM CONTENT */}
       <section className="w-full md:px-10 lg:px-20 py-16 bg-white">
         {/* Head Section */}
-        <div className="mb-14">
-          {/* First Head */}
+        {/* <div className="mb-14">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 border-b-4 pb-8">
             <div className="flex flex-col items-center justify-center text-center lg:hidden">
               <img
@@ -170,7 +169,6 @@ const TeamContent: React.FC = () => {
               </p>
             </div>
             
-            {/* Description */}
             <div className="flex items-center mx-4">
               <div className="text-gray-600 text-lg leading-relaxed">
                 {head[0].description}
@@ -192,7 +190,6 @@ const TeamContent: React.FC = () => {
             </div>
           </div>
 
-          {/* Second Head */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             <div className="flex flex-col items-center justify-center text-center">
               <img
@@ -208,14 +205,13 @@ const TeamContent: React.FC = () => {
               </p>
             </div>
 
-            {/* Description */}
             <div className="flex items-center mx-4">
               <div className="text-gray-600 text-lg leading-relaxed">
                 {head[1].description}
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* NAVIGATION */}
         <div className="w-full flex justify-center mb-12">
@@ -247,17 +243,17 @@ const TeamContent: React.FC = () => {
         </div>
 
         {/* Head Cards */}
-        {headMembers.length > 0 && (
+        {/* {headMembers.length > 0 && (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14 p-4">
             {headMembers.map((member, index) => (
               <HeadCard member={member} key={index} />
             ))}
           </div>
-        )}
+        )} */}
         
         {/* Regular Team Cards Grid */}
         {regularMembers.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-4">
             {regularMembers.map((member, index) => (
               <TeamCard member={member} key={index} />
             ))}
