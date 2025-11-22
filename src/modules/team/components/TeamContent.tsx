@@ -193,8 +193,8 @@ const TeamContent: React.FC = () => {
           </div>
 
           {/* Second Head */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <div className="flex flex-col items-center justify-center text-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14 border-b-4">
+            <div className="flex flex-col items-center justify-center text-center mb-12">
               <img
                 src={head[1].img}
                 alt={head[1].name}
