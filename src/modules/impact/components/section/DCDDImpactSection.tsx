@@ -21,6 +21,7 @@ const DCDDImpactSection: React.FC = () => {
             Transforming Learning in Bhutan and beyond
           </h4>
           <p>Makeing learning fun like never before</p>
+          <p>You an get the app in both IOS and Android phones</p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
             <img
               src={playStoreImage}
@@ -33,7 +34,6 @@ const DCDDImpactSection: React.FC = () => {
               className="h-20 w-auto cursor-pointer"
             />
           </div>
-          <p>You an get the app in both IOS and Android phones</p>
           <p>
             <span
               className="text-blue-800 underline cursor-pointer"

@@ -127,3 +127,31 @@ export const memebershipDetails: MemebershipProps[] = [
     ],
   },
 ];
+
+export const testimonials = [
+  {
+    name: "Dorji Pem",
+    text: "The way the app uses animations to explain complex chemical reactions is brilliant! My team grasped the concepts much faster than they did with traditional textbooks. The learning videos are also high quality.",
+    avatar: "https://i.pravatar.cc/150?img=11",
+  },
+  {
+    name: "Tashi",
+    text: "We've seen a real uptick in engagement thanks to the gamified challenges. The competitive element makes mandatory training fun, and the short learning videos are perfect for quick refreshers between tasks",
+    avatar: "https://i.pravatar.cc/150?img=32",
+  },
+  {
+    name: "Dechen Dema",
+    text: "The balance between in-depth video lessons and quick, reinforcing games is perfect. I particularly appreciate that the content is easy to navigate. Adding a few more advanced strategy scenarios would be the only improvement.",
+    avatar: "https://i.pravatar.cc/150?img=47",
+  },
+  {
+    name: "Norbu Wangchuk",
+    text: "The way the app uses animations to explain complex chemical reactions is brilliant! My team grasped the concepts much faster than they did with traditional textbooks. The learning videos are also high quality.",
+    avatar: "https://i.pravatar.cc/150?img=55",
+  },
+  {
+    name: "Nobin Rai",
+    text: "The balance between in-depth video lessons and quick, reinforcing games is perfect. I particularly appreciate that the content is easy to navigate. Adding a few more advanced strategy scenarios would be the only improvement.",
+    avatar: "https://i.pravatar.cc/150?img=41",
+  },
+];

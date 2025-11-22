@@ -1,10 +1,9 @@
 import React, { lazy } from "react";
 import { useNavigate } from "react-router-dom";
 import {
-  landing2,
   landing4,
-  missionVideo,
-  RightArrowIcon,
+  educareVideo,
+  landing1,
 } from "assets";
 import { EducareMissionContent } from "assets/content/VissionAndMission";
 import { Menus } from "layouts/components/ManuList";
@@ -16,15 +15,15 @@ import DCDDUserSection from "./sections/DCDDUserSection";
 import MembershipSection from "./sections/MembershipSection";
 import { Media } from "props/Commonprops";
 
-const FeedBackCarousel = lazy(() => import("./FeedBackCarousel"));
+const Testimonial = lazy(() => import("./Testimobial"));
 
 const AboutUsContent: React.FC = () => {
   const navigate = useNavigate();
 
   const listOfMedia:Media[] = [
-    { type: "video", src: missionVideo },
-    { type: "image", src: landing2 },
-    { type: "video", src: missionVideo },
+    { type: "video", src: educareVideo },
+    { type: "image", src: landing1 },
+    { type: "video", src: educareVideo },
     { type: "image", src: landing4 },
   ];
 
@@ -34,7 +33,7 @@ const AboutUsContent: React.FC = () => {
     <DCDDUserSection key="dcdd" />,
     <HorizontalScroller key="scroller2" mediaList={listOfMedia} />,
     <MembershipSection key="membership" />,
-    <FeedBackCarousel key="feedback" />,
+    <Testimonial key="feedback" />,
   ];
 
   const handleNavigate = (path: string) => navigate(path);
@@ -43,18 +42,18 @@ const AboutUsContent: React.FC = () => {
     <div>
       <AnimateOnScroll animation="zoom-in" delay={300}>
         <section className="relative space-y-4">
-          <div className="relative w-full h-auto max-h-[500px] overflow-hidden">
+          <div className="relative w-full md:max-h-[500px] overflow-hidden">
             <video
-              className="w-full h-auto max-h-[500px] object-cover"
+              className="w-full h-auto "
               autoPlay
               loop
               muted
               playsInline
             >
-              <source src={missionVideo} type="video/mp4" />
+              <source src={educareVideo} type="video/mp4" />
             </video>
 
-            <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
               <div className="text-center text-white px-6">
                 <h2 className="text-3xl md:text-4xl font-bold mb-3">
                   {EducareMissionContent.title}
@@ -73,7 +72,7 @@ const AboutUsContent: React.FC = () => {
       ))}
 
       <AnimateOnScroll animation="fade-left" delay={300}>
-        <section className="my-10 text-center">
+        <section className="my-10 text-center space-y-10">
           <CommonHeader>Learn More About Educare</CommonHeader>
           <div className="flex flex-wrap justify-center gap-4 p-4">
             {Menus.filter(
@@ -87,7 +86,7 @@ const AboutUsContent: React.FC = () => {
                   transition duration-200 ease-in-out shadow-sm 
                   flex items-center justify-center"
               >
-                {menu.title} <RightArrowIcon className="ml-2 size-[20px]" />
+                {menu.title}
               </button>
             ))}
           </div>

@@ -9,7 +9,7 @@ const ContentProvided: React.FC = () => {
     navigate("/why-choose-us-we-offer");
   };
   return (
-    <section className="mx-4 md:mx-20 my-20">
+    <section className="mx-4 md:mx-20 mb-20">
       <div className="text-center">
         <CommonHeader>What we have to offer</CommonHeader>
       </div>
@@ -22,7 +22,7 @@ const ContentProvided: React.FC = () => {
             my-10 
             items-center 
             md:flex-row 
-            gap-4
+            md:gap-10 gap-5
             ${index % 2 !== 0 ? "md:flex-row-reverse" : ""}
           `}
           >

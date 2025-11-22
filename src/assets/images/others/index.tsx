@@ -1,0 +1,1 @@
+export { default as EducareBooks } from "./EducareBooks.jpg";

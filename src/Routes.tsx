@@ -4,20 +4,20 @@ import FreeToolsForDCDDUsersPage from "modules/about-us/FreeToolsForDCDDUsersPag
 import MembershipPage from "modules/about-us/MembershipPage";
 import Blog from "modules/blog/Blog";
 import Detail from "modules/blog/Detail";
-import Home from "modules/home/Home";
 import ThakurSPowdyel from "modules/impact/components/ThakurSPowdyel";
 import Impact from "modules/impact/Impact";
 import Leadership from "modules/leadership/Leadership";
 import Team from "modules/team/Team";
 import WeOfferPage from "modules/why-choose-us/WeOfferPage";
 import WhyChooseUs from "modules/why-choose-us/WhyChooseUs";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 const AppRoutes: React.FC = () => {
   return (
     <Router>
       <Routes>
         <Route path="*" element={<PageNotFound />} />
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Navigate to="/about" replace />} />
         <Route path="/about" element={<AboutUs />} />
         <Route
           path="/about-free-dcdd-users"

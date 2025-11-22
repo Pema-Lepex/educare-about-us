@@ -23,7 +23,6 @@ export interface WhyChooseUsShortDetailsProps {
   title: string;
   icon: string;
   description1: string;
-  description2: string;
 }
 export interface ContentProvidedDetailsProps {
   id: number;
@@ -37,8 +36,6 @@ export interface LeaderProps {
   name: string;
   image: string;
   position: string;
-  intro_note: string;
-  description: string;
 }
 
 export interface TeamProps {

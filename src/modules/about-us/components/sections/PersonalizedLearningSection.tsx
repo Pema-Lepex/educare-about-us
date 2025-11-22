@@ -29,7 +29,7 @@ const PersonalizedLearningSection: React.FC = () => {
 
   return (
     <section className="px-4 sm:px-8 md:px-16 lg:px-24 py-16 bg-primary-50">
-      <div className="flex flex-col lg:flex-row items-center justify-center lg:items-start gap-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
         <div className="flex-1 text-center lg:text-left space-y-6">
           <CommonHeader>{PersonalizedLearningContent.title}</CommonHeader>
           <CommonParagraph>

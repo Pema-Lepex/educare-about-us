@@ -20,8 +20,6 @@ export const WhyChooseUsShortDetails: WhyChooseUsShortDetailsProps[] = [
     title: "Affordable Pricing",
     description1:
       "We offer competitive pricing without compromising on quality, ensuring you get the best value for your investment.",
-    description2:
-      "Earn recognized credentials from leading universities and companies to achieve your goals.",
   },
   {
     id: 2,
@@ -29,8 +27,6 @@ export const WhyChooseUsShortDetails: WhyChooseUsShortDetailsProps[] = [
     title: "Global Reach",
     description1:
       "Our services extend across multiple countries, allowing us to cater to a diverse clientele and meet international standards.",
-    description2:
-      "Learn from experts at 350+ leading universities and companies.",
   },
   {
     id: 3,
@@ -38,8 +34,6 @@ export const WhyChooseUsShortDetails: WhyChooseUsShortDetailsProps[] = [
     title: "Expert Guidance",
     description1:
       "Our team of experienced professionals provides expert advice and support to help you navigate your options effectively.",
-    description2:
-      "Get personalized support and guidance from our team of experts to help you succeed.",
   },
   {
     id: 4,
@@ -47,8 +41,6 @@ export const WhyChooseUsShortDetails: WhyChooseUsShortDetailsProps[] = [
     title: "Certified Quality",
     description1:
       "We adhere to industry standards and hold various certifications that attest to our commitment to quality and excellence.",
-    description2:
-      "Receive certifications that are recognized and respected in your industry.",
   },
 ];
 

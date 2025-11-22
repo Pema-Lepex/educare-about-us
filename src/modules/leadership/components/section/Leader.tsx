@@ -1,5 +1,5 @@
 import { LeadersOfIBest } from "assets/content/leadership/Leadership";
-import React from "react"; 
+import React from "react";
 import { FounderCard, OtherLeaderCard } from "../LeaderCard";
 
 const Leader: React.FC = () => {
@@ -22,15 +22,23 @@ const Leader: React.FC = () => {
       </h2>
       <div className="flex flex-col md:flex-row justify-center items-start gap-12 w-full max-w-5xl">
         {CEODetails.map((leader) => (
-          <FounderCard leader={leader} key={leader.id}/>
+          <FounderCard leader={leader} key={leader.id} />
         ))}
       </div>
       <h2 className="text-4xl font-extrabold text-primary-500 border-b-4 border-primary-500 pb-2">
         Meet Our Leadership Team
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 w-full max-w-6xl">
+      <div
+        className="grid 
+    grid-cols-1 
+    sm:grid-cols-2 
+    lg:grid-cols-4 
+    gap-8 
+    justify-center 
+    justify-items-center"
+      >
         {otherLeaders.map((leader) => (
-         <OtherLeaderCard leader={leader} key={leader.id}/>
+          <OtherLeaderCard leader={leader} key={leader.id} />
         ))}
       </div>
     </section>

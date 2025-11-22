@@ -27,16 +27,15 @@ const WhyChooseUsContent = () => {
                   <img src={item.icon} alt="Globe icon" className="w-24 h-24" />
                   <h2 className="text-lg font-bold">{item.title}</h2>
                   <p>{item.description1}</p>
-                  <p>{item.description2}</p>
                 </div>
               )
             )}
           </div>
         </section>
       </AnimateOnScroll>
-      <AnimateOnScroll animation="fade-left" delay={300}>
+      {/* <AnimateOnScroll animation="fade-left" delay={300}>
         <ShowMembershipPlan />
-      </AnimateOnScroll>
+      </AnimateOnScroll> */}
 
       <AnimateOnScroll animation="fade-left" delay={300}>
         <ContentProvided />
