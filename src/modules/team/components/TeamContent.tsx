@@ -3,8 +3,6 @@ import { departments } from "./teamNav";
 import { TeamEnum } from "props/Enum";
 import { TeamProps } from "props/Commonprops";
 import {
-  Description,
-  head,
   management,
   content,
   tech,
@@ -13,7 +11,6 @@ import {
   animator3d,
   production
 } from "assets/content/team/temInfo";
-import { teamBg } from "assets";
 
 // ---------------- HELPERS ---------------- //
 const getDepartmentTeam = (department: TeamEnum): TeamProps[] => {
@@ -29,84 +26,53 @@ const getDepartmentTeam = (department: TeamEnum): TeamProps[] => {
   return map[department] || [];
 };
 
-// ---------------- TEAM CARD COMPONENTS ---------------- //
+// ---------------- TEAM CARD ---------------- //
 
-/* Regular Team Member Card */
 const TeamCard: React.FC<{ member: TeamProps }> = ({ member }) => {
   return (
-    <div className="relative group rounded-2xl overflow-hidden shadow hover:shadow-xl transition-all duration-300 bg-white cursor-pointer">
-      {/* Main Card Content */}
-      <div className="relative z-10 bg-white flex flex-col justify-end items-center">
-        <img
-          src={member.img}
-          alt={member.name}
-          className="w-56 h-56  transition-transform duration-300 group-hover:scale-105 rounded-full"
-        />
-        <div className="p-5 text-center">
-          <h4 className="text-xl font-semibold text-gray-900">
-            {member.name}
-          </h4>
-          <p className="text-lg font-semibold text-primary-400 mt-1">
-            {member.position}
-          </p>
+    <div
+      className="group relative rounded-2xl overflow-hidden bg-white shadow-lg 
+      hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 cursor-pointer
+      border border-gray-100 hover:border-primary-200"
+    >
+      {/* Image */}
+      <div className="flex justify-center pt-8 pb-2">
+        <div className="relative">
+          <img
+            src={member.img}
+            alt={member.name}
+            className="w-36 h-36 object-cover rounded-full transition-all duration-500 
+            group-hover:scale-110 group-hover:rotate-2 shadow-md"
+          />
+          {/* Gradient overlay on image hover */}
+          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         </div>
       </div>
-      
-      {/* Hover Overlay */}
-      <div
-        className="
-          absolute inset-0 bg-primary-500 bg-opacity-90 text-white
-          opacity-0 group-hover:opacity-100 transition-opacity duration-300
-          flex flex-col items-center justify-center p-6 z-20
-        "
-      >
-        <p className="text-xl font-bold text-center">{member.name}</p>
-        <p className="text-md font-semibold text-primary-100 mb-4 text-center">
+
+      {/* Name + Position */}
+      <div className="px-6 pb-6 text-center">
+        <h4 className="text-xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors duration-300">
+          {member.name}
+        </h4>
+        <p className="text-primary-500 font-medium mt-2 group-hover:text-primary-600 transition-colors duration-300">
           {member.position}
         </p>
-        <div className="text-sm text-gray-200 overflow-y-auto max-h-40 text-center leading-relaxed">
-          <p>{member.description}</p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-/* Head Team Card */
-const HeadCard: React.FC<{ member: TeamProps }> = ({ member }) => {
-  return (
-    <div className="relative group rounded-2xl overflow-hidden shadow-lg bg-white cursor-pointer">
-      {/* Main Card Content */}
-      <div className="relative z-10 bg-white">
-        <img
-          src={member.img}
-          alt={member.name}
-          className="w-full h-72 md:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
-        />
-        <div className="p-6 md:p-8 bg-white">
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
-            {member.name}
-          </h3>
-          <p className="text-xl font-semibold text-primary-400 mt-2">
-            {member.position}
-          </p>
-        </div>
       </div>
 
       {/* Hover Overlay */}
       <div
         className="
-          absolute inset-0 bg-primary-500 bg-opacity-90 text-white
-          opacity-0 group-hover:opacity-100 transition-opacity duration-300
-          flex flex-col items-center justify-center p-8 z-20
-        "
+        absolute inset-0 bg-gradient-to-br from-primary-600 to-primary-700 text-white 
+        opacity-0 group-hover:opacity-100 transition-all duration-500
+        flex flex-col justify-center items-center p-8 text-center
+        backdrop-blur-sm"
       >
-        <p className="text-2xl md:text-3xl font-bold text-center mb-2">{member.name}</p>
-        <p className="text-lg font-semibold text-primary-100 mb-6 text-center">
-          {member.position}
-        </p>
-        <div className="text-base text-gray-200 overflow-y-auto max-h-60 text-center leading-relaxed">
-          <p>{member.description}</p>
+        <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+          <h4 className="text-2xl font-bold mb-2">{member.name}</h4>
+          <p className="text-primary-200 font-medium mb-6">{member.position}</p>
+          <p className="text-sm leading-relaxed max-h-40 overflow-y-auto px-2">
+            {member.description}
+          </p>
         </div>
       </div>
     </div>
@@ -120,147 +86,73 @@ const TeamContent: React.FC = () => {
     TeamEnum.MANAGEMENT
   );
 
-  const departmentMembers = getDepartmentTeam(activeDepartment);
-  
-  // Get first two members as heads and the rest as regular members
-  const headMembers = departmentMembers.slice(0, 2);
-  const regularMembers = departmentMembers.slice(2);
+  const members = getDepartmentTeam(activeDepartment);
 
   return (
-    <>
-      {/* <section className="w-full px-4 sm:px-10 md:px-10 lg:px-20 py-16 bg-white">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Our Team
-          </h2>
-          <p className="text-gray-500 mt-2">
-            Explore creative ideas, behind the scenes, and storytelling tips.
-          </p>
-        </div>
+    <section className="w-full px-4 md:px-10 lg:px-20 py-20 bg-gradient-to-br from-gray-50 to-white">
 
-        <div className="rounded-2xl overflow-hidden shadow-lg mb-14">
-          <img
-            src={teamBg}
-            alt="Team Background"
-            className="w-full h-auto mx-auto"
-          />
-          <div className="p-6 md:p-8 bg-white">
-            {Description.description}
-          </div>
-        </div>
-      </section> */}
+      {/* Page Heading */}
+      <div className="text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Our <span className="text-primary-600">Team</span>
+        </h2>
+        <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+          Meet the talented professionals who bring creativity and innovation to every project
+        </p>
+      </div>
 
-      {/* TEAM CONTENT */}
-      <section className="w-full md:px-10 lg:px-20 py-16 bg-white">
-        {/* Head Section */}
-        {/* <div className="mb-14">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 border-b-4 pb-8">
-            <div className="flex flex-col items-center justify-center text-center lg:hidden">
-              <img
-                src={head[0].img}
-                alt={head[0].name}
-                className="w-48 h-48 rounded-full object-cover mb-4 shadow-lg"
-              />
-              <h3 className="text-2xl font-bold text-gray-900">
-                {head[0].name}
-              </h3>
-              <p className="text-lg font-semibold text-primary-400 mt-2 mb-4">
-                {head[0].position}
-              </p>
-            </div>
-            
-            <div className="flex items-center mx-4">
-              <div className="text-gray-600 text-lg leading-relaxed">
-                {head[0].description}
-              </div>
-            </div>
-
-            <div className="hidden lg:flex flex-col items-center justify-center text-center">
-              <img
-                src={head[0].img}
-                alt={head[0].name}
-                className="w-48 h-48 rounded-full object-cover mb-4 shadow-lg"
-              />
-              <h3 className="text-2xl font-bold text-gray-900">
-                {head[0].name}
-              </h3>
-              <p className="text-lg font-semibold text-primary-400 mt-2 mb-4">
-                {head[0].position}
-              </p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <div className="flex flex-col items-center justify-center text-center">
-              <img
-                src={head[1].img}
-                alt={head[1].name}
-                className="w-48 h-48 rounded-full object-cover mb-4 shadow-lg"
-              />
-              <h3 className="text-2xl font-bold text-gray-900">
-                {head[1].name}
-              </h3>
-              <p className="text-lg font-semibold text-primary-400 mt-2">
-                {head[1].position}
-              </p>
-            </div>
-
-            <div className="flex items-center mx-4">
-              <div className="text-gray-600 text-lg leading-relaxed">
-                {head[1].description}
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-        {/* NAVIGATION */}
-        <div className="w-full flex justify-center mb-12">
-          <nav className="w-full flex flex-wrap gap-4 sm:gap-6 md:gap-8 
-                text-gray-600 justify-center text-sm sm:text-base">
-            {departments.map(dept => (
-              <button
-                key={dept}
-                onClick={() => setActiveDepartment(dept as TeamEnum)}
-                className={`pb-2 transition-all ${
+      {/* NAVIGATION */}
+      <div className="flex justify-center mb-16">
+        <nav className="flex flex-wrap gap-3 sm:gap-4 justify-center max-w-4xl mx-auto">
+          {departments.map((dept) => (
+            <button
+              key={dept}
+              onClick={() => setActiveDepartment(dept as TeamEnum)}
+              className={`
+                px-6 py-3 rounded-xl font-medium transition-all duration-300
+                border-2 text-sm sm:text-base min-w-[120px]
+                ${
                   activeDepartment === dept
-                    ? "text-black font-semibold border-b-2 border-black flex"
-                    : "hover:text-black"
-                }`}
-              >
-                {dept}
-              </button>
-            ))}
-          </nav>
-        </div>
+                    ? "bg-primary-500 text-white border-primary-500 shadow-lg transform scale-105"
+                    : "text-gray-600 border-gray-200 hover:border-primary-300 hover:text-primary-600 hover:bg-primary-50"
+                }
+              `}
+            >
+              {dept}
+            </button>
+          ))}
+        </nav>
+      </div>
 
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            {activeDepartment} Team
-          </h2>
-          <p className="text-gray-500 mt-2">
-            Meet our talented team members and their contributions
-          </p>
-        </div>
+      {/* Department Heading */}
+      <div className="text-center mb-12">
+        <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
+          {activeDepartment} Team
+        </h3>
+        <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full"></div>
+      </div>
 
-        {/* Head Cards */}
-        {/* {headMembers.length > 0 && (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14 p-4">
-            {headMembers.map((member, index) => (
-              <HeadCard member={member} key={index} />
-            ))}
-          </div>
-        )} */}
-        
-        {/* Regular Team Cards Grid */}
-        {regularMembers.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-4">
-            {regularMembers.map((member, index) => (
-              <TeamCard member={member} key={index} />
-            ))}
-          </div>
-        )}
-      </section>
-    </>
+      {/* TEAM GRID - Centered and Justified */}
+      <div className="flex justify-center">
+        <div className="
+          grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
+          gap-8 max-w-7xl w-full justify-items-center
+        ">
+          {members.map((member, idx) => (
+            <div key={idx} className="w-full max-w-[280px]">
+              <TeamCard member={member} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Empty State */}
+      {members.length === 0 && (
+        <div className="text-center py-16">
+          <p className="text-gray-500 text-lg">No team members found for this department.</p>
+        </div>
+      )}
+    </section>
   );
 };
 

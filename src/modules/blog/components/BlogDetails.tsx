@@ -1,34 +1,57 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { blogs } from "assets/content/blog/blogs";
 
-const BlogDetails: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
-  const blog = blogs.find(b => b.id === Number(id));
+const BlogDetail: React.FC = () => {
+  const navigation = useNavigate();
+  const handleClickToBlog = () => {
+    "/blog";
+  };
+  const { id } = useParams();
+  const blog = blogs.find(b => b.id.toString() === id);
 
-  if (!blog) return <p className="p-10 text-center">Blog not found.</p>;
+  if (!blog) {
+    return (
+      <section className="w-full py-40 text-center text-gray-500 text-xl">
+        Blog not found.
+      </section>
+    );
+  }
 
   return (
-    <div className="w-full px-4 md:px-10 lg:px-20 py-16 bg-white">
-      <img
-        src={blog.image}
-        alt={blog.title}
-        className="w-full h-80 md:h-96 object-cover rounded-2xl shadow-lg"
-      />
+    <section className="w-full px-4 md:px-10 lg:px-40 py-20 bg-white">
+      {/* Back Button */}
+      <a
+        href="/blog"
+        className="text-gray-600 hover:text-gray-900 inline-flex items-center mb-10"
+      >
+        ← Back to Blogs
+      </a>
 
-      <h1 className="text-3xl md:text-4xl font-bold mt-8 text-gray-900">
+      {/* Title */}
+      <h1 className="text-4xl md:text-5xl font-light text-gray-900 leading-tight mb-10">
         {blog.title}
       </h1>
 
-      <p className="text-gray-600 mt-3 text-xl">
-        {blog.subject}
-      </p>
+      {/* Banner Image */}
+      <div className="rounded-3xl overflow-hidden border border-gray-200 shadow-sm mb-12">
+        <img
+          src={blog.image}
+          alt={blog.title}
+          className="w-full h-[350px] md:h-[500px] object-cover"
+        />
+      </div>
 
-      <p className="mt-6 text-gray-700 leading-relaxed text-lg">
-        {blog.content}
-      </p>
-    </div>
+      {/* Blog Content */}
+      <div className="text-gray-800 text-xl leading-relaxed space-y-6">
+        {(blog.content || blog.subject).split("\n").map((para, index) =>
+          <p key={index}>
+            {para.trim()}
+          </p>
+        )}
+      </div>
+    </section>
   );
 };
 
-export default BlogDetails;
+export default BlogDetail;
