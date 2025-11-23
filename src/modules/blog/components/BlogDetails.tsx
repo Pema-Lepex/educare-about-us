@@ -44,7 +44,7 @@ const BlogDetail: React.FC = () => {
 
       {/* Blog Content */}
       <div className="text-gray-800 text-xl leading-relaxed space-y-6">
-        {(blog.content || blog.subject).split("\n").map((para, index) =>
+        {(blog.content || blog.subject).split("\n").map((para:string, index:number) =>
           <p key={index}>
             {para.trim()}
           </p>

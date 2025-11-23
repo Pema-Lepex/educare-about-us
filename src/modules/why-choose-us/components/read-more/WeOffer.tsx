@@ -1,7 +1,7 @@
 import { ContentProvidedDetails } from "assets/content/why-choose-us/WhyChooseUs";
 
 const WeOffer: React.FC = () => {
-  const item = ContentProvidedDetails[0]; // <-- only ONE item
+  const item = ContentProvidedDetails[0];
 
   return (
     <section className="flex flex-col items-center justify-center mt-10">
@@ -15,7 +15,7 @@ const WeOffer: React.FC = () => {
         </h4>
 
         <ul>
-          {item.benefits?.map((benefit, idx) => (
+          {item.benefits?.map((benefit:string, idx:number) => (
             <li key={idx} className="list-disc ml-5 my-2">
               {benefit}
             </li>

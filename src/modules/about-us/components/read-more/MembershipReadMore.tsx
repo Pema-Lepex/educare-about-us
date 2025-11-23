@@ -22,7 +22,7 @@ const MembershipReadMore: React.FC = () => {
                 <p>Monthly: {item.monthlyCost}</p>
               </div>
               <ul className="flex flex-wrap justify-center items-center space-x-1 text-sm text-gray-700">
-                {item.benefits.map((benefit, i) => (
+                {item.benefits.map((benefit:string, i:number) => (
                   <li key={i}>{benefit}</li>
                 ))}
               </ul>
