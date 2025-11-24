@@ -17,7 +17,7 @@ const BlogSection: React.FC = () => {
         </p>
       </div>
 
-      {/* Featured Blog - Magazine Style */}
+      {/* Featured Blog */}
       <div className="relative mb-20 border border-gray-200 rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
         <div className="flex flex-col md:flex-row">
           {/* IMAGE */}
@@ -49,7 +49,7 @@ const BlogSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Grid Posts — Clean Minimal Look */}
+      {/* Grid Posts*/}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {others.map((item, index) =>
           <div
