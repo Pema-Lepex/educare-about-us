@@ -18,7 +18,7 @@ const ImpactContent = () => {
       <AnimateOnScroll animation="fade-up" delay={300}>
         <ListOfImpact />
       </AnimateOnScroll>
-      <AnimateOnScroll animation="fade-up" delay={300}>
+      <AnimateOnScroll animation="fade-up" delay={300} >
         <DCDDImpactSection />
       </AnimateOnScroll>
     </>

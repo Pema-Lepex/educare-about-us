@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Menus } from "./ManuList";
-import { blueLogo, MenuIcon, XMarkIcon } from "assets";
+import { whiteLogo, MenuIcon, XMarkIcon} from "assets";
 
 interface Props {
   hidden?: boolean;
@@ -29,15 +29,15 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
     return (
       <header
         ref={ref as any}
-        className="fixed top-0 w-full bg-white dark:bg-bgColor-900 shadow-md dark:shadow-gray-800 z-50 transition-transform duration-300 "
+        className="fixed top-0 w-full bg-primary-500 dark:bg-bgColor-900 shadow-md dark:shadow-gray-800 z-50 transition-transform duration-300 px-4 "
         style={{ transform: hidden ? "translateY(-100%)" : "translateY(0)" }}
       >
         <div className="mx-auto px-4 py-4 flex items-center justify-between">
           <div onClick={() => handleNavigate("/")} className="cursor-pointer">
             <img
-              src={blueLogo}
+              src={whiteLogo}
               alt="Educare Logo"
-              className="inline md:h-6 h-4 w-auto mr-2"
+              className="inline md:h-12 h-9 w-auto mr-2"
             />
           </div>
           <div className="hidden lg:flex space-x-6">
@@ -49,8 +49,8 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
                   onClick={() => handleNavigate(menu.ref)}
                   className={`md:text-lg text-sm font-medium transition-all duration-300 ${
                     isActive
-                      ? "text-primary-600 font-semibold border-b-2 border-primary-600"
-                      : "text-gray-700 dark:text-gray-300 hover:text-primary-500"
+                      ? "text-customOriange-100 font-semibold border-b-2 border-customOriange-100"
+                      : "text-white hover:text-customOriange-100"
                   }`}
                 >
                   {menu.title}
@@ -62,14 +62,14 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             <a
               href="https://www.educareskill.com/#/login"
               target="_blank"
-              className="bg-primary-500 text-white hover:bg-primary-700 px-5 py-2 rounded-md cursor-pointer"
+              className="bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
             >
               Sign in
             </a>
             <a
               href="https://www.educareskill.com/#/signup"
               target="_blank"
-              className="bg-primary-500 text-white hover:bg-primary-700 px-5 py-2 rounded-md cursor-pointer"
+              className="bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
             >
               Sign up
             </a>

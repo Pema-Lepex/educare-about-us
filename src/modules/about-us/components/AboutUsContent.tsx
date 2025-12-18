@@ -4,8 +4,8 @@ import {
   landing4,
   educareVideo,
   landing1,
+  Slider1,
 } from "assets";
-import { EducareMissionContent } from "assets/content/VissionAndMission";
 import { Menus } from "layouts/components/ManuList";
 import { CommonHeader } from "components";
 import AnimateOnScroll from "utils/helpers/AnimationOnScroll";
@@ -13,7 +13,8 @@ import HorizontalScroller from "./sections/HorizontalScroller";
 import PersonalizedLearningSection from "./sections/PersonalizedLearningSection";
 import DCDDUserSection from "./sections/DCDDUserSection";
 import MembershipSection from "./sections/MembershipSection";
-import { Media } from "props/Commonprops";
+import { Media, SlideProps } from "props/Commonprops";
+import Carousel from "components/Carousel";
 
 const Testimonial = lazy(() => import("./Testimobial"));
 
@@ -26,6 +27,11 @@ const AboutUsContent: React.FC = () => {
     { type: "video", src: educareVideo },
     { type: "image", src: landing4 },
   ];
+   const slides: SlideProps[] = [
+      { id: 1, img: Slider1, title: "Beautiful Landscape" },
+      { id: 2, img: Slider1, title: "City Night Lights" },
+      { id: 3, img: Slider1, title: "Mountain Adventure" },
+    ];
 
   const sections = [
     <PersonalizedLearningSection key="personalized" />,
@@ -42,28 +48,7 @@ const AboutUsContent: React.FC = () => {
     <div>
       <AnimateOnScroll animation="zoom-in" delay={300}>
         <section className="relative space-y-4">
-          <div className="relative w-full md:max-h-[500px] overflow-hidden">
-            <video
-              className="w-full h-auto "
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source src={educareVideo} type="video/mp4" />
-            </video>
-
-            <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
-              <div className="text-center text-white px-6">
-                <h2 className="text-3xl md:text-4xl font-bold mb-3">
-                  {EducareMissionContent.title}
-                </h2>
-                <p className="text-xs md:text-2xl max-w-3xl mx-auto leading-relaxed">
-                  {EducareMissionContent.content}
-                </p>
-              </div>
-            </div>
-          </div>
+          <Carousel slides={slides} />
         </section>
       </AnimateOnScroll>
 

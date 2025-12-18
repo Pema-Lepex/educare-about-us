@@ -16,7 +16,7 @@ export { default as missionImage } from "./mission.avif";
 export { default as playStoreImage } from "./PlaystoreImage.png";
 export { default as ThakurSPowdyel } from "./Thakur S Powdyel.jpeg";
 export * from "./landingPage";
-export * from "./logo";
+export * from "../new-images/logo";
 export * from "./team/2d";
 export * from "./blog";
 export * from "./others";

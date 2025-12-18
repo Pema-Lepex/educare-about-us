@@ -8,16 +8,16 @@ module.exports = {
     extend: {
       animation: {
         spin: "spin 1s linear infinite",
-         fadeIn: 'fade-in 0.5s ease forwards',
+        fadeIn: "fade-in 0.5s ease forwards",
       },
       keyframes: {
         spin: {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
         },
-         fadeIn: {
-          '0%': { opacity: 0, transform: 'translateY(20px)' },
-          '100%': { opacity: 1, transform: 'translateY(0)' },
+        fadeIn: {
+          "0%": { opacity: 0, transform: "translateY(20px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
         },
       },
       colors: {
@@ -33,8 +33,11 @@ module.exports = {
           800: "#001A26",
           900: "#001119",
         },
-        custom: {},
-        "light-brown": "#66b9a0d762d56f1e200b113c",
+        customOriange: {
+          100: "#FFA202",
+          200: "#F34800",
+        },
+        "light-brown": "#C4A484",
       },
       fontFamily: {
         "sf-pro": ["SF Pro", "sans-serif"],

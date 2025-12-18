@@ -1,0 +1,7 @@
+export { default as Facebook } from "./facebook.png";
+export { default as Instragram } from "./instragram.png";
+export { default as Messanger } from "./messanger.png";
+export { default as Telegram } from "./telegram.png";
+export { default as Tiktok } from "./tiktok.png";
+export { default as Whatsapp } from "./whatsapp.png";
+export { default as Youtube } from "./youtube.png";

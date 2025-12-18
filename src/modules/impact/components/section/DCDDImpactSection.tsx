@@ -8,7 +8,7 @@ const DCDDImpactSection: React.FC = () => {
     navigate("/about-free-dcdd-users");
   };
   return (
-    <section className="bg-primary-200 py-12 px-4 md:px-8 lg:px-16 space-y-4">
+    <section className="bg-primary-200 py-12 px-4 md:px-8 lg:px-16 space-y-4" id="video-comments">
       <div className="text-center">
         <CommonHeader>DCDD Free Subscription </CommonHeader>
       </div>

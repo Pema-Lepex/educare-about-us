@@ -53,3 +53,14 @@ export interface BlogProps {
   content: string;
   image?: string;
 }
+export interface SlideProps {
+  id: number;
+  img: string;
+  title: string;
+}
+export interface SocialMediaProps {
+  id: number;
+  img: string;
+  title: string;
+  url: string
+}
