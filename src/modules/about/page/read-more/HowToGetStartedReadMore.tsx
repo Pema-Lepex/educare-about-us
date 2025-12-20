@@ -7,12 +7,12 @@ import {
 import { CommonHeader, CommonParagraph } from "components";
 
 const HowToGetStartedReadMore: React.FC = () => {
-    const redirectToAppStore = () => {
-        window.location.href = 'https://www.apple.com/app-store/';
-    };
-    const redirectToGooglePlay = () => {
-        window.location.href = 'https://play.google.com/store';
-    };
+  const redirectToAppStore = () => {
+    window.location.href = "https://www.apple.com/app-store/";
+  };
+  const redirectToGooglePlay = () => {
+    window.location.href = "https://play.google.com/store";
+  };
   return (
     <section className="p-6 md:mb-14" id="how-to-get-started">
       <div className="lg:flex relative">
@@ -28,7 +28,10 @@ const HowToGetStartedReadMore: React.FC = () => {
             <h4 className="text-2xl font-bold">Membership Plan</h4>
             <div className="grid md:grid-cols-3 md:space-y-0 space-y-4">
               {memebershipDetails.map((item) => (
-                <div key={item.id} className="flex flex-col items-center md:px-0 px-12 ">
+                <div
+                  key={item.id}
+                  className="flex flex-col items-center md:px-0 px-12 "
+                >
                   <img
                     src={item.imageSrc}
                     alt={`${item.memebrshipType} Membership`}
@@ -84,7 +87,11 @@ const HowToGetStartedReadMore: React.FC = () => {
             </div>
           </div>
         </div>
-        <img src={AnimalImage} alt="animalimage" className="lg:absolute lg:flex hidden" />
+        <img
+          src={AnimalImage}
+          alt="animalimage"
+          className="lg:absolute lg:flex hidden"
+        />
       </div>
     </section>
   );

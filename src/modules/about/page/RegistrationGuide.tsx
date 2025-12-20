@@ -9,7 +9,7 @@ const RegistrationGuide: React.FC = () => {
         className="w-full  bg-cover bg-center bg-no-repeat "
         style={{ backgroundImage: `url(${RegistrationGuideBGImage})` }}
       >
-        <RegistraionGuideReadMore/>
+        <RegistraionGuideReadMore />
       </div>
     </MainLayout>
   );

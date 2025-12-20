@@ -2,11 +2,11 @@ import { AndroidStoreImage, AppleStoreImage, GirlRunningImage } from "assets";
 
 const DownloadOptionSection: React.FC = () => {
   const redirectToAppStore = () => {
-        window.location.href = 'https://www.apple.com/app-store/';
-    };
-    const redirectToGooglePlay = () => {
-        window.location.href = 'https://play.google.com/store';
-    };
+    window.location.href = "https://www.apple.com/app-store/";
+  };
+  const redirectToGooglePlay = () => {
+    window.location.href = "https://play.google.com/store";
+  };
 
   return (
     <div className="w-full relative">
@@ -20,14 +20,23 @@ const DownloadOptionSection: React.FC = () => {
         id="about-download-option"
       >
         <p className="text-[12px] md:text-3xl mb-6 leading-relaxed">
-          Download the <strong>Educare Skill App</strong> and make learning Dzongkha a fun and exciting adventure.
+          Download the <strong>Educare Skill App</strong> and make learning
+          Dzongkha a fun and exciting adventure.
         </p>
         <div className="flex flex-row gap-4">
           <button onClick={redirectToAppStore}>
-            <img src={AppleStoreImage} alt="Apple Store" className="h-[18px] md:h-14 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"/>
+            <img
+              src={AppleStoreImage}
+              alt="Apple Store"
+              className="h-[18px] md:h-14 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
+            />
           </button>
           <button onClick={redirectToGooglePlay}>
-            <img src={AndroidStoreImage} alt="Android Store" className="h-[18px] md:h-14 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"/>
+            <img
+              src={AndroidStoreImage}
+              alt="Android Store"
+              className="h-[18px] md:h-14 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
+            />
           </button>
         </div>
       </section>

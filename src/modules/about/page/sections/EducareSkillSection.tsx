@@ -5,7 +5,6 @@ import {
 import { CommonHeader, CommonParagraph } from "components";
 
 const EducareSkillSection: React.FC = () => {
-
   return (
     <section
       id="about-educare-skill"

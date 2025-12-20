@@ -9,7 +9,7 @@ const ForDCDDUsers: React.FC = () => {
         className="w-full  bg-cover bg-center bg-no-repeat "
         style={{ backgroundImage: `url(${RegistrationGuideBGImage})` }}
       >
-        <ForDCDDUsersReadMore/>
+        <ForDCDDUsersReadMore />
       </div>
     </MainLayout>
   );
