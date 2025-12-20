@@ -13,6 +13,8 @@ export { default as TeamProfileImage1 } from "./team-bg1.png";
 export { default as DCDDPageBackGroundImage } from "./bgimage1.png";
 export { default as ThreeCharacterImage } from "./ThreeCharacter.png";
 export { default as FamilyWithPhoneImage } from "./FamilyWithPhone.png";
+export { default as CareerOpportunityImage } from "./Career.png";
+
 export * from "./logo";
 export * from "./social-media";
 export * from "./educare-skill";
