@@ -229,23 +229,23 @@ export const GiftCouponContent = {
   buyerGuide: {
     heading: "For the Buyer:",
     steps: [
-      "Open the Educare Skill Homepage.",
-      "Click on the Gift Coupon Button.",
-      "Enter the recipient's details, such as email address or phone number.",
-      "Click on the Join Button for the desired package and select the membership duration.",
-      "Choose a payment option and complete payment.",
-      "You have now purchased an Educare Skill membership plan for your loved one!"
+     {step1: "Open the Educare Skill Homepage.",
+      step2:"Click on the Gift Coupon Button.",
+      step3:"Enter the recipient's details, such as email address or phone number.",
+     step4: "Click on the Join Button for the desired package and select the membership duration.",
+     step5: "Choose a payment option and complete payment.",
+     step6: "You have now purchased an Educare Skill membership plan for your loved one!"}
     ]
   },
 
   recipientGuide: {
     heading: "For the Recipient:",
     steps: [
-      "Log in to the Educare Skill platform either through the website or the app.",
-      "Click on Membership Plan.",
-      "Enter your Coupon Code.",
-      "Click on Redeem.",
-      "You have now received an Educare Skill membership!"
+      {step1:"Log in to the Educare Skill platform either through the website or the app.",
+      step2:"Click on Membership Plan.",
+      step3:"Enter your Coupon Code.",
+      step4:"Click on Redeem.",
+      step5:"You have now received an Educare Skill membership!"}
     ]
   }
 };
