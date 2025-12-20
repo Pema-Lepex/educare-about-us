@@ -10,3 +10,5 @@ const ImpactPage: React.FC = () => {
   );
 };
 export default ImpactPage;
+
+

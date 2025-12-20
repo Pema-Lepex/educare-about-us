@@ -2,9 +2,9 @@ import { productionData } from 'assets/content/team/ProductionTeamInfo';
 import React from 'react';
 export default function ProductionTeam() {
   return (
-    <section className="py-16 px-4 max-w-7xl mx-auto">
+    <section className="md:py-16 py-4 px-4 max-w-7xl mx-auto">
       {/* Section Heading */}
-      <h2 className="text-4xl font-bold text-center text-purple-600 mb-12">
+      <h2 className="md:text-4xl text-2xl font-bold text-center text-purple-600 md:mb-12 mb-6">
         Production Team
       </h2>
 
