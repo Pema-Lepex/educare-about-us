@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Menus } from "./ManuList";
-import { whiteLogo, MenuIcon, XMarkIcon} from "assets";
+import { whiteLogo, MenuIcon, XMarkIcon } from "assets";
 
 interface Props {
   hidden?: boolean;
@@ -42,7 +42,9 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
           </div>
           <div className="hidden lg:flex space-x-6">
             {Menus.map((menu, index) => {
-              const isActive = location.pathname === menu.ref;
+              const isActive =
+                location.pathname === menu.ref ||
+                location.pathname.startsWith(menu.ref + "/");
               return (
                 <button
                   key={index}
@@ -71,7 +73,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
               target="_blank"
               className="bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
             >
-              Sign up
+              DCDD Sign up
             </a>
           </div>
           <button
@@ -79,7 +81,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             aria-expanded={open}
             aria-label={open ? "Close menu" : "Open menu"}
             onClick={() => setOpen((s) => !s)}
-            className="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-200"
+            className="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-white dark:text-gray-200"
           >
             {open ? (
               <XMarkIcon className="size-5" />
@@ -89,24 +91,30 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
           </button>
         </div>
         <div
-          className={`lg:hidden absolute left-0 right-0 top-full bg-white dark:bg-bgColor-900 shadow-md transition-transform duration-200 origin-top ${
+          className={`lg:hidden absolute left-0 right-0 top-full bg-primary-500 dark:bg-bgColor-900 shadow-md transition-transform duration-200 origin-top ${
             open ? "scale-y-100" : "scale-y-0"
           }`}
         >
           <nav className="px-4 py-3">
             {Menus.map((menu, index) => {
-              const isActive = location.pathname === menu.ref;
+              const isActive =
+                location.pathname === menu.ref ||
+                location.pathname.startsWith(menu.ref + "/");
               return (
                 <div
                   key={index}
-                  className="py-2 border-b last:border-b-0 border-gray-100 dark:border-gray-800"
+                  className={`py-2 border-b last:border-b-0 ${
+                    isActive
+                      ? "border-customOriange-100 dark:border-gray-800"
+                      : "border-primary-100 dark:border-gray-800"
+                  } `}
                 >
                   <button
                     onClick={() => handleNavigate(menu.ref)}
                     className={`w-full text-left text-base font-medium transition-colors duration-200 ${
                       isActive
-                        ? "text-primary-600 font-semibold"
-                        : "text-gray-700 dark:text-gray-200 hover:text-primary-500"
+                        ? "text-customOriange-100 font-semibold"
+                        : "text-white dark:text-gray-200 hover:text-primary-500"
                     }`}
                   >
                     {menu.title}
@@ -114,22 +122,22 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
                 </div>
               );
             })}
-            <div className="lg:hidden gap-2 flex mt-2">
-            <a
-              href="https://www.educareskill.com/#/login"
-              target="_blank"
-              className="bg-primary-500 text-white hover:bg-primary-700 px-5 py-2 rounded-md cursor-pointer"
-            >
-              Sign in
-            </a>
-            <a
-              href="https://www.educareskill.com/#/signup"
-              target="_blank"
-              className="bg-primary-500 text-white hover:bg-primary-700 px-5 py-2 rounded-md cursor-pointer"
-            >
-              Sign up
-            </a>
-          </div>
+            <div className="lg:hidden gap-2 flex mt-3">
+              <a
+                href="https://www.educareskill.com/#/login"
+                target="_blank"
+                className="bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
+              >
+                Sign in
+              </a>
+              <a
+                href="https://www.educareskill.com/#/signup"
+                target="_blank"
+                className="bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
+              >
+                DCDD Sign up
+              </a>
+            </div>
           </nav>
         </div>
       </header>

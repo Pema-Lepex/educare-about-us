@@ -3,6 +3,7 @@ export interface Media {
   src: string;
 }
 export interface MemebershipProps {
+  id:number;
   memebrshipType: string;
   imageSrc: string;
   yearlyCost: string;

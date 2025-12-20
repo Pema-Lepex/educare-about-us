@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { feedBack } from "assets/content/about-us/AboutUs";
+import { feedBack } from "assets/content/about/About";
 import { LeftArrowIcon, RightArrowIcon } from "assets";
 
 const FeedBackCarousel = () => {

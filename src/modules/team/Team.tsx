@@ -1,12 +1,11 @@
 import MainLayout from "layouts/MainLayout";
-import TeamContent from "./components/TeamContent";
+import ImpactPage from "./page/ImpactPage";
 
-const Team: React.FC = () => {
+const Team:React.FC = () => {
   return (
-    <MainLayout>
-      <TeamContent />
+   <MainLayout>
+      <ImpactPage/>
     </MainLayout>
-  );
-};
-
+  )
+}
 export default Team;

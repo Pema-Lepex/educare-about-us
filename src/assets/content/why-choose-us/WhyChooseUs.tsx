@@ -2,12 +2,9 @@ import {
   CertificateIcon,
   CompassIcon,
   GlobelIcon,
-  landing1,
-  landing2,
-  landing3,
-  landing4,
   MoneyIcon,
 } from "assets";
+import { landing1, landing2, landing3, landing4 } from "backup/images";
 import {
   ContentProvidedDetailsProps,
   WhyChooseUsShortDetailsProps,

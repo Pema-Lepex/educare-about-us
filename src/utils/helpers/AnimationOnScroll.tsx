@@ -1,4 +1,3 @@
-// ...existing code...
 import React, { useEffect, useRef, useState } from "react";
 
 interface AnimateOnScrollProps {
@@ -102,4 +101,3 @@ const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({
 };
 
 export default AnimateOnScroll;
-// ...existing code...

@@ -26,24 +26,25 @@ const MainFooter: React.FC = () => {
   ];
 
   return (
-    <footer
-      className="relative w-full bg-cover bg-top bg-no-repeat"
-      style={{ backgroundImage: `url(${FooterImage})` }}
-    >
+   <footer
+  className="absolute bottom-0 left-0 w-full bg-cover bg-top bg-no-repeat z-40"
+  style={{ backgroundImage: `url(${FooterImage})` }}
+>
+
       <div className="max-w-7xl mx-auto px-6 pt-32 pb-12 relative z-10 space-y-4">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-white text-[11px] uppercase tracking-wider text-center md:text-left">
-            © {new Date().getFullYear()} Educare Skill Pvt. Ltd. | Developed By BEST
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center justify-start gap-6">
+          <p className="text-white text-[8px] lg:text-[11px] tracking-wider lg:text-center md:text-left">
+            © {new Date().getFullYear()} Educare Skill Pvt. Ltd. | All rights reserved | Developed By iBEST
               <a className="hover:underline hover:text-customOriange-100" href="/"> STUDIOS</a> &<a className="hover:underline hover:text-customOriange-100" href="/"> TECHNOLOGIES</a>
           </p>
 
-          <nav className="flex space-x-8">
+          <nav className="flex lg:space-x-8 space-x-2">
             {["About Us", "FAQ", "Contact", "Privacy", "Terms of Use"].map(
               (link) => (
                 <a
                   key={link}
                   href="#"
-                  className="text-white text-xs  transition-transform duration-300 ease-out hover:scale-110 hover:text-customOriange-100"
+                  className="text-white text-[9px] lg:text-xs  transition-transform duration-300 ease-out hover:scale-110 hover:text-customOriange-100"
                 >
                   {link}
                 </a>
@@ -53,8 +54,8 @@ const MainFooter: React.FC = () => {
         </div>
         {/* Column 2: Follow Us */}
         <div className="flex flex-row gap-10">
-          <div className="flex flex-col items-center md:items-start">
-            <h4 className="text-white font-semibold mb-5 uppercase tracking-widest text-xs">
+          <div className="flex flex-col items-start">
+            <h4 className="text-white font-semibold lg:mb-5 mb-2 uppercase tracking-widest text-[9px] lg:text-xs">
               Follow us
             </h4>
             <div className="flex flex-wrap gap-4">
@@ -62,7 +63,7 @@ const MainFooter: React.FC = () => {
                 <a
                   key={item.id}
                   href={item.url}
-                  className="footer-social-icon border rounded-full size-10 flex justify-center items-center transition-transform duration-300 ease-out hover:scale-110"
+                  className="footer-social-icon border rounded-full lg:size-10 size-5 p-1 lg:p-0 flex justify-center items-center transition-transform duration-300 ease-out hover:scale-110"
                 >
                   <img
                     src={item.img}
@@ -76,7 +77,7 @@ const MainFooter: React.FC = () => {
 
           {/* Column 3: Let's Chat */}
           <div className="flex flex-col items-center md:items-start">
-            <h4 className="text-white font-semibold mb-5 uppercase tracking-widest text-xs">
+            <h4 className="text-white font-semibold lg:mb-5 mb-2 uppercase tracking-widest text-[9px] lg:text-xs">
               Let's Chat
             </h4>
             <div className="flex flex-wrap gap-4">
@@ -84,7 +85,7 @@ const MainFooter: React.FC = () => {
                 <a
                   key={item.id}
                   href={item.url}
-                  className="footer-social-icon border rounded-full size-10 flex justify-center items-center transition-transform duration-300 ease-out hover:scale-110"
+                  className="footer-social-icon border rounded-full lg:size-10 size-5 p-1 lg:p-0 flex justify-center items-center transition-transform duration-300 ease-out hover:scale-110"
                 >
                   <img
                     src={item.img}
