@@ -1,83 +1,92 @@
+import { bronze, gold, sliver } from "assets";
 import {
-  bronze,
-  gold,
-  sliver,
-} from "assets";
-import { CheCheyImage, CheCheyIcon, EducareSkillImage, EducareSkillIcon, PrimaryLevelImage, PrimaryLevelIcon, IntermediateLevelImage, IntermediateLevelIcon, RedFrame, BuleFrame, PurpleFrame, GreenFrame } from "assets/images";
+  CheCheyImage,
+  CheCheyIcon,
+  EducareSkillImage,
+  EducareSkillIcon,
+  PrimaryLevelImage,
+  PrimaryLevelIcon,
+  IntermediateLevelImage,
+  IntermediateLevelIcon,
+  RedFrame,
+  BuleFrame,
+  PurpleFrame,
+  GreenFrame,
+} from "assets/images";
 import { landing1, landing2, landing3 } from "backup/images";
 import { FeedBackCarouselProps, MemebershipProps } from "props/Commonprops";
 
 export const EducareSkillContent = {
   title: "Educare Skill",
-  subTitle:"Your Favorite Dzongkha Tutor!",
+  subTitle: "Your Favorite Dzongkha Tutor!",
   content1: `Educare Skill is Bhutan’s first online learning platform with a wide variety of entertaining and educational content catering to all learners, from children in ECCD centres, students studying in Classes PP to XII, to graduates preparing for their RCSE Examinations, as well as anyone interested in learning and mastering our national language, Dzongkha.`,
   content2: `Educare Skill is officially endorsed by the Department of Culture and Dzongkha Development as the National Dzongkha Learning platform, making it the apex platform for Dzongkha learning not only for those residing in the country but also for those living abroad.`,
 };
 
-export const EducareSkillGroupContent =[
+export const EducareSkillGroupContent = [
   {
-    id:1,
+    id: 1,
     groupName: "CHEYCHEY",
     groupImage: CheCheyImage,
     groupIcon: CheCheyIcon,
     eligibility: "Age 3 - 10 years",
-    info: "Learn the fundamentals of Dzongkha through interactive mobile games."
+    info: "Learn the fundamentals of Dzongkha through interactive mobile games.",
   },
   {
-    id:2,
+    id: 2,
     groupName: "Educare Kids",
     groupImage: EducareSkillImage,
     groupIcon: EducareSkillIcon,
     eligibility: "Age 3 - 16 years",
-    info: "Where Dzongkha Learning Comes Alive - Animations. Stories. Rhymes."
+    info: "Where Dzongkha Learning Comes Alive - Animations. Stories. Rhymes.",
   },
   {
-    id:3,
+    id: 3,
     groupName: "Primary Level",
     groupImage: PrimaryLevelImage,
     groupIcon: PrimaryLevelIcon,
     eligibility: "Classes PP - VI",
-    info: "The Perfect Dzongkha tutor to help your children build a strong foundation."
+    info: "The Perfect Dzongkha tutor to help your children build a strong foundation.",
   },
   {
-    id:4,
+    id: 4,
     groupName: "Intermediate Level",
     groupImage: IntermediateLevelImage,
     groupIcon: IntermediateLevelIcon,
     eligibility: "Classes VIII - XII",
-    info: "Your perfect guide to mastering Dzongkha."
+    info: "Your perfect guide to mastering Dzongkha.",
   },
-]
-export const EducareSkillGuideContent =[
+];
+export const EducareSkillGuideContent = [
   {
-    id:1,
+    id: 1,
     title: "How To Get Started?",
     frame: BuleFrame,
-    href:"/about/how-to-get-started?",
-    info: "If you wish to get started on Educare Skill, please register or sign up now and avail our affordable membership plans."
+    href: "/about/how-to-get-started?",
+    info: "If you wish to get started on Educare Skill, please register or sign up now and avail our affordable membership plans.",
   },
   {
-    id:2,
+    id: 2,
     title: "Registration Guide:",
     frame: RedFrame,
-    href:"/about/registration-guide",
-    info: "Do you want to register on our platform and watch our amazing content, but you are not quite sure how to do it? Don’t worry. We will help you get started."
+    href: "/about/registration-guide",
+    info: "Do you want to register on our platform and watch our amazing content, but you are not quite sure how to do it? Don’t worry. We will help you get started.",
   },
   {
-    id:3,
+    id: 3,
     title: "For DCDD Users:",
     frame: PurpleFrame,
-    href:"/about/for-dcdd-users",
-    info: "With the subsidized support of DCDD, Educare Skill is FREE for students and teachers from Class PP to VI, as well as for ECCD children and facilitators."
+    href: "/about/for-dcdd-users",
+    info: "With the subsidized support of DCDD, Educare Skill is FREE for students and teachers from Class PP to VI, as well as for ECCD children and facilitators.",
   },
   {
-    id:4,
+    id: 4,
     title: "Gift Coupon The Gift of Learning!",
     frame: GreenFrame,
-    href:"/about/gift-coupon-the-gift-of-learning",
-    info: "With the Educare Skill Gift Coupon, you can give your loved ones the Educare Skill membership plans."
+    href: "/about/gift-coupon-the-gift-of-learning",
+    info: "With the Educare Skill Gift Coupon, you can give your loved ones the Educare Skill membership plans.",
   },
-]
+];
 
 export const feedBack: FeedBackCarouselProps[] = [
   {
@@ -107,13 +116,14 @@ export const feedBack: FeedBackCarouselProps[] = [
 ];
 
 export const HowToGetStartedContent = {
-  title:"How To Get Started?",
-  description:"With the subsidized support of DCDD, Educare Skill is FREE for students and teachers in classes PP to VI, as well as for ECCD children and facilitators. If you are eligible for this support, you can click here for more information. (redirects the user to the DCDD user webpage) If you are not eligible for this support and wish to get started on Educare Skill, please register or sign up now and avail our affordable membership plans."
-}
+  title: "How To Get Started?",
+  description:
+    "With the subsidized support of DCDD, Educare Skill is FREE for students and teachers in classes PP to VI, as well as for ECCD children and facilitators. If you are eligible for this support, you can click here for more information. (redirects the user to the DCDD user webpage) If you are not eligible for this support and wish to get started on Educare Skill, please register or sign up now and avail our affordable membership plans.",
+};
 
 export const memebershipDetails: MemebershipProps[] = [
   {
-    id:1,
+    id: 1,
     memebrshipType: "Basic",
     imageSrc: bronze,
     yearlyCost: "Nu.399",
@@ -122,7 +132,7 @@ export const memebershipDetails: MemebershipProps[] = [
     benefits: ["RA", "NR", "AS", "GL", "CHEYCHEY accessible"],
   },
   {
-    id:2,
+    id: 2,
     memebrshipType: "Standard",
     imageSrc: sliver,
     yearlyCost: "Nu.449",
@@ -139,7 +149,7 @@ export const memebershipDetails: MemebershipProps[] = [
     ],
   },
   {
-    id:3,
+    id: 3,
     memebrshipType: "Premium",
     imageSrc: gold,
     yearlyCost: "Nu.499",
@@ -169,9 +179,27 @@ With the PREMIUM plan, users can access all content on the platform, including R
 Before purchasing any Educare Membership plan, please know the categories of content accessible under each membership plan and select the package accordingly.
 
 Once payment is made, there is no refund policy.
-`
+`,
 };
 
+export const RegistrationGuideContent = {
+  title: "Registration Guide:",
+  description:
+    "Do you want to register on our platform and watch our amazing content, but you are not quite sure how to do it? Don't worry. We will help you get started.",
+  guide: [
+    {
+      guide1:
+        "Open the Educare Skill homepage either through the website or the app. Then click on SIGN IN button.",
+      guide2: "After opening the SIGN IN page, click on the SIGN-UP button.",
+      guide3: "Type in your personal information.",
+      guide4: "After filling out your details, click on SIGN UP button.",
+      guide5:
+        "You will receive an OTP on your registered phone number or email address.",
+      guide6:
+        "Enter your OTP on your device, and you are now registered on our platform!",
+    },
+  ],
+};
 
 export const testimonials = [
   {
