@@ -8,6 +8,8 @@ export { default as RegistrationGuideBGImage } from "./RegistrationGuideBG.png";
 export { default as bronze } from "./Bronze.png";
 export { default as sliver } from "./Sliver.png";
 export { default as gold } from "./Gold.png";
+export { default as TeamProfileImage } from "./team-bg.png";
+
 export { default as DCDDPageBackGroundImage } from "./bgimage1.png";
 export { default as ThreeCharacterImage } from "./ThreeCharacter.png";
 export { default as FamilyWithPhoneImage } from "./FamilyWithPhone.png";
