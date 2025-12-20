@@ -19,6 +19,7 @@ const AppRoutes: React.FC = () => {
         <Route path="*" element={<PageNotFound />} />
         <Route path="/" element={<Navigate to="/about" replace />} />
         {/* About page routes */}
+        
         <Route path="/about" element={<AboutUs />} />
         <Route
           path="/about/how-to-get-started?"
