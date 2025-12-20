@@ -40,7 +40,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
               className="inline md:h-10 xl:12 h-9 w-auto mr-2"
             />
           </div>
-          <div className="hidden lg:flex xl:space-x-2 2xl:space-x-8">
+          <div className="hidden lg:flex lg:space-x-2 xl:space-x-4  2xl:space-x-8">
             {Menus.map((menu, index) => {
               const isActive =
                 location.pathname === menu.ref ||
