@@ -1,5 +1,5 @@
 import MainLayout from "layouts/MainLayout";
-import { RegistrationGuideBGImage } from "assets";
+import { HTGSBGImage } from "assets";
 import GiftCouponReadMore from "./read-more/GiftCouponReadMore";
 
 const GiftCoupon: React.FC = () => {
@@ -7,7 +7,7 @@ const GiftCoupon: React.FC = () => {
     <MainLayout>
       <div
         className="w-full  bg-cover bg-center bg-no-repeat "
-        style={{ backgroundImage: `url(${RegistrationGuideBGImage})` }}
+        style={{ backgroundImage: `url(${HTGSBGImage})` }}
       >
         <GiftCouponReadMore />
       </div>

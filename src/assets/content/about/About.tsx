@@ -201,6 +201,56 @@ export const RegistrationGuideContent = {
   ],
 };
 
+export const ForDCDDUsersContent = {
+  title: "For DCDD Users (Free Access)",
+  description1:
+    "If you are eligible for the DCDD support, we are glad to inform you that you have already been registered on Educare Skill!",
+  description2:
+    "In collaboration with schools and ECCD centres across the country, the Educare Skill support team has already registered all eligible users onto the platform.",
+  guide: [
+    {
+      guide1:
+        "Collect your USER ID and PASSWORD from your respective class teacher or ECCD facilitator.",
+      guide2: "Open the Educare Skill homepage either through the website or the app. Then, click on DCDD Sign In.",
+      guide3: "Type in your USER ID and PASSWORD and click on Sing In.",
+      guide4: "You now have access to our treasure trove of engaging and entertaing content!.",
+      
+    },
+  ],
+  importentNote: "If you haven't been registered or were missed during the registration process, or are facing any issues, please don't hesitate to reach out to your class teacher, ECCD facilitator, or the Educare Skill Support Team."
+};
+
+export const GiftCouponContent = {
+  title: "Gift Coupon - The Gift of Learning",
+  subtitle: "The Best Gift You Can Give, The Gift of Learning!",
+  description:
+    "With the Educare Skill Gift Coupon, you can give your loved ones the Educare Skill membership plans.",
+
+  buyerGuide: {
+    heading: "For the Buyer:",
+    steps: [
+      "Open the Educare Skill Homepage.",
+      "Click on the Gift Coupon Button.",
+      "Enter the recipient's details, such as email address or phone number.",
+      "Click on the Join Button for the desired package and select the membership duration.",
+      "Choose a payment option and complete payment.",
+      "You have now purchased an Educare Skill membership plan for your loved one!"
+    ]
+  },
+
+  recipientGuide: {
+    heading: "For the Recipient:",
+    steps: [
+      "Log in to the Educare Skill platform either through the website or the app.",
+      "Click on Membership Plan.",
+      "Enter your Coupon Code.",
+      "Click on Redeem.",
+      "You have now received an Educare Skill membership!"
+    ]
+  }
+};
+
+
 export const testimonials = [
   {
     name: "Dorji Pem",

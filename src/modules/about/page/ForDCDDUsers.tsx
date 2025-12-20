@@ -1,5 +1,5 @@
 import MainLayout from "layouts/MainLayout";
-import { RegistrationGuideBGImage } from "assets";
+import { DCDDPageBackGroundImage } from "assets";
 import ForDCDDUsersReadMore from "./read-more/ForDCDDUsersReadMore";
 
 const ForDCDDUsers: React.FC = () => {
@@ -7,7 +7,7 @@ const ForDCDDUsers: React.FC = () => {
     <MainLayout>
       <div
         className="w-full  bg-cover bg-center bg-no-repeat "
-        style={{ backgroundImage: `url(${RegistrationGuideBGImage})` }}
+        style={{ backgroundImage: `url(${DCDDPageBackGroundImage})` }}
       >
         <ForDCDDUsersReadMore />
       </div>
