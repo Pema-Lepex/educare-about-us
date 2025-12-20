@@ -1,10 +1,10 @@
 import MainLayout from "layouts/MainLayout";
-import ImpactPage from "./page/ImpactPage";
+import BlogSection from "./page/sections/BlogSection";
 
 const Blog:React.FC = () => {
   return (
    <MainLayout>
-      <ImpactPage/>
+      <BlogSection/>
     </MainLayout>
   )
 }
