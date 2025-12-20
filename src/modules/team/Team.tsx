@@ -1,10 +1,10 @@
 import MainLayout from "layouts/MainLayout";
-import ImpactPage from "./page/ImpactPage";
+import TeamProfileSection from "./page/sections/TeamProfileSection";
 
 const Team:React.FC = () => {
   return (
    <MainLayout>
-      <ImpactPage/>
+      <TeamProfileSection/>
     </MainLayout>
   )
 }

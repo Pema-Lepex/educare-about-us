@@ -8,6 +8,8 @@ export { default as RegistrationGuideBGImage } from "./RegistrationGuideBG.png";
 export { default as bronze } from "./Bronze.png";
 export { default as sliver } from "./Sliver.png";
 export { default as gold } from "./Gold.png";
+export { default as TeamProfileImage } from "./team-bg.png";
+
 export * from "./logo";
 export * from "./social-media";
 export * from "./educare-skill";
