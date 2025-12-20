@@ -19,7 +19,7 @@ export { default as Blog2 } from "./Blog2.png";
 export { default as Blog3 } from "./Blog3.png";
 export { default as Blog4 } from "./Blog4.png";
 export { default as Blog5 } from "./Blog5.png";
-
+export { default as Contact } from "./Contact.png";
 
 export * from "./logo";
 export * from "./social-media";

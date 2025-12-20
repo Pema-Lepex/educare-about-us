@@ -1,10 +1,10 @@
 import MainLayout from "layouts/MainLayout";
-import ImpactPage from "./page/ImpactPage";
+import ContactSection from "./page/sections/ContactUsSection";
 
 const Contact:React.FC = () => {
   return (
    <MainLayout>
-      <ImpactPage/>
+      <ContactSection/>
     </MainLayout>
   )
 }
