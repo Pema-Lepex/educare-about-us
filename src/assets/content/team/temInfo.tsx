@@ -1,4 +1,4 @@
-import { animator } from "assets";
+import { animator } from "backup/images";
 import { TeamProps } from "props/Commonprops";
 
 export const Description = {

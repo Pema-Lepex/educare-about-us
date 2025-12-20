@@ -1,12 +1,11 @@
 import MainLayout from "layouts/MainLayout";
-import LeadershipContent from "./components/LeadershipContent";
+import ImpactPage from "./page/ImpactPage";
 
-const Leadership: React.FC = () => {
+const Leadership:React.FC = () => {
   return (
-    <MainLayout>
-     <LeadershipContent/>
+   <MainLayout>
+      <ImpactPage/>
     </MainLayout>
-  );
-};
-
+  )
+}
 export default Leadership;

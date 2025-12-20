@@ -1,4 +1,5 @@
-import { img1, img2, img3, img4 } from "assets/images";
+
+import { img1, img2, img3, img4 } from "backup/images";
 import { BlogProps } from "props/Commonprops";
 
 export const blogs: BlogProps[] = [

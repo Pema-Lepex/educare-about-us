@@ -3,6 +3,7 @@ export interface Media {
   src: string;
 }
 export interface MemebershipProps {
+  id:number;
   memebrshipType: string;
   imageSrc: string;
   yearlyCost: string;
@@ -52,4 +53,15 @@ export interface BlogProps {
   subject: string;
   content: string;
   image?: string;
+}
+export interface SlideProps {
+  id: number;
+  img: string;
+  title: string;
+}
+export interface SocialMediaProps {
+  id: number;
+  img: string;
+  title: string;
+  url: string
 }

@@ -1,16 +1,12 @@
-import {
-  production,
-  production1,
-  production2,
-  production3,
-} from "assets/images/team/production";
+
+import { production1, production2, production3 } from "backup/images/team/production";
 import { LeaderProps } from "props/Commonprops";
 
 export const LeadersOfIBest: LeaderProps[] = [
   {
     id: 1,
     name: "Tharchen",
-    image: production,
+    image: production1,
     position: "CEO & Founder",
     },
   {

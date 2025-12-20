@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import MainFooter from "./components/MainFooter";
 import MainNavigation from "./components/MainNavigation";
+import ScrollToSection from "utils/helpers/ScrollToSection";
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -36,7 +37,8 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative overflow-hidden pb-[13.9rem] sm:pb-[14rem] md:pb-[13.7rem] lg:pb-32 xl:pb-40">
+      <ScrollToSection />
       <MainNavigation ref={headerRef} hidden={navHidden} />
       <main
         className="flex-grow hide-scrollbar"
