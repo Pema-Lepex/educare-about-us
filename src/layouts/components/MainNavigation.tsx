@@ -37,10 +37,10 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             <img
               src={whiteLogo}
               alt="Educare Logo"
-              className="inline md:h-12 h-9 w-auto mr-2"
+              className="inline md:h-10 xl:12 h-9 w-auto mr-2"
             />
           </div>
-          <div className="hidden lg:flex space-x-6">
+          <div className="hidden lg:flex xl:space-x-2 2xl:space-x-8">
             {Menus.map((menu, index) => {
               const isActive =
                 location.pathname === menu.ref ||
@@ -64,14 +64,14 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             <a
               href="https://www.educareskill.com/#/login"
               target="_blank"
-              className="bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
+              className="bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 rounded-md cursor-pointer"
             >
               Sign in
             </a>
             <a
               href="https://www.educareskill.com/#/signup"
               target="_blank"
-              className="bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
+              className="bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 rounded-md cursor-pointer"
             >
               DCDD Sign up
             </a>
