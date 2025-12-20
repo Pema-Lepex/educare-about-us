@@ -15,6 +15,12 @@ export { default as DCDDPageWideBackGroundImage } from "./DCDDWideGB.png";
 export { default as ThreeCharacterImage } from "./ThreeCharacter.png";
 export { default as FamilyWithPhoneImage } from "./FamilyWithPhone.png";
 export { default as CareerOpportunityImage } from "./Career.png";
+export { default as Blog1 } from "./Blog1.png";
+export { default as Blog2 } from "./Blog2.png";
+export { default as Blog3 } from "./Blog3.png";
+export { default as Blog4 } from "./Blog4.png";
+export { default as Blog5 } from "./Blog5.png";
+
 
 export { default as EducarekidsBGImage } from "./EducarekidsBG.jpg";
 export { default as GirlPointImage } from "./GirlPointingImage.png";
