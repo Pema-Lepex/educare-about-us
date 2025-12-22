@@ -28,6 +28,11 @@ export { default as GirlPointImage } from "./GirlPointingImage.png";
 export { default as CloudeFrameImage } from "./CloudFrame.png";
 export { default as ManHoldingABabyImage } from "./ManHolingABaby.png";
 export { default as GiftLineImage } from "./GiftLineimage.png";
+export { default as Founder } from "./founder.png";
+export { default as CEO } from "./CEO.png";
+export { default as PIC } from "./PIC.png";
+export { default as LeadershipBG } from "./BG.jpg";
+
 export * from "./logo";
 export * from "./social-media";
 export * from "./educare-skill";
