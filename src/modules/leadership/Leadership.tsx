@@ -1,10 +1,10 @@
 import MainLayout from "layouts/MainLayout";
-import ImpactPage from "./page/ImpactPage";
+import LeadershipSection from "./page/sections/LeadershipSection";
 
 const Leadership:React.FC = () => {
   return (
    <MainLayout>
-      <ImpactPage/>
+    <LeadershipSection/>
     </MainLayout>
   )
 }
