@@ -1,11 +1,11 @@
 import MainLayout from "layouts/MainLayout";
-import ImpactPage from "./page/ImpactPage";
+import WhyChooseUsContent from "./page/WhyChooseUsContent";
 
-const WhyChooseUs:React.FC = () => {
+const WhyChooseUs: React.FC = () => {
   return (
-   <MainLayout>
-      <ImpactPage/>
+    <MainLayout>
+      <WhyChooseUsContent />
     </MainLayout>
-  )
-}
+  );
+};
 export default WhyChooseUs;

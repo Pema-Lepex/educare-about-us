@@ -3,7 +3,7 @@ export interface Media {
   src: string;
 }
 export interface MemebershipProps {
-  id:number;
+  id: number;
   memebrshipType: string;
   imageSrc: string;
   yearlyCost: string;
@@ -31,6 +31,13 @@ export interface ContentProvidedDetailsProps {
   image: string;
   description1: string;
   benefits?: string[];
+}
+
+export interface whyChooseUsDetailsProps {
+  title: string;
+  icon: string;
+  desc: string;
+  theme: string;
 }
 export interface LeaderProps {
   id: number;
@@ -63,5 +70,36 @@ export interface SocialMediaProps {
   id: number;
   img: string;
   title: string;
-  url: string
+  url: string;
+}
+export interface contentCardProps {
+  contentType: string;
+  content: contentProps;
+}
+export interface contentProps {
+  title: string;
+  intro: string;
+  items: string[];
+}
+
+export interface educareKidsProp {
+  id: string;
+  title: string;
+  desc: string;
+  borderClass: string;
+  titleClass: string;
+  isAccordion: boolean;
+  items?: educareKideItemsProps[];
+}
+
+export interface educareKideItemsProps {
+  title: string;
+  desc: string;
+  bgClass: string;
+}
+
+export interface cheycheyProps {
+  title: string;
+  intro: string;
+  games: string[];
 }

@@ -1,3 +1,5 @@
+import exp from "constants";
+
 export { default as Slider1 } from "./Slider.png";
 export { default as FooterImage } from "./Footer.png";
 export { default as NonoImage } from "./nono new 1.png";
@@ -12,3 +14,4 @@ export * from "./logo";
 export * from "./social-media";
 export * from "./educare-skill";
 export * from "./frames";
+export * from "./why-choose-us";
