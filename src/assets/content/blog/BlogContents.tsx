@@ -1,4 +1,21 @@
-import { Blog2,Blog3, Blog4, Blog5 } from "assets/images";
+import { Blog1, Blog2,Blog3, Blog4, Blog5 } from "assets/images";
+
+
+export const blogHeader = 
+    {
+        id: 1,
+        header: "Insights & Stories",
+        description: "Explore creative ideas, behind the scenes, and storytelling tips.",
+    };
+
+export const featuredPosts = [
+    {
+        id: 1,
+        title: "Bringing Ideas to Life",
+        excerpt: "From concept to execution, see how our creative team turns ideas into captivating multimedia. Jump headfirst into 'easily the best thriller series going",
+        image: Blog1, // Replace with your assets
+    },
+];
 
 export const blogPosts = [
     {

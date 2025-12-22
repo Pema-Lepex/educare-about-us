@@ -19,7 +19,7 @@ export default function ContactSection() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
                 
                 {/* Contact Info Card */}
-                <div className="border border-orange-200 rounded-[2rem] p-8 md:p-12 shadow-sm bg-white">
+                <div className="border border-customOriange-200 rounded-[2rem] p-8 md:p-12 shadow-sm bg-white">
                     <h3 className="text-orange-500 font-bold text-lg mb-8">Get In Touch</h3>
                     
                     <div className="space-y-8">

@@ -5,7 +5,6 @@ import {
   MoneyIcon,
 } from "assets";
 import {
-  ContentProvidedDetailsProps,
   WhyChooseUsShortDetailsProps,
 } from "props/Commonprops";
 

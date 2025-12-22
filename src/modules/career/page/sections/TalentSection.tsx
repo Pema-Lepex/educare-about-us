@@ -11,7 +11,7 @@ export default function CreativeTalentSection() {
       </h2>
 
       {/* 1. Areas of Interest Card (Purple Theme) */}
-      <div className="border border-purple-200 rounded-2xl p-6 md:p-10 bg-white shadow-sm">
+      <div className="border border-purple-300 rounded-2xl p-6 md:p-10 bg-white shadow-sm">
         <p className="text-gray-700 mb-8 text-lg">
           If you are a creative maverick with an unquenchable desire to tell a story and are competent in any of the following areas, we'd love to hear from you:
         </p>
@@ -27,7 +27,7 @@ export default function CreativeTalentSection() {
       </div>
 
       {/* 2. How to Apply Card (Orange Theme) */}
-      <div className="border border-orange-200 rounded-2xl p-6 md:p-10 bg-white shadow-sm">
+      <div className="border border-customOriange-200 rounded-2xl p-6 md:p-10 bg-white shadow-sm">
         <h3 className="text-xl font-semibold text-orange-500 mb-4">How to Apply</h3>
         <p className="text-gray-600 mb-6 leading-relaxed">
           Please send your CV along with any relevant academic transcripts and certificates to our team. 
@@ -40,7 +40,7 @@ export default function CreativeTalentSection() {
       </div>
 
       {/* 3. What We Offer Card (Orange Theme) */}
-      <div className="border border-orange-200 rounded-2xl p-6 md:p-10 bg-white shadow-sm">
+      <div className="border border-customOriange-200 rounded-2xl p-6 md:p-10 bg-white shadow-sm">
         <h3 className="text-xl font-semibold text-orange-500 mb-6">What We Offer</h3>
         <ul className="space-y-4">
           {offers.map((offer, index) => (
