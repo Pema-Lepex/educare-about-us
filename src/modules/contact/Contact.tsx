@@ -1,10 +1,10 @@
 import MainLayout from "layouts/MainLayout";
-import ContactSection from "./page/sections/ContactUsSection";
+import ContactContent from "./page/ContactContent";
 
 const Contact:React.FC = () => {
   return (
    <MainLayout>
-      <ContactSection/>
+      <ContactContent/>
     </MainLayout>
   )
 }

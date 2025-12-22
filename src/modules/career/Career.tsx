@@ -1,12 +1,10 @@
 import MainLayout from "layouts/MainLayout";
-import CareerOpportunitySection from "./page/sections/CareerOpportunitySection";
-import CreativeTalentSection from "./page/sections/TalentSection";
+import CareerContent from "./page/CareerContent";
 
 const Career:React.FC = () => {
   return (
     <MainLayout>
-      <CareerOpportunitySection/>
-      <CreativeTalentSection/>
+      <CareerContent/>
     </MainLayout>
   )
 }

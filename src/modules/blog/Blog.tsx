@@ -1,10 +1,10 @@
 import MainLayout from "layouts/MainLayout";
-import BlogSection from "./page/sections/BlogSection";
+import BlogContent from "./page/BlogContent";
 
 const Blog:React.FC = () => {
   return (
    <MainLayout>
-      <BlogSection/>
+      <BlogContent/>
     </MainLayout>
   )
 }
