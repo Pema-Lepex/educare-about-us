@@ -12,6 +12,8 @@ import Team from "modules/team/Team";
 import Blog from "modules/blog/Blog";
 import Career from "modules/career/Career";
 import Contact from "modules/contact/Contact";
+import TermsOfUse from "modules/terms-of-use/TermsOfUse";
+import PrivacyPolicy from "modules/privacy-policy/PrivacyPolicy";
 const AppRoutes: React.FC = () => {
   return (
     <Router>
@@ -46,6 +48,8 @@ const AppRoutes: React.FC = () => {
         <Route path="/career" element={<Career />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/terms-of-use" element={<TermsOfUse />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </Router>
   );

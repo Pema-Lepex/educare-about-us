@@ -60,3 +60,4 @@ export {default as MoneyIcon} from "./money.svg";
 export {default as GlobelIcon} from "./globe.svg";
 export {default as CompassIcon} from "./compass-full.svg";
 export {default as CertificateIcon} from "./certificate-stack.svg";
+export * from './why-choose-us'; 

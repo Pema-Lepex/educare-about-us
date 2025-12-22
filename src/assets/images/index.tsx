@@ -37,3 +37,4 @@ export * from "./logo";
 export * from "./social-media";
 export * from "./educare-skill";
 export * from "./frames";
+export * from "./why-choose-us";

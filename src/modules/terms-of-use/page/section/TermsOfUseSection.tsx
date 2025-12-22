@@ -1,0 +1,100 @@
+import {
+  termsOfUse,
+  termsOfUseMenu,
+} from "assets/content/terms-of-use/TermsOfUse";
+import React, { useEffect, useState } from "react";
+import TermsContentRenderer from "../components/TermsContentRender";
+import { SectionsProps } from "props/Commonprops";
+
+const TermsOfUseSection = () => {
+  const [activeSection, setActiveSection] = useState<string>("introduction");
+  const [isTocOpen, setIsTocOpen] = useState(false);
+
+  // const scrollToSection = (id: string) => {
+  //   setActiveSection(id);
+  //   document.getElementById(id)?.scrollIntoView({
+  //     behavior: "smooth",
+  //     block: "start",
+  //   });
+  // };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "-20% 0px -95% 0px",
+        threshold: 0,
+      }
+    );
+
+    termsOfUse.sections.forEach((section) => {
+      const element = document.getElementById(section.id);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div className="flex bg-white min-h-screen">
+      {/* LEFT NAVIGATION */}
+      <aside className="hidden lg:block w-1/4 border-r px-6 py-8 sticky top-0 h-screen overflow-y-auto mb-28 hide-scrollbar">
+        <h2 className="text-lg font-semibold mb-6">Contents</h2>
+
+        <ul className="space-y-4 text-sm">
+          {termsOfUseMenu.sections.map((section) => (
+            <li
+              key={section.id}
+              onClick={() => {
+                document.getElementById(section.id)?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }}
+              className={`cursor-pointer transition-all duration-200 pl-3
+          ${
+            activeSection === section.id
+              ? "text-primary-500 font-semibold border-l-2 border-primary-500"
+              : "text-gray-600 hover:text-blue-600 border-l-2 border-transparent"
+          }
+        `}
+            >
+              {section.heading}
+            </li>
+          ))}
+        </ul>
+      </aside>
+
+      {/* RIGHT CONTENT */}
+      <main className="w-full lg:w-3/4 px-6 md:px-10 py-10 overflow-y-auto max-h-screen hide-scrollbar">
+        <h1 className="text-3xl md:text-4xl font-bold mb-12">
+          {termsOfUse.title}
+        </h1>
+
+        {termsOfUse.sections.map((section:SectionsProps) => (
+          <section
+            key={section.id}
+            id={section.id}
+            className="mb-16 scroll-mt-24 hide-scrollbar"
+          >
+            <h4 className="uppercase mb-6 text-2xl font-bold">
+              {section.heading}
+            </h4>
+
+            <TermsContentRenderer content={section?.content } contentWithNO={section?.contentWithNO}/>
+          </section>
+        ))}
+        <div className=" h-20"></div>
+      </main>
+    </div>
+  );
+};
+
+export default TermsOfUseSection;

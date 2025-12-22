@@ -65,3 +65,36 @@ export interface SocialMediaProps {
   title: string;
   url: string
 }
+
+export interface educareKidsProp {
+  id: string;
+  title: string;
+  desc: string;
+  borderClass: string;
+  titleClass: string;
+  isAccordion: boolean;
+  items?: educareKideItemsProps[];
+}
+
+export interface educareKideItemsProps {
+  title: string;
+  desc: string;
+  bgClass: string;
+}
+export interface ContentProps {
+  type:string;
+  text?:string;
+  style?:string;
+  title?: string;
+  items?: string[]
+}
+export interface SectionsProps {
+  id:string;
+  heading: string;
+  contentWithNO?: ContentProps[] | null;
+  content?:ContentProps[] | null
+}
+export interface TermsOfUseProps {
+  title: string;
+ sections: SectionsProps[]
+}

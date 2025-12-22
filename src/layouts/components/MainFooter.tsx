@@ -10,8 +10,10 @@ import {
   Youtube,
 } from "assets";
 import { SocialMediaProps } from "props/Commonprops";
+import { useLocation } from "react-router-dom";
 
 const MainFooter: React.FC = () => {
+  const location = useLocation();
   const followMedia: SocialMediaProps[] = [
     { id: 1, title: "Facebook", img: Facebook, url: "" },
     { id: 2, title: "Tiktok", img: Tiktok, url: "" },
@@ -25,31 +27,60 @@ const MainFooter: React.FC = () => {
     { id: 3, title: "Whatsapp", img: Whatsapp, url: "" },
   ];
 
-  return (
-   <footer
-  className="absolute bottom-0 left-0 w-full bg-cover bg-top bg-no-repeat z-40"
-  style={{ backgroundImage: `url(${FooterImage})` }}
->
+  const otherPages = [
+    { id: 1, title: "About Us", url: "/about" },
+    { id: 1, title: "FAQ", url: "/" },
+    { id: 1, title: "Privacy Policy", url: "/privacy-policy" },
+    { id: 1, title: "Terms of Use", url: "/terms-of-use" },
+  ];
 
+  return (
+    <footer
+      className="absolute bottom-0 left-0 w-full bg-cover bg-top bg-no-repeat z-40"
+      style={{ backgroundImage: `url(${FooterImage})` }}
+    >
       <div className="max-w-7xl mx-auto px-6 pt-32 pb-12 relative z-10 space-y-4">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center justify-start gap-6">
           <p className="text-white text-[8px] lg:text-[11px] tracking-wider lg:text-center md:text-left">
-            © {new Date().getFullYear()} Educare Skill Pvt. Ltd. | All rights reserved | Developed By iBEST
-              <a className="hover:underline hover:text-customOriange-100" href="/"> STUDIOS</a> &<a className="hover:underline hover:text-customOriange-100" href="/"> TECHNOLOGIES</a>
+            © {new Date().getFullYear()} Educare Skill Pvt. Ltd. | All rights
+            reserved | Developed By iBEST
+            <a
+              className="hover:underline hover:text-customOriange-100"
+              href="/"
+            >
+              {" "}
+              STUDIOS
+            </a>{" "}
+            &
+            <a
+              className="hover:underline hover:text-customOriange-100"
+              href="/"
+            >
+              {" "}
+              TECHNOLOGIES
+            </a>
           </p>
 
           <nav className="flex lg:space-x-8 space-x-2">
-            {["About Us", "FAQ", "Contact", "Privacy", "Terms of Use"].map(
-              (link) => (
+            {otherPages.map((items) => {
+              const isActive =
+                location.pathname === items.url ||
+                location.pathname.startsWith(items.url + "/");
+              return (
                 <a
-                  key={link}
-                  href="#"
-                  className="text-white text-[9px] lg:text-xs  transition-transform duration-300 ease-out hover:scale-110 hover:text-customOriange-100"
+                  key={items.id}
+                  href={items.url}
+                  className={` text-[9px] lg:text-xs  transition-transform duration-300 ease-out hover:scale-110 hover:text-customOriange-100
+                    ${
+                      isActive
+                        ? "text-customOriange-100 font-semibold border-b-2 border-customOriange-100"
+                        : "text-white hover:text-customOriange-100"
+                    }`}
                 >
-                  {link}
+                  {items.title}
                 </a>
-              )
-            )}
+              );
+            })}
           </nav>
         </div>
         {/* Column 2: Follow Us */}

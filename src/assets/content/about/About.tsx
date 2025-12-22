@@ -13,7 +13,7 @@ import {
   PurpleFrame,
   GreenFrame,
 } from "assets/images";
-import { FeedBackCarouselProps, MemebershipProps } from "props/Commonprops";
+import {  MemebershipProps } from "props/Commonprops";
 
 export const EducareSkillContent = {
   title: "Educare Skill",
