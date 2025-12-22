@@ -4,7 +4,6 @@ import {
   GlobelIcon,
   MoneyIcon,
 } from "assets";
-import { landing1, landing2, landing3, landing4 } from "backup/images";
 import {
   ContentProvidedDetailsProps,
   WhyChooseUsShortDetailsProps,
@@ -41,54 +40,4 @@ export const WhyChooseUsShortDetails: WhyChooseUsShortDetailsProps[] = [
   },
 ];
 
-export const ContentProvidedDetails: ContentProvidedDetailsProps[] = [
-  {
-    id: 1,
-    image: landing1,
-    title: "Animation Series",
-    description1:
-      "Access a wide range of learning materials including videos, quizzes, and interactive exercises to enhance your learning experience.",
-    benefits: [
-      "Engaging visual storytelling",
-      "Easy-to-understand explanations",
-      "Improves retention through animation",
-    ],
-  },
-  {
-    id: 2,
-    image: landing2,
-    title: "Gakyid Lobdra",
-    description1:
-      "Learn from experienced instructors who are native Dzongkha speakers and experts in language education.",
-    benefits: [
-      "Guidance from native speakers",
-      "Authentic pronunciation and usage",
-      "Structured lessons for all levels",
-    ],
-  },
-  {
-    id: 3,
-    image: landing3,
-    title: "Intermidiate Dzongkha",
-    description1:
-      "Study at your own pace with our flexible learning options, allowing you to fit language learning into your busy schedule.",
-    benefits: [
-      "Builds on foundational Dzongkha skills",
-      "Improves reading and writing fluency",
-      "Flexible pacing for busy learners",
-    ],
-  },
-  {
-    id: 4,
-    image: landing4,
-    title: "Chey Chey",
-    description1:
-      "Join a community of learners and get support from peers and instructors to help you stay motivated and on track.",
-    benefits: [
-      "Interactive community support",
-      "Collaborative learning activities",
-      "Motivation through peer engagement",
-    ],
-  },
-];
 

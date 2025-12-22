@@ -13,7 +13,6 @@ import {
   PurpleFrame,
   GreenFrame,
 } from "assets/images";
-import { landing1, landing2, landing3 } from "backup/images";
 import { FeedBackCarouselProps, MemebershipProps } from "props/Commonprops";
 
 export const EducareSkillContent = {
@@ -85,33 +84,6 @@ export const EducareSkillGuideContent = [
     frame: GreenFrame,
     href: "/about/gift-coupon-the-gift-of-learning",
     info: "With the Educare Skill Gift Coupon, you can give your loved ones the Educare Skill membership plans.",
-  },
-];
-
-export const feedBack: FeedBackCarouselProps[] = [
-  {
-    id: 1,
-    img: landing1,
-    title: "Beautiful Landscape",
-    feedBack:
-      "The way the app uses animations to explain complex chemical reactions is brilliant! My team grasped the concepts much faster than they did with traditional textbooks. The learning videos are also high quality.",
-    author: "Tashi Dorji",
-  },
-  {
-    id: 2,
-    img: landing2,
-    title: "City Night Lights",
-    feedBack:
-      "We've seen a real uptick in engagement thanks to the gamified challenges. The competitive element makes mandatory training fun, and the short learning videos are perfect for quick refreshers between tasks",
-    author: "Jigme Wangchuk",
-  },
-  {
-    id: 3,
-    img: landing3,
-    title: "Mountain Adventure",
-    feedBack:
-      "The balance between in-depth video lessons and quick, reinforcing games is perfect. I particularly appreciate that the content is easy to navigate. Adding a few more advanced strategy scenarios would be the only improvement.",
-    author: "Sonam Choden",
   },
 ];
 
