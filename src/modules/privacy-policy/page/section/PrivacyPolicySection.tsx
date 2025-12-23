@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { SectionsProps } from "props/Commonprops";
+import { PolicySectionsProps, SectionsProps } from "props/Commonprops";
 import PolicyContentRenderer from "../components/PolicyContentRenderer";
 import {
   privacyPolicy,
@@ -78,7 +78,7 @@ const PrivacyPolicySection = () => {
           {privacyPolicy.title}
         </h1>
 
-        {privacyPolicy.sections.map((section: SectionsProps) => (
+        {privacyPolicy.sections.map((section: PolicySectionsProps) => (
           <section
             key={section.id}
             id={section.id}

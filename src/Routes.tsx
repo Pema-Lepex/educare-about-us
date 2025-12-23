@@ -14,6 +14,7 @@ import Career from "modules/career/Career";
 import Contact from "modules/contact/Contact";
 import TermsOfUse from "modules/terms-of-use/TermsOfUse";
 import PrivacyPolicy from "modules/privacy-policy/PrivacyPolicy";
+import FAQ from "modules/faq/FAQ";
 const AppRoutes: React.FC = () => {
   return (
     <Router>
@@ -50,6 +51,7 @@ const AppRoutes: React.FC = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/faq" element={<FAQ />} />
       </Routes>
     </Router>
   );

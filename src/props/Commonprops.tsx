@@ -98,3 +98,26 @@ export interface TermsOfUseProps {
   title: string;
  sections: SectionsProps[]
 }
+export interface ListItem {
+  text?: string;
+  style?: string;          
+  items?: ListItem[];    
+}
+
+export interface PolicyContentProps {
+  type: "paragraph" | "list";
+  text?: string;
+  title?: string;
+  style?: string;
+  items?: ListItem[];
+}
+export interface PolicySectionsProps {
+  id:string;
+  heading: string;
+  contentWithNO?: PolicyContentProps[] | null;
+  content?:PolicyContentProps[] | null
+}
+export interface PrivacyPolicyProps {
+  title: string;
+ sections: PolicySectionsProps[]
+}
