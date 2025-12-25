@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { educareSkillFAQ } from "assets/content/faq/FAQ";
-import {  renderFormattedText, renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
+import {
+  renderFormattedText,
+  renderTextWithLinks,
+} from "utils/helpers/renderTextWithLinks";
 
 interface AccordionItemProps {
   header: string;
@@ -27,52 +30,52 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   accentColor,
 }) => {
   return (
-    <div 
+    <div
       className={`mb-6 w-full rounded-2xl bg-white transition-all duration-300 border shadow-sm hover:shadow-md`}
-      style={{ borderColor: accentColor }} // Dynamic Border Color
+      style={{ borderColor: accentColor }}
     >
       <button
         className="flex w-full items-center justify-between p-5 text-left focus:outline-none"
         onClick={onToggle}
       >
-        <div className="flex items-center gap-4">
-          {/* Icon Container with dynamic background opacity */}
-          <div 
+        <div className="w-full flex items-center justify-between">
+          <h4
+            className="text-lg font-bold text-slate-800"
+            style={{ color: accentColor }}
+          >
+            {header && renderTextWithLinks(header)}
+          </h4>
+          <div
             className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl"
-            style={{ backgroundColor: `${accentColor}15` }} // 15 is hex opacity
+            style={{ backgroundColor: `${accentColor}15` }}
           >
             <svg
-              className={`duration-300 ease-in-out ${isActive ? "rotate-180" : ""}`}
+              className={`duration-300 ease-in-out ${
+                isActive ? "rotate-180" : ""
+              }`}
               width="17"
               height="10"
               viewBox="0 0 17 10"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path 
-                d="M7.28687 8.43257L15.7631 2.70784C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.5249 1.38489 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063" 
-                stroke={accentColor} 
-                strokeWidth="2" 
+              <path
+                d="M7.28687 8.43257L15.7631 2.70784C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.5249 1.38489 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063"
+                stroke={accentColor}
+                strokeWidth="2"
                 strokeLinecap="round"
               />
             </svg>
           </div>
-          <h4 className="text-lg font-bold text-slate-800" style={{ color: accentColor }}>
-            {header && renderTextWithLinks(header)}
-          </h4>
         </div>
       </button>
-
-      {/* Accordion Content */}
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${
           isActive ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="pb-6 pl-[72px] pr-6">
-          <p 
-            className="text-base font-medium leading-relaxed whitespace-pre-line"
-          >
+        <div className="pb-6 px-[40px]">
+          <p className="text-base font-medium leading-relaxed whitespace-pre-line">
             {text && renderFormattedText(text, accentColor)}
           </p>
         </div>

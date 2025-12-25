@@ -43,7 +43,7 @@ const TermsOfUseSection = () => {
   }, []);
 
   return (
-    <div className="flex bg-white min-h-screen">
+    <div className="flex bg-white min-h-screen ">
       {/* LEFT NAVIGATION */}
       <aside className="hidden lg:block w-1/4 border-r px-6 py-8 sticky top-0 h-screen overflow-y-auto mb-28 hide-scrollbar">
         <h2 className="text-lg font-semibold mb-6">Contents</h2>
@@ -61,8 +61,8 @@ const TermsOfUseSection = () => {
               className={`cursor-pointer transition-all duration-200 pl-3
           ${
             activeSection === section.id
-              ? "text-primary-500 font-semibold border-l-2 border-primary-500"
-              : "text-gray-600 hover:text-blue-600 border-l-2 border-transparent"
+              ? "text-primary-600 font-semibold border-l-2 border-primary-500"
+              : "text-gray-600 hover:text-primary-400 hover:font-semibold border-l-2 border-transparent"
           }
         `}
             >

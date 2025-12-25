@@ -101,7 +101,7 @@ export const memebershipDetails: MemebershipProps[] = [
     yearlyCost: "Nu.399",
     halfYearlyCost: "Nu.1995",
     monthlyCost: "Nu.3990",
-    benefits: ["RA", "NR", "AS", "GL", "CHEYCHEY accessible"],
+    benefits: ["RA", "NR", "AS", "FD","BD","Classes IV – VI Tutorials", "CHEYCHEY accessible"],
   },
   {
     id: 2,
@@ -114,9 +114,10 @@ export const memebershipDetails: MemebershipProps[] = [
       "RA",
       "NR",
       "AS",
-      "GL",
+      "FD",
       "CHEYCHEY",
       "BD",
+      "ID",
       "Class IV - VI Tutorials accessible",
     ],
   },
@@ -131,9 +132,10 @@ export const memebershipDetails: MemebershipProps[] = [
       "RA",
       "NR",
       "AS",
-      "GL",
+      "FD",
       "CHEYCHEY",
       "BD",
+      "ID",
       "Class IV - XII Tutorials accessible",
     ],
   },
@@ -142,15 +144,27 @@ export const memebershipDetails: MemebershipProps[] = [
 export const MemebershipImportantNotice = {
   title: "Important Notice",
   notice: `
-Under the BASIC plan, users can access content such as Read-aloud Stories (RA), Nursery Rhymes (NR), Animation Series (AS), Gaykid Lobra – Foundational Dzongkha (GL) and CHEYCHEY, the interactive learning mobile games. With the Basic membership, you can use it on three devices.
+Under the **BASIC** plan, users can access content such as Nursery Rhymes (NR), Animation Series (AS), Read Aloud Stories (RA), Chey Chey Mobile Games, Foundational Dzongkha - Gaykid Lobdra (GL), Basic Dzongkha (BD), and Classes IV – VI Tutorials. With the Basic membership, you can use it on **three devices** at the same time.
 
-With the STANDARD plan, one can watch and access RA, NR, AS, GL, CHEYCHEY, Basic Dzongkha (BD) and Class IV – VI Tutorials. With the Standard membership, you can use it on four devices.
+With the **STANDARD** plan, one can watch and access Nursery Rhymes (NR), Animation Series (AS), Read Aloud Stories (RA), Chey Chey Mobile Games, Foundational Dzongkha - Gaykid Lobdra (GL), Basic Dzongkha (BD), Intermediate Dzongkha (ID) and Classes IV - VIII Tutorials. With the Standard membership, you can use it on **four devices** at the same time.
 
-With the PREMIUM plan, users can access all content on the platform, including RA, NR, AS, GL, CHEYCHEY, BD, Intermediate Dzongkha (ID) and Class IV – XII Tutorials. With the Premium membership, you can use it on five devices.
+With the **PREMIUM** plan, users can access Nursery Rhymes (NR), Animation Series (AS), Read Aloud Stories (RA), Chey Chey Mobile Games, Foundational Dzongkha - Gaykid Lobdra (GL), Basic Dzongkha (BD), Intermediate Dzongkha (ID) and Classes IV - XII Tutorials. With the Premium membership, you can use it on **five devices** at the same time.
 
-Before purchasing any Educare Membership plan, please know the categories of content accessible under each membership plan and select the package accordingly.
+The aforementioned are the standard plans. Based on your individual’s needs, we also have a **Grade-wise membership plans** as follows.
 
-Once payment is made, there is no refund policy.
+With the **Educare Kids** plan, users can access content such as Nursery Rhymes (NR), Animation Series (AS), Read Aloud Stories (RA), Chey Chey Mobile Games, and Foundational Dzongkha - Gaykid Lobdra (GL). We recommend this membership plan to children, **aged 3 and above, enrolled in daycare and nursery and students in Classes PP-III.** With the Educare Kids membership, you can use it on three devices at the same time.
+
+Under the **Primary Level** plan, users can access content such as Nursery Rhymes (NR), Animation Series (AS), Read Aloud Stories (RA), Foundational Dzongkha - Gaykid Lobdra (GL), Basic Dzongkha (BD), and Classes IV – VI Tutorials. This package is best for students in **Classes IV- VI.** With the Primary Level membership, you can use it on three devices at the same time.
+
+With the **Classes VII - VIII** membership plan, users can access content such as Animation Series (AS), Read Aloud Stories (RA), Basic Dzongkha (BD), Intermediate Dzongkha (ID), and Classes VII – VIII Tutorials. We recommend this membership plan to students in Classes VII-VIII. With this membership plan, you can use it on **three devices** at the same time.
+
+Under the **Classes IX - X** membership plan, users can access content such as Animation Series (AS), Read Aloud Stories (RA), Basic Dzongkha (BD), Intermediate Dzongkha (ID), and Classes IX – X Tutorials. We recommend this membership plan to students in Classes IX- X. With this membership plan, you can use it on **three devices** at the same time.
+
+With the **Classes XI - XII** membership plan, users can access content such as Animation Series (AS), Read Aloud Stories (RA), Basic Dzongkha (BD), Intermediate Dzongkha (ID), and Classes XI – XII Tutorials. We recommend this membership plan to students in Classes XI- XII. With this membership plan, you can use it on three devices at the same time.
+
+If you are an **undergrade student or graduates sitting for RCSC’s BCS examination,** we recommend this membership plan to explore and learn lessons of **grammar, letter and essay writing, Ngyensom, Dayig, and solved questions on Dayig, Ngyensom, and grammar.** With this plan, you can prepare for Dzongkha Exams by accessing content such as Read Aloud Stories (RA), Basic Dzongkha (BD), Intermediate Dzongkha (ID), Dayig, and Ngyensom. Joining this membership, you can use it on three devices at the same time. 
+
+**Before purchasing any Educare Skill Membership plan,** please know the categories of content accessible under each membership plan and select the package accordingly. **Once payment is made, there is no refund policy.**
 `,
 };
 

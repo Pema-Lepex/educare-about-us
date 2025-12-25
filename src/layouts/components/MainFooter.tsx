@@ -40,9 +40,9 @@ const MainFooter: React.FC = () => {
       className="absolute bottom-0 left-0 w-full bg-cover bg-top bg-no-repeat z-40"
       style={{ backgroundImage: `url(${FooterImage})` }}
     >
-      <div className="max-w-7xl mx-auto px-6 pt-32 pb-12 relative z-10 space-y-4">
+      <div className="xl:max-w-full xl:px-20 max-w-7xl mx-auto px-6 pt-32 pb-12 relative z-10 space-y-4">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center justify-start gap-6">
-          <p className="text-white text-[8px] lg:text-[11px] tracking-wider lg:text-center md:text-left">
+          <p className="text-white text-[8px] lg:text-[11px] 2xl:text-base tracking-wider lg:text-center md:text-left">
             © {new Date().getFullYear()} Educare Skill Pvt. Ltd. | All rights
             reserved | Developed By iBEST
             <a
@@ -71,7 +71,7 @@ const MainFooter: React.FC = () => {
                 <a
                   key={items.id}
                   href={items.url}
-                  className={` text-[9px] lg:text-xs  transition-transform duration-300 ease-out hover:scale-110 hover:text-customOriange-100
+                  className={` text-[9px] lg:text-xs 2xl:text-base transition-transform duration-300 ease-out hover:scale-110 hover:text-customOriange-100
                     ${
                       isActive
                         ? "text-customOriange-100 font-semibold border-b-2 border-customOriange-100"
@@ -87,7 +87,7 @@ const MainFooter: React.FC = () => {
         {/* Column 2: Follow Us */}
         <div className="flex flex-row gap-10">
           <div className="flex flex-col items-start">
-            <h4 className="text-white font-semibold lg:mb-5 mb-2 uppercase tracking-widest text-[9px] lg:text-xs">
+            <h4 className="text-white font-semibold lg:mb-5 mb-2 uppercase tracking-widest text-[9px] lg:text-xs xl:text-base">
               Follow us
             </h4>
             <div className="flex flex-wrap gap-4">
@@ -109,7 +109,7 @@ const MainFooter: React.FC = () => {
 
           {/* Column 3: Let's Chat */}
           <div className="flex flex-col items-center md:items-start">
-            <h4 className="text-white font-semibold lg:mb-5 mb-2 uppercase tracking-widest text-[9px] lg:text-xs">
+            <h4 className="text-white font-semibold lg:mb-5 mb-2 uppercase tracking-widest text-[9px] lg:text-xs xl:text-base">
               Let's Chat
             </h4>
             <div className="flex flex-wrap gap-4">

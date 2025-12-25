@@ -5,7 +5,7 @@ import {
   ManHoldingABabyImage,
 } from "assets";
 import { GiftCouponContent } from "assets/content/about/About";
-import { CommonParagraph } from "components";
+import { CommonParagraph1 } from "components";
 
 const GiftCouponReadMore: React.FC = () => {
   return (
@@ -30,7 +30,7 @@ const GiftCouponReadMore: React.FC = () => {
 
           <div className="px-4 md:px-6 space-y-4 mt-4">
             <div className="text-sm md:text-base">
-                <CommonParagraph>{GiftCouponContent.description}</CommonParagraph>
+                <CommonParagraph1>{GiftCouponContent.description}</CommonParagraph1>
             </div>
             
             <div className="bg-white rounded-2xl p-3 md:p-4">

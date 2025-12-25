@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { EducareKIds } from "assets/content/why-choose-us/WhyChooseUs";
 import type { educareKidsProp, educareKideItemsProps } from "props/Commonprops";
+import { CommonHeader4, CommonParagraph2, CommonParagraph3 } from "components";
 
 const Chevron = ({ open }: { open: boolean }) =>
   <svg
@@ -49,12 +50,12 @@ export default function ContentAccordionSection() {
               ].join(" ")}
             >
               <div>
-                <h3 className={`text-base font-extrabold ${b.titleClass}`}>
+                <CommonHeader4  className={`t font-extrabold ${b.titleClass}`}>
                   {b.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                </CommonHeader4 >
+                <CommonParagraph2 className="mt-2 leading-relaxed text-slate-600">
                   {b.desc}
-                </p>
+                </CommonParagraph2>
               </div>
 
               {b.isAccordion
@@ -80,9 +81,9 @@ export default function ContentAccordionSection() {
                             key={it}
                             className={"rounded-xl px-5 py-4 shadow-[0_6px_14px_rgba(0,0,0,0.06)]"}
                           >
-                            <h4 className="text-sm font-extrabold text-slate-800">
+                            <CommonParagraph2 className=" font-extrabold text-slate-800">
                               {it}
-                            </h4>
+                            </CommonParagraph2>
                           </div>
                         );
                       }
@@ -95,12 +96,12 @@ export default function ContentAccordionSection() {
                             it.bgClass
                           ].join(" ")}
                         >
-                          <h4 className="text-sm font-extrabold text-slate-800">
+                          <CommonParagraph2 className="font-extrabold text-slate-800">
                             {it.title}
-                          </h4>
-                          <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                          </CommonParagraph2>
+                          <CommonParagraph3 className="mt-2 leading-relaxed text-slate-600">
                             {it.desc}
-                          </p>
+                          </CommonParagraph3>
                         </div>
                       );
                     })}

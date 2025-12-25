@@ -1,12 +1,13 @@
 import { productionData } from 'assets/content/team/ProductionTeamInfo';
+import { CommonHeader2, CommonHeader4, CommonParagraph2 } from 'components';
 import React from 'react';
 export default function ProductionTeam() {
   return (
     <section className="md:py-16 py-4 px-4 max-w-7xl mx-auto">
       {/* Section Heading */}
-      <h2 className="md:text-4xl text-2xl font-bold text-center text-purple-600 md:mb-12 mb-6">
+      <CommonHeader2 className=" font-bold text-center text-purple-600 md:mb-12 mb-6">
         Production Team
-      </h2>
+      </CommonHeader2>
 
       {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -20,13 +21,13 @@ export default function ProductionTeam() {
                 <div className="p-2 bg-purple-50 rounded-lg">
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-purple-600">
+                <CommonHeader4 className="font-semibold text-purple-600">
                   {item.title}
-                </h3>
+                </CommonHeader4>
               </div>
-              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+              <CommonParagraph2 className="text-gray-600 leading-relaxed ">
                 {item.description}
-              </p>
+              </CommonParagraph2>
             </div>
           </div>
         ))}

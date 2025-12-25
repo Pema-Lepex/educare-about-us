@@ -1,6 +1,6 @@
 import { DCDDPageWideBackGroundImage, FamilyWithPhoneImage } from "assets";
 import { ForDCDDUsersContent } from "assets/content/about/About";
-import { CommonHeader, CommonParagraph } from "components";
+import { CommonHeader2, CommonParagraph1 } from "components";
 
 const ForDCDDUsersReadMore: React.FC = () => {
   return (
@@ -11,15 +11,15 @@ const ForDCDDUsersReadMore: React.FC = () => {
           {ForDCDDUsersContent && (
             <div className=" pb-[350px] 2xl:pb-[800px]">
               <div className="w-[80%] mx-auto border border-customOriange-200 rounded-3xl shadow-md p-10 bg-blue-50 space-y-4  mb-20">
-                <CommonHeader className="text-customOriange-200 text-center">
+                <CommonHeader2 className="text-customOriange-200 text-center">
                   {ForDCDDUsersContent.title}
-                </CommonHeader>
-                <CommonParagraph>
+                </CommonHeader2>
+                <CommonParagraph1>
                   {ForDCDDUsersContent.description1}
-                </CommonParagraph>
-                <CommonParagraph>
+                </CommonParagraph1>
+                <CommonParagraph1>
                   {ForDCDDUsersContent.description2}
-                </CommonParagraph>
+                </CommonParagraph1>
                 <ol className="list-decimal list-inside space-y-2">
                   {ForDCDDUsersContent.guide.map((item, index) =>
                     Object.values(item).map((step, stepIndex) => (

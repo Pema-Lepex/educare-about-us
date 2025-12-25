@@ -1,40 +1,56 @@
 export const renderTextWithLinks = (text: string | undefined) => {
-    if (!text) return null;
+  if (!text) return null;
 
-    const urlRegex = /(https?:\/\/[^\s]+|www\.[^\s]+|support@[^\s]+)/g;
-    const parts = text.split(urlRegex);
+  const urlRegex =
+    /(https?:\/\/[^\s]+|www\.[^\s]+|support@[^\s]+|\*\*[^*]+\*\*)/g;
+  const parts = text.split(urlRegex);
 
-    return parts.map((part, i) => {
-      if (part.match(urlRegex)) {
-        if (part.includes("@")) {
-          return (
-            <a key={i} href={`mailto:${part}`} className="text-primary-500 hover:underline font-medium">
-              {part}
-            </a>
-          );
-        }
-
-        const href = part.startsWith("http") ? part : `https://${part}`;
+  return parts.map((part, i) => {
+    if (part.match(urlRegex)) {
+      if (part.includes("@")) {
         return (
           <a
             key={i}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`mailto:${part}`}
             className="text-primary-500 hover:underline font-medium"
           >
             {part}
           </a>
         );
       }
-      return part;
-    });
-  };
+      if (part.startsWith("**") && part.endsWith("**")) {
+        return (
+          <strong key={i} className="font-extrabold text-slate-900">
+            {part.replace(/\*\*/g, "")}
+          </strong>
+        );
+      }
 
-  export const renderFormattedText = (text: string | string[] | undefined, accentColor: string) => {
+      const href = part.startsWith("http") ? part : `https://${part}`;
+      return (
+        <a
+          key={i}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary-500 hover:underline font-medium"
+        >
+          {part}
+        </a>
+      );
+    }
+    return part;
+  });
+};
+
+export const renderFormattedText = (
+  text: string | string[] | undefined,
+  accentColor: string
+) => {
   if (!text) return null;
 
-  const combinedRegex = /(https?:\/\/[^\s]+|www\.[^\s]+|support@[^\s]+|\*\*[^*]+\*\*)/g;
+  const combinedRegex =
+    /(https?:\/\/[^\s]+|www\.[^\s]+|support@[^\s]+|\*\*[^*]+\*\*)/g;
   const textStr = Array.isArray(text) ? text.join("\n") : text;
   const parts = textStr.split(combinedRegex);
 
@@ -49,8 +65,12 @@ export const renderTextWithLinks = (text: string | undefined) => {
 
     if (part.match(/(https?:\/\/[^\s]+|www\.[^\s]+|support@[^\s]+)/)) {
       const isEmail = part.includes("@");
-      const href = isEmail ? `mailto:${part}` : (part.startsWith("http") ? part : `https://${part}`);
-      
+      const href = isEmail
+        ? `mailto:${part}`
+        : part.startsWith("http")
+        ? part
+        : `https://${part}`;
+
       return (
         <a
           key={i}

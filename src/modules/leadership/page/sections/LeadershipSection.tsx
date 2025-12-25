@@ -1,6 +1,7 @@
 import { LeadershipBG } from "assets";
 
 import { founders, teamMembers } from "assets/content/leadership/Leadership";
+import { CommonHeader2, CommonHeader4 } from "components";
 
 type Leader = {
   name: string;
@@ -53,15 +54,15 @@ export default function LeadershipSection() {
       />
 
       <div className="max-w-6xl mx-auto relative z-10">
-        <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-16">
+        <CommonHeader2 className="text-white font-bold text-center mb-16">
           Meet our leadership team
-        </h2>
+        </CommonHeader2>
 
         {/* --- FOUNDER SECTION --- */}
         <div className="mb-24">
-          <h3 className="text-orange-500 font-bold text-center tracking-widest mb-10 text-sm md:text-lg uppercase">
+          <CommonHeader4 className="text-orange-500 font-bold text-center tracking-widest mb-10 uppercase">
             OUR FOUNDER
-          </h3>
+          </CommonHeader4>
           <div className="flex flex-wrap justify-center gap-10 md:gap-16">
             {founders.map((founder, index) => (
               <LeaderCard key={index} {...founder} isFounder={true} />
@@ -71,9 +72,9 @@ export default function LeadershipSection() {
 
         {/* --- LEADERSHIP TEAM GRID --- */}
         <div>
-          <h3 className="text-orange-500 font-bold text-center tracking-widest mb-10 text-sm md:text-lg uppercase">
+          <CommonHeader4 className="text-orange-500 font-bold text-center tracking-widest mb-10 uppercase">
             LEADERSHIP TEAM
-          </h3>
+          </CommonHeader4>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-12">
             {teamMembers.map((member, index) => (
               <LeaderCard key={index} {...member} />

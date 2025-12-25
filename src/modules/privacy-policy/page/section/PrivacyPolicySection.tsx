@@ -61,8 +61,8 @@ const PrivacyPolicySection = () => {
               className={`cursor-pointer transition-all duration-200 pl-3
           ${
             activeSection === section.id
-              ? "text-primary-500 font-semibold border-l-2 border-primary-500"
-              : "text-gray-600 hover:text-blue-600 border-l-2 border-transparent"
+              ? "text-primary-600 font-semibold border-l-2 border-primary-500"
+              : "text-gray-600 hover:text-primary-400 hover:font-semibold border-l-2 border-transparent"
           }
         `}
             >

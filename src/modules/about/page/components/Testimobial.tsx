@@ -1,6 +1,6 @@
 import { LeftArrowIcon, RightArrowIcon } from "assets";
 import { testimonials } from "assets/content/about/About";
-import { CommonHeader } from "components";
+import { CommonHeader2 } from "components";
 import { useEffect, useState } from "react";
 
 const Testimonial: React.FC = () => {
@@ -28,7 +28,7 @@ const Testimonial: React.FC = () => {
 
   return (
     <div className="w-full py-20 bg-primary-50 flex flex-col items-center space-y-7">
-      <CommonHeader>Happy Customers</CommonHeader>
+      <CommonHeader2>Happy Customers</CommonHeader2>
       <div className="w-full flex justify-center items-center gap-6 mb-10">
         <button
           onClick={prev}

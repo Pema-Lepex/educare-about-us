@@ -1,11 +1,11 @@
 import React from "react";
 
-interface CommonHeaderProps {
+interface CommonHeader2Props {
   children: React.ReactNode;
   className?: React.ReactNode;
 }
 
-const CommonHeader: React.FC<CommonHeaderProps> = ({ children, className  }) => {
+const CommonHeader2: React.FC<CommonHeader2Props> = ({ children, className  }) => {
   return (
     <h2
       className={`text-2xl sm:text-3xl md:text-4xl font-extrabold ${className}`}
@@ -14,4 +14,4 @@ const CommonHeader: React.FC<CommonHeaderProps> = ({ children, className  }) => 
   );
 };
 
-export default CommonHeader;
+export default CommonHeader2;

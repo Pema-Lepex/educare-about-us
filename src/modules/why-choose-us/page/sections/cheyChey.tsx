@@ -1,4 +1,5 @@
 import { cheyChey } from "assets/content/why-choose-us/WhyChooseUs";
+import { CommonHeader3, CommonHeader4, CommonParagraph1, CommonParagraph2, CommonParagraph3 } from "components";
 
 const GamepadIcon = () =>
   <svg
@@ -22,40 +23,40 @@ const CheyCheyContent: React.FC = () => {
     <section className="px-4 py-10">
       <div className="mx-auto max-w-5xl rounded-2xl border-2 border-violet-300 bg-white shadow-[0_12px_22px_rgba(0,0,0,0.08)]">
         <div className="px-6 pt-6">
-          <h3 className="text-base font-extrabold text-violet-600">
+          <CommonHeader4 className=" font-extrabold text-violet-600">
             {entry.title}
-          </h3>
-          <p className="mt-3 text-sm leading-relaxed text-slate-600">
+          </CommonHeader4>
+          <CommonParagraph2 className="mt-3 text-sm leading-relaxed text-slate-600">
             {entry.intro}
-          </p>
+          </CommonParagraph2>
         </div>
 
         {/* Pills */}
         <div className="grid grid-cols-1 gap-4 px-6 pb-6 pt-6 md:grid-cols-2">
           <div className="space-y-4">
-            {left.map(x =>
+            {left.map(items =>
               <div
-                key={x}
+                key={items}
                 className="flex items-center gap-3 rounded-xl bg-violet-50 px-4 py-3 shadow-[0_8px_16px_rgba(0,0,0,0.06)]"
               >
                 <GamepadIcon />
-                <span className="text-sm font-semibold text-slate-700">
-                  {x}
-                </span>
+                <CommonParagraph3 className="text-sm font-semibold text-slate-700">
+                  {items}
+                </CommonParagraph3>
               </div>
             )}
           </div>
 
           <div className="space-y-4">
-            {right.map(x =>
+            {right.map(item =>
               <div
-                key={x}
+                key={item}
                 className="flex items-center gap-3 rounded-xl bg-violet-50 px-4 py-3 shadow-[0_8px_16px_rgba(0,0,0,0.06)]"
               >
                 <GamepadIcon />
-                <span className="text-sm font-semibold text-slate-700">
-                  {x}
-                </span>
+                <CommonParagraph3 className="text-sm font-semibold text-slate-700">
+                  {item}
+                </CommonParagraph3>
               </div>
             )}
           </div>

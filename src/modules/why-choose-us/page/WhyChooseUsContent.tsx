@@ -1,3 +1,4 @@
+import { CommonHeader2, CommonParagraph1 } from "components";
 import ImpactSectionPage from "./sections/ImpactSection";
 import { aPlus2, APlus, BgYChooseUsImage, girlMascot } from "assets";
 
@@ -30,13 +31,13 @@ const WhyChooseUsContent: React.FC = () => {
               alt="Mascot"
               className="mx-auto mb-2 w-[220px] md:w-[260px] "
             />
-            <h1 className="text-3xl font-extrabold md:text-4xl">
+            <CommonHeader2 className="text-3xl font-extrabold md:text-4xl">
               Why Choose Us?
-            </h1>
-            <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-white/90">
+            </CommonHeader2>
+            <CommonParagraph1 className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-white/90">
               Our platform is designed to make learning Dzongkha enjoyable,
               interactive, and engaging for every learner.
-            </p>
+            </CommonParagraph1>
           </div>
 
           <div className="hidden lg:flex">

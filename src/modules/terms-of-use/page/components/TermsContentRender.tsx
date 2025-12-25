@@ -1,5 +1,5 @@
 import React from "react";
-import { CommonParagraph } from "components";
+import { CommonParagraph1 } from "components";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 import { ContentProps } from "props/Commonprops";
 
@@ -24,13 +24,13 @@ const TermsContentRenderer = ({
     if (item?.type === "paragraph") {
       const prefix = isNumbered ? `${index + 1}. ` : "";
       return (
-        <CommonParagraph
+        <CommonParagraph1
           key={index}
           className="mb-4 text-gray-700 leading-relaxed"
         >
           {isNumbered && <span className="mr-1">{prefix}</span>}
           {renderTextWithLinks(item?.text)}
-        </CommonParagraph>
+        </CommonParagraph1>
       );
     }
 
@@ -39,13 +39,13 @@ const TermsContentRenderer = ({
       return (
         <div key={index} className="mb-6">
           {item?.title && (
-            <CommonParagraph
+            <CommonParagraph1
               key={index}
               className="mb-4 text-gray-700 leading-relaxed"
             >
               {isNumbered && <span className="mr-1">{prefix}</span>}
               {item?.title}
-            </CommonParagraph>
+            </CommonParagraph1>
           )}
 
           <ul

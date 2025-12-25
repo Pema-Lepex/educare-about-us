@@ -1,6 +1,6 @@
 import { RegistrationGuideBGImage, ThreeCharacterImage } from "assets";
 import { RegistrationGuideContent } from "assets/content/about/About";
-import { CommonHeader, CommonParagraph } from "components";
+import { CommonHeader2, CommonParagraph1 } from "components";
 
 const RegistraionGuideReadMore: React.FC = () => {
   return (
@@ -11,12 +11,12 @@ const RegistraionGuideReadMore: React.FC = () => {
           {RegistrationGuideContent && (
             <>
               <div className="w-[90%] mx-auto border border-[#981AF7] rounded-3xl shadow-md p-10 bg-blue-50 space-y-4 min-h-[1000px] mb-20">
-                <CommonHeader className="text-[#981AF7] text-center">
+                <CommonHeader2 className="text-[#981AF7] text-center">
                   {RegistrationGuideContent.title}
-                </CommonHeader>
-                <CommonParagraph>
+                </CommonHeader2>
+                <CommonParagraph1>
                   {RegistrationGuideContent.description}
-                </CommonParagraph>
+                </CommonParagraph1>
                 <ol className="list-decimal list-inside space-y-2">
                   {RegistrationGuideContent.guide.map((item, index) =>
                     Object.values(item).map((step, stepIndex) => (

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { TrendingUp, Users, ShieldCheck } from 'lucide-react';
+import { CommonHeader3, CommonParagraph2} from 'components';
 
 export default function ImpactDetailSection() {
   return (
@@ -15,10 +16,10 @@ export default function ImpactDetailSection() {
               <TrendingUp className="w-6 h-6 text-orange-500" />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-orange-600 mb-2">Our Approach</h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
+              <CommonHeader3 className="font-bold text-orange-600 mb-2">Our Approach</CommonHeader3>
+              <CommonParagraph2 className="text-gray-600 leading-relaxed">
                 In accordance with this vision, Educare Skill aims to revolutionize the way people can learn our national language by creating content that simplifies Dzongkha and makes learning an engaging and interactive experience for everyone.
-              </p>
+              </CommonParagraph2>
             </div>
           </div>
         </div>
@@ -30,10 +31,10 @@ export default function ImpactDetailSection() {
               <Users className="w-6 h-6 text-purple-500" />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-purple-600 mb-2">Who We Help</h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
+              <CommonHeader3 className="font-bold text-purple-600 mb-2">Who We Help</CommonHeader3>
+              <CommonParagraph2 className="text-gray-600 leading-relaxed">
                 Educare Skill has helped, and continues to help, students learn Dzongkha and prepare for their exams. Children can build a solid Dzongkha foundation, students can prepare for exams, and graduates can use it for their RCSE examinations.
-              </p>
+              </CommonParagraph2>
             </div>
           </div>
         </div>
@@ -62,13 +63,13 @@ export default function ImpactDetailSection() {
             <ShieldCheck className="w-8 h-8 text-orange-500" />
           </div>
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-orange-600">A Safe Haven for Learning</h3>
-            <p className="text-gray-600 leading-relaxed">
+            <CommonHeader3 className="font-bold text-orange-600">A Safe Haven for Learning</CommonHeader3>
+            <CommonParagraph2 className="text-gray-600 leading-relaxed">
               In a technologically driven world where everyone, including your child, has access to smartphones and devices, Educare Skill provides a safe haven, making screentime both productive and educational.
-            </p>
-            <p className="text-gray-800 leading-relaxed">
+            </CommonParagraph2>
+            <CommonParagraph2 className="text-gray-800 leading-relaxed">
               <span className="font-bold">Educare Skill is not just an online learning platform — it is a service to our nation.</span> We believe that the antidote to protecting our national identity lies in our national language, Dzongkha. We hope that by preserving our national language, our content will continue to help children and adults alike for generations to come.
-            </p>
+            </CommonParagraph2>
           </div>
         </div>
       </div>

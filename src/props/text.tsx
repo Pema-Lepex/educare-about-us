@@ -106,7 +106,7 @@ export interface TermsOfUseProps {
 }
 
 import React from "react";
-import { CommonParagraph } from "components";
+import { CommonParagraph1 } from "components";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 
 const listStyles = {
@@ -193,13 +193,13 @@ const renderItem = (
     // Paragraph
     if (item.type === "paragraph") {
       return (
-        <CommonParagraph
+        <CommonParagraph1
           key={index}
           className="mb-4 text-gray-700 leading-relaxed"
         >
           {isNumbered && <span className="mr-1">{prefix}</span>}
           {renderTextWithLinks(item.text)}
-        </CommonParagraph>
+        </CommonParagraph1>
       );
     }
 
@@ -208,10 +208,10 @@ const renderItem = (
       return (
         <div key={index} className="mb-6">
           {item.title && (
-            <CommonParagraph className="mb-2 text-gray-700 font-medium">
+            <CommonParagraph1 className="mb-2 text-gray-700 font-medium">
               {isNumbered && <span className="mr-1">{prefix}</span>}
               {item.title}
-            </CommonParagraph>
+            </CommonParagraph1>
           )}
 
           <RenderList

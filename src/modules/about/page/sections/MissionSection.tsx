@@ -1,5 +1,5 @@
 import { EducareMissionContent } from "assets/content/VissionAndMission";
-import { CommonHeader, CommonParagraph } from "components";
+import { CommonHeader2, CommonParagraph1 } from "components";
 
 const MissionSection: React.FC = () => {
   return (
@@ -9,10 +9,10 @@ const MissionSection: React.FC = () => {
     >
       {EducareMissionContent && (
         <div className="border-t-8 border-customOriange-200 rounded-2xl shadow-sm shadow-primary-200 p-8 text-center space-y-2">
-          <CommonHeader className="text-customOriange-200">
+          <CommonHeader2 className="text-customOriange-200">
             {EducareMissionContent.title}
-          </CommonHeader>
-          <CommonParagraph>{EducareMissionContent.content}</CommonParagraph>
+          </CommonHeader2>
+          <CommonParagraph1>{EducareMissionContent.content}</CommonParagraph1>
         </div>
       )}
     </section>

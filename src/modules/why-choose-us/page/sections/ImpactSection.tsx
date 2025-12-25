@@ -1,14 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { whyChooseUsDetails } from "assets/content/why-choose-us/WhyChooseUs";
 import CheyCheyContent from "./cheyChey";
 import EducareKidsSection from "./educareKids";
 import IntermediateLevelContent from "./intermidateLevel";
 import PrimaryLevelContent from "./primaryLevel";
 import { CheCheyIcon, EducareSkillIcon, IntermediateLevelIcon, PrimaryLevelIcon } from "assets";
+import { useSearchParams } from "react-router-dom";
+import { CommonHeader3, CommonParagraph1, CommonParagraph2 } from "components";
 
 type TabKey = "cheychey" | "kids" | "primary" | "intermediate";
 
 const ImpactSectionPage: React.FC = () => {
+  const [searchParams] = useSearchParams();
   const [activeTab, setActiveTab] = useState<TabKey>("cheychey");
 
   const features = whyChooseUsDetails;
@@ -38,7 +41,17 @@ const ImpactSectionPage: React.FC = () => {
     red: "text-[#EF4444]",
     blue: "text-[#3B82F6]",
   };
-
+useEffect(() => {
+    const tabFromUrl = searchParams.get("tab") as TabKey;
+    if (tabFromUrl && ["cheychey", "kids", "primary", "intermediate"].includes(tabFromUrl)) {
+      setActiveTab(tabFromUrl);
+      
+      const contentElement = document.getElementById("content-anchor");
+      if (contentElement) {
+        contentElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [searchParams]);
   return (
     <div className="bg-white ">
       <section className="-mt-16 px-4 pb-10 absolute w-full">
@@ -70,16 +83,16 @@ const ImpactSectionPage: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <h3
-                      className={`text-sm font-extrabold ${
+                    <CommonParagraph1
+                      className={` font-extrabold ${
                         titleByTheme[f.theme]
                       }`}
                     >
                       {f.title}
-                    </h3>
-                    <p className="mt-1 text-xs leading-relaxed text-gray-700">
+                    </CommonParagraph1>
+                    <CommonParagraph2 className="mt-1 leading-relaxed text-gray-700">
                       {f.desc}
-                    </p>
+                    </CommonParagraph2>
                   </div>
                 </div>
               </div>
@@ -88,10 +101,10 @@ const ImpactSectionPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="px-4 pb-16 lg:pt-[400px] pt-[1000px]">
-        <h2 className="text-center text-2xl font-extrabold tracking-wide text-[#0B2A4A]">
+      <section className="px-4 pb-16 md:pt-[800px] lg:pt-[600px] pt-[980px]">
+        <CommonHeader3 className="text-center font-extrabold tracking-wide text-[#0B2A4A]">
           CONTENT AVAILABLE ON EDUCARE SKILL
-        </h2>
+        </CommonHeader3>
 
         <div className="mx-auto mt-5 grid lg:grid-cols-4 grid-cols-2 max-w-5xl flex-wrap justify-center gap-6 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
           {(
@@ -106,7 +119,7 @@ const ImpactSectionPage: React.FC = () => {
               key={t.key}
               onClick={() => setActiveTab(t.key)}
               className={[
-                "rounded-full border  justify-center py-2 text-xs font-semibold transition flex gap-1 items-center",
+                "rounded-full border  justify-center py-2 text-xs md:text-base font-semibold transition flex gap-1 items-center",
                 activeTab === t.key
                   ? "border-violet-400 bg-white shadow-[0_10px_18px_rgba(139,92,246,0.18)]"
                   : "border-blue-100 bg-blue-50 hover:bg-blue-100",

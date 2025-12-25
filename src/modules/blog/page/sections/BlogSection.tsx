@@ -1,19 +1,30 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import { blogHeader, blogPosts, featuredPosts } from "assets/content/blog/BlogContents";
+import {
+  blogHeader,
+  blogPosts,
+  featuredPosts,
+} from "assets/content/blog/BlogContents";
 import { Blog1 } from "assets";
+import {
+  CommonHeader1,
+  CommonHeader3,
+  CommonHeader4,
+  CommonParagraph2,
+  CommonParagraph3,
+} from "components";
 
 export default function BlogSection() {
   return (
     <section className="py-16 px-4 max-w-7xl mx-auto">
       {/* Header */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-black text-[#1b364d] tracking-tight uppercase">
+        <CommonHeader1 className=" font-black text-[#1b364d] tracking-tight uppercase">
           {blogHeader.header}
-        </h2>
-        <p className="text-cyan-700 mt-2 text-lg">
+        </CommonHeader1>
+        <CommonParagraph2 className="text-cyan-700 mt-2 ">
           {blogHeader.description}
-        </p>
+        </CommonParagraph2>
       </div>
 
       {/* Featured Blog Post */}
@@ -28,12 +39,12 @@ export default function BlogSection() {
               />
             </div>
             <div className="md:w-1/2 p-6 md:p-10 flex flex-col justify-center">
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+              <CommonHeader4 className="font-bold text-gray-900 mb-4">
                 {items.title}
-              </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              </CommonHeader4>
+              <CommonParagraph2 className="text-gray-600 mb-6 leading-relaxed">
                 {items.excerpt}
-              </p>
+              </CommonParagraph2>
               <a
                 href="#"
                 className="text-blue-600 font-semibold flex items-center gap-2 hover:underline group"
@@ -59,12 +70,12 @@ export default function BlogSection() {
               className="w-full h-48 object-cover"
             />
             <div className="p-5 flex flex-col flex-grow">
-              <h4 className="text-lg font-bold text-gray-900 mb-2">
+              <CommonHeader4 className=" font-bold text-gray-900 mb-2">
                 {post.title}
-              </h4>
-              <p className="text-gray-600 text-sm mb-6 flex-grow">
+              </CommonHeader4>
+              <CommonParagraph2 className="text-gray-600 mb-6 flex-grow">
                 {post.excerpt}
-              </p>
+              </CommonParagraph2>
               <a
                 href="#"
                 className="text-blue-600 font-semibold flex items-center gap-2 hover:underline group text-sm"

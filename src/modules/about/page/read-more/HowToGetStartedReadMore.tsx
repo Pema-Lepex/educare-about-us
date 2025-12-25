@@ -4,7 +4,8 @@ import {
   memebershipDetails,
   MemebershipImportantNotice,
 } from "assets/content/about/About";
-import { CommonHeader, CommonParagraph } from "components";
+import { CommonHeader2, CommonHeader3, CommonParagraph1 } from "components";
+import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 
 const HowToGetStartedReadMore: React.FC = () => {
   const redirectToAppStore = () => {
@@ -18,14 +19,14 @@ const HowToGetStartedReadMore: React.FC = () => {
       <div className="lg:flex relative">
         <div className="lg:flex lg:w-1/3"></div>
         <div className="flex-1 lg:w-2/3 w-full border border-customOriange-100 rounded-2xl bg-blue-50 text-center py-6 md:px-10 px-3 space-y-6 shadow-md">
-          <CommonHeader className="text-customOriange-200">
+          <CommonHeader2 className="text-customOriange-200">
             {HowToGetStartedContent.title}
-          </CommonHeader>
-          <CommonParagraph>
+          </CommonHeader2>
+          <CommonParagraph1>
             {HowToGetStartedContent.description}
-          </CommonParagraph>
+          </CommonParagraph1>
           <div className="border border-customOriange-100 rounded-2xl bg-white space-y-3 p-4 shadow-md">
-            <h4 className="text-2xl font-bold">Membership Plan</h4>
+            <CommonHeader3 className="">Membership Plan</CommonHeader3>
             <div className="grid md:grid-cols-3 md:space-y-0 space-y-4">
               {memebershipDetails.map((item) => (
                 <div
@@ -55,11 +56,11 @@ const HowToGetStartedReadMore: React.FC = () => {
           <div className="border border-customOriange-100 rounded-2xl bg-white space-y-3 p-4 shadow-md">
             {MemebershipImportantNotice && (
               <div>
-                <h4 className="text-2xl font-bold">
+                <CommonHeader3 className="">
                   {MemebershipImportantNotice.title}
-                </h4>
-                <p className="text-start" style={{ whiteSpace: "pre-line" }}>
-                  {MemebershipImportantNotice.notice}
+                </CommonHeader3>
+                <p className="text-start 2xl:text-lg" style={{ whiteSpace: "pre-line" }}>
+                  {renderTextWithLinks( MemebershipImportantNotice.notice)}
                 </p>
               </div>
             )}

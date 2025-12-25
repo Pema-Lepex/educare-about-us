@@ -1,4 +1,5 @@
 import { IntermediateLevel } from "assets/content/why-choose-us/WhyChooseUs";
+import { CommonHeader4, CommonParagraph2, CommonParagraph3 } from "components";
 
 type Item = {
   title: string;
@@ -27,12 +28,12 @@ const IntermediateLevelContent: React.FC = () => {
     <section className="px-4 py-10">
       <div className="mx-auto max-w-5xl rounded-2xl border border-rose-200 bg-white shadow-[0_12px_22px_rgba(0,0,0,0.08)]">
         <div className="px-6 pt-6">
-          <h3 className="text-base font-extrabold text-rose-600">
+          <CommonHeader4 className="font-extrabold text-rose-600">
             Intermediate Level Content
-          </h3>
-          <p className="mt-2 text-sm text-slate-600">
+          </CommonHeader4>
+          <CommonParagraph2 className="mt-2 text-slate-600">
             Advanced content for Classes VII to XII
-          </p>
+          </CommonParagraph2>
         </div>
 
         <div className="space-y-4 px-6 pb-6 pt-5">
@@ -44,12 +45,12 @@ const IntermediateLevelContent: React.FC = () => {
                 it.bgClass
               ].join(" ")}
             >
-              <h4 className="text-sm font-extrabold text-slate-800">
+              <CommonParagraph2 className="text-sm font-extrabold text-slate-800">
                 {it.title}
-              </h4>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              </CommonParagraph2>
+              <CommonParagraph3 className="mt-2 text-sm leading-relaxed text-slate-600">
                 {it.desc}
-              </p>
+              </CommonParagraph3>
             </div>
           )}
         </div>

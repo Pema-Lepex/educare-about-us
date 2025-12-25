@@ -10,8 +10,8 @@ export const privacyPolicy: PrivacyPolicyProps = {
       content: [
         {
           type: "paragraph",
-          text: ` We value your trust. In order to honour that trust, EDUCARE SKILL adheres to ethical standards in gathering, using, and safeguarding any information
-                you provide. Educare Skill Private Limited is a leading ed-tech company, incorporated in Bhutan, for imparting learning. This privacy policy governs
+          text: ` We value your trust. In order to honour that trust, **EDUCARE SKILL** adheres to ethical standards in gathering, using, and safeguarding any information
+                you provide. **Educare Skill Private Limited** is a leading ed-tech company, incorporated in Bhutan, for imparting learning. This privacy policy governs
                 your use of the application “Educare Skill”, www.educareskill.com (‘Website’) and the other associated applications,
                 products, websites, and services managed by the Company. Please read this privacy policy (‘Policy’) carefully before using the Application, Website, our services, and
                 products, along with the Terms of Use (‘ToU’) provided on the Application and the Website. Your use of the Website, Application, or services in connection with the
@@ -100,7 +100,7 @@ export const privacyPolicy: PrivacyPolicyProps = {
                      to the rules set forth in this Policy.`,
             },
             {
-              text: `to protect against imminent harm to the rights, property, or safety of the Application/Website/ Educare Skill Private Limited or its users or the public as
+              text: `to protect against imminent harm to the rights, property, or safety of the Application/Website/ **Educare Skill Private Limited** or its users or the public as
                      required or permitted by law.`,
             },
             {
@@ -267,11 +267,11 @@ export const privacyPolicy: PrivacyPolicyProps = {
       content: [
         {
           type: "paragraph",
-          text: `These Terms & Conditions (“Terms”) of (a) use of our website www.educareskill.com
-                (“Website”), our applications (“Application”) or any products or services in connection with the Application/, Website/products
-                (“Services”) or (b) any modes of registrations or usage of products, including through SD cards, tablets or other storage/transmitting device are
-                between Educare Skill Private Limited (“Company/We/Us/Our”) and its users (“User/You/Your”). These Terms constitute an electronic
-                record in accordance with the provisions of the Information, Communications and Media Act of Bhutan 2018 and other applicable laws of Bhutan,
+          text: `These Terms & Conditions **(“Terms”)** of (a) use of our website www.educareskill.com
+                **(“Website”)**, our applications **(“Application”)** or any products or services in connection with the Application/, Website/products
+                **(“Services”)** or (b) any modes of registrations or usage of products, including through SD cards, tablets or other storage/transmitting device are
+                between Educare Skill Private Limited **(“Company/We/Us/Our”)** and its users **(“User/You/Your”)**. These Terms constitute an electronic
+                record in accordance with the provisions of the **Information, Communications and Media Act of Bhutan 2018** and other applicable laws of Bhutan,
                 thereunder, as amended from time to time. Please read the Terms and the privacy policy of the Company (“Privacy Policy”) with respect to registration with us, the use
                 of the Application, Website, Services, and products carefully before using the Application, Website, Services, or products. In the event of any discrepancy between the
                 Terms and any other policies with respect to the Application or Website or Services or products, the provisions of the Terms shall prevail. Your use/access/browsing of
