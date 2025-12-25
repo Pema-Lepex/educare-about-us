@@ -5,13 +5,9 @@ import {
   MemebershipImportantNotice,
 } from "assets/content/about/About";
 import { CommonHeader2, CommonHeader3, CommonParagraph1 } from "components";
-import { useState } from "react";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 
 const HowToGetStartedReadMore: React.FC = () => {
-  const [selectedType, setSelectedType] = useState(
-    memebershipDetails[0].memnershipType
-  );
   const redirectToAppStore = () => {
     window.location.href = "https://www.apple.com/app-store/";
   };
@@ -19,7 +15,7 @@ const HowToGetStartedReadMore: React.FC = () => {
     window.location.href = "https://play.google.com/store";
   };
   return (
-    <section className="p-6 md:mb-20 mb-16" id="how-to-get-started">
+    <section className="p-6 md:mb-14 mb-12" id="how-to-get-started">
       <div className="lg:flex relative">
         <div className="lg:flex lg:w-1/3"></div>
         <div className="flex-1 lg:w-2/3 w-full border border-customOriange-100 rounded-2xl bg-blue-50 text-center py-6 md:px-10 px-3 space-y-6 shadow-md">
@@ -29,67 +25,44 @@ const HowToGetStartedReadMore: React.FC = () => {
           <CommonParagraph1>
             {HowToGetStartedContent.description}
           </CommonParagraph1>
-          <div className="border border-customOriange-100 rounded-2xl bg-white md:space-y-5 space-y-4 p-4 shadow-md">
+          <div className="border border-customOriange-100 rounded-2xl bg-white space-y-3 p-4 shadow-md">
             <CommonHeader3 className="">Membership Plan</CommonHeader3>
-            <div className="flex justify-center items-center gap-4">
-              {memebershipDetails.map((type) => (
-                <button
-                  key={type.id}
-                  onClick={() => setSelectedType(type.memnershipType)}
-                  className={`px-4 py-2 rounded-md border 
-                ${
-                  selectedType === type.memnershipType
-                    ? "bg-primary-500 text-white"
-                    : "bg-gray-200"
-                }
-            `}
-                >
-                  {type.memnershipType}
-                </button>
-              ))}
-            </div>
-            {memebershipDetails
-              .filter(
-                (items) =>
-                  selectedType === null || items.memnershipType === selectedType
-              )
-              .map((items) => (
+            <div className="">
+              {memebershipDetails.map((item) => (
                 <div
-                  className="grid md:grid-cols-3 gap-6"
-                  key={items.id}
+                  key={item.id}
+                  className="flex flex-col items-center md:px-0 px-12 "
                 >
-                  {items.packages.map((item) => (
-                    <div
-                      key={item.id}
-                      className="flex flex-col items-center md:px-0 px-6 pb-4  bg-blue-50 border border-customOriange-100  rounded-xl shadow-sm py-4"
-                    >
-                      {item.imageSrc !== "" && (
+                  {item.packages.map((item) => (
+                    <div key={item.id} className="grid md:grid-cols-3 md:space-y-0 space-y-4">
+                      {item.imageSrc !== "" ? (
                         <img
-                          src={item.imageSrc}
+                          src={item?.imageSrc}
                           alt={`${item.memebrshipType} Membership`}
                           className="w-auto h-34 sm:h-42 lg:h-60 rounded-lg object-cover"
                         />
+                      ) : (
+                        <></>
                       )}
 
-                      <h3 className="text-xl font-bold mt-2">
+                      <h3 className="text-xl font-bold">
                         {item.memebrshipType}
                       </h3>
-
                       <div className="text-center mb-3">
                         <p>Yearly: {item.yearlyCost}</p>
                         <p>Half-Yearly: {item.halfYearlyCost}</p>
                         <p>Monthly: {item.monthlyCost}</p>
                       </div>
-
-                      <ul className="flex flex-wrap justify-center items-center space-x-1 text-sm text-gray-700 px-1">
+                      <ul className="flex flex-wrap justify-center items-center space-x-1 text-sm text-gray-700">
                         {item.benefits.map((benefit, i) => (
-                          <li key={i}>{benefit},</li>
+                          <li key={i}>{benefit}</li>
                         ))}
                       </ul>
                     </div>
                   ))}
                 </div>
               ))}
+            </div>
           </div>
           <div className="border border-customOriange-100 rounded-2xl bg-white space-y-3 p-4 shadow-md">
             {MemebershipImportantNotice && (
@@ -132,7 +105,7 @@ const HowToGetStartedReadMore: React.FC = () => {
         <img
           src={AnimalImage}
           alt="animalimage"
-          className="lg:absolute lg:flex hidden pointer-events-none lg:-left-24 xl:left-0"
+          className="lg:absolute lg:flex hidden"
         />
       </div>
     </section>

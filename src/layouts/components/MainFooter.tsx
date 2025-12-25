@@ -46,21 +46,23 @@ const MainFooter: React.FC = () => {
             © {new Date().getFullYear()} Educare Skill Pvt. Ltd. | All rights
             reserved | Developed By iBEST
             <a
+              target="_blank"
               className="hover:underline hover:text-customOriange-100"
-              href="/"
+              href="https://www.ibeststudios.com/"
             >
               {" "}
               STUDIOS
             </a>{" "}
             &
             <a
+              target="_blank"
               className="hover:underline hover:text-customOriange-100"
-              href="/"
+              href="https://www.ibesttechnologies.bt/"
             >
               {" "}
               TECHNOLOGIES
             </a>
-          </p>
+          </p>``
 
           <nav className="flex lg:space-x-8 space-x-2">
             {otherPages.map((items) => {

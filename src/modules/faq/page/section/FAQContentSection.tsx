@@ -4,6 +4,7 @@ import {
   renderFormattedText,
   renderTextWithLinks,
 } from "utils/helpers/renderTextWithLinks";
+import { CommonHeader1, CommonParagraph1 } from "components";
 
 interface AccordionItemProps {
   header: string;
@@ -40,7 +41,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       >
         <div className="w-full flex items-center justify-between">
           <h4
-            className="text-lg font-bold text-slate-800"
+            className="md:text-2xl text:lg  font-bold text-slate-800"
             style={{ color: accentColor }}
           >
             {header && renderTextWithLinks(header)}
@@ -74,10 +75,10 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
           isActive ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="pb-6 px-[40px]">
-          <p className="text-base font-medium leading-relaxed whitespace-pre-line">
+        <div className="pb-6 px-5">
+          <CommonParagraph1 className="text-base font-medium leading-relaxed whitespace-pre-line">
             {text && renderFormattedText(text, accentColor)}
-          </p>
+          </CommonParagraph1>
         </div>
       </div>
     </div>
@@ -92,12 +93,12 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section className="relative z-20 overflow-hidden bg-slate-50 pb-12 pt-16 lg:pb-[90px] md:mb-10">
+    <section className="relative z-20 overflow-hidden pb-12 pt-16 lg:pb-[90px] md:mb-10">
       <div className="container mx-auto px-4">
         <div className="mb-16 text-center">
-          <h2 className="text-3xl font-extrabold text-slate-900 md:text-5xl">
+          <CommonHeader1 className=" font-extrabold text-slate-900 ">
             Frequently Asked Questions
-          </h2>
+          </CommonHeader1>
           <div className="mt-4 h-1.5 w-24 bg-primary-500 mx-auto rounded-full"></div>
         </div>
 

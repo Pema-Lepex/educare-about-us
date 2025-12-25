@@ -13,7 +13,7 @@ import {
   PurpleFrame,
   GreenFrame,
 } from "assets/images";
-import {  MemebershipProps } from "props/Commonprops";
+import { MemebershipProps } from "props/Commonprops";
 
 export const EducareSkillContent = {
   title: "Educare Skill",
@@ -93,50 +93,164 @@ export const HowToGetStartedContent = {
     "With the subsidized support of DCDD, Educare Skill is FREE for students and teachers in classes PP to VI, as well as for ECCD children and facilitators. If you are eligible for this support, you can click here for more information. (redirects the user to the DCDD user webpage) If you are not eligible for this support and wish to get started on Educare Skill, please register or sign up now and avail our affordable membership plans.",
 };
 
-export const memebershipDetails: MemebershipProps[] = [
+export const memebershipDetails = [
   {
     id: 1,
-    memebrshipType: "Basic",
-    imageSrc: bronze,
-    yearlyCost: "Nu.399",
-    halfYearlyCost: "Nu.1995",
-    monthlyCost: "Nu.3990",
-    benefits: ["RA", "NR", "AS", "FD","BD","Classes IV – VI Tutorials", "CHEYCHEY accessible"],
-  },
-  {
-    id: 2,
-    memebrshipType: "Standard",
-    imageSrc: sliver,
-    yearlyCost: "Nu.449",
-    halfYearlyCost: "Nu.2245",
-    monthlyCost: "Nu.4490",
-    benefits: [
-      "RA",
-      "NR",
-      "AS",
-      "FD",
-      "CHEYCHEY",
-      "BD",
-      "ID",
-      "Class IV - VI Tutorials accessible",
+    memnershipType: "Standard Plans",
+    packages: [
+      {
+        id: 1,
+        memebrshipType: "Basic",
+        imageSrc: bronze,
+        yearlyCost: "Nu.399",
+        halfYearlyCost: "Nu.1995",
+        monthlyCost: "Nu.3990",
+        benefits: [
+          "RA",
+          "NR",
+          "AS",
+          "FD",
+          "BD",
+          "Classes IV – VI Tutorials",
+          "CHEYCHEY accessible",
+        ],
+      },
+      {
+        id: 2,
+        memebrshipType: "Standard",
+        imageSrc: sliver,
+        yearlyCost: "Nu.449",
+        halfYearlyCost: "Nu.2245",
+        monthlyCost: "Nu.4490",
+        benefits: [
+          "RA",
+          "NR",
+          "AS",
+          "FD",
+          "CHEYCHEY",
+          "BD",
+          "ID",
+          "Class IV - VIII Tutorials accessible",
+        ],
+      },
+      {
+        id: 3,
+        memebrshipType: "Premium",
+        imageSrc: gold,
+        yearlyCost: "Nu.499",
+        halfYearlyCost: "Nu.2495",
+        monthlyCost: "nNu.4990",
+        benefits: [
+          "RA",
+          "NR",
+          "AS",
+          "FD",
+          "CHEYCHEY",
+          "BD",
+          "ID",
+          "Class IV - XII Tutorials accessible",
+        ],
+      },
     ],
   },
   {
-    id: 3,
-    memebrshipType: "Premium",
-    imageSrc: gold,
-    yearlyCost: "Nu.499",
-    halfYearlyCost: "Nu.2495",
-    monthlyCost: "nNu.4990",
-    benefits: [
-      "RA",
-      "NR",
-      "AS",
-      "FD",
-      "CHEYCHEY",
-      "BD",
-      "ID",
-      "Class IV - XII Tutorials accessible",
+    id: 2,
+    memnershipType: "Grade-Wise Plans",
+    packages: [
+      {
+        id: 1,
+        memebrshipType: "Educare Kids",
+        imageSrc: "",
+        yearlyCost: "Nu.399",
+        halfYearlyCost: "Nu.1995",
+        monthlyCost: "Nu.3990",
+        benefits: [
+          "RA",
+          "NR",
+          "AS",
+          "FD",
+          "CHEYCHEY accessible",
+        ],
+      },
+      {
+        id: 2,
+        memebrshipType: "Primary Level",
+        imageSrc: "",
+        yearlyCost: "Nu.449",
+        halfYearlyCost: "Nu.2245",
+        monthlyCost: "Nu.4490",
+        benefits: [
+          "RA",
+          "NR",
+          "AS",
+          "FD",
+          "BD",
+          "ID",
+          "Class IV - VI Tutorials accessible",
+        ],
+      },
+      {
+        id: 3,
+        memebrshipType: "Classes VII - VIII",
+        imageSrc: "",
+        yearlyCost: "Nu.499",
+        halfYearlyCost: "Nu.2495",
+        monthlyCost: "nNu.4990",
+        benefits: [
+          "RA",
+          "AS",
+          "BD",
+          "ID",
+          "Class VII - VIII Tutorials accessible",
+        ],
+      },
+      {
+        id: 4,
+        memebrshipType: "Classes IX - X",
+        imageSrc: "",
+        yearlyCost: "Nu.499",
+        halfYearlyCost: "Nu.2495",
+        monthlyCost: "nNu.4990",
+        benefits: [
+          "RA",
+          "AS",
+          "BD",
+          "ID",
+          "Class IX - X Tutorials accessible",
+        ],
+      },
+      {
+        id: 5,
+        memebrshipType: "Classes XI - XII",
+        imageSrc: "",
+        yearlyCost: "Nu.499",
+        halfYearlyCost: "Nu.2495",
+        monthlyCost: "nNu.4990",
+        benefits: [
+          "RA",
+          "AS",
+          "BD",
+          "ID",
+          "Class XI - XII Tutorials accessible",
+        ],
+      },
+      {
+        id: 6,
+        memebrshipType: "Undergrads / Graduates",
+        imageSrc: "",
+        yearlyCost: "Nu.499",
+        halfYearlyCost: "Nu.2495",
+        monthlyCost: "nNu.4990",
+        benefits: [
+          "RA",
+          "BD",
+          "ID",
+          "Dayig",
+          "Ngyensom",
+          "Ngyensom Solved Question",
+          "Grammer Solved Question",
+        ],
+      },
     ],
   },
 ];
@@ -197,13 +311,15 @@ export const ForDCDDUsersContent = {
     {
       guide1:
         "Collect your USER ID and PASSWORD from your respective class teacher or ECCD facilitator.",
-      guide2: "Open the Educare Skill homepage either through the website or the app. Then, click on DCDD Sign In.",
+      guide2:
+        "Open the Educare Skill homepage either through the website or the app. Then, click on DCDD Sign In.",
       guide3: "Type in your USER ID and PASSWORD and click on Sing In.",
-      guide4: "You now have access to our treasure trove of engaging and entertaing content!.",
-      
+      guide4:
+        "You now have access to our treasure trove of engaging and entertaing content!.",
     },
   ],
-  importentNote: "If you haven't been registered or were missed during the registration process, or are facing any issues, please don't hesitate to reach out to your class teacher, ECCD facilitator, or the Educare Skill Support Team."
+  importentNote:
+    "If you haven't been registered or were missed during the registration process, or are facing any issues, please don't hesitate to reach out to your class teacher, ECCD facilitator, or the Educare Skill Support Team.",
 };
 
 export const GiftCouponContent = {
@@ -215,27 +331,34 @@ export const GiftCouponContent = {
   buyerGuide: {
     heading: "For the Buyer:",
     steps: [
-     {step1: "Open the Educare Skill Homepage.",
-      step2:"Click on the Gift Coupon Button.",
-      step3:"Enter the recipient's details, such as email address or phone number.",
-     step4: "Click on the Join Button for the desired package and select the membership duration.",
-     step5: "Choose a payment option and complete payment.",
-     step6: "You have now purchased an Educare Skill membership plan for your loved one!"}
-    ]
+      {
+        step1: "Open the Educare Skill Homepage.",
+        step2: "Click on the Gift Coupon Button.",
+        step3:
+          "Enter the recipient's details, such as email address or phone number.",
+        step4:
+          "Click on the Join Button for the desired package and select the membership duration.",
+        step5: "Choose a payment option and complete payment.",
+        step6:
+          "You have now purchased an Educare Skill membership plan for your loved one!",
+      },
+    ],
   },
 
   recipientGuide: {
     heading: "For the Recipient:",
     steps: [
-      {step1:"Log in to the Educare Skill platform either through the website or the app.",
-      step2:"Click on Membership Plan.",
-      step3:"Enter your Coupon Code.",
-      step4:"Click on Redeem.",
-      step5:"You have now received an Educare Skill membership!"}
-    ]
-  }
+      {
+        step1:
+          "Log in to the Educare Skill platform either through the website or the app.",
+        step2: "Click on Membership Plan.",
+        step3: "Enter your Coupon Code.",
+        step4: "Click on Redeem.",
+        step5: "You have now received an Educare Skill membership!",
+      },
+    ],
+  },
 };
-
 
 export const testimonials = [
   {
