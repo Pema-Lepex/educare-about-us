@@ -62,7 +62,7 @@ const MainFooter: React.FC = () => {
               {" "}
               TECHNOLOGIES
             </a>
-          </p>``
+          </p>
 
           <nav className="flex lg:space-x-8 space-x-2">
             {otherPages.map((items) => {
