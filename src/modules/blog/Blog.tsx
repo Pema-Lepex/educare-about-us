@@ -1,12 +1,11 @@
 import MainLayout from "layouts/MainLayout";
-import BlogSection from "./components/BolgContent";
+import BlogContent from "./page/BlogContent";
 
-const Blog: React.FC = () => {
+const Blog:React.FC = () => {
   return (
-    <MainLayout>
-      <BlogSection />
+   <MainLayout>
+      <BlogContent/>
     </MainLayout>
-  );
-};
-
+  )
+}
 export default Blog;

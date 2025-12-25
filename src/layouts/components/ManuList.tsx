@@ -26,8 +26,18 @@ export const Menus = [
     ref: "/team",
   },
   {
+    title: "Career",
+    icon: "",
+    ref: "/career",
+  },
+  {
     title: "Blog",
     icon: "",
     ref: "/blog",
+  },
+  {
+    title: "Contact",
+    icon: "",
+    ref: "/contact",
   },
 ];

@@ -1,52 +1,30 @@
-import {
-  production,
-  production1,
-  production2,
-  production3,
-} from "assets/images/team/production";
-import { LeaderProps } from "props/Commonprops";
+import { CEO, Founder, PIC } from "assets/images";
 
-export const LeadersOfIBest: LeaderProps[] = [
+export const founders = [
   {
-    id: 1,
     name: "Tharchen",
-    image: production,
-    position: "CEO & Founder",
-    },
+    role: "CEO & Founder",
+    image: Founder 
+  },
   {
-    id: 2,
     name: "Sonam Rinchen",
-    image: production1,
-    position: "Chief Operations Officer",
-    },
-  {
-    id: 3,
-    name: "Kinley",
-    image: production2,
-    position: "Operations Manager",
-    },
-  {
-    id: 4,
-    name: "Tshering Yangki",
-    image: production3,
-    position: "Operations Manager",
-    },
-  {
-    id: 5,
-    name: "Tshering Yangki",
-    image: production3,
-    position: "Operations Manager",
-    },
-  {
-    id: 6,
-    name: "Tshering Yangki",
-    image: production3,
-    position: "Operations Manager",
-     },
-  {
-    id: 7,
-    name: "Tshering Yangki",
-    image: production3,
-    position: "Operations Manager",
-     },
+    role: "Chief Operations Officer",
+    image: CEO
+  }
 ];
+
+export const teamMembers = [
+  { name: "Kinley", role: "Operations Manager", image: PIC },
+  { name: "Tshering Yangki", role: "2D Animator Head", image: PIC },
+  { name: "Gembo Leki", role: "3D Animator Head", image: PIC },
+  { name: "Sonam Rinchen", role: "Chief Operations Officer", image: PIC },
+  { name: "Kinley", role: "Operations Manager", image: PIC },
+  { name: "Tshering Yangki", role: "2D Animator Head", image: PIC },
+  { name: "Gembo Leki", role: "3D Animator Head", image: PIC },
+  { name: "Sonam Rinchen", role: "Chief Operations Officer", image: PIC },
+  { name: "Kinley", role: "Operations Manager", image: PIC },
+  { name: "Tshering Yangki", role: "2D Animator Head", image: PIC },
+  { name: "Gembo Leki", role: "3D Animator Head", image: PIC },
+  { name: "Sonam Rinchen", role: "Chief Operations Officer", image: PIC },
+];
+

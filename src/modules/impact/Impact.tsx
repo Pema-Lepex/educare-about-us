@@ -1,12 +1,11 @@
 import MainLayout from "layouts/MainLayout";
-import ImpactContent from "./components/ImpactContent";
+import ImpactPage from "./page/ImpactPage";
 
-const Impact: React.FC = () => {
+const Impact:React.FC = () => {
   return (
-    <MainLayout>
-      <ImpactContent/>
+   <MainLayout>
+      <ImpactPage/>
     </MainLayout>
-  );
-};
-
+  )
+}
 export default Impact;

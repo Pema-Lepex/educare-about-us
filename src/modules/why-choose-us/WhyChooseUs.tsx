@@ -1,12 +1,11 @@
 import MainLayout from "layouts/MainLayout";
-import WhyChooseUsContent from "./components/WhyChooseUsContent";
+import WhyChooseUsContent from "./page/WhyChooseUsContent";
 
 const WhyChooseUs: React.FC = () => {
   return (
     <MainLayout>
-      <WhyChooseUsContent/>
+      <WhyChooseUsContent />
     </MainLayout>
   );
 };
-
 export default WhyChooseUs;
