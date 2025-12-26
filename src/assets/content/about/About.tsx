@@ -12,14 +12,23 @@ import {
   BuleFrame,
   PurpleFrame,
   GreenFrame,
+  FCTFLLogo,
+  FDCDDULogo,
+  HTGSLogo,
+  RGLogo,
+  GiftIcon,
+  BCSEImage,
+  iBESTOroginalImage,
+  iBestOrognalIcon,
+  BCSEIcon,
 } from "assets/images";
-import { MemebershipProps } from "props/Commonprops";
 
 export const EducareSkillContent = {
   title: "Educare Skill",
   subTitle: "Your Favorite Dzongkha Tutor!",
   content1: `Educare Skill is Bhutan’s first online learning platform with a wide variety of entertaining and educational content catering to all learners, from children in ECCD centres, students studying in Classes PP to XII, to graduates preparing for their RCSE Examinations, as well as anyone interested in learning and mastering our national language, Dzongkha.`,
   content2: `Educare Skill is officially endorsed by the Department of Culture and Dzongkha Development as the National Dzongkha Learning platform, making it the apex platform for Dzongkha learning not only for those residing in the country but also for those living abroad.`,
+  content3: `Educare Skill is officially endorsed by the Department of Culture and Dzongkha Development as the National Dzongkha Learning platform, making it the apex platform for Dzongkha learning not only for those residing in the country but also for those living abroad.`,
 };
 
 export const EducareSkillGroupContent = [
@@ -28,7 +37,7 @@ export const EducareSkillGroupContent = [
     groupName: "CHEYCHEY",
     groupImage: CheCheyImage,
     groupIcon: CheCheyIcon,
-    eligibility: "Age 3 - 10 years",
+    eligibility: "Age 3 - 12 years",
     info: "Learn the fundamentals of Dzongkha through interactive mobile games.",
   },
   {
@@ -55,11 +64,28 @@ export const EducareSkillGroupContent = [
     eligibility: "Classes VIII - XII",
     info: "Your perfect guide to mastering Dzongkha.",
   },
+  {
+    id: 5,
+    groupName: "Graduate/BCSE",
+    groupImage: BCSEImage,
+    groupIcon: BCSEIcon,
+    eligibility: "Your perfect tutor for relearning Dzongkha",
+    info: "Relearn, Refresh, and Reload nYour Dzongkha - Begin Today!",
+  },
+  {
+    id: 6,
+    groupName: "iBEST Originals",
+    groupImage: iBESTOroginalImage,
+    groupIcon: iBestOrognalIcon,
+    eligibility: "Happy hours for all",
+    info: "Pay. Eatch. Enjoy Bhutan's Best Stories - Anytime, Your Way!",
+  },
 ];
 export const EducareSkillGuideContent = [
   {
     id: 1,
     title: "How To Get Started?",
+    icon: HTGSLogo,
     frame: BuleFrame,
     href: "/about/how-to-get-started?",
     info: "If you wish to get started on Educare Skill, please register or sign up now and avail our affordable membership plans.",
@@ -67,6 +93,7 @@ export const EducareSkillGuideContent = [
   {
     id: 2,
     title: "Registration Guide:",
+    icon: RGLogo,
     frame: RedFrame,
     href: "/about/registration-guide",
     info: "Do you want to register on our platform and watch our amazing content, but you are not quite sure how to do it? Don’t worry. We will help you get started.",
@@ -74,6 +101,7 @@ export const EducareSkillGuideContent = [
   {
     id: 3,
     title: "For DCDD Users:",
+    icon: FDCDDULogo,
     frame: PurpleFrame,
     href: "/about/for-dcdd-users",
     info: "With the subsidized support of DCDD, Educare Skill is FREE for students and teachers from Class PP to VI, as well as for ECCD children and facilitators.",
@@ -81,6 +109,7 @@ export const EducareSkillGuideContent = [
   {
     id: 4,
     title: "Gift Coupon The Gift of Learning!",
+    icon: FCTFLLogo,
     frame: GreenFrame,
     href: "/about/gift-coupon-the-gift-of-learning",
     info: "With the Educare Skill Gift Coupon, you can give your loved ones the Educare Skill membership plans.",
@@ -89,8 +118,10 @@ export const EducareSkillGuideContent = [
 
 export const HowToGetStartedContent = {
   title: "How To Get Started?",
-  description:
-    "With the subsidized support of DCDD, Educare Skill is FREE for students and teachers in classes PP to VI, as well as for ECCD children and facilitators. If you are eligible for this support, you can click here for more information. (redirects the user to the DCDD user webpage) If you are not eligible for this support and wish to get started on Educare Skill, please register or sign up now and avail our affordable membership plans.",
+  description1:
+    "With the subsidized support of DCDD, Educare Skill is FREE for students and teachers in classes PP to VI, as well as for ECCD children and facilitators. If you are eligible for this support, you can click here for more information.",
+  description2:
+    "If you are not eligible for this support and wish to get started on Educare Skill, please **Sign Up** now and explore our affordable membership plans.",
 };
 
 export const memebershipDetails = [
@@ -106,13 +137,13 @@ export const memebershipDetails = [
         halfYearlyCost: "Nu.1995",
         monthlyCost: "Nu.3990",
         benefits: [
-          "RA",
           "NR",
           "AS",
+          "RA",
+          "CHEYCHEY",
           "FD",
           "BD",
           "Classes IV – VI Tutorials",
-          "CHEYCHEY accessible",
         ],
       },
       {
@@ -123,14 +154,14 @@ export const memebershipDetails = [
         halfYearlyCost: "Nu.2245",
         monthlyCost: "Nu.4490",
         benefits: [
-          "RA",
           "NR",
           "AS",
-          "FD",
+          "RA",
           "CHEYCHEY",
+          "FD",
           "BD",
           "ID",
-          "Class IV - VIII Tutorials accessible",
+          "Class IV - VIII Tutorials",
         ],
       },
       {
@@ -139,16 +170,16 @@ export const memebershipDetails = [
         imageSrc: gold,
         yearlyCost: "Nu.499",
         halfYearlyCost: "Nu.2495",
-        monthlyCost: "nNu.4990",
+        monthlyCost: "Nu.4990",
         benefits: [
-          "RA",
           "NR",
           "AS",
-          "FD",
+          "RA",
           "CHEYCHEY",
+          "FD",
           "BD",
           "ID",
-          "Class IV - XII Tutorials accessible",
+          "Class IV - XII Tutorials",
         ],
       },
     ],
@@ -164,13 +195,7 @@ export const memebershipDetails = [
         yearlyCost: "Nu.399",
         halfYearlyCost: "Nu.1995",
         monthlyCost: "Nu.3990",
-        benefits: [
-          "RA",
-          "NR",
-          "AS",
-          "FD",
-          "CHEYCHEY accessible",
-        ],
+        benefits: ["NR", "AS", "RA", "FD", "CHEYCHEY"],
       },
       {
         id: 2,
@@ -179,15 +204,7 @@ export const memebershipDetails = [
         yearlyCost: "Nu.449",
         halfYearlyCost: "Nu.2245",
         monthlyCost: "Nu.4490",
-        benefits: [
-          "RA",
-          "NR",
-          "AS",
-          "FD",
-          "BD",
-          "ID",
-          "Class IV - VI Tutorials accessible",
-        ],
+        benefits: ["NR", "AS", "RA", "FD", "BD", "Class IV - VI Tutorials"],
       },
       {
         id: 3,
@@ -197,11 +214,12 @@ export const memebershipDetails = [
         halfYearlyCost: "Nu.2495",
         monthlyCost: "nNu.4990",
         benefits: [
-          "RA",
           "AS",
+          "RA",
           "BD",
           "ID",
-          "Class VII - VIII Tutorials accessible",
+          "Class VII Tutorial",
+          "Class VIII Tutorial",
         ],
       },
       {
@@ -212,11 +230,12 @@ export const memebershipDetails = [
         halfYearlyCost: "Nu.2495",
         monthlyCost: "nNu.4990",
         benefits: [
-          "RA",
           "AS",
+          "RA",
           "BD",
           "ID",
-          "Class IX - X Tutorials accessible",
+          "Class IX Tutorial",
+          "Class X Tutorial",
         ],
       },
       {
@@ -227,11 +246,12 @@ export const memebershipDetails = [
         halfYearlyCost: "Nu.2495",
         monthlyCost: "nNu.4990",
         benefits: [
-          "RA",
           "AS",
+          "RA",
           "BD",
           "ID",
-          "Class XI - XII Tutorials accessible",
+          "Class XI Tutorial",
+          "Class XII Tutorial",
         ],
       },
       {
@@ -247,8 +267,8 @@ export const memebershipDetails = [
           "ID",
           "Dayig",
           "Ngyensom",
-          "Ngyensom Solved Question",
-          "Grammer Solved Question",
+          "Ngyensom Solved Questions",
+          "Grammer Solved Questions",
         ],
       },
     ],
@@ -307,24 +327,25 @@ export const ForDCDDUsersContent = {
     "If you are eligible for the DCDD support, we are glad to inform you that you have already been registered on Educare Skill!",
   description2:
     "In collaboration with schools and ECCD centres across the country, the Educare Skill support team has already registered all eligible users onto the platform.",
-  guide: [
+  guide: 
     {
       guide1:
         "Collect your USER ID and PASSWORD from your respective class teacher or ECCD facilitator.",
       guide2:
-        "Open the Educare Skill homepage either through the website or the app. Then, click on DCDD Sign In.",
-      guide3: "Type in your USER ID and PASSWORD and click on Sing In.",
+        "Open the Educare Skill homepage either through the website or the app. Then, click on **DCDD Sign In**.",
+      guide3: "Type in your USER ID and PASSWORD and click on **Sing In**.",
       guide4:
         "You now have access to our treasure trove of engaging and entertaing content!.",
     },
-  ],
   importentNote:
     "If you haven't been registered or were missed during the registration process, or are facing any issues, please don't hesitate to reach out to your class teacher, ECCD facilitator, or the Educare Skill Support Team.",
 };
 
 export const GiftCouponContent = {
-  title: "Gift Coupon - The Gift of Learning",
+  title: "Gift Coupon",
   subtitle: "The Best Gift You Can Give, The Gift of Learning!",
+  buttonName: "Gift the joy of learning!",
+  linkToGiftCoupon: "https://www.educareskill.com/?tab=gift-coupon",
   description:
     "With the Educare Skill Gift Coupon, you can give your loved ones the Educare Skill membership plans.",
 
@@ -387,3 +408,14 @@ export const testimonials = [
     avatar: "https://i.pravatar.cc/150?img=41",
   },
 ];
+
+export const GiftCouponLinkDetails = {
+  icon: GiftIcon,
+  linkToGiftCoupon: "https://www.educareskill.com/?tab=gift-coupon",
+  buttonName: "Gift the joy of learning!",
+  title: "A meaningful gift for those who think beyond today.",
+  info1:
+    "Choosing the right gift is never easy—but some gifts last far beyond toys or trends. An **Educare Skill Gift Coupon** is one such gift.",
+  info2:
+    "It keeps young minds connected to our national language, Dzongkha, through stories rooted in Bhutanese culture, shaping confident, compassionate citizens ready for the world.",
+};

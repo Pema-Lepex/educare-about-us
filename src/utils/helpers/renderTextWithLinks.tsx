@@ -1,8 +1,7 @@
 export const renderTextWithLinks = (text: string | undefined) => {
   if (!text) return null;
 
-  const urlRegex =
-    /(https?:\/\/[^\s]+|www\.[^\s]+|support@[^\s]+|\*\*[^*]+\*\*)/g;
+  const urlRegex = /(https?:\/\/[^\s]+|www\.[^\s]+|support@[^\s]+|(\*\*[^*]+\*\*))/g;
   const parts = text.split(urlRegex);
 
   return parts.map((part, i) => {
@@ -33,7 +32,7 @@ export const renderTextWithLinks = (text: string | undefined) => {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-primary-500 hover:underline font-medium"
+          className="text-primary-500 hover:underline font-medium "
         >
           {part}
         </a>
@@ -57,7 +56,7 @@ export const renderFormattedText = (
   return parts.map((part, i) => {
     if (part.startsWith("**") && part.endsWith("**")) {
       return (
-        <strong key={i} className="font-extrabold text-slate-900">
+        <strong key={i} className="font-extrabold text-slate-900 ">
           {part.replace(/\*\*/g, "")}
         </strong>
       );

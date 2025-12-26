@@ -26,9 +26,27 @@ const HowToGetStartedReadMore: React.FC = () => {
           <CommonHeader2 className="text-customOriange-200">
             {HowToGetStartedContent.title}
           </CommonHeader2>
-          <CommonParagraph1>
-            {HowToGetStartedContent.description}
+          <CommonParagraph1 className="">
+            {renderTextWithLinks(HowToGetStartedContent.description1)}
           </CommonParagraph1>
+          <a
+            href="https://www.educareskill.com/#/signup"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex justify-center items-center w-64 bg-customOriange-100 text-white px-5 py-2 xl:px-6 xl:py-3 xl:text-base text-sm rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:bg-orange-600 hover:shadow-md hover:scale-105">
+            DCDD Sign In
+          </a>
+
+          <CommonParagraph1 className="">
+            {renderTextWithLinks(HowToGetStartedContent.description2)}
+          </CommonParagraph1>
+          <a
+            href="https://www.educareskill.com/#/signup"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex justify-center items-center w-64 bg-[#215FF8] text-white px-5 py-2 xl:px-6 xl:py-3 xl:text-base text-sm rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:bg-blue-600 hover:shadow-md hover:scale-105">
+            Sign Up
+          </a>
           <div className="border border-customOriange-100 rounded-2xl bg-white md:space-y-5 space-y-4 p-4 shadow-md">
             <CommonHeader3 className="">Membership Plan</CommonHeader3>
             <div className="flex justify-center items-center gap-4">
@@ -54,10 +72,7 @@ const HowToGetStartedReadMore: React.FC = () => {
                   selectedType === null || items.memnershipType === selectedType
               )
               .map((items) => (
-                <div
-                  className="grid md:grid-cols-3 gap-6"
-                  key={items.id}
-                >
+                <div className="grid md:grid-cols-3 gap-6" key={items.id}>
                   {items.packages.map((item) => (
                     <div
                       key={item.id}
@@ -76,14 +91,17 @@ const HowToGetStartedReadMore: React.FC = () => {
                       </h3>
 
                       <div className="text-center mb-3">
-                        <p>Yearly: {item.yearlyCost}</p>
-                        <p>Half-Yearly: {item.halfYearlyCost}</p>
                         <p>Monthly: {item.monthlyCost}</p>
+                        <p>Half-Yearly: {item.halfYearlyCost}</p>
+                        <p>Yearly: {item.yearlyCost}</p>
                       </div>
 
                       <ul className="flex flex-wrap justify-center items-center space-x-1 text-sm text-gray-700 px-1">
                         {item.benefits.map((benefit, i) => (
-                          <li key={i}>{benefit},</li>
+                          <li key={i}>
+                            {benefit}
+                            {i < item.benefits.length - 1 && ","}
+                          </li>
                         ))}
                       </ul>
                     </div>

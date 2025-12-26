@@ -29,6 +29,16 @@ const RegistraionGuideReadMore: React.FC = () => {
                     ))
                   )}
                 </ol>
+                <div className="w-full flex justify-center py-4">
+                  <a
+                    href="https://www.educareskill.com/#/signup"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative z-10 inline-flex justify-center items-center w-64 h-12  bg-[#981AF7] text-white rounded-md font-semibold transition-all duration-300 ease-in-out  hover:bg-[#7C15C9] hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
+                  >
+                    Sign Up
+                  </a>
+                </div>
               </div>
             </>
           )}
@@ -57,6 +67,16 @@ const RegistraionGuideReadMore: React.FC = () => {
               ))
             )}
           </ol>
+          <div className="w-full flex justify-center py-4">
+            <a
+              href="https://www.educareskill.com/#/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative z-10 inline-flex justify-center items-center w-40 h-10  bg-[#981AF7] text-white rounded-md font-semibold transition-all duration-300 ease-in-out  hover:bg-[#7C15C9] hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
+            >
+              Sign Up
+            </a>
+          </div>
         </div>
       </div>
     </>

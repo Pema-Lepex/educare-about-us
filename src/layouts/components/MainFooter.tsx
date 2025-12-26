@@ -15,16 +15,16 @@ import { useLocation } from "react-router-dom";
 const MainFooter: React.FC = () => {
   const location = useLocation();
   const followMedia: SocialMediaProps[] = [
-    { id: 1, title: "Facebook", img: Facebook, url: "" },
-    { id: 2, title: "Tiktok", img: Tiktok, url: "" },
-    { id: 3, title: "Instagram", img: Instragram, url: "" },
-    { id: 4, title: "Youtube", img: Youtube, url: "" },
+    { id: 1, title: "Facebook", img: Facebook, url: "https://www.facebook.com/educareskill" },
+    { id: 2, title: "Tiktok", img: Tiktok, url: "https://www.tiktok.com/@educare.skill" },
+    { id: 3, title: "Instagram", img: Instragram, url: "https://www.instagram.com/educare.skill/" },
+    { id: 4, title: "Youtube", img: Youtube, url: "https://www.youtube.com/@educareskill" },
   ];
 
   const chatMedia: SocialMediaProps[] = [
-    { id: 1, title: "Messenger", img: Messanger, url: "" },
-    { id: 2, title: "Telegram", img: Telegram, url: "" },
-    { id: 3, title: "Whatsapp", img: Whatsapp, url: "" },
+    { id: 1, title: "Messenger", img: Messanger, url: "https://www.facebook.com/educareskill" },
+    { id: 2, title: "Telegram", img: Telegram, url: "https://t.me/+97577718721" },
+    { id: 3, title: "Whatsapp", img: Whatsapp, url: "https://wa.me/97577718721" },
   ];
 
   const otherPages = [
@@ -97,6 +97,7 @@ const MainFooter: React.FC = () => {
                 <a
                   key={item.id}
                   href={item.url}
+                  target="_blank"
                   className="footer-social-icon border rounded-full lg:size-10 size-5 p-1 lg:p-0 flex justify-center items-center transition-transform duration-300 ease-out hover:scale-110"
                 >
                   <img
@@ -119,6 +120,7 @@ const MainFooter: React.FC = () => {
                 <a
                   key={item.id}
                   href={item.url}
+                  target="_blank"
                   className="footer-social-icon border rounded-full lg:size-10 size-5 p-1 lg:p-0 flex justify-center items-center transition-transform duration-300 ease-out hover:scale-110"
                 >
                   <img

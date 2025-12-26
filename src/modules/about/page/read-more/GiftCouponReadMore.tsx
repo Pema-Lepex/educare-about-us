@@ -1,5 +1,6 @@
 import {
   CloudeFrameImage,
+  GiftIcon,
   GiftLineImage,
   GirlPointImage,
   ManHoldingABabyImage,
@@ -11,28 +12,50 @@ const GiftCouponReadMore: React.FC = () => {
   return (
     <div className="w-full flex justify-center items-center overflow-hidden px-4">
       <section className="py-10 md:py-16 w-full max-w-[90%] lg:max-w-[70%] relative">
-        
         <div className="border border-blue-600 bg-blue-100 py-4 rounded-xl shadow-md relative pb-16 md:pb-24 mb-32 md:mb-48 z-10">
-          
-          <div className="w-full relative">
-            <img
-              src={GiftLineImage}
-              alt="giftlineimage"
-              className="w-full h-auto object-cover"
-            />
-            <div className="absolute top-1/2 left-1/2 -translate-x-2/3 -translate-y-1/2 text-center w-full px-2">
-              <h1 className="text-[11px] md:text-[23px] lg:text-3xl xl:text-3xl text-blue-700 font-extrabold">
+          <div className="w-full relative  overflow-hidden px-6 md:px-10 flex items-center justify-between gap-4">
+            {/* Text Content Container */}
+            <div className="flex flex-col items-center text-center space-y-1 md:space-y-6 flex-1 md:pb-6 pb-3">
+              <h1 className="text-xl md:text-5xl lg:text-6xl text-[#3366FF] font-extrabold tracking-tight">
                 {GiftCouponContent.title}
               </h1>
-              <p className="text-[8px] md:text-xl font-light">{GiftCouponContent.subtitle}</p>
+
+              <p className="text-[8px] md:text-2xl lg:text-3xl font-medium text-black">
+                {GiftCouponContent.subtitle}
+              </p>
+
+              <a
+                href={GiftCouponContent.linkToGiftCoupon}
+                target="_blank"
+                className="bg-[#3366FF] text-white w-full md:py-3 py-2 rounded-lg
+                 text-xs md:text-2xl font-semibold
+                 transition-all duration-300 ease-in-out
+                 hover:bg-[#1a4fd0] hover:shadow-lg hover:scale-105"
+              >
+                {GiftCouponContent.buttonName}
+              </a>
             </div>
+
+            {/* Icon Container */}
+            <div className="flex justify-end relative lg:w-64  md:w-44 w-16">
+              <img
+                src={GiftIcon}
+                alt="gift icon"
+                className="lg:size-[200px] md:size-[150px] absolute 2xl:-top-[95px] lg:-top-[72px] md:-top-[45px] -top-5"
+              />
+            </div>
+
+            {/* Bottom Border Line */}
+            <div className="absolute bottom-0 left-0 w-full md:h-[6px] h-[3px] bg-blue-600"></div>
           </div>
 
           <div className="px-4 md:px-6 space-y-4 mt-4">
             <div className="text-sm md:text-base">
-                <CommonParagraph1>{GiftCouponContent.description}</CommonParagraph1>
+              <CommonParagraph1>
+                {GiftCouponContent.description}
+              </CommonParagraph1>
             </div>
-            
+
             <div className="bg-white rounded-2xl p-3 md:p-4">
               <h4 className="text-lg md:text-xl font-semibold text-blue-500">
                 {GiftCouponContent.buyerGuide.heading}
@@ -81,9 +104,12 @@ const GiftCouponReadMore: React.FC = () => {
         </div>
 
         <div className="absolute bottom-5 -right-8 md:-right-12 lg:-right-48 w-24 md:w-48 lg:w-auto z-10">
-          <img src={ManHoldingABabyImage} alt="image" className="h-auto w-full" />
+          <img
+            src={ManHoldingABabyImage}
+            alt="image"
+            className="h-auto w-full"
+          />
         </div>
-
       </section>
     </div>
   );

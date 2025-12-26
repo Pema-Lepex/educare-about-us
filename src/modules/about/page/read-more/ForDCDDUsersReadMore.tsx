@@ -1,6 +1,10 @@
 import { DCDDPageWideBackGroundImage, FamilyWithPhoneImage } from "assets";
 import { ForDCDDUsersContent } from "assets/content/about/About";
 import { CommonHeader2, CommonParagraph1 } from "components";
+import {
+  renderFormattedText,
+  renderTextWithLinks,
+} from "utils/helpers/renderTextWithLinks";
 
 const ForDCDDUsersReadMore: React.FC = () => {
   return (
@@ -21,17 +25,29 @@ const ForDCDDUsersReadMore: React.FC = () => {
                   {ForDCDDUsersContent.description2}
                 </CommonParagraph1>
                 <ol className="list-decimal list-inside space-y-2">
-                  {ForDCDDUsersContent.guide.map((item, index) =>
-                    Object.values(item).map((step, stepIndex) => (
-                      <li
-                        key={`${index}-${stepIndex}`}
-                        className="text-gray-700 text-lg font-light"
-                      >
-                        {step}
-                      </li>
-                    ))
-                  )}
+                  <li className="text-gray-700 text-lg font-light">
+                    {renderTextWithLinks(ForDCDDUsersContent.guide.guide1)}
+                  </li>
+                  <li className="text-gray-700 text-lg font-light">
+                    {renderTextWithLinks(ForDCDDUsersContent.guide.guide2)}
+                  </li>
+                  <li className="text-gray-700 text-lg font-light">
+                    {renderTextWithLinks(ForDCDDUsersContent.guide.guide3)}
+                  </li>
+                  <li className="text-gray-700 text-lg font-light">
+                    {renderTextWithLinks(ForDCDDUsersContent.guide.guide4)}
+                  </li>
                 </ol>
+                <div className="w-full flex justify-center py-4">
+                  <a
+                    href="https://www.educareskill.com/#/signup"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative z-10 inline-flex justify-center items-center w-64 h-12  bg-customOriange-200 text-white rounded-md font-semibold transition-all duration-300 ease-in-out  hover:bg-orange-700 hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
+                  >
+                    Sign Up
+                  </a>
+                </div>
                 <p className="py-4 px-6 text-xl font-light text-customOriange-200">
                   {ForDCDDUsersContent.importentNote}
                 </p>
@@ -50,7 +66,11 @@ const ForDCDDUsersReadMore: React.FC = () => {
       {/* {small screen} */}
       <div className="lg:hidden">
         <div className="relative">
-          <img src={DCDDPageWideBackGroundImage} alt="image" className="w-full" />
+          <img
+            src={DCDDPageWideBackGroundImage}
+            alt="image"
+            className="w-full"
+          />
           <img
             src={FamilyWithPhoneImage}
             alt="imag"
@@ -65,20 +85,32 @@ const ForDCDDUsersReadMore: React.FC = () => {
           <p className="text-start">{ForDCDDUsersContent.description1}</p>
           <p className="text-start">{ForDCDDUsersContent.description2}</p>
           <ol className="list-decimal list-inside space-y-2 px-2">
-            {ForDCDDUsersContent.guide.map((item, index) =>
-              Object.values(item).map((step, stepIndex) => (
-                <li
-                  key={`${index}-${stepIndex}`}
-                  className="text-gray-700 text-xs font-light"
-                >
-                  {step}
-                </li>
-              ))
-            )}
+            <li className="text-gray-700 text-xs font-light">
+              {renderTextWithLinks(ForDCDDUsersContent.guide.guide1)}
+            </li>
+            <li className="text-gray-700 text-xs font-light">
+              {renderTextWithLinks(ForDCDDUsersContent.guide.guide2)}
+            </li>
+            <li className="text-gray-700 text-xs font-light">
+              {renderTextWithLinks(ForDCDDUsersContent.guide.guide3)}
+            </li>
+            <li className="text-gray-700 text-xs font-light">
+              {renderTextWithLinks(ForDCDDUsersContent.guide.guide4)}
+            </li>
           </ol>
+          <div className="w-full flex justify-center py-4">
+            <a
+              href="https://www.educareskill.com/#/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative z-10 inline-flex justify-center items-center w-40 h-10  bg-customOriange-200 text-white rounded-md font-semibold transition-all duration-300 ease-in-out  hover:bg-hover:bg-orange-700 hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
+            >
+              Sign Up
+            </a>
+          </div>
           <p className="text-start text-customOriange-200">
-                  {ForDCDDUsersContent.importentNote}
-                </p>
+            {ForDCDDUsersContent.importentNote}
+          </p>
         </div>
       </div>
     </>

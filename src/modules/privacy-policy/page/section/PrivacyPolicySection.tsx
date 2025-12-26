@@ -5,6 +5,7 @@ import {
   privacyPolicy,
   privacyPolicyMenu,
 } from "assets/content/privacy-policy/PrivacyPolicy";
+import { CommonHeader4 } from "components";
 
 const PrivacyPolicySection = () => {
   const [activeSection, setActiveSection] = useState<string>("introduction");
@@ -74,7 +75,7 @@ const PrivacyPolicySection = () => {
 
       {/* RIGHT CONTENT */}
       <main className="w-full lg:w-3/4 px-6 md:px-10 py-10 overflow-y-auto max-h-screen hide-scrollbar">
-        <h1 className="text-3xl md:text-4xl font-bold mb-12">
+        <h1 className="text-3xl md:text-4xl font-bold mb-5">
           {privacyPolicy.title}
         </h1>
 
@@ -82,11 +83,11 @@ const PrivacyPolicySection = () => {
           <section
             key={section.id}
             id={section.id}
-            className="mb-16 scroll-mt-24 hide-scrollbar"
+            className="md:mb-8 mb-5 scroll-mt-24 hide-scrollbar"
           >
-            <h4 className="uppercase mb-6 text-2xl font-bold">
+            <CommonHeader4 className="uppercase mb-3 font-bold">
               {section.heading}
-            </h4>
+            </CommonHeader4>
 
             <PolicyContentRenderer
               content={section?.content}

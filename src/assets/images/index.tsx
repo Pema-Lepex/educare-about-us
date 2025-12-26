@@ -1,4 +1,3 @@
-export { default as Slider1 } from "./Slider.png";
 export { default as FooterImage } from "./Footer.png";
 export { default as NonoImage } from "./nono new 1.png";
 export { default as GirlRunningImage } from "./newfbdfhdf 1.png";
@@ -32,9 +31,15 @@ export { default as Founder } from "./founder.png";
 export { default as CEO } from "./CEO.png";
 export { default as PIC } from "./PIC.png";
 export { default as LeadershipBG } from "./BG.jpg";
+export { default as DCDDTextImage } from "./DCDDTextImage.png";
+export { default as iBESTOroginalImage } from "./Rectangle 15.png";
+export { default as BCSEImage } from "./Rectangle 16.png";
+export { default as iBestOrognalIcon } from "./iBEST Orginal_150 x 150_1.png";
+export { default as BCSEIcon } from "./Undergraduate_150-x-150.png";
 
 export * from "./logo";
 export * from "./social-media";
 export * from "./educare-skill";
 export * from "./frames";
 export * from "./why-choose-us";
+export * from "./silders";

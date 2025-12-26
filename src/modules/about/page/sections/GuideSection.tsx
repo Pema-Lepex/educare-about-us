@@ -32,6 +32,14 @@ const GuideSection: React.FC = () => {
                     className="w-full h-auto object-cover object-center transform "
                   />
                   <div className="absolute inset-0 flex flex-col justify-center items-center  pointer-events-none md:p-10 space-y-2">
+                    <div className="p-1 bg-white rounded-full flex items-center justify-center">
+                      <img
+                        src={items.icon}
+                        alt={items.title}
+                        className="size-6 lg:size-8 2xl:size-11 object-contain"
+                      />
+                    </div>
+
                     <h1 className=" text-white text-lg font-black drop-shadow-md 2xl:text-3xl xl:text-lg lg:text-base md:text-xs">
                       {items.title}
                     </h1>
@@ -39,7 +47,7 @@ const GuideSection: React.FC = () => {
                       {items.info}
                     </p>
                   </div>
-                  <div className="absolute inset-0 flex flex-col justify-end items-center  pb-5">
+                  <div className="absolute inset-0 flex flex-col justify-end items-center  pb-4">
                     <LearnMoreButton
                       onClick={() => navigate(items.href)}
                       className="bg-primary-500 text-white cursor-pointer"

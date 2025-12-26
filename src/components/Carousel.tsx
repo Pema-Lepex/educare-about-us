@@ -4,16 +4,13 @@ interface Props {
   slides: SlideProps[];
 }
 const Carousel: React.FC<Props> = ({ slides = [] }) => {
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     if (slides.length === 0) return;
 
     const interval = setInterval(() => {
-      setCurrentIndex((prev) =>
-        prev === slides.length - 1 ? 0 : prev + 1
-      );
+      setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
     }, 3000);
 
     return () => clearInterval(interval);
@@ -22,22 +19,21 @@ const Carousel: React.FC<Props> = ({ slides = [] }) => {
   if (slides.length === 0) return null;
 
   const prevSlide = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? slides.length - 1 : prev - 1
-    );
+    setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
 
   const nextSlide = () => {
-    setCurrentIndex((prev) =>
-      prev === slides.length - 1 ? 0 : prev + 1
-    );
+    setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
   return (
     <div className="w-full m-auto relative group ">
-      <div
-        className="w-full rounded-2xl bg-center bg-cover duration-700 aspect-[16/9]"
-        style={{ backgroundImage: `url(${slides[currentIndex].img})` }}
-      ></div>
+      <div className="w-full overflow-hidden">
+        <img
+          src={slides[currentIndex].img}
+          alt="slide"
+          className="w-full h-auto object-contain duration-700"
+        />
+      </div>
 
       <button
         onClick={prevSlide}

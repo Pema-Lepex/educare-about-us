@@ -13,6 +13,8 @@ const EducareSkillSection: React.FC = () => {
       "Educare Kids": "kids",
       "Primary Level": "primary",
       "Intermediate Level": "intermediate",
+      "Graduate/BCSE": "graduate",
+      "iBEST Originals": "ibest",
     };
 
     const activeTab = tabMapping[groupName] || "cheychey";
@@ -32,6 +34,7 @@ const EducareSkillSection: React.FC = () => {
           <div className="space-y-4 pt-2">
             <CommonParagraph1>{EducareSkillContent.content1}</CommonParagraph1>
             <CommonParagraph1>{EducareSkillContent.content2}</CommonParagraph1>
+            <CommonParagraph1>{EducareSkillContent.content3}</CommonParagraph1>
           </div>
         </div>
 
@@ -52,7 +55,7 @@ const EducareSkillSection: React.FC = () => {
                   <img
                     src={items.groupIcon}
                     alt="icon"
-                    className="size-9 p-2  rounded-full object-contain bg-customOriange-100 md:mb-1"
+                    className="size-9 p-2  rounded-full object-contain bg-white/90 md:mb-1"
                   />
                   <h1 className=" text-white text-lg 2xl:text-2xl font-black drop-shadow-md tracking-wide uppercase">
                     {items.groupName}

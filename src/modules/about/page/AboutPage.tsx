@@ -7,17 +7,14 @@ import MissionSection from "./sections/MissionSection";
 import EducareSkillSection from "./sections/EducareSkillSection";
 import GuideSection from "./sections/GuideSection";
 import DownloadOptionSection from "./sections/DownloadOptionSection";
+import { slides } from "./components/SliderContent";
+import AccessContentInfoSection from "./sections/AccessContentInfoSection";
 
 const AboutPage: React.FC = () => {
-  const slides: SlideProps[] = [
-    { id: 1, img: Slider1, title: "Beautiful Landscape" },
-    { id: 2, img: Slider1, title: "City Night Lights" },
-    { id: 3, img: Slider1, title: "Mountain Adventure" },
-  ];
-
   const sections = [
     <MissionSection key="mission" />,
     <EducareSkillSection key="educareSkill" />,
+    <AccessContentInfoSection key="accessContentInfoSection" />,
     <GuideSection key="guide" />,
     <DownloadOptionSection key="download" />,
   ];

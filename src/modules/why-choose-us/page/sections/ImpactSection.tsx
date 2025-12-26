@@ -4,11 +4,11 @@ import CheyCheyContent from "./cheyChey";
 import EducareKidsSection from "./educareKids";
 import IntermediateLevelContent from "./intermidateLevel";
 import PrimaryLevelContent from "./primaryLevel";
-import { CheCheyIcon, EducareSkillIcon, IntermediateLevelIcon, PrimaryLevelIcon } from "assets";
+import { BCSEIcon, CheCheyIcon, EducareSkillIcon, iBestOrognalIcon, IntermediateLevelIcon, PrimaryLevelIcon } from "assets";
 import { useSearchParams } from "react-router-dom";
 import { CommonHeader3, CommonParagraph1, CommonParagraph2 } from "components";
 
-type TabKey = "cheychey" | "kids" | "primary" | "intermediate";
+type TabKey = "cheychey" | "kids" | "primary" | "intermediate" | "graduate" | "ibest";
 
 const ImpactSectionPage: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -43,7 +43,7 @@ const ImpactSectionPage: React.FC = () => {
   };
 useEffect(() => {
     const tabFromUrl = searchParams.get("tab") as TabKey;
-    if (tabFromUrl && ["cheychey", "kids", "primary", "intermediate"].includes(tabFromUrl)) {
+    if (tabFromUrl && ["cheychey", "kids", "primary", "intermediate" , "graduate" , "ibest"].includes(tabFromUrl)) {
       setActiveTab(tabFromUrl);
       
       const contentElement = document.getElementById("content-anchor");
@@ -106,13 +106,15 @@ useEffect(() => {
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>
 
-        <div className="mx-auto mt-5 grid lg:grid-cols-4 grid-cols-2 max-w-5xl flex-wrap justify-center gap-6 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
+        <div className="mx-auto mt-5 grid lg:grid-cols-6 grid-cols-2 max-w-8xl flex-wrap justify-center gap-6 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
           {(
             [
               { key: "cheychey", label: "Chey Chey",icon: CheCheyIcon },
               { key: "kids", label: "Educare Kids", icon:EducareSkillIcon },
               { key: "primary", label: "Primary Level", icon:PrimaryLevelIcon },
               { key: "intermediate", label: "Intermediate Level", icon:IntermediateLevelIcon },
+              { key: "graduate", label: "Graduate/BCSE", icon:BCSEIcon },
+              { key: "ibest", label: "iBEST Originals", icon:iBestOrognalIcon },
             ] as { key: TabKey; label: string, icon:string }[]
           ).map((t) => (
             <button
@@ -135,6 +137,8 @@ useEffect(() => {
           {activeTab === "kids" && <EducareKidsSection />}
           {activeTab === "primary" && <PrimaryLevelContent />}
           {activeTab === "intermediate" && <IntermediateLevelContent />}
+          {activeTab === "graduate" && <>graduate /. BCSE</>}
+          {activeTab === "ibest" && <>iBEST Orignals</>}
         </div>
       </section>
     </div>

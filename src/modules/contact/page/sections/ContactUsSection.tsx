@@ -80,7 +80,7 @@ export default function ContactSection() {
                   support@educareskill.com
                 </CommonParagraph3>
                 <CommonParagraph3 className="text-sm text-gray-400">
-                  We'll respond within 24 hours
+                  We'll respond as soon as possible.
                 </CommonParagraph3>
               </div>
             </div>

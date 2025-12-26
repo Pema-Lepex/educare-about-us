@@ -1,5 +1,5 @@
 import React from "react";
-import { CommonParagraph1 } from "components";
+import { CommonParagraph2, CommonParagraph3 } from "components";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 import { ListItem, PolicyContentProps } from "props/Commonprops";
 
@@ -43,7 +43,7 @@ const RenderList: React.FC<RenderListProps> = ({
       className={`
         ${listStyles[style as keyof typeof listStyles] || "list-disc"}
         ml-${level === 0 ? "6" : "8"}
-        space-y-2 text-gray-700
+        space-y-2 text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl
       `}
     >
       {items.map((item, index) => (
@@ -82,13 +82,13 @@ const PolicyContentRenderer = ({ content, contentWithNO }: PolicyProps) => {
     // Paragraph
     if (item.type === "paragraph") {
       return (
-        <CommonParagraph1
+        <CommonParagraph2
           key={index}
           className="mb-4 text-gray-700 leading-relaxed"
         >
           {isNumbered && <span className="mr-1">{prefix}</span>}
           {renderTextWithLinks(item.text)}
-        </CommonParagraph1>
+        </CommonParagraph2>
       );
     }
 
@@ -97,10 +97,10 @@ const PolicyContentRenderer = ({ content, contentWithNO }: PolicyProps) => {
       return (
         <div key={index} className="mb-6">
           {item.title && (
-            <CommonParagraph1 className="mb-2 text-gray-700">
+            <CommonParagraph2 className="mb-2 text-gray-700">
               {isNumbered && <span className="mr-1">{prefix}</span>}
               {item.title}
-            </CommonParagraph1>
+            </CommonParagraph2>
           )}
 
           <RenderList items={item.items} style={item.style} />
