@@ -18,9 +18,9 @@ export default function CareerOpportunitySection() {
 
                     {/* Large Yellow Quote: Scales from text-xl to 7xl */}
                     <h1 className="text-yellow-400 font-bold text-xl sm:text-3xl md:text-5xl lg:text-7xl max-w-[90%] md:max-w-4xl leading-tight drop-shadow-xl">
-                        "Join our team and <br className="hidden sm:block" />
+                        Join our team and <br className="hidden sm:block" />
                         unleash your hidden <br className="hidden sm:block" />
-                        potential!"
+                        potential!
                     </h1>
                 </div>
             </div>
