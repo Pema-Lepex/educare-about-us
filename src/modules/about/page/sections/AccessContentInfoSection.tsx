@@ -27,7 +27,7 @@ const AccessContentInfoSection: React.FC = () => {
              transition-all duration-300 ease-in-out
              hover:bg-orange-700 hover:shadow-lg hover:scale-105 my-6"
             >
-              {GiftCouponLinkDetails.buttonName}
+              DCDD Sign In
             </a>
             <img
               src={DCDDNEWTextImage}

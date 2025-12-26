@@ -17,7 +17,7 @@ export default function ManagementTeam() {
             key={index} 
             className={`${member.fullWidth ? "md:col-span-2" : "col-span-1"}`}
           >
-            <div className="h-full border border-orange-100 rounded-2xl p-8 shadow-md bg-white hover:shadow-lg transition-shadow duration-300">
+            <div className="h-full border border-orange-400 rounded-2xl p-8 shadow-md bg-white hover:shadow-lg transition-shadow duration-300">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 bg-orange-50 rounded-lg">
                   {member.icon}

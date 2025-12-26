@@ -1,22 +1,22 @@
 export const renderTextWithLinks = (text: string | undefined) => {
   if (!text) return null;
 
-  const urlRegex = /(https?:\/\/[^\s]+|www\.[^\s]+|support@[^\s]+|(\*\*[^*]+\*\*))/g;
-  const parts = text.split(urlRegex);
+  const urlRegex = /(https?:\/\/[^\s]+|www\.[^\s]+|support@[^\s]+|\*\*[^*]+\*\*)/g;
+  
+  const parts = text.split(urlRegex).filter(part => part !== undefined && part !== "");
 
   return parts.map((part, i) => {
-    if (part.match(urlRegex)) {
+    if (urlRegex.test(part)) {
+      urlRegex.lastIndex = 0; 
+
       if (part.includes("@")) {
         return (
-          <a
-            key={i}
-            href={`mailto:${part}`}
-            className="text-primary-500 hover:underline font-medium"
-          >
+          <a key={i} href={`mailto:${part}`} className="text-primary-500 hover:underline font-medium">
             {part}
           </a>
         );
       }
+
       if (part.startsWith("**") && part.endsWith("**")) {
         return (
           <strong key={i} className="font-extrabold text-slate-900">
@@ -27,13 +27,7 @@ export const renderTextWithLinks = (text: string | undefined) => {
 
       const href = part.startsWith("http") ? part : `https://${part}`;
       return (
-        <a
-          key={i}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary-500 hover:underline font-medium "
-        >
+        <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline font-medium">
           {part}
         </a>
       );
@@ -41,7 +35,6 @@ export const renderTextWithLinks = (text: string | undefined) => {
     return part;
   });
 };
-
 export const renderFormattedText = (
   text: string | string[] | undefined,
   accentColor: string

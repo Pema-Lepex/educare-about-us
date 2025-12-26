@@ -20,7 +20,7 @@ const GiftCouponReadMore: React.FC = () => {
                 {GiftCouponContent.title}
               </h1>
 
-              <p className="text-[8px] md:text-2xl lg:text-3xl font-medium text-black">
+              <p className="text-[8px] md:text-2xl lg:text-2xl 2xl:3xl font-medium text-black">
                 {GiftCouponContent.subtitle}
               </p>
 
@@ -41,7 +41,7 @@ const GiftCouponReadMore: React.FC = () => {
               <img
                 src={GiftIcon}
                 alt="gift icon"
-                className="lg:size-[200px] md:size-[150px] absolute 2xl:-top-[95px] lg:-top-[72px] md:-top-[45px] -top-5"
+                className="lg:size-[200px] md:size-[150px] absolute 2xl:-top-[95px] lg:-top-[90px] md:-top-[40px] -top-5"
               />
             </div>
 

@@ -12,7 +12,7 @@ export default function TechnologyTeam() {
 
       {/* Technology Card */}
       <div className="max-w-5xl mx-auto mb-16">
-        <div className="border border-blue-200 rounded-2xl p-8 shadow-sm bg-white hover:shadow-md transition-all duration-300">
+        <div className="border border-blue-400 rounded-2xl p-8 shadow-sm bg-white hover:shadow-md transition-all duration-300">
           <div className="flex items-center gap-3 mb-4">
             {/* Blue icon and role title */}
             <div className="p-2 bg-blue-50 rounded-lg">

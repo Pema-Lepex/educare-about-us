@@ -32,7 +32,7 @@ const GuideSection: React.FC = () => {
                     className="w-full h-auto object-cover object-center transform "
                   />
                   <div className="absolute inset-0 flex flex-col justify-center items-center  pointer-events-none md:p-10 space-y-2">
-                    <div className="p-1 bg-white rounded-full flex items-center justify-center">
+                    <div className="p-2 bg-white rounded-full flex items-center justify-center">
                       <img
                         src={items.icon}
                         alt={items.title}
@@ -43,7 +43,7 @@ const GuideSection: React.FC = () => {
                     <h1 className=" text-white text-lg font-black drop-shadow-md 2xl:text-3xl xl:text-lg lg:text-base md:text-xs">
                       {items.title}
                     </h1>
-                    <p className="text-[14px] text-gray-200 font-bold 2xl:px-10  2xl:text-xl lg:pb-0 pb-4 max-sm:px-6">
+                    <p className="text-[14px] text-gray-200 font-light 2xl:px-10  2xl:text-xl lg:pb-0 pb-4 max-sm:px-6">
                       {items.info}
                     </p>
                   </div>

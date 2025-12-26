@@ -16,7 +16,7 @@ export default function ProductionTeam() {
             key={index} 
             className={`${item.fullWidth ? "md:col-span-2" : "col-span-1"}`}
           >
-            <div className="h-full border border-purple-200 rounded-2xl p-8 shadow-sm bg-white hover:shadow-md transition-all duration-300">
+            <div className="h-full border border-purple-400 rounded-2xl p-8 shadow-sm bg-white hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 bg-purple-50 rounded-lg">
                   {item.icon}

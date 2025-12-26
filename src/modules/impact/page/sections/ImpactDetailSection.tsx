@@ -52,7 +52,7 @@ export default function ImpactDetailSection() {
                 <TrendingUp className={`w-6 h-6 ${items.colorCode.text}`} />
               </div>
               <div>
-                <CommonHeader3 className={`font-bold ${items.colorCode} mb-2`}>
+                <CommonHeader3 className={`font-bold ${items.colorCode.text} mb-2`}>
                   {items.title}
                 </CommonHeader3>
                 <CommonParagraph2 className="text-gray-600 leading-relaxed">
@@ -66,13 +66,13 @@ export default function ImpactDetailSection() {
 
       {/* Middle Row: Statistics */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="border border-green-200 rounded-[2rem] p-8 text-center bg-white shadow-sm">
+        <div className="border-t-4 border-green-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
           <span className="block text-4xl md:text-5xl font-black text-green-600">
             50,000+
           </span>
           <span className="text-gray-800 font-bold text-lg">Downloads</span>
         </div>
-        <div className="border border-red-200 rounded-[2rem] p-8 text-center bg-white shadow-sm">
+        <div className="border-t-4 border-red-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
           <span className="block text-4xl md:text-5xl font-black text-red-600">
             1000s
           </span>
@@ -80,7 +80,7 @@ export default function ImpactDetailSection() {
             Daily Active Learners
           </span>
         </div>
-        <div className="border border-blue-200 rounded-[2rem] p-8 text-center bg-white shadow-sm">
+        <div className="border-t-4 border-blue-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
           <span className="block text-4xl md:text-5xl font-black text-blue-600">
             PP-XII
           </span>

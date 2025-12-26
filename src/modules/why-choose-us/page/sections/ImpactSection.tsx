@@ -70,7 +70,7 @@ useEffect(() => {
                 role="button"
                 tabIndex={0}
                 onClick={() => setActiveTab(themeToTab[f.theme])}
-                className={`rounded-2xl border-2 bg-white p-5 shadow-[0_10px_20px_rgba(0,0,0,0.08)] ${
+                className={`rounded-2xl border-t-4 bg-white p-5 shadow-md ${
                   borderByTheme[f.theme]
                 } ${gridClasses} cursor-pointer`}
               >
