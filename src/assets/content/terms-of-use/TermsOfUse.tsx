@@ -102,7 +102,7 @@ export const termsOfUse: TermsOfUseProps = {
           type: "list",
           style: "disc",
           items: [
-            `he User must ensure they read and decide on the "membership plan" before purchasing any services on the Educare Skill platform.`,
+            `The User must ensure they read and decide on the "membership plan" before purchasing any services on the Educare Skill platform.`,
             "The User can continue their membership plan until it is terminated.",
             "No refunds are provided for early cancellation.",
             `The User must pay for the membership plan if opting for a different membership during the continuation of their current membership plan, with no adjustment
@@ -124,7 +124,7 @@ export const termsOfUse: TermsOfUseProps = {
           type: "paragraph",
           text: ` We reserve the right to modify/ update the whole or any part of the User Terms at any time by providing you with a 72 (seventy-two) hours’ notice. Notwithstanding
                   what is stated in the preceding sentence, it is your responsibility to review the User Terms for modifications/ updates and analyze its impact on yourself. In the
-                   event that any update/ modification to the User Terms is not acceptable to you, please feel free to email us at{' '}
+                   event that any update/ modification to the User Terms is not acceptable to you, please feel free to email us at
                    support@educareskill.com and if we are unable to address your concerns, please refrain from using the Website and the Application
                    (or any portion thereof). Your continued use of the Website and the Application (or a part thereof) will be deemed to mean that you accept and agree to be bound by
                   such modified/ updated User Terms.`,
@@ -447,7 +447,7 @@ export const termsOfUse: TermsOfUseProps = {
           type: "paragraph",
           text: `We are committed to provide the excellent user experience. Therefore, we attend to User complaints with diligence. We aim to respond to your complaints within a
                  reasonable period, in any event no later than the time period prescribed by applicable law. All complaints and feedback should be addressed to the following email
-                 address: support@educareskill.com.`,
+                 address at support@educareskill.com `,
         },
       ],
     },

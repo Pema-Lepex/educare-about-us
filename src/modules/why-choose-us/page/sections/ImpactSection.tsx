@@ -7,6 +7,8 @@ import PrimaryLevelContent from "./primaryLevel";
 import { BCSEIcon, CheCheyIcon, EducareSkillIcon, iBestOrognalIcon, IntermediateLevelIcon, PrimaryLevelIcon } from "assets";
 import { useSearchParams } from "react-router-dom";
 import { CommonHeader3, CommonParagraph1, CommonParagraph2 } from "components";
+import Graduate from "./Graduate";
+import IBESTOriginal from "./IBESTOriginal";
 
 type TabKey = "cheychey" | "kids" | "primary" | "intermediate" | "graduate" | "ibest";
 
@@ -106,7 +108,7 @@ useEffect(() => {
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>
 
-        <div className="mx-auto mt-5 grid lg:grid-cols-6 grid-cols-2 max-w-8xl flex-wrap justify-center gap-6 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
+        <div className="mx-20 mt-5 grid lg:grid-cols-6 grid-cols-2 max-w-8xl flex-wrap justify-center gap-6 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
           {(
             [
               { key: "cheychey", label: "Chey Chey",icon: CheCheyIcon },
@@ -137,8 +139,8 @@ useEffect(() => {
           {activeTab === "kids" && <EducareKidsSection />}
           {activeTab === "primary" && <PrimaryLevelContent />}
           {activeTab === "intermediate" && <IntermediateLevelContent />}
-          {activeTab === "graduate" && <>graduate /. BCSE</>}
-          {activeTab === "ibest" && <>iBEST Orignals</>}
+          {activeTab === "graduate" && <Graduate/>}
+          {activeTab === "ibest" && <IBESTOriginal/>}
         </div>
       </section>
     </div>

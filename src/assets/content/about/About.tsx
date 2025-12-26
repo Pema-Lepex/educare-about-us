@@ -61,7 +61,7 @@ export const EducareSkillGroupContent = [
     groupName: "Intermediate Level",
     groupImage: IntermediateLevelImage,
     groupIcon: IntermediateLevelIcon,
-    eligibility: "Classes VIII - XII",
+    eligibility: "Classes VII - XII",
     info: "Your perfect guide to mastering Dzongkha.",
   },
   {

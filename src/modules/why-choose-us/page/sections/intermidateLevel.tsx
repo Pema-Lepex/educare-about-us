@@ -32,7 +32,7 @@ const IntermediateLevelContent: React.FC = () => {
             Intermediate Level Content
           </CommonHeader4>
           <CommonParagraph2 className="mt-2 text-slate-600">
-            Advanced content for Classes VII to XII
+            Advanced content for Classes VII - XII
           </CommonParagraph2>
         </div>
 

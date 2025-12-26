@@ -47,7 +47,7 @@ const MainFooter: React.FC = () => {
             reserved | Developed By iBEST
             <a
               target="_blank"
-              className="hover:underline hover:text-customOriange-100"
+              className="hover:text-customOriange-100"
               href="https://www.ibeststudios.com/"
             >
               {" "}
@@ -56,7 +56,7 @@ const MainFooter: React.FC = () => {
             &
             <a
               target="_blank"
-              className="hover:underline hover:text-customOriange-100"
+              className="hover:text-customOriange-100"
               href="https://www.ibesttechnologies.bt/"
             >
               {" "}

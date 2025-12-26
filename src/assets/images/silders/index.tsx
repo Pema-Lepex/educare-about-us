@@ -2,7 +2,7 @@ export { default as Slider1 } from "./1.Tutor.jpg";
 export { default as Slider2 } from "./2.Download&Register.jpg";
 export { default as Slider3 } from "./3.MembershipPlan.jpg";
 export { default as Slider4 } from "./4.EducareKids.jpg";
-export { default as Slider5 } from "./5.CheyChey.jpg";
+export { default as Slider5 } from "./5. CheyCheyGames.jpg";
 export { default as Slider6 } from "./6.PrimaryLevel-1.jpg";
 export { default as Slider7 } from "./7.Intermediatelevel.jpg";
 export { default as Slider8 } from "./8.iBESTOrginals.jpg";

@@ -59,7 +59,7 @@ export default function ContactSection() {
                   Call Us
                 </CommonParagraph1>
                 <CommonParagraph3 className="text-gray-600">
-                  Toll-free number: <span className="font-bold">2016</span>
+                  Toll free number: <span className="font-bold">2016</span>
                 </CommonParagraph3>
                 <CommonParagraph3 className="text-gray-600">
                   Mobile number:  <span className="font-bold">+975 77718721</span>

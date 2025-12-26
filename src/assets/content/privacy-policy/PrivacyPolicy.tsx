@@ -36,7 +36,11 @@ export const privacyPolicy: PrivacyPolicyProps = {
                 Information and Associated Information shall collectively be referred to as ‘Information’ in this Policy. We may use the Information to contact you from time to time,
                 to provide you with the Services, important information, required notices and marketing promotions. We will ask you when we need more information that personally
                 identifies you (personal information) or allows us to contact you. We will not differentiate between who is using the device to access the Application, Website or
-                Services or products, so long as the log in/access credentials match with yours. In order to make the best use of the Application/Website/Services/products and enable
+                Services or products, so long as the log in/access credentials match with yours. `,
+        },
+        {
+          type: "paragraph",
+          text: `In order to make the best use of the Application/Website/Services/products and enable
                 your Information to be captured accurately on the Application/Website/Services/products, it is essential that you have logged in using your own credentials. We will, at
                 all times, provide the option to you to not provide the Personal Information or Sensitive Personal Information, which we seek from you. Further, you shall, at any time
                 while using the Application/Services/products, also have an option to withdraw your consent given earlier to us to use such Personal Information or Sensitive Personal
@@ -639,7 +643,7 @@ export const privacyPolicy: PrivacyPolicyProps = {
       content: [
         {
           type: "paragraph",
-          text: ` We make all best endeavours to provide You with a pleasant experience. In the unlikely event that you face any issues, please contact us at support@educareskill.com`,
+          text: ` We make all best endeavours to provide You with a pleasant experience. In the unlikely event that you face any issues, please contact us at our Toll Free number **2016** or **+975 77718721** or email at support@educareskill.com`,
         },
       ],
     },

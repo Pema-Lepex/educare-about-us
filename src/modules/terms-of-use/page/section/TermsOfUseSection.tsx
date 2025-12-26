@@ -79,14 +79,14 @@ const TermsOfUseSection = () => {
           {termsOfUse.title}
         </h1>
 
-        {termsOfUse.sections.map((section:SectionsProps) => (
+        {termsOfUse.sections.map((section:SectionsProps, index) => (
           <section
             key={section.id}
             id={section.id}
             className="md:mb-8 mb-5 scroll-mt-24 hide-scrollbar"
           >
             <CommonHeader4 className="uppercase  mb-3 font-bold">
-              {section.heading}
+             {index+1}. {section.heading}
             </CommonHeader4>
 
             <TermsContentRenderer content={section?.content } contentWithNO={section?.contentWithNO}/>

@@ -79,14 +79,14 @@ const PrivacyPolicySection = () => {
           {privacyPolicy.title}
         </h1>
 
-        {privacyPolicy.sections.map((section: PolicySectionsProps) => (
+        {privacyPolicy.sections.map((section: PolicySectionsProps,index) => (
           <section
             key={section.id}
             id={section.id}
             className="md:mb-8 mb-5 scroll-mt-24 hide-scrollbar"
           >
             <CommonHeader4 className="uppercase mb-3 font-bold">
-              {section.heading}
+              {index+1}.{section.heading}
             </CommonHeader4>
 
             <PolicyContentRenderer
