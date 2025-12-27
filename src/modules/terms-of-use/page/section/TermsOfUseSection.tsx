@@ -86,7 +86,7 @@ const TermsOfUseSection = () => {
             className="md:mb-8 mb-5 scroll-mt-24 hide-scrollbar"
           >
             <CommonHeader4 className="uppercase  mb-3 font-bold">
-             {index+1}. {section.heading}
+             {index+1}. <span className="pl-1">{section.heading}</span>
             </CommonHeader4>
 
             <TermsContentRenderer content={section?.content } contentWithNO={section?.contentWithNO}/>
