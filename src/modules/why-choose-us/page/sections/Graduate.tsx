@@ -26,7 +26,7 @@ const Graduate: React.FC = () => {
 
   return (
     <section className="px-4 py-10">
-      <div className="mx-auto max-w-5xl rounded-2xl border border-rose-200 bg-white shadow-[0_12px_22px_rgba(0,0,0,0.08)]">
+      <div className="mx-auto max-w-5xl 3xl:max-w-full 3xl:px-36 rounded-2xl border border-rose-200 bg-white shadow-[0_12px_22px_rgba(0,0,0,0.08)]">
         <div className="px-6 pt-6">
           <CommonHeader4 className="font-extrabold text-rose-600">
             Graduate / BCSE

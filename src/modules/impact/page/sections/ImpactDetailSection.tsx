@@ -37,7 +37,7 @@ const BottomSection: React.FC = () => {
 };
 export default function ImpactDetailSection() {
   return (
-    <section className="py-16 px-4 max-w-7xl mx-auto space-y-8 mb-24">
+    <section className="py-16 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto space-y-8 mb-24">
       {/* Top Row: Approach and Audience */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {ImpactOfEducare.map((items) => (

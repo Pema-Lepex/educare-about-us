@@ -6,6 +6,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        "6xl": "3840px", // 4K monitors & TVs
+        "5xl": "3200px", // Large high-end displays
+        "4xl": "2560px", // 2K / QHD monitors
+        "3xl": "1920px", // Full HD (most laptops & monitors)
+        "2xl": "1536px", // Large laptops / scaled desktops
+        xl: "1280px", // Small laptops & desktops
+        lg: "1024px", // Tablets (landscape)
+        md: "768px", // Tablets (portrait)
+        sm: "640px", // Large phones
+        xs: "480px", // Small phones
+      },
       animation: {
         spin: "spin 1s linear infinite",
         fadeIn: "fade-in 0.5s ease forwards",

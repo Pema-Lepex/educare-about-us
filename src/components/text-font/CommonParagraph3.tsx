@@ -11,7 +11,7 @@ const CommonParagraph3: React.FC<CommonParagraph1Props> = ({
 }) => {
   return (
     <p
-      className={`text-xs sm:text-sm md:text-base 2xl:text-lg ${className}`}
+      className={`text-xs sm:text-sm md:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl ${className}`}
     >
       {children}
     </p>

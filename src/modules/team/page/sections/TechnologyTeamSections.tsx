@@ -4,7 +4,7 @@ import { CommonHeader2, CommonHeader4, CommonParagraph2 } from 'components';
 
 export default function TechnologyTeam() {
   return (
-    <section className="md:py-16 py-4 px-4 max-w-7xl mx-auto">
+    <section className="md:py-16 py-4 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto">
       {/* Section Heading */}
       <CommonHeader2 className="font-bold text-center text-blue-600 md:mb-12 mb-6">
         Technology Team

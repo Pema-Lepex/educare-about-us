@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function ManagementTeam() {
   return (
-    <section className="md:py-16 py-4 px-4 max-w-7xl mx-auto">
+    <section className="md:py-16 py-4 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto">
       {/* Section Heading */}
       <CommonHeader2 className=" font-bold text-center text-orange-600 md:mb-12 mb-6">
         Management Team

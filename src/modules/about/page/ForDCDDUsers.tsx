@@ -1,13 +1,13 @@
 import MainLayout from "layouts/MainLayout";
-import { DCDDPageBackGroundImage } from "assets";
 import ForDCDDUsersReadMore from "./read-more/ForDCDDUsersReadMore";
+import { DCDDNewBGImage } from "assets/images/dcdd";
 
 const ForDCDDUsers: React.FC = () => {
   return (
     <MainLayout>
       <div
         className="w-full  bg-cover bg-center bg-no-repeat "
-        style={{ backgroundImage: `url(${DCDDPageBackGroundImage})` }}
+        style={{ backgroundImage: `url(${DCDDNewBGImage})` }}
       >
         <ForDCDDUsersReadMore />
       </div>

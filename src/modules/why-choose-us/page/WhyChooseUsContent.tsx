@@ -16,7 +16,7 @@ const WhyChooseUsContent: React.FC = () => {
           <div className="h-full w-full bg-[radial-gradient(circle_at_20%_20%,white_0,transparent_35%),radial-gradient(circle_at_80%_30%,white_0,transparent_35%),radial-gradient(circle_at_60%_80%,white_0,transparent_40%)]" />
         </div>
 
-        <div className="relative mx-auto flex lg:flex-row  max-w-6xl gap-6 px-4 pb-24 pt-12  md:pt-14 justify-center items-center">
+        <div className="relative mx-auto flex lg:flex-row  max-w-6xl gap-6 3xl:gap-24 px-4 pb-24 pt-12  md:pt-14 justify-center items-center">
           <div className="hidden lg:flex">
             <img
               src={APlus}
@@ -31,7 +31,7 @@ const WhyChooseUsContent: React.FC = () => {
               alt="Mascot"
               className="mx-auto mb-2 w-[220px] md:w-[260px] "
             />
-            <CommonHeader2 className="text-3xl font-extrabold md:text-4xl">
+            <CommonHeader2 className="text-3xl font-extrabold md:text-4xl text-white">
               Why Choose Us?
             </CommonHeader2>
             <CommonParagraph1 className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-white/90">

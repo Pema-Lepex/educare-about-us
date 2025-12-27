@@ -15,7 +15,7 @@ const LearnMoreButton: FC<ButtonProps> = ({
       {...props}
       onClick={onClick}
       type={ type ? type: "button"}
-      className={`w-auto  mt-4  px-6 sm:px-8 md:px-10   py-4 sm:py-3 md:py-2 text-lg sm:text-base md:text-lg rounded-md  font-semibold  transition  cursor-pointer  hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed ${className} `}
+      className={`w-auto  mt-4  px-6 sm:px-8 md:px-10 3xl:px-16   py-4 sm:py-3 md:py-2  3xl:py-4 text-lg sm:text-base md:text-lg 3xl:text-xl rounded-md  font-semibold  transition  cursor-pointer  hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed ${className} `}
       disabled={loading}
     >
       {loading ? loadingText : children || "Learn More"}

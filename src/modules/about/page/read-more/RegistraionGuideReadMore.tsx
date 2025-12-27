@@ -7,10 +7,10 @@ const RegistraionGuideReadMore: React.FC = () => {
     <>
       {/* {website} */}
       <div className="w-full hidden lg:flex justify-center items-center relative">
-        <section id="registration-guid" className=" py-16 px-40 ">
+        <section id="registration-guid" className=" py-16 px-40">
           {RegistrationGuideContent && (
             <>
-              <div className="w-[90%] mx-auto border border-[#981AF7] rounded-3xl shadow-md p-10 bg-blue-50 space-y-4 min-h-[1000px] mb-20">
+              <div className="w-[90%] mx-auto border border-[#981AF7] rounded-3xl shadow-md p-10 bg-blue-50 space-y-4 min-h-[1000px] 3xl:h-[1300px] mb-20 ">
                 <CommonHeader2 className="text-[#981AF7] text-center">
                   {RegistrationGuideContent.title}
                 </CommonHeader2>
@@ -22,7 +22,7 @@ const RegistraionGuideReadMore: React.FC = () => {
                     Object.values(item).map((step, stepIndex) => (
                       <li
                         key={`${index}-${stepIndex}`}
-                        className="text-gray-700 text-lg font-light"
+                        className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl font-light"
                       >
                         {step}
                       </li>
@@ -34,7 +34,7 @@ const RegistraionGuideReadMore: React.FC = () => {
                     href="https://www.educareskill.com/#/signup"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative z-10 inline-flex justify-center items-center w-64 h-12  bg-[#981AF7] text-white rounded-md font-semibold transition-all duration-300 ease-in-out  hover:bg-[#7C15C9] hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
+                    className="relative 3xl:text-2xl 2xl:text-xl xl:text-base  text-sm z-10 inline-flex justify-center items-center w-64 h-12  bg-[#981AF7] text-white rounded-md font-semibold transition-all duration-300 ease-in-out  hover:bg-[#7C15C9] hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
                   >
                     Sign Up
                   </a>
@@ -42,7 +42,7 @@ const RegistraionGuideReadMore: React.FC = () => {
               </div>
             </>
           )}
-          <div className="absolute -bottom-20 md:-bottom-40 2xl:-bottom-80 right-3">
+          <div className="absolute -bottom-20 md:-bottom-40 lg:-bottom-20 xl:-bottom-40 2xl:-bottom-64 3xl:-bottom-[300px] right-3">
             <img src={ThreeCharacterImage} alt="ThreeCharacterImage" />
           </div>
         </section>

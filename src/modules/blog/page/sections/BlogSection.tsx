@@ -16,7 +16,7 @@ import {
 
 export default function BlogSection() {
   return (
-    <section className="py-16 px-4 max-w-7xl mx-auto">
+    <section className="py-16 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto">
       {/* Header */}
       <div className="text-center mb-12">
         <CommonHeader1 className=" font-black text-[#1b364d] tracking-tight uppercase">

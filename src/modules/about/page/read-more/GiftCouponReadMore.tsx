@@ -6,7 +6,7 @@ import {
   ManHoldingABabyImage,
 } from "assets";
 import { GiftCouponContent } from "assets/content/about/About";
-import { CommonParagraph1 } from "components";
+import { CommonHeader2, CommonHeader3, CommonParagraph1 } from "components";
 
 const GiftCouponReadMore: React.FC = () => {
   return (
@@ -19,8 +19,7 @@ const GiftCouponReadMore: React.FC = () => {
               <h1 className="text-xl md:text-5xl lg:text-6xl text-[#3366FF] font-extrabold tracking-tight">
                 {GiftCouponContent.title}
               </h1>
-
-              <p className="text-[8px] md:text-2xl lg:text-2xl 2xl:3xl font-medium text-black">
+              <p className="text-[8px] md:text-2xl lg:text-2xl 2xl:3xl 3xl:text-4xl font-medium text-black ">
                 {GiftCouponContent.subtitle}
               </p>
 
@@ -37,11 +36,11 @@ const GiftCouponReadMore: React.FC = () => {
             </div>
 
             {/* Icon Container */}
-            <div className="flex justify-end relative lg:w-64  md:w-44 w-16">
+            <div className="flex justify-end relative lg:w-64 md:w-44 w-16">
               <img
                 src={GiftIcon}
                 alt="gift icon"
-                className="lg:size-[200px] md:size-[150px] absolute 2xl:-top-[95px] lg:-top-[90px] md:-top-[40px] -top-5"
+                className="lg:size-[200px] md:size-[150px] absolute 2xl:-top-[95px] 3xl:-top-[90px] lg:-top-[90px] md:-top-[35px] -top-5"
               />
             </div>
 
@@ -50,6 +49,9 @@ const GiftCouponReadMore: React.FC = () => {
           </div>
 
           <div className="px-4 md:px-6 space-y-4 mt-4">
+            <CommonHeader2 className="font-bold xl:max-w-2xl 3xl:max-w-5xl">
+              {GiftCouponContent.subheader}
+            </CommonHeader2>
             <div className="text-sm md:text-base">
               <CommonParagraph1>
                 {GiftCouponContent.description}

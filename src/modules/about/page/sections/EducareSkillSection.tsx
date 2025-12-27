@@ -25,7 +25,7 @@ const EducareSkillSection: React.FC = () => {
       id="about-educare-skill"
       className="px-4 sm:px-8 md:px-16 lg:px-14 md:pb-16 pb-6"
     >
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-2">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 3xl:gap-16">
         <div className="flex-1 md:text-center lg:text-left space-y-2">
           <CommonHeader2>{EducareSkillContent.title}</CommonHeader2>
           <h4 className="text-2xl sm:text-3xl md:text-4xl font-extralight italic">
@@ -57,7 +57,7 @@ const EducareSkillSection: React.FC = () => {
                     alt="icon"
                     className="size-9 p-2  rounded-full object-contain bg-white/90 md:mb-1"
                   />
-                  <h1 className=" text-white text-lg 2xl:text-2xl font-black drop-shadow-md tracking-wide uppercase">
+                  <h1 className=" text-white text-lg 2xl:text-2xl font-black drop-shadow-md tracking-wide">
                     {items.groupName}
                   </h1>
                   <h5 className="mb-[2px] text-white text-[14px] 2xl:text-lg">

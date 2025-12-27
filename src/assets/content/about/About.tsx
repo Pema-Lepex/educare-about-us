@@ -24,7 +24,7 @@ import {
 } from "assets/images";
 
 export const EducareSkillContent = {
-  title: "Educare Skill",
+  title: "EDUCARE SKILL",
   subTitle: "Your Favorite Dzongkha Tutor!",
   content1: `Educare Skill is Bhutan’s first online learning platform with a wide variety of entertaining and educational content catering to all learners, from children in ECCD centres, students studying in Classes PP to XII, to graduates preparing for their RCSE Examinations, as well as anyone interested in learning and mastering our national language, Dzongkha.`,
   content2: `Educare Skill is officially endorsed by the Department of Culture and Dzongkha Development as the National Dzongkha Learning platform, making it the apex platform for Dzongkha learning not only for those residing in the country but also for those living abroad.`,
@@ -42,7 +42,7 @@ export const EducareSkillGroupContent = [
   },
   {
     id: 2,
-    groupName: "Educare Kids",
+    groupName: "KDUCARE KIDS",
     groupImage: EducareSkillImage,
     groupIcon: EducareSkillIcon,
     eligibility: "Age 3 - 16 years",
@@ -50,7 +50,7 @@ export const EducareSkillGroupContent = [
   },
   {
     id: 3,
-    groupName: "Primary Level",
+    groupName: "PRIMARY LEVEL",
     groupImage: PrimaryLevelImage,
     groupIcon: PrimaryLevelIcon,
     eligibility: "Classes PP - VI",
@@ -58,7 +58,7 @@ export const EducareSkillGroupContent = [
   },
   {
     id: 4,
-    groupName: "Intermediate Level",
+    groupName: "INTERMEDIATE LEVEL",
     groupImage: IntermediateLevelImage,
     groupIcon: IntermediateLevelIcon,
     eligibility: "Classes VII - XII",
@@ -66,7 +66,7 @@ export const EducareSkillGroupContent = [
   },
   {
     id: 5,
-    groupName: "Graduate/BCSE",
+    groupName: "GRADUATE / BCSE",
     groupImage: BCSEImage,
     groupIcon: BCSEIcon,
     eligibility: "Your perfect tutor for relearning Dzongkha",
@@ -74,7 +74,7 @@ export const EducareSkillGroupContent = [
   },
   {
     id: 6,
-    groupName: "iBEST Originals",
+    groupName: "iBEST ORIGINALS",
     groupImage: iBESTOroginalImage,
     groupIcon: iBestOrognalIcon,
     eligibility: "Happy hours for all",
@@ -92,7 +92,7 @@ export const EducareSkillGuideContent = [
   },
   {
     id: 2,
-    title: "Registration Guide:",
+    title: "Registration Guide",
     icon: RGLogo,
     frame: RedFrame,
     href: "/about/registration-guide",
@@ -100,7 +100,7 @@ export const EducareSkillGuideContent = [
   },
   {
     id: 3,
-    title: "For DCDD Users:",
+    title: "For DCDD Users",
     icon: FDCDDULogo,
     frame: PurpleFrame,
     href: "/about/for-dcdd-users",
@@ -133,9 +133,9 @@ export const memebershipDetails = [
         id: 1,
         memebrshipType: "Basic",
         imageSrc: bronze,
-        yearlyCost: "Nu.399",
+        yearlyCost: "Nu.3990",
         halfYearlyCost: "Nu.1995",
-        monthlyCost: "Nu.3990",
+        monthlyCost: "Nu.399",
         benefits: [
           "NR",
           "AS",
@@ -150,9 +150,9 @@ export const memebershipDetails = [
         id: 2,
         memebrshipType: "Standard",
         imageSrc: sliver,
-        yearlyCost: "Nu.449",
+        yearlyCost: "Nu.4490",
         halfYearlyCost: "Nu.2245",
-        monthlyCost: "Nu.4490",
+        monthlyCost: "Nu.449",
         benefits: [
           "NR",
           "AS",
@@ -168,9 +168,9 @@ export const memebershipDetails = [
         id: 3,
         memebrshipType: "Premium",
         imageSrc: gold,
-        yearlyCost: "Nu.499",
+        yearlyCost: "Nu.4990",
         halfYearlyCost: "Nu.2495",
-        monthlyCost: "Nu.4990",
+        monthlyCost: "Nu.499",
         benefits: [
           "NR",
           "AS",
@@ -192,27 +192,35 @@ export const memebershipDetails = [
         id: 1,
         memebrshipType: "Educare Kids",
         imageSrc: "",
-        yearlyCost: "Nu.399",
+        yearlyCost: "Nu.3990",
         halfYearlyCost: "Nu.1995",
-        monthlyCost: "Nu.3990",
-        benefits: ["NR", "AS", "RA", "FD", "CHEYCHEY"],
+        monthlyCost: "Nu.399",
+        benefits: ["NR", "AS", "RA", "FD", "Chey Chey"],
       },
       {
         id: 2,
         memebrshipType: "Primary Level",
         imageSrc: "",
-        yearlyCost: "Nu.449",
-        halfYearlyCost: "Nu.2245",
-        monthlyCost: "Nu.4490",
-        benefits: ["NR", "AS", "RA", "FD", "BD", "Class IV - VI Tutorials"],
+        yearlyCost: "Nu.4990",
+        halfYearlyCost: "Nu.2495",
+        monthlyCost: "Nu.499",
+        benefits: [
+          "NR",
+          "AS",
+          "RA",
+          "FD",
+          "BD",
+          "Chey Chey",
+          "Class IV - VI Tutorials",
+        ],
       },
       {
         id: 3,
         memebrshipType: "Classes VII - VIII",
         imageSrc: "",
-        yearlyCost: "Nu.499",
+        yearlyCost: "Nu.4990",
         halfYearlyCost: "Nu.2495",
-        monthlyCost: "nNu.4990",
+        monthlyCost: "Nu.499",
         benefits: [
           "AS",
           "RA",
@@ -226,9 +234,9 @@ export const memebershipDetails = [
         id: 4,
         memebrshipType: "Classes IX - X",
         imageSrc: "",
-        yearlyCost: "Nu.499",
+        yearlyCost: "Nu.4990",
         halfYearlyCost: "Nu.2495",
-        monthlyCost: "nNu.4990",
+        monthlyCost: "Nu.499",
         benefits: [
           "AS",
           "RA",
@@ -242,9 +250,9 @@ export const memebershipDetails = [
         id: 5,
         memebrshipType: "Classes XI - XII",
         imageSrc: "",
-        yearlyCost: "Nu.499",
+        yearlyCost: "Nu.4990",
         halfYearlyCost: "Nu.2495",
-        monthlyCost: "nNu.4990",
+        monthlyCost: "Nu.499",
         benefits: [
           "AS",
           "RA",
@@ -258,9 +266,9 @@ export const memebershipDetails = [
         id: 6,
         memebrshipType: "Undergrads / Graduates",
         imageSrc: "",
-        yearlyCost: "Nu.499",
+        yearlyCost: "Nu.4990",
         halfYearlyCost: "Nu.2495",
-        monthlyCost: "nNu.4990",
+        monthlyCost: "Nu.499",
         benefits: [
           "RA",
           "BD",
@@ -303,7 +311,7 @@ If you are an **undergrade student or graduates sitting for RCSC’s BCS examina
 };
 
 export const RegistrationGuideContent = {
-  title: "Registration Guide:",
+  title: "Registration Guide",
   description:
     "Do you want to register on our platform and watch our amazing content, but you are not quite sure how to do it? Don't worry. We will help you get started.",
   guide: [
@@ -327,25 +335,25 @@ export const ForDCDDUsersContent = {
     "If you are eligible for the DCDD support, we are glad to inform you that you have already been registered on Educare Skill!",
   description2:
     "In collaboration with schools and ECCD centres across the country, the Educare Skill support team has already registered all eligible users onto the platform.",
-  guide: 
-    {
-      guide1:
-        "Collect your USER ID and PASSWORD from your respective class teacher or ECCD facilitator.",
-      guide2:
-        "Open the Educare Skill homepage either through the website or the app. Then, click on **DCDD Sign In**.",
-      guide3: "Type in your USER ID and PASSWORD and click on **Sing In**.",
-      guide4:
-        "You now have access to our treasure trove of engaging and entertaing content!.",
-    },
-  importentNote:
+  guide: {
+    guide1:
+      "Collect your USER ID and PASSWORD from your respective class teacher or ECCD facilitator.",
+    guide2:
+      "Open the Educare Skill homepage either through the website or the app. Then, click on **DCDD Sign In**.",
+    guide3: "Type in your USER ID and PASSWORD and click on **Sign In**.",
+    guide4:
+      "You now have access to our treasure trove of engaging and entertaing content!.",
+  },
+  importentNote1:
     "If you haven't been registered or were missed during the registration process, or are facing any issues, please don't hesitate to reach out to your class teacher, ECCD facilitator, or the Educare Skill Support Team.",
-};
+  importentNote2:"For any assistance, contact us at our Toll Free number **2016** or **+975 77718721** or email at support@educareskill.com"};
 
 export const GiftCouponContent = {
   title: "Gift Coupon",
   subtitle: "The Best Gift You Can Give, The Gift of Learning!",
   buttonName: "Gift the joy of learning!",
   linkToGiftCoupon: "https://www.educareskill.com/?tab=gift-coupon",
+  subheader: "A meaningful gift for those who think beyond today.",
   description:
     "With the Educare Skill Gift Coupon, you can give your loved ones the Educare Skill membership plans.",
 

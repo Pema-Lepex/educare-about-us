@@ -12,7 +12,7 @@ import {
 
 export default function CreativeTalentSection() {
   return (
-    <section className="py-16 px-4 max-w-6xl mx-auto space-y-12">
+    <section className="py-16 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto space-y-12">
       {/* Main Section Heading */}
       <CommonHeader1 className=" font-bold text-center text-[#1b364d] mb-8">
         We're Looking For Creative Talent

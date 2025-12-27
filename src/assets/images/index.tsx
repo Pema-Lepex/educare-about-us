@@ -32,10 +32,11 @@ export { default as CEO } from "./CEO.png";
 export { default as PIC } from "./PIC.png";
 export { default as LeadershipBG } from "./BG.jpg";
 export { default as DCDDTextImage } from "./DCDDTextImage.png";
-export { default as iBESTOroginalImage } from "./Rectangle 15.png";
-export { default as BCSEImage } from "./Rectangle 16.png";
+export { default as iBESTOroginalImage } from "./iBEST Originals BG copy.jpg";
+export { default as BCSEImage } from "./Undergraduite BG copy.jpg";
 export { default as iBestOrognalIcon } from "./iBEST Orginal_150 x 150_1.png";
 export { default as BCSEIcon } from "./Undergraduate_150-x-150.png";
+export { default as MonkeyAndDragonImage } from "./Chara1.png";
 
 export * from "./logo";
 export * from "./social-media";

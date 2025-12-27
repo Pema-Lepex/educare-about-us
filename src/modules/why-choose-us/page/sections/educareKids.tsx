@@ -25,7 +25,7 @@ export default function ContentAccordionSection() {
   const [openId, setOpenId] = useState<string | null>("animation"); 
 
   return (
-    <section className="mx-auto w-full max-w-4xl space-y-6 px-4 py-10">
+    <section className="mx-auto w-full max-w-5xl 3xl:max-w-full 3xl:px-36 space-y-6 py-10">
       {blocks.map(b => {
         const isOpen = openId === b.id;
 

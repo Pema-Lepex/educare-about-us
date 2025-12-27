@@ -57,7 +57,7 @@ useEffect(() => {
   return (
     <div className="bg-white ">
       <section className="-mt-16 px-4 pb-10 absolute w-full">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-5 md:grid-cols-6">
+        <div className="mx-auto grid max-w-6xl 3xl:max-w-full 3xl:px-36 px-0 grid-cols-2 gap-5 md:grid-cols-6">
           {features.map((f, idx) => {
             const gridClasses =
               idx < 3
@@ -108,7 +108,7 @@ useEffect(() => {
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>
 
-        <div className="mx-20 mt-5 grid lg:grid-cols-6 grid-cols-2 max-w-8xl flex-wrap justify-center gap-6 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
+        <div className="md:mx-20 mt-5 grid lg:grid-cols-6 grid-cols-2 max-w-8xl flex-wrap justify-center gap-6 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
           {(
             [
               { key: "cheychey", label: "Chey Chey",icon: CheCheyIcon },
@@ -134,7 +134,7 @@ useEffect(() => {
           ))}
         </div>
         {/* Panel - render the matching section component */}
-        <div className="mx-auto mt-4 max-w-5xl mb-20">
+        <div className="mx-auto mt-4 max-w-6xl 3xl:max-w-full 3xl:px-36 px-0 mb-20">
           {activeTab === "cheychey" && <CheyCheyContent />}
           {activeTab === "kids" && <EducareKidsSection />}
           {activeTab === "primary" && <PrimaryLevelContent />}

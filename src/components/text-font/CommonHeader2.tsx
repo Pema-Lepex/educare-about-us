@@ -8,7 +8,7 @@ interface CommonHeader2Props {
 const CommonHeader2: React.FC<CommonHeader2Props> = ({ children, className  }) => {
   return (
     <h2
-      className={`text-2xl sm:text-3xl md:text-4xl font-extrabold ${className}`}
+      className={`text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-extrabold ${className}`}
     >{children}
     </h2>
   );

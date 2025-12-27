@@ -9,25 +9,34 @@ export const renderTextWithLinks = (text: string | undefined) => {
     if (urlRegex.test(part)) {
       urlRegex.lastIndex = 0; 
 
+      // Handle Email Links
       if (part.includes("@")) {
         return (
-          <a key={i} href={`mailto:${part}`} className="text-primary-500 hover:underline font-medium">
+          <a key={i} href={`mailto:${part}`} className="text-current hover:underline font-medium">
             {part}
           </a>
         );
       }
 
+      // Handle Bold Text
       if (part.startsWith("**") && part.endsWith("**")) {
         return (
-          <strong key={i} className="font-extrabold text-slate-900">
+          <strong key={i} className="font-extrabold text-current">
             {part.replace(/\*\*/g, "")}
           </strong>
         );
       }
 
+      // Handle Web Links
       const href = part.startsWith("http") ? part : `https://${part}`;
       return (
-        <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline font-medium">
+        <a 
+          key={i} 
+          href={href} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-current hover:underline font-medium"
+        >
           {part}
         </a>
       );

@@ -29,13 +29,13 @@ const ImpactHeaderSection: React.FC = () => {
               className="w-20  md:w-64 lg:w-[34rem] 2xl:w-[45rem] object-contain flex-shrink-0 lg:ml-[11rem] 2xl:ml-[15rem] md:flex hidden"
             />
             <div className="flex-1 text-left">
-              <p className="text-[7px] md:text-[15px] lg:text-xl text-white mb-3 sm:mb-4">
+              <p className="text-[8px]  sm:text-lg md:text-xl xl:text-2xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl text-white mb-3 sm:mb-4">
                 We need to be prepared for the future so that every one of us is
                 equipped with the skills, competencies and experience to succeed
                 and compete in the world. We must give utmost priority to skill,
                 up-skill, and re-skill our people to make them world-ready.
               </p>
-              <p className="text-[8px] md:text-[15px] lg:text-lg font-bold text-yellow-400">
+              <p className="text-[8px] sm:text-lg md:text-xl xl:text-2xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl font-bold text-yellow-400">
                 - His Majesty The King of Bhutan, 2021 National Day Royal
                 Address
               </p>

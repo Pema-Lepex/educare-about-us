@@ -33,7 +33,8 @@ const HowToGetStartedReadMore: React.FC = () => {
             href="https://www.educareskill.com/#/signup"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex justify-center items-center w-64 bg-customOriange-100 text-white px-5 py-2 xl:px-6 xl:py-3 xl:text-base text-sm rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:bg-orange-600 hover:shadow-md hover:scale-105">
+            className="inline-flex 3xl:text-2xl 2xl:text-xl xl:text-base  text-sm justify-center items-center w-64 bg-customOriange-100 text-white px-5 py-2 xl:px-6 xl:py-3  rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:bg-orange-600 hover:shadow-md hover:scale-105"
+          >
             DCDD Sign In
           </a>
 
@@ -44,7 +45,8 @@ const HowToGetStartedReadMore: React.FC = () => {
             href="https://www.educareskill.com/#/signup"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex justify-center items-center w-64 bg-[#215FF8] text-white px-5 py-2 xl:px-6 xl:py-3 xl:text-base text-sm rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:bg-blue-600 hover:shadow-md hover:scale-105">
+            className="inline-flex 3xl:text-2xl 2xl:text-xl xl:text-base  text-sm justify-center items-center w-64 bg-[#215FF8] text-white px-5 py-2 xl:px-6 xl:py-3 rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:bg-blue-600 hover:shadow-md hover:scale-105"
+          >
             Sign Up
           </a>
           <div className="border border-customOriange-100 rounded-2xl bg-white md:space-y-5 space-y-4 p-4 shadow-md">
@@ -54,7 +56,7 @@ const HowToGetStartedReadMore: React.FC = () => {
                 <button
                   key={type.id}
                   onClick={() => setSelectedType(type.memnershipType)}
-                  className={`px-4 py-2 rounded-md border 
+                  className={`px-4 py-2 rounded-md border 3xl:text-2xl 2xl:text-xl xl:text-base  text-sm 
                 ${
                   selectedType === type.memnershipType
                     ? "bg-primary-500 text-white"
@@ -86,17 +88,32 @@ const HowToGetStartedReadMore: React.FC = () => {
                         />
                       )}
 
-                      <h3 className="text-xl font-bold mt-2">
+                      <h3 className="text-xl 3xl:text-2xl font-bold mt-2">
                         {item.memebrshipType}
                       </h3>
 
-                      <div className="text-center mb-3">
-                        <p>Monthly: {item.monthlyCost}</p>
-                        <p>Half-Yearly: {item.halfYearlyCost}</p>
-                        <p>Yearly: {item.yearlyCost}</p>
+                      <div className="text-center mb-3 text-base md:text-lg 3xl:xl">
+                        <p>
+                          Monthly:{" "}
+                          <span className="font-semibold">
+                            {item.monthlyCost}
+                          </span>{" "}
+                        </p>
+                        <p>
+                          Half-Yearly:{" "}
+                          <span className="font-semibold">
+                            {item.halfYearlyCost}
+                          </span>
+                        </p>
+                        <p>
+                          Yearly:{" "}
+                          <span className="font-semibold">
+                            {item.yearlyCost}
+                          </span>
+                        </p>
                       </div>
 
-                      <ul className="flex flex-wrap justify-center items-center space-x-1 text-sm text-gray-700 px-1">
+                      <ul className="text-sm md:text-lg 3xl:xl flex flex-wrap justify-center items-center space-x-1  text-gray-700 px-1">
                         {item.benefits.map((benefit, i) => (
                           <li key={i}>
                             {benefit}
@@ -116,7 +133,7 @@ const HowToGetStartedReadMore: React.FC = () => {
                   {MemebershipImportantNotice.title}
                 </CommonHeader3>
                 <p
-                  className="text-start 2xl:text-lg"
+                  className="text-sm sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl"
                   style={{ whiteSpace: "pre-line" }}
                 >
                   {renderTextWithLinks(MemebershipImportantNotice.notice)}
@@ -125,7 +142,7 @@ const HowToGetStartedReadMore: React.FC = () => {
             )}
           </div>
           <div className="flex flex-col justify-center items-center space-y-3">
-            <h4 className="md:text-2xl text-basic md:px-12 px-2 font-light">
+            <h4 className="md:text-2xl text-basic md:px-12 px-2 font-light xl:max-w-3xl">
               The Educare Skill App is available on both the Play Store for
               Android devices and App Store for iOS devices.
             </h4>
@@ -150,7 +167,7 @@ const HowToGetStartedReadMore: React.FC = () => {
         <img
           src={AnimalImage}
           alt="animalimage"
-          className="lg:absolute lg:flex hidden pointer-events-none lg:-left-24 xl:left-0"
+          className="lg:absolute lg:flex hidden pointer-events-none lg:-left-24 xl:left-0 lg:bottom-0 3xl:w-[1200px] 2xl:w-[990px] xl:w-[840px] h-auto"
         />
       </div>
     </section>

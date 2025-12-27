@@ -11,7 +11,7 @@ import {
 
 export default function ContactSection() {
   return (
-    <section className="py-16 px-4 max-w-7xl mx-auto space-y-12">
+    <section className="py-16 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto space-y-12">
       {/* 1. Header Section */}
       <div className="text-center">
         <CommonHeader1 className=" font-black text-[#1b364d] tracking-tight uppercase mb-2">
