@@ -18,10 +18,10 @@ const bgClasses = [
 ];
 
 const Graduate: React.FC = () => {
-  const items: Item[] = GraduateContent.map((it, i) => ({
-    title: it.title,
-    desc: it.desc,
-    bgClass: it.bgClass || bgClasses[i % bgClasses.length]
+  const items: Item[] = GraduateContent.map((item, index) => ({
+    title: item.title,
+    desc: item.desc,
+    bgClass: item.bgClass || bgClasses[index % bgClasses.length]
   }));
 
   return (

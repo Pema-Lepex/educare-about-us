@@ -9,18 +9,18 @@ const GuideSection: React.FC = () => {
     <>
       <section className="px-4 sm:px-8 md:px-16 py-16" id="about-guide">
         <div className="flex flex-col lg:flex-row items-center gap-16">
-          <div className="relative flex-shrink-0">
+          <div className="relative flex-shrink-0 w-1/3">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-[200px] md:w-[440px] lg:w-[200px] xl:w-[250px] 2xl:w-[440px] 3xl:w-[644px] h-[200px] md:h-[440px] lg:h-[200px] xl:h-[250px] 2xl:h-[440px] 3xl:h-[644px] bg-[#F1E8FF] rounded-full" />
+              <div className="w-[200px] md:w-[440px] lg:w-[200px] xl:w-[250px] 2xl:w-[440px] 3xl:w-[644px]  4xl:w-[700px] 5xl:w-[800px] 6xl:w-[900px] h-[200px] md:h-[440px] lg:h-[200px] xl:h-[250px] 2xl:h-[440px] 3xl:h-[644px] 4xl:h-[700px] 5xl:h-[800px] 6xl:h-[900px] bg-[#F1E8FF] rounded-full" />
             </div>
             <img
               src={NonoImage}
               alt="Nono"
-              className="relative md:w-[440px] lg:w-[200px] xl:w-[400px] 2xl:w-[440px] 3xl:w-[644px] h-auto object-contain z-10"
+              className="relative w-full h-auto object-contain z-10"
             />
           </div>
-          <div className="flex-1 ">
-            <div className="grid md:grid-cols-2 gap-2">
+          <div className="flex-1  w-1/3">
+            <div className="grid md:grid-cols-2 gap-2 lg:gap-10">
               {EducareSkillGuideContent.map((items) => (
                 <div
                   className=" relative w-full transform transition duration-500 "
@@ -31,7 +31,7 @@ const GuideSection: React.FC = () => {
                     alt={`${items.info} icon`}
                     className="w-full h-auto object-cover object-center transform "
                   />
-                  <div className="absolute top-[60px] md:top-2 xl:top-5 2xl:top-8 3xl:top-19  flex flex-col justify-center items-center  pointer-events-none md:p-10 space-y-2 3xl:space-y-2">
+                  <div className="absolute top-[60px] md:top-2 xl:top-0 2xl:top-8 3xl:top-19  flex flex-col justify-center items-center  pointer-events-none md:p-10 space-y-2 3xl:space-y-2">
                     <div className="p-2 bg-white rounded-full flex items-center justify-center">
                       <img
                         src={items.icon}
@@ -47,7 +47,7 @@ const GuideSection: React.FC = () => {
                       {items.info}
                     </p>
                   </div>
-                  <div className="absolute inset-0 xl:bottom-5 2xl:bottom-8 3xl:bottom-10 flex flex-col justify-end items-center  pb-4">
+                  <div className="absolute inset-0 xl:-bottom-8 2xl:bottom-8 3xl:bottom-10 flex flex-col justify-end items-center  pb-4 z-50">
                     <LearnMoreButton
                       onClick={() => navigate(items.href)}
                       className="bg-primary-500 text-white cursor-pointer"

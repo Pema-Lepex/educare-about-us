@@ -22,7 +22,7 @@ const AccessContentInfoSection: React.FC = () => {
             <a
               href={GiftCouponLinkDetails.linkToGiftCoupon}
               target="_blank"
-              className="bg-customOriange-200 text-white px-8 py-2 rounded-md xl:text-2xl 2xl:text-3xl md:text-base lg:text-xl text-base transition-all duration-300 ease-in-out hover:bg-orange-700 hover:shadow-lg hover:scale-105 my-6"
+              className=" bg-customOriange-200 text-white px-8 py-2 4xl:py-4 4xl:px-16 rounded-lg text-base md:text-base lg:text-xl  xl:text-2xl 2xl:text-3xl  3xl:text-4xl 4xl:text-5xl 5xl:text-6xl 6xl:text-7xl transition-all duration-300 ease-in-out hover:bg-orange-700 hover:shadow-lg hover:scale-105 my-4 4xl:my-8"
             >
               DCDD Sign In
             </a>
@@ -35,25 +35,25 @@ const AccessContentInfoSection: React.FC = () => {
 
           {/* Right card */}
           <div className="border-t-8 rounded-xl border-[#215FF8] shadow-md p-6 flex flex-col items-center justify-center space-y-3 lg:space-y-8 3xl:space-y-12 h-full 3xl:px-10">
-            <img src={GiftCouponLinkDetails.icon} alt="gifticon" className="size-[60px] md:size-[55px] xl:size-[150px] 2xl:size-[160px] 3xl:size-[250px]" />
+            <img src={GiftCouponLinkDetails.icon} alt="gifticon" className="size-[60px] md:size-[55px] xl:size-[150px] 2xl:size-[160px] 3xl:size-[250px] 4xl:size-[290px] 5xl:size-[320px] 6xl:size-[360px]" />
 
             <a
               href={GiftCouponLinkDetails.linkToGiftCoupon}
               target="_blank"
-              className="bg-[#215FF8] text-white px-8 py-2 rounded-md  xl:text-2xl 2xl:text-3xl lg:text-xl md:text-base text-base transition-all duration-300 ease-in-out hover:bg-[#1a4fd0] hover:shadow-lg hover:scale-105"
+              className="bg-[#215FF8] text-white px-8 py-2 4xl:py-4 4xl:px-16 rounded-lg text-base md:text-base lg:text-xl  xl:text-2xl 2xl:text-3xl  3xl:text-4xl 4xl:text-5xl 5xl:text-6xl 6xl:text-7xl transition-all duration-300 ease-in-out hover:bg-[#1a4fd0] hover:shadow-lg hover:scale-105"
             >
               {GiftCouponLinkDetails.buttonName}
             </a>
 
-            <h1 className="text-center text-2xl sm:text-4xl md:text-lg lg:text-5xl xl:text-[50px] 2xl:text-[60px] 3xl:text-[70px] font-extrabold">
+            <h1 className="text-center text-2xl sm:text-4xl md:text-lg lg:text-5xl xl:text-[50px] 2xl:text-[60px] 3xl:text-[70px] 4xl:text-[80px] 5xl:text-[90px] 6xl:text-[100px] font-extrabold">
               {GiftCouponLinkDetails.title}
             </h1>
 
-            <p className="text-center text-base sm:text-lg md:text-xs lg:text-xl xl:text-2xl 2xl:text-4xl">
+            <p className="text-center text-base sm:text-lg md:text-xs lg:text-xl xl:text-2xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-6xl 6xl:text-8xl">
               {renderTextWithLinks(GiftCouponLinkDetails.info1)}
             </p>
 
-            <p className="text-center  text-base sm:text-lg md:text-xs lg:text-xl  xl:text-2xl 2xl:text-4xl">
+            <p className="text-center  text-base sm:text-lg md:text-xs lg:text-xl  xl:text-2xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-6xl 6xl:text-8xl">
               {renderTextWithLinks(GiftCouponLinkDetails.info2)}
             </p>
           </div>

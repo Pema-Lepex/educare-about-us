@@ -8,10 +8,6 @@ import {
   PrimaryLevelIcon,
   IntermediateLevelImage,
   IntermediateLevelIcon,
-  RedFrame,
-  BuleFrame,
-  PurpleFrame,
-  GreenFrame,
   FCTFLLogo,
   FDCDDULogo,
   HTGSLogo,
@@ -21,13 +17,17 @@ import {
   iBESTOroginalImage,
   iBestOrognalIcon,
   BCSEIcon,
+  BlueBoxImage,
+  RedBoxImage,
+  PurpleBoxImage,
+  GreenBoxImage,
 } from "assets/images";
 
 export const EducareSkillContent = {
   title: "EDUCARE SKILL",
-  subTitle: "Your Favorite Dzongkha Tutor!",
-  content1: `Educare Skill is Bhutan’s first online learning platform with a wide variety of entertaining and educational content catering to all learners, from children in ECCD centres, students studying in Classes PP to XII, to graduates preparing for their RCSE Examinations, as well as anyone interested in learning and mastering our national language, Dzongkha.`,
-  content2: `Educare Skill is officially endorsed by the Department of Culture and Dzongkha Development as the National Dzongkha Learning platform, making it the apex platform for Dzongkha learning not only for those residing in the country but also for those living abroad.`,
+  subTitle: "Your Perfect Dzongkha Tutor!",
+  content1: `Introducing Bhutan’s pioneering online learning platform, Educare Skill, developed with a mission to **transform learning and skilling in Bhutan and beyond.** Educare Skill enables learners to master our national language, Dzongkha, like never before through more than 1,000 fun, engaging, entertaining, and curriculum-aligned episodes.`,
+  content2: `From catchy nursery rhymes and captivating animation series to immersive read-aloud stories and comprehensive, exam-oriented tutorials, the platform offers something for everyone. Whether you are a young child beginning your Dzongkha journey, a student preparing for school examinations, a parent or teacher seeking quality learning resources, or a graduate sitting for the RCSC examinations, our carefully curated content supports you at every stage.`,
   content3: `Educare Skill is officially endorsed by the Department of Culture and Dzongkha Development as the National Dzongkha Learning platform, making it the apex platform for Dzongkha learning not only for those residing in the country but also for those living abroad.`,
 };
 
@@ -35,6 +35,7 @@ export const EducareSkillGroupContent = [
   {
     id: 1,
     groupName: "CHEYCHEY",
+    redirectUrl:"cheychey",
     groupImage: CheCheyImage,
     groupIcon: CheCheyIcon,
     eligibility: "Age 3 - 12 years",
@@ -43,6 +44,7 @@ export const EducareSkillGroupContent = [
   {
     id: 2,
     groupName: "KDUCARE KIDS",
+    redirectUrl:"kids",
     groupImage: EducareSkillImage,
     groupIcon: EducareSkillIcon,
     eligibility: "Age 3 - 16 years",
@@ -51,6 +53,7 @@ export const EducareSkillGroupContent = [
   {
     id: 3,
     groupName: "PRIMARY LEVEL",
+    redirectUrl:"primary",
     groupImage: PrimaryLevelImage,
     groupIcon: PrimaryLevelIcon,
     eligibility: "Classes PP - VI",
@@ -59,6 +62,7 @@ export const EducareSkillGroupContent = [
   {
     id: 4,
     groupName: "INTERMEDIATE LEVEL",
+    redirectUrl:"intermediate",
     groupImage: IntermediateLevelImage,
     groupIcon: IntermediateLevelIcon,
     eligibility: "Classes VII - XII",
@@ -67,6 +71,7 @@ export const EducareSkillGroupContent = [
   {
     id: 5,
     groupName: "GRADUATE / BCSE",
+    redirectUrl:"graduate",
     groupImage: BCSEImage,
     groupIcon: BCSEIcon,
     eligibility: "Your perfect tutor for relearning Dzongkha",
@@ -75,6 +80,7 @@ export const EducareSkillGroupContent = [
   {
     id: 6,
     groupName: "iBEST ORIGINALS",
+    redirectUrl:"ibest",
     groupImage: iBESTOroginalImage,
     groupIcon: iBestOrognalIcon,
     eligibility: "Happy hours for all",
@@ -84,33 +90,33 @@ export const EducareSkillGroupContent = [
 export const EducareSkillGuideContent = [
   {
     id: 1,
+    title: "For DCDD Users",
+    icon: FDCDDULogo,
+    frame: PurpleBoxImage,
+    href: "/about/for-dcdd-users",
+    info: "With the subsidized support of DCDD, Educare Skill is FREE for students and teachers from Class PP to VI, as well as for ECCD children and facilitators.",
+  },
+  {
+    id: 2,
     title: "How To Get Started?",
     icon: HTGSLogo,
-    frame: BuleFrame,
+    frame: BlueBoxImage,
     href: "/about/how-to-get-started?",
     info: "If you wish to get started on Educare Skill, please register or sign up now and avail our affordable membership plans.",
   },
   {
-    id: 2,
+    id: 3,
     title: "Registration Guide",
     icon: RGLogo,
-    frame: RedFrame,
+    frame: RedBoxImage,
     href: "/about/registration-guide",
     info: "Do you want to register on our platform and watch our amazing content, but you are not quite sure how to do it? Don’t worry. We will help you get started.",
-  },
-  {
-    id: 3,
-    title: "For DCDD Users",
-    icon: FDCDDULogo,
-    frame: PurpleFrame,
-    href: "/about/for-dcdd-users",
-    info: "With the subsidized support of DCDD, Educare Skill is FREE for students and teachers from Class PP to VI, as well as for ECCD children and facilitators.",
   },
   {
     id: 4,
     title: "Gift Coupon The Gift of Learning!",
     icon: FCTFLLogo,
-    frame: GreenFrame,
+    frame: GreenBoxImage,
     href: "/about/gift-coupon-the-gift-of-learning",
     info: "With the Educare Skill Gift Coupon, you can give your loved ones the Educare Skill membership plans.",
   },

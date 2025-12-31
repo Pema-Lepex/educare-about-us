@@ -37,7 +37,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden pb-[13.9rem] sm:pb-[14rem] md:pb-[13.7rem] lg:pb-32 xl:pb-40">
+    <div className="min-h-screen flex flex-col relative overflow-hidden pb-[13.9rem] sm:pb-[14rem] md:pb-[13.7rem] lg:pb-32 xl:pb-40 2xl:pb-44 3xl:pb-36 4xl:pb-28 5xl:pb-20 6xl:pb-14">
       <ScrollToSection />
       <MainNavigation ref={headerRef} hidden={navHidden} />
       <main

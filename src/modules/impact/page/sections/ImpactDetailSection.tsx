@@ -1,5 +1,5 @@
 import React from "react";
-import { TrendingUp, Users, ShieldCheck } from "lucide-react";
+import { TrendingUp, ShieldCheck } from "lucide-react";
 import { CommonHeader3, CommonParagraph2 } from "components";
 import {
   ImpactBottomSection,
@@ -68,16 +68,16 @@ export default function ImpactDetailSection() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="border-t-4 border-green-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
           <span className="block text-4xl md:text-5xl font-black text-green-600">
-            50,000+
+            100,000+
           </span>
-          <span className="text-gray-800 font-bold text-lg">Downloads</span>
+          <span className="text-gray-800 font-bold text-lg">Registered Users</span>
         </div>
         <div className="border-t-4 border-red-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
           <span className="block text-4xl md:text-5xl font-black text-red-600">
-            1000s
+            1000+
           </span>
           <span className="text-gray-800 font-bold text-lg">
-            Daily Active Learners
+           Entertaining and Impactful Episodes 
           </span>
         </div>
         <div className="border-t-4 border-blue-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
@@ -85,15 +85,12 @@ export default function ImpactDetailSection() {
             PP-XII
           </span>
           <span className="text-gray-800 font-bold text-lg">
-            Complete Coverage
+            Comprehensive Dzongkha Tutorials
           </span>
         </div>
       </div>
 
       {/* Bottom Row: Safe Haven */}
-      <BottomSection />
-      <BottomSection />
-      <BottomSection />
       <BottomSection />
     </section>
   );

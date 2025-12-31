@@ -1,13 +1,13 @@
 import MainLayout from "layouts/MainLayout";
 import HowToGetStartedReadMore from "./read-more/HowToGetStartedReadMore";
-import {  HTGSBGImage } from "assets";
+import {  DoodleImage, HTGSBGImage } from "assets";
 
 const HowToGetStarted: React.FC = () => {
   return (
     <MainLayout>
       <div
-        className="w-full  bg-cover bg-center bg-no-repeat "
-        style={{ backgroundImage: `url(${HTGSBGImage})` }}
+        className="w-full  bg-cover bg-center bg-no-repeat min-h-screen"
+        style={{ backgroundImage: `url(${DoodleImage})` }}
       >
         <HowToGetStartedReadMore />
       </div>

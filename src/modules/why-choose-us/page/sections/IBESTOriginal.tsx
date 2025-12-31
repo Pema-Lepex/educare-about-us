@@ -25,40 +25,48 @@ export default function IBESTOriginal() {
   const [openId, setOpenId] = useState<string | null>("animation"); 
 
   return (
-    <section className="mx-auto w-full max-w-5xl 3xl:max-w-full 3xl:px-36 space-y-6 py-10">
-      {blocks.map(b => {
-        const isOpen = openId === b.id;
+    <section className="mx-auto max-w-5xl 3xl:max-w-full 3xl:px-36 rounded-2xl border border-emerald-200 bg-white shadow-[0_12px_22px_rgba(0,0,0,0.08)] my-12">
+      <div className="px-6 pt-6">
+          <CommonHeader4 className=" font-extrabold text-emerald-600">
+            iBEST Originals Content
+          </CommonHeader4>
+          <CommonParagraph2 className="mt-2 text-slate-600">
+           Happy hours for all
+          </CommonParagraph2>``
+        </div>
+      {blocks.map(item => {
+        const isOpen = openId === item.id;
 
         return (
           <div
-            key={b.id}
+            key={item.id}
             className={[
-              "rounded-2xl border bg-white shadow-[0_10px_18px_rgba(0,0,0,0.08)]",
-              b.borderClass
+              "rounded-2xl border bg-white shadow-[0_10px_18px_rgba(0,0,0,0.08)] mx-6 mt-5 mb-5",
+              item.borderClass
             ].join(" ")}
           >
             {/* Header */}
             <button
               type="button"
               onClick={() => {
-                if (!b.isAccordion) return;
-                setOpenId(prev => (prev === b.id ? null : b.id));
+                if (!item.isAccordion) return;
+                setOpenId(prev => (prev === item.id ? null : item.id));
               }}
               className={[
                 "flex w-full items-start justify-between gap-4 px-6 py-5 text-left",
-                b.isAccordion ? "cursor-pointer" : "cursor-default"
+                item.isAccordion ? "cursor-pointer" : "cursor-default"
               ].join(" ")}
             >
               <div>
-                <CommonHeader4  className={`t font-extrabold ${b.titleClass}`}>
-                  {b.title}
+                <CommonHeader4  className={`t font-extrabold ${item.titleClass}`}>
+                  {item.title}
                 </CommonHeader4 >
                 <CommonParagraph2 className="mt-2 leading-relaxed text-slate-600">
-                  {b.desc}
+                  {item.desc}
                 </CommonParagraph2>
               </div>
 
-              {b.isAccordion
+              {item.isAccordion
                 ? <div className="mt-1 text-slate-500">
                     <Chevron open={isOpen} />
                   </div>
@@ -66,7 +74,7 @@ export default function IBESTOriginal() {
             </button>
 
             {/* Body */}
-            {b.isAccordion
+            {item.isAccordion
               ? <div
                   className={[
                     "grid overflow-hidden px-6 transition-all duration-300 ease-in-out",
@@ -74,7 +82,7 @@ export default function IBESTOriginal() {
                   ].join(" ")}
                 >
                   <div className="min-h-0 space-y-4">
-                    {(b.items || []).map((it: string | educareKideItemsProps) => {
+                    {(item.items || []).map((it: string | educareKideItemsProps) => {
                       if (typeof it === "string") {
                         return (
                           <div

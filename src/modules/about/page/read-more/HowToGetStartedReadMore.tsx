@@ -170,6 +170,8 @@ const HowToGetStartedReadMore: React.FC = () => {
           className="lg:absolute lg:flex hidden pointer-events-none lg:-left-24 xl:left-0 lg:bottom-0 3xl:w-[1200px] 2xl:w-[990px] xl:w-[840px] h-auto"
         />
       </div>
+      <div className="h-0 lg:h-10 4xl:h-36 6xl:h-52">
+      </div>
     </section>
   );
 };

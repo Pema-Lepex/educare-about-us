@@ -1,5 +1,6 @@
 import { EducareMissionContent } from "assets/content/VissionAndMission";
 import { CommonHeader2, CommonParagraph1 } from "components";
+import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 
 const MissionSection: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const MissionSection: React.FC = () => {
           <CommonHeader2 className="text-customOriange-200">
             {EducareMissionContent.title}
           </CommonHeader2>
-          <CommonParagraph1>{EducareMissionContent.content}</CommonParagraph1>
+          <CommonParagraph1 className="whitespace-break-spaces">{renderTextWithLinks(EducareMissionContent.content)}</CommonParagraph1>
         </div>
       )}
     </section>
