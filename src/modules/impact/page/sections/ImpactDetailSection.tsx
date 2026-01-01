@@ -93,8 +93,8 @@ export default function ImpactDetailSection() {
 
       {/* Bottom Row: Safe Haven */}
       <div className="space-y-2 3xl:space-y-6">
-        <CommonHeader1 className="text-primary-500">{ImpactTitle.title}</CommonHeader1>
-      <CommonParagraph3 className="text-primary-500">{ImpactTitle.description}</CommonParagraph3>
+        {/* <CommonHeader1 className="text-primary-500">{ImpactTitle.title}</CommonHeader1> */}
+      <p className="font-bold text-base  xl:text-2xl text-center">{ImpactTitle.description}</p>
       </div>
       <BottomSection />
       <div className="4xl:h-[300px] 5xl:h-[500px] "/>
