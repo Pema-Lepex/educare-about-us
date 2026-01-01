@@ -28,17 +28,17 @@ const ForDCDDUsersReadMore: React.FC = () => {
                 <CommonParagraph1>
                   {ForDCDDUsersContent.description3}
                 </CommonParagraph1>
-                <ol className="list-decimal list-inside space-y-2">
-                  <li className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl font-light">
+                <ol className="list-disc list-inside space-y-2">
+                  <li className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl  font-light">
                     {renderTextWithLinks(ForDCDDUsersContent.guide.guide1)}
                   </li>
-                  <li className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl font-light">
+                  <li className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl  font-light">
                     {renderTextWithLinks(ForDCDDUsersContent.guide.guide2)}
                   </li>
-                  <li className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl font-light">
+                  <li className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl  font-light">
                     {renderTextWithLinks(ForDCDDUsersContent.guide.guide3)}
                   </li>
-                  <li className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl font-light">
+                  <li className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl  font-light">
                     {renderTextWithLinks(ForDCDDUsersContent.guide.guide4)}
                   </li>
                 </ol>
