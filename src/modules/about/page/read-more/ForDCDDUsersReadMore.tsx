@@ -12,7 +12,7 @@ const ForDCDDUsersReadMore: React.FC = () => {
     <>
       {/* {website} */}
       <div className="w-full hidden lg:flex justify-center items-center relative">
-        <section id="registration-guid" className=" py-16 px-40 lg:mb-[350px] xl:mb-[500px] 2xl:mb-[550px] 3xl:mb-[880px]">
+        <section id="registration-guid" className=" py-16 px-40 lg:mb-[350px] xl:mb-[500px] 2xl:mb-[550px] 3xl:mb-[880px] 4xl:mb-[1390px]">
           {ForDCDDUsersContent && (
             <div className=" pb-[350px] 2xl:pb-[800px] ">
               <div className="w-[80%] mx-auto border border-customOriange-200 rounded-3xl shadow-md p-10 bg-blue-50 space-y-4  mb-20">
@@ -24,6 +24,9 @@ const ForDCDDUsersReadMore: React.FC = () => {
                 </CommonParagraph1>
                 <CommonParagraph1>
                   {ForDCDDUsersContent.description2}
+                </CommonParagraph1>
+                <CommonParagraph1>
+                  {ForDCDDUsersContent.description3}
                 </CommonParagraph1>
                 <ol className="list-decimal list-inside space-y-2">
                   <li className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl font-light">
@@ -60,7 +63,7 @@ const ForDCDDUsersReadMore: React.FC = () => {
               </div>
             </div>
           )}
-          <div className="absolute -bottom-20 md:-bottom-[20rem] lg:bottom-[130px] xl:bottom-[5rem] 2xl:bottom-[8rem] right-3 w-full ">
+          <div className="absolute -bottom-20 md:-bottom-[20rem] lg:bottom-[130px] xl:bottom-[5rem] 2xl:bottom-[8rem] 4xl:-bottom-3 right-3 w-full ">
             <div className="relative w-full">
               {/* Background Family Image */}
               <img
@@ -73,7 +76,7 @@ const ForDCDDUsersReadMore: React.FC = () => {
                  <img 
                     src={DCDDShortTextImage} 
                     alt="DCDD Info" 
-                    className="drop-shadow-2xl 3xl:w- h-auto" // Adjust width as needed
+                    className="drop-shadow-2xl 2xl:w-[1200px] 3xl:w-[1500px] 4xl:w-[2000px] h-auto" // Adjust width as needed
                  />
               </div>
             </div>

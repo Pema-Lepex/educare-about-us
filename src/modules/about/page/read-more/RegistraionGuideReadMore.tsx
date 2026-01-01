@@ -10,7 +10,7 @@ const RegistraionGuideReadMore: React.FC = () => {
         <section id="registration-guid" className=" py-16 px-40">
           {RegistrationGuideContent && (
             <>
-              <div className="w-[90%] mx-auto border border-[#981AF7] rounded-3xl shadow-md p-10 bg-blue-50 space-y-4 min-h-[1000px] 3xl:h-[1300px] mb-20 ">
+              <div className="w-[90%] mx-auto border border-[#981AF7] rounded-3xl shadow-md p-10 bg-blue-50 space-y-4 min-h-[1000px] 3xl:h-[1700px] 4xl:h-[2000px] mb-20 ">
                 <CommonHeader2 className="text-[#981AF7] text-center">
                   {RegistrationGuideContent.title}
                 </CommonHeader2>

@@ -36,6 +36,11 @@ export const ImpactOfEducare = [
   },
 ];
 
+export const ImpactTitle = {
+  title:"Impact of Educare Skill",
+  description:`Educare Skill is designed to deliver meaningful, inclusive, and future-ready learning experiences that positively impact students, learners, educators, parents, guardians, and the nation as a whole. As Bhutan’s pioneering online learning platform, Educare Skill leverages digital innovation to support and complement government efforts in transforming education and nurturing responsible, competent, and productive citizens.`
+}
+
 export const ImpactBottomSection = [
   {
     id:1,

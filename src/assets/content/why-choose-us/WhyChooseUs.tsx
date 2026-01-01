@@ -43,7 +43,7 @@ export const EducareKIds = [
   {
     id: "gakyid",
     title: "Gakyid Lobdra",
-    desc: "The Gakyid Lobdra series is a foundational Dzongkha series where our lively class of troublemakers learns foundational Dzongkha lessons and concepts through fun exercises and engaging activities.",
+    desc: "The Gakyid Lobdra series presents foundational Dzongkha lessons where our lively class of troublemakers learns foundational Dzongkha lessons and concepts through fun exercises and engaging activities.",
     borderClass: "border-orange-300",
     titleClass: "text-orange-500",
     isAccordion: false,
@@ -71,7 +71,7 @@ export const EducareKIds = [
       },
       {
         title: "Tales of the Four Friends",
-        desc: "Tales of the Four Friends, where four close friends, Karma, Tongtong, Zala & Chunku, embark on wild adventures together, gaining a few friends as well as making a few enemies, overcoming obstacles, and showing us the true meaning of friendship.",
+        desc: "Tales of the Four Friends is a reimagined and adaptation of the most popular and endearing folklore of Four Harmonious Friends (Thuenpa Puenzhi), where four close friends, Karma, Tongtong, Zala & Chunku, embark on wild adventures together, gaining a few friends as well as making a few enemies, overcoming obstacles, and showing us the true meaning of friendship.",
         bgClass: "bg-violet-50",
       },
       {
@@ -83,7 +83,7 @@ export const EducareKIds = [
   },
   {
     id: "readaloud",
-    title: "The Dragon Tales and Monkey King Read-Aloud Stories",
+    title: "The Read-Aloud Stories Series",
     desc: "There are 360 colourful read-aloud stories, such as the Monkey King and Dragon Tales series, available in both Dzongkha and English, to help children learn Dzongkha easily.",
     borderClass: "border-red-300",
     titleClass: "text-red-600",
@@ -91,7 +91,7 @@ export const EducareKIds = [
     items: [
       {
         title: "Dragon Tales Read-Aloud Stories",
-        desc: "An anthological compilation of short stories heavily inspired by the beloved and fabled Jataka Tales. The synchronized read-aloud texts appearing alongside the narration help your child follow word by word, building their foundational reading and writing skills.",
+        desc: "An anthological compilation of short stories heavily inspired by the beloved and fabled Jataka Tales, Bhutanese folktales and other stories. The synchronized read-aloud texts appearing alongside the narration help your child follow word by word, building their foundational reading and writing skills.",
         bgClass: "bg-orange-50",
       },
       {

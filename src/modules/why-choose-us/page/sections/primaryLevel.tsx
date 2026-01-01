@@ -17,7 +17,7 @@ const PrimaryLevelContent: React.FC = () => {
             Primary Level Content
           </CommonHeader4>
           <CommonParagraph2 className="mt-2 text-slate-600">
-            Comprehensive content for Classes PP - VI
+            Comprehensive Dzongkha lessons, excting stories and other entertaining content for Classes PP - VI
           </CommonParagraph2>
         </div>
 

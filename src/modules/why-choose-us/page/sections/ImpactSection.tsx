@@ -103,7 +103,7 @@ useEffect(() => {
         </div>
       </section>
 
-      <section className="px-4 pb-16 md:pt-[800px] lg:pt-[600px] 2xl:pt-[650px] pt-[980px]">
+      <section className="px-4 pb-16  md:pt-[800px] lg:pt-[600px] 2xl:pt-[650px] pt-[1050px]">
         <CommonHeader3 className="text-center font-extrabold tracking-wide text-[#0B2A4A]">
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>

@@ -16,14 +16,9 @@ export const Menus = [
     ref: "/why-choose-us",
   },
   {
-    title: "Leadership",
-    icon: "",
-    ref: "/leadership",
-  },
-  {
     title: "Team",
     icon: "",
-    ref: "/team",
+    ref: "/leadership",
   },
   {
     title: "Career",

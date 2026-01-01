@@ -32,7 +32,7 @@ export default function IBESTOriginal() {
           </CommonHeader4>
           <CommonParagraph2 className="mt-2 text-slate-600">
            Happy hours for all
-          </CommonParagraph2>``
+          </CommonParagraph2>
         </div>
       {blocks.map(item => {
         const isOpen = openId === item.id;

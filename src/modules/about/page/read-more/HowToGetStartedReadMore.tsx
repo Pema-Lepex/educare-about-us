@@ -113,7 +113,7 @@ const HowToGetStartedReadMore: React.FC = () => {
                         </p>
                       </div>
 
-                      <ul className="text-sm md:text-lg 3xl:xl flex flex-wrap justify-center items-center space-x-1  text-gray-700 px-1">
+                      <ul className="text-sm md:text-lg 3xl:xl flex flex-wrap justify-center items-center space-x-1  text-gray-700 px-4 ">
                         {item.benefits.map((benefit, i) => (
                           <li key={i}>
                             {benefit}

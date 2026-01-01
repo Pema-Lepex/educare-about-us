@@ -32,7 +32,7 @@ export default function ContentAccordionSection() {
             Educare Kids Content
           </CommonHeader4>
           <CommonParagraph2 className="mt-2 text-slate-600">
-           Comprehensive content for Kids Age 3 - 16 years
+           Comprehensive entertaining content and foundational Dzongkha lessons for Kids Age 3 - 16 years
           </CommonParagraph2>
         </div>
       {blocks.map((b) => {

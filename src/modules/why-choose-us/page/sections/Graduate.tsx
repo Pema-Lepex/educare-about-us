@@ -32,7 +32,7 @@ const Graduate: React.FC = () => {
             Graduate / BCSE
           </CommonHeader4>
           <CommonParagraph2 className="mt-2 text-slate-600">
-            Advanced content for Classes VII - XII
+            Comprehensive Dzongkha lessons, exam oriented tutorials and other entertaing content for undergrades, graduates or anyone wishing to learn Dzongkha.
           </CommonParagraph2>
         </div>
 
