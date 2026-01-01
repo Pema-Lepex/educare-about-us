@@ -40,7 +40,7 @@ const MainFooter: React.FC = () => {
       className="absolute bottom-0 left-0 w-full bg-cover bg-top bg-no-repeat z-40"
       style={{ backgroundImage: `url(${FooterImage})` }}
     >
-      <div className="xl:max-w-full xl:px-20 4xl:px-52  max-w-7xl mx-auto px-6 pt-32 4xl:pt-48 pb-12 relative z-10 space-y-4">
+      <div className="xl:max-w-full xl:px-20 4xl:px-52  max-w-7xl mx-auto px-6 pt-32 4xl:p-48 5xl:pt-60 6xl:pt-80 pb-12 relative z-10 space-y-4">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center justify-start gap-6">
           <p className="text-white text-[8px] lg:text-[11px] 2xl:text-base 3xl:text-xl 4xl:text-2xl 5xl:text-3xl 6xl:text-4xl tracking-wider lg:text-center md:text-left">
             © {new Date().getFullYear()} Educare Skill Pvt. Ltd. | All rights

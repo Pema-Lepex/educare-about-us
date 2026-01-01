@@ -51,10 +51,10 @@ export default function CreativeTalentSection() {
           certificate. We'll review your application and get back to you soon.
           Apply via provided link below.
         </CommonParagraph2>
-        <button className="flex items-center gap-2 bg-[#1b364d] text-white px-6 py-3 rounded-lg hover:bg-[#254a69] transition-all shadow-md">
+        <a target="_blank" href="https://forms.gle/3aF7nE6MU1ofzKdj7" className="flex items-center gap-2 bg-[#1b364d] text-white px-6 py-3 rounded-lg hover:bg-[#254a69] transition-all shadow-md w-1/4">
           <Upload className="w-4 h-4" />
           Submit Application
-        </button>
+        </a>
       </div>
 
       {/* 3. What We Offer Card (Orange Theme) */}

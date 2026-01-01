@@ -12,9 +12,9 @@ const ForDCDDUsersReadMore: React.FC = () => {
     <>
       {/* {website} */}
       <div className="w-full hidden lg:flex justify-center items-center relative">
-        <section id="registration-guid" className=" py-16 px-40 lg:mb-[350px] xl:mb-[500px] 2xl:mb-[550px] 3xl:mb-[650px]">
+        <section id="registration-guid" className=" py-16 px-40 lg:mb-[350px] xl:mb-[500px] 2xl:mb-[550px] 3xl:mb-[880px]">
           {ForDCDDUsersContent && (
-            <div className=" pb-[350px] 2xl:pb-[800px]">
+            <div className=" pb-[350px] 2xl:pb-[800px] ">
               <div className="w-[80%] mx-auto border border-customOriange-200 rounded-3xl shadow-md p-10 bg-blue-50 space-y-4  mb-20">
                 <CommonHeader2 className="text-customOriange-200 text-center">
                   {ForDCDDUsersContent.title}
@@ -73,7 +73,7 @@ const ForDCDDUsersReadMore: React.FC = () => {
                  <img 
                     src={DCDDShortTextImage} 
                     alt="DCDD Info" 
-                    className="drop-shadow-2xl" // Adjust width as needed
+                    className="drop-shadow-2xl 3xl:w- h-auto" // Adjust width as needed
                  />
               </div>
             </div>

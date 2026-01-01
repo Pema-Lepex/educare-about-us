@@ -66,6 +66,14 @@ export default function ImpactDetailSection() {
 
       {/* Middle Row: Statistics */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+         <div className="border-t-4 border-blue-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
+          <span className="block text-4xl md:text-5xl font-black text-blue-600">
+            PP-XII
+          </span>
+          <span className="text-gray-800 font-bold text-lg">
+            Comprehensive Dzongkha Tutorials
+          </span>
+        </div>
         <div className="border-t-4 border-green-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
           <span className="block text-4xl md:text-5xl font-black text-green-600">
             100,000+
@@ -78,14 +86,6 @@ export default function ImpactDetailSection() {
           </span>
           <span className="text-gray-800 font-bold text-lg">
            Entertaining and Impactful Episodes 
-          </span>
-        </div>
-        <div className="border-t-4 border-blue-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
-          <span className="block text-4xl md:text-5xl font-black text-blue-600">
-            PP-XII
-          </span>
-          <span className="text-gray-800 font-bold text-lg">
-            Comprehensive Dzongkha Tutorials
           </span>
         </div>
       </div>

@@ -53,7 +53,7 @@ export const ImpactBottomSection = [
   },
   {
     id:2,
-    title: "Empowering Learners with Flexible and Self-Paced Learning",
+    title: "Empowering Learners with Self-Paced Learning",
     colorCode: {
       border: "border-red-300",
       text: "text-red-500",
@@ -66,7 +66,7 @@ export const ImpactBottomSection = [
   },
   {
     id:3,
-    title: "Standardized, High-Quality Teaching and Learning Materials for Educators",
+    title: "Standardized, High-Quality TLMs for Educators",
     colorCode: {
       border: "border-blue-300",
       text: "text-blue-500",

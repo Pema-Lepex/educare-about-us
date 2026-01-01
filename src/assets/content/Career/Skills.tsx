@@ -1,8 +1,8 @@
 export const skills = [
     "Content Writer/Project Coordinator", "Storyboard Artist/Illustrator",
-    "2D Animator", "3D Animator",
-    "Cinematographer", "Visual Editor/Graphic Designer",
-    "Sound & Music Director", "PR & Marketing Officer"
+    "Animator (2D/3D)", "Visual Editor/Graphic Designer",
+    "Cinematographer/Visual Editor", "PR & Marketing Officer",
+    "Sound & Music Director", "Software Developer"
 ];
 
 export const offers = [

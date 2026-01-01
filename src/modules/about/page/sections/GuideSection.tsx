@@ -9,9 +9,9 @@ const GuideSection: React.FC = () => {
     <>
       <section className="px-4 sm:px-8 md:px-16 py-16" id="about-guide">
         <div className="flex flex-col lg:flex-row items-center gap-16">
-          <div className="relative flex-shrink-0 w-1/3">
+          <div className="relative flex-shrink-0 lg:w-1/3">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-[200px] md:w-[440px] lg:w-[200px] xl:w-[250px] 2xl:w-[440px] 3xl:w-[644px]  4xl:w-[700px] 5xl:w-[800px] 6xl:w-[900px] h-[200px] md:h-[440px] lg:h-[200px] xl:h-[250px] 2xl:h-[440px] 3xl:h-[644px] 4xl:h-[700px] 5xl:h-[800px] 6xl:h-[900px] bg-[#F1E8FF] rounded-full" />
+              <div className="w-[300px] md:w-[440px] lg:w-[200px] xl:w-[250px] 2xl:w-[440px] 3xl:w-[644px]  4xl:w-[700px] 5xl:w-[800px] 6xl:w-[900px] h-[300px] md:h-[440px] lg:h-[200px] xl:h-[250px] 2xl:h-[440px] 3xl:h-[644px] 4xl:h-[700px] 5xl:h-[800px] 6xl:h-[900px] bg-[#F1E8FF] rounded-full" />
             </div>
             <img
               src={NonoImage}
@@ -19,8 +19,8 @@ const GuideSection: React.FC = () => {
               className="relative w-full h-auto object-contain z-10"
             />
           </div>
-          <div className="flex-1  w-1/3">
-            <div className="grid md:grid-cols-2 gap-2 lg:gap-10">
+          <div className="flex-1  lg:w-1/3">
+            <div className="grid md:grid-cols-2 gap-6 lg:gap-10">
               {EducareSkillGuideContent.map((items) => (
                 <div
                   className=" relative w-full transform transition duration-500 "
@@ -31,26 +31,28 @@ const GuideSection: React.FC = () => {
                     alt={`${items.info} icon`}
                     className="w-full h-auto object-cover object-center transform "
                   />
-                  <div className="absolute top-[60px] md:top-2 xl:top-0 2xl:top-8 3xl:top-19  flex flex-col justify-center items-center  pointer-events-none md:p-10 space-y-2 3xl:space-y-2">
-                    <div className="p-2 bg-white rounded-full flex items-center justify-center">
+                  <div className="absolute top-[15px] md:-top-[19px] lg:-top-[24px] xl:-top-[10px] 2xl:-top-3 3xl:top-4 4xl:top-8 5xl:top-16  flex flex-col justify-center items-center  pointer-events-none md:p-10 space-y-2 3xl:space-y-2">
+                    <div className="p-2 bg-white rounded-full flex items-center justify-center 4xl:mb-10">
                       <img
                         src={items.icon}
                         alt={items.title}
-                        className="size-9 md:size-9 lg:size-8 2xl:size-10 3xl:size-14 object-contain"
+                        className="size-9 md:size-9 lg:size-5 xl:size-8 2xl:size-10 3xl:size-14 4xl:size-16 5xl:size-20 6xl:size-24 object-contain"
                       />
                     </div>
 
-                    <h1 className=" text-white text-lg font-black drop-shadow-md 2xl:text-3xl xl:text-xl lg:text-base md:text-xs text-center">
+                    <div className="px-3 md:px-4 lg:px-3 xl:px-6 2xl:px-7 3xl:px-8 4xl:px-9 5xl:px-10 6xl:px-11 space-y-1 4xl:space-y-10 text-center">
+                      <h1 className=" text-white text-lg font-black drop-shadow-md 6xl:text-6xl 5xl:text-5xl 4xl:text-4xl 2xl:text-3xl xl:text-xl lg:text-sm md:text-xs text-center">
                       {items.title}
                     </h1>
-                    <p className="text-[14px] md:text-xs lg:text-base 3xl:text-xl  text-gray-200 font-light 2xl:px-10 lg:pb-0 pb-4 max-sm:px-6">
+                    <p className="text-[14px] md:text-xs lg:text-[12px] xl:text-[16px] 2xl:text-[19px] 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl text-gray-200 font-light 4xl:px-8 2xl:px-6 lg:pb-0 pb-4 max-sm:px-6">
                       {items.info}
                     </p>
+                    </div>
                   </div>
-                  <div className="absolute inset-0 xl:-bottom-8 2xl:bottom-8 3xl:bottom-10 flex flex-col justify-end items-center  pb-4 z-50">
+                  <div className="absolute inset-0 -bottom-8 xl:-bottom-8 2xl:-bottom-8 3xl:-bottom-10 flex flex-col justify-end items-center  pb-4 z-50">
                     <LearnMoreButton
                       onClick={() => navigate(items.href)}
-                      className="bg-primary-500 text-white cursor-pointer"
+                      className="bg-primary-500 text-white cursor-pointer font-extralight text-base md:text-base lg:text-lg  xl:text-xl 2xl:text-2xl  3xl:text-3xl 4xl:text-4xl 5xl:text-5xl 6xl:text-6xl"
                     >
                       Learn More
                     </LearnMoreButton>
