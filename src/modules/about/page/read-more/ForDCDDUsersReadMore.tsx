@@ -3,7 +3,6 @@ import { ForDCDDUsersContent } from "assets/content/about/About";
 import { DCDDCharacterImage, DCDDShortTextImage } from "assets/images/dcdd";
 import { CommonHeader2, CommonParagraph1 } from "components";
 import {
-  renderFormattedText,
   renderTextWithLinks,
 } from "utils/helpers/renderTextWithLinks";
 

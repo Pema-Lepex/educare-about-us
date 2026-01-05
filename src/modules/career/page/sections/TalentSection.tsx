@@ -84,7 +84,7 @@ export default function CreativeTalentSection() {
           </span>
         </CommonParagraph2>
       </div>
-      <div className="w-full h-20 5xl:h-[500px]"></div>
+      <div className="w-full h-20 4xl:h-[400px] 5xl:h-[500px]"></div>
     </section>
   );
 }

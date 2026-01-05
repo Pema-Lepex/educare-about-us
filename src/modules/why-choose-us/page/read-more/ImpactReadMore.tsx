@@ -5,4 +5,4 @@ const ImpactReadMore:React.FC = () => {
    </>
   )
 }
-export default ImpactReadMore;
+export default ImpactReadMore;``

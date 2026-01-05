@@ -15,7 +15,7 @@ const LeaderCard = ({ name, role, image, isFounder = false }: Leader) => (
   <div className="flex flex-col items-center relative z-10">
     <div
       className={`
-      bg-white rounded-2xl py-6 px-3 shadow-[6px_6px_0px_0px_#F34800] mb-4 
+      bg-white rounded-2xl py-6 px-3 border border-customOriange-200 shadow-md mb-4 
       flex flex-col items-center justify-center overflow-hidden
       ${isFounder ? "w-44 h-52 md:w-52 md:h-64" : "w-36 h-44 md:w-44 md:h-56"}
     `}
@@ -29,7 +29,7 @@ const LeaderCard = ({ name, role, image, isFounder = false }: Leader) => (
         <h4 className="text-border-customOriange-200 font-bold text-sm md:text-base leading-tight">
           {name}
         </h4>
-        <p className=" text-[10px] md:text-base text-primary-400 font-medium mt-1">
+        <p className=" text-[10px] md:text-base text-primary-500 font-medium mt-1">
           {role}
         </p>
       </div>
@@ -41,7 +41,7 @@ export default function LeadershipSection() {
   return (
     <div
       className="w-full bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${LeadershipBG})` }}
+      // style={{ backgroundImage: `url(${LeadershipBG})` }}
     >
       <section className=" py-10 px-4 relative overflow-hidden">
         {/* --- BACKGROUND IMAGE LAYER --- */}
@@ -57,7 +57,7 @@ export default function LeadershipSection() {
         />
 
         <div className="max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto relative z-10 mb-10">
-          <CommonHeader2 className="text-white font-bold text-center mb-10">
+          <CommonHeader2 className="text-customOriange-200 font-bold text-center mb-10">
             OUR FOUNDER
           </CommonHeader2>
 

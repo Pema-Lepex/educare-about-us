@@ -10,7 +10,7 @@ import {
 const TeamProfileSection: React.FC = () => {
   return (
     <>
-      <section className="space-y-10">
+      <section className="space-y-10 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto">
         <div className="text-center">
           <CommonHeader2 className="text-customOriange-200">
             {TeamProfileHeader.title}
@@ -18,7 +18,7 @@ const TeamProfileSection: React.FC = () => {
           <CommonParagraph2 className="text-white">
             {TeamProfileHeader.subTitle}
           </CommonParagraph2>
-          <CommonParagraph3 className="text-primary-300">
+          <CommonParagraph3 className="text-primary-500">
             {TeamProfileHeader.description}
           </CommonParagraph3>
         </div>

@@ -1,5 +1,5 @@
 import { CommonHeader2, CommonParagraph1 } from "components";
-import ImpactSectionPage from "./sections/ImpactSection";
+import MainSectionPage from "./sections/MainSectionPage";
 import { aPlus2, APlus, BgYChooseUsImage, girlMascot } from "assets";
 
 const WhyChooseUsContent: React.FC = () => {
@@ -50,7 +50,7 @@ const WhyChooseUsContent: React.FC = () => {
         </div>
       </section>
 
-      <ImpactSectionPage />
+      <MainSectionPage />
       <div className="3xl:h-[200px] 4xl:h-[350px] 5xl:h-[450px]"/>
     </>
   );

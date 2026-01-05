@@ -39,6 +39,7 @@ export { default as iBestOrognalIcon } from "./iBEST Orginal_150 x 150_1.png";
 export { default as BCSEIcon } from "./Undergraduate_150-x-150.png";
 export { default as MonkeyAndDragonImage } from "./Chara1.png";
 export { default as DoodleImage } from "./Doodle.png";
+export { default as DoodleLessOpacityImage } from "./Doodle_OpicityLess.png";
 
 export * from "./logo";
 export * from "./social-media";
