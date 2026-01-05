@@ -3,6 +3,7 @@ import { LeadershipBG } from "assets";
 import { founders, teamMembers } from "assets/content/leadership/Leadership";
 import { CommonHeader2, CommonHeader4, CommonParagraph2 } from "components";
 import TeamProfileSection from "./TeamProfileSections";
+import { ArrowRight } from "lucide-react";
 
 type Leader = {
   name: string;
@@ -87,19 +88,18 @@ export default function LeadershipSection() {
               ))}
           </div>
           </div>
-          {/* --- LEADERSHIP TEAM GRID --- */}
-          {/* <div>
-          <CommonHeader4 className="text-orange-500 font-bold text-center tracking-widest mb-10 uppercase">
-            LEADERSHIP TEAM
-          </CommonHeader4>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-12">
-            {teamMembers.map((member, index) => (
-              <LeaderCard key={index} {...member} />
-            ))}
-          </div>
-        </div> */}
         </div>
         <TeamProfileSection/>
+        <div className="flex flex-col items-center text-center space-y-6 md:mt-16 mt-8">
+        <CommonParagraph2 className="text-gray-700  font-medium">
+          If you wish to join the team, click on the link below:
+        </CommonParagraph2>
+        
+        <button className="flex items-center gap-2 bg-[#1b364d] text-white px-8 py-3 rounded-lg hover:bg-[#254a69] transition-colors duration-300 shadow-lg">
+          Join Our Team
+          <ArrowRight className="w-5 h-5" />
+        </button>
+      </div>
         <div className="w-full lg:h-28 h-12 3xl:h-32"></div>
       </section>
     </div>

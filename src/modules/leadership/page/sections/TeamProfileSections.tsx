@@ -33,7 +33,7 @@ const TeamProfileSection: React.FC = () => {
                   <img
                     src={item.prfile}
                     alt="profile "
-                    className="border border-purple-600 rounded-3xl"
+                    className="border border-purple-600 rounded-3xl w-full"
                   />
                   <div className="rounded-3xl p-5 border border-purple-600 shadow-md bg-blue-50">
                     <CommonParagraph1 className="">
@@ -46,15 +46,15 @@ const TeamProfileSection: React.FC = () => {
               )}
               {item.subTeamcategory.length > 1 ? (
                 <>
-                <CommonHeader2 className="text-center text-purple-600 my-7">
-                        {item.team}
-                      </CommonHeader2>
+                  <CommonHeader2 className="text-center text-purple-600 my-7">
+                    {item.team}
+                  </CommonHeader2>
                   {item.subTeamcategory.map((items) => (
                     <div key={items.id} className="w-full space-y-7 mt-7">
                       <img
                         src={items.prfile}
                         alt="profile "
-                        className="border border-purple-600 rounded-3xl"
+                        className="border rounded-3xl w-full"
                       />
                       <div className="rounded-3xl p-5 border border-purple-600 shadow-md bg-blue-50">
                         <CommonParagraph3 className=" text-purple-600">

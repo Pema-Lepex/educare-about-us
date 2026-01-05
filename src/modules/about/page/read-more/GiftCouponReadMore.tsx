@@ -62,7 +62,7 @@ const GiftCouponReadMore: React.FC = () => {
               <h4 className="text-lg md:text-xl font-semibold text-blue-500">
                 {GiftCouponContent.buyerGuide.heading}
               </h4>
-              <ol className="list-decimal list-inside space-y-2 mt-2">
+              <ol className="list-disc list-inside space-y-2 mt-2">
                 {GiftCouponContent.buyerGuide.steps.map((item, index) =>
                   Object.values(item).map((step, stepIndex) => (
                     <li
