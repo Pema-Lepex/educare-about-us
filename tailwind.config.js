@@ -7,6 +7,9 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        // Custom TV-specific targets (Ultra-wide or 8K readiness)
+        "8k": "7680px",      // 8K Ultra HD TVs
+        "tv-wide": "4096px", // DCI 4K (Cinema Standard)
         "6xl": "3840px", // 4K monitors & TVs
         "5xl": "3200px", // Large high-end displays
         "4xl": "2560px", // 2K / QHD monitors

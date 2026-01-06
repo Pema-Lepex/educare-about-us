@@ -57,7 +57,7 @@ useEffect(() => {
   return (
     <div className="bg-white ">
       <section className="-mt-16 px-4 pb-10 absolute w-full">
-        <div className="mx-auto grid max-w-6xl 3xl:max-w-full 3xl:px-36 px-0 grid-cols-2 gap-5 md:grid-cols-6">
+        <div className="mx-auto grid max-w-6xl 3xl:max-w-full 3xl:px-36 px-0 grid-cols-2 gap-5 4xl:gap-12 md:grid-cols-6">
           {features.map((f, idx) => {
             const gridClasses =
               idx < 3
@@ -76,17 +76,17 @@ useEffect(() => {
                   borderByTheme[f.theme]
                 } ${gridClasses} cursor-pointer`}
               >
-                <div className="flex flex-col items-start gap-3">
-                  <div className="grid h-12 w-12 place-items-center rounded-xl bg-gray-50">
+                <div className="flex flex-col items-start gap-3 4xl:gap-6 4xl:p-8">
+                  <div className="grid h-12 w-12 place-items-center rounded-xl bg-gray-50 4xl:mb-2">
                     <img
                       src={f.icon}
                       alt=""
-                      className="h-9 w-9 object-contain"
+                      className="h-9 w-9 4xl:w-12 4xl:h-12 5xl:w-16 5xl:h-16 object-contain"
                     />
                   </div>
                   <div>
                     <CommonParagraph1
-                      className={` font-extrabold ${
+                      className={` font-extrabold 4xl:mb-4 ${
                         titleByTheme[f.theme]
                       }`}
                     >
@@ -103,8 +103,8 @@ useEffect(() => {
         </div>
       </section>
 
-      <section className="px-4 pb-16  md:pt-[800px] lg:pt-[600px] 2xl:pt-[650px] pt-[1050px]">
-        <CommonHeader3 className="text-center font-extrabold tracking-wide text-[#0B2A4A]">
+      <section className="px-4 pb-16  md:pt-[800px] lg:pt-[600px] 2xl:pt-[650px] 4xl:pt-[950px] 5xl:pt-[1000px] pt-[1050px]">
+        <CommonHeader3 className="text-center font-extrabold tracking-wide text-[#0B2A4A] 4xl:mb-12">
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>
 
@@ -129,7 +129,7 @@ useEffect(() => {
                   : "border-blue-100 bg-blue-50 hover:bg-blue-100",
               ].join(" ")}
             >
-             <img src={t.icon} alt="gh" className="size-4"/> {t.label}
+             <img src={t.icon} alt="gh" className="size-4 xl:size-5 2xl:size-6 4xl:size-8 5xl:size-9 mr-3"/> <CommonParagraph2>{t.label}</CommonParagraph2>
             </button>
           ))}
         </div>

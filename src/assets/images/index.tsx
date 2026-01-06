@@ -40,6 +40,7 @@ export { default as BCSEIcon } from "./Undergraduate_150-x-150.png";
 export { default as MonkeyAndDragonImage } from "./Chara1.png";
 export { default as DoodleImage } from "./Doodle.png";
 export { default as DoodleLessOpacityImage } from "./Doodle_OpicityLess.png";
+export { default as K5Image } from "./K5.jpg";
 
 export * from "./logo";
 export * from "./social-media";

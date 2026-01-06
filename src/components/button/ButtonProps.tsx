@@ -12,4 +12,6 @@ export interface ButtonProps {
   tooltip?: string;
   disabled?:boolean;
   onVideo?:boolean;
+  href?:string;
+  target?:string;
 }

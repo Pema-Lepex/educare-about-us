@@ -102,7 +102,7 @@ const FAQ: React.FC = () => {
           <div className="mt-4 h-1.5 w-24 bg-primary-500 mx-auto rounded-full"></div>
         </div>
 
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-6xl 3xl:max-w-[70%]">
           {educareSkillFAQ?.faqs.map((faq: any, index: number) => (
             <AccordionItem
               key={index}

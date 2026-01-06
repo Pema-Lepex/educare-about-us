@@ -12,6 +12,7 @@ import {
   CommonHeader4,
   CommonParagraph2,
   CommonParagraph3,
+  HrefButton,
 } from "components";
 
 export default function BlogSection() {
@@ -47,10 +48,10 @@ export default function BlogSection() {
               </CommonParagraph2>
               <a
                 href="#"
-                className="text-blue-600 font-semibold flex items-center gap-2 hover:underline group"
+                className="text-blue-600 font-semibold flex items-center gap-2 hover:underline group text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl"
               >
                 Read More
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 xl:size-5 2xl:size-6 4xl:size-8 5xl:size-9 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
@@ -67,7 +68,7 @@ export default function BlogSection() {
             <img
               src={post.image}
               alt={post.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-auto object-cover"
             />
             <div className="p-5 flex flex-col flex-grow">
               <CommonHeader4 className=" font-bold text-gray-900 mb-2">
@@ -78,10 +79,10 @@ export default function BlogSection() {
               </CommonParagraph2>
               <a
                 href="#"
-                className="text-blue-600 font-semibold flex items-center gap-2 hover:underline group text-sm"
+                className="text-blue-600 font-semibold flex items-center gap-2 hover:underline group text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl"
               >
                 Read More
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 xl:size-5 2xl:size-6 4xl:size-8 5xl:size-9 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>

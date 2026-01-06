@@ -32,6 +32,7 @@ const AboutPage: React.FC = () => {
           {section}
         </AnimateOnScroll>
       ))}
+      <div className="lg:h-24 xl:h-0"/>
     </div>
   );
 };

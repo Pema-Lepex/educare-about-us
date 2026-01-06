@@ -29,7 +29,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
     return (
       <header
         ref={ref as any}
-        className="fixed top-0 w-full bg-primary-500 dark:bg-bgColor-900 shadow-md dark:shadow-gray-800 z-50 transition-transform duration-300 px-4 "
+        className="fixed top-0 5xl:w-[3200px] mx-auto w-full bg-primary-500 dark:bg-bgColor-900 shadow-md dark:shadow-gray-800 z-50 transition-transform duration-300 px-4 "
         style={{ transform: hidden ? "translateY(-100%)" : "translateY(0)" }}
       >
         <div className="mx-auto px-4 py-4 flex items-center justify-between">
@@ -37,10 +37,10 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             <img
               src={whiteLogo}
               alt="Educare Logo"
-              className="inline md:h-10 xl:h-12 2xl:h-16 3xl:h-20 4xl:h-24 5xl:h-28 h-9 w-auto mr-2"
+              className="inline md:h-10 lg:h-8 xl:h-12 2xl:h-16 3xl:h-20 4xl:h-24 5xl:h-32 h-9 w-auto mr-2"
             />
           </div>
-          <div className="hidden lg:flex lg:space-x-2 xl:space-x-4  2xl:space-x-8">
+          <div className="hidden lg:flex lg:space-x-2 xl:space-x-4 2xl:space-x-8">
             {Menus.map((menu, index) => {
               const isActive =
                 location.pathname === menu.ref ||
@@ -49,7 +49,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
                 <button
                   key={index}
                   onClick={() => handleNavigate(menu.ref)}
-                  className={`text-sm sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl font-medium transition-all duration-300 ${
+                  className={`text-sm sm:text-base md:text-lg lg:text-sm 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl font-medium transition-all duration-300 ${
                     isActive
                       ? "text-customOriange-100 font-semibold border-b-2 border-customOriange-100"
                       : "text-white hover:text-customOriange-100"
@@ -60,25 +60,25 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
               );
             })}
           </div>
-          <div className="lg:flex gap-2 hidden">
+          <div className="lg:flex gap-2 xl:gap-4 hidden">
             <a
               href="https://www.educareskill.com/#/signup"
               target="_blank"
-              className="bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl rounded-md cursor-pointer"
+              className="bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
             >
               DCDD Sign In
             </a>
             <a
               href="https://www.educareskill.com/#/login"
               target="_blank"
-              className="bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl rounded-md cursor-pointer"
+              className="bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
             >
               Sign In
             </a>
             <a
               href="https://www.educareskill.com/#/login"
               target="_blank"
-              className="bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl rounded-md cursor-pointer"
+              className="bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
             >
               Gift Coupon
             </a>

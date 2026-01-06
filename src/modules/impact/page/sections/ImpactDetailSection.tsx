@@ -1,6 +1,6 @@
 import React from "react";
 import { TrendingUp, ShieldCheck } from "lucide-react";
-import { CommonHeader1, CommonHeader3, CommonParagraph2, CommonParagraph3 } from "components";
+import { CommonHeader1, CommonHeader3, CommonParagraph1, CommonParagraph2, CommonParagraph3 } from "components";
 import {
   ImpactBottomSection,
   ImpactOfEducare,
@@ -17,7 +17,7 @@ const BottomSection: React.FC = () => {
             className="flex flex-col md:flex-row items-start gap-6"
           >
             <div className={`p-3 ${items.colorCode.iconBG} rounded-full flex-shrink-0`}>
-              <ShieldCheck className={`w-8 h-8 ${items.colorCode.text}`} />
+              <ShieldCheck className={`w-8 h-8 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 ${items.colorCode.text}`} />
             </div>
             <div className="space-y-4">
               <CommonHeader3 className={`font-bold ${items.colorCode.text}`}>
@@ -50,7 +50,7 @@ export default function ImpactDetailSection() {
               <div
                 className={`p-3 ${items.colorCode.iconBG} rounded-full flex-shrink-0`}
               >
-                <TrendingUp className={`w-6 h-6 ${items.colorCode.text}`} />
+                <TrendingUp className={`w-6 h-6 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 ${items.colorCode.text}`} />
               </div>
               <div>
                 <CommonHeader3 className={`font-bold ${items.colorCode.text} mb-2`}>
@@ -71,7 +71,7 @@ export default function ImpactDetailSection() {
           <span className="block text-4xl md:text-5xl font-black text-blue-600">
             PP-XII
           </span>
-          <span className="text-gray-800 font-bold text-lg">
+          <span className="text-gray-800 font-bold text-lg 2xl:text-xl 4xl:text-3xl">
             Comprehensive Dzongkha Tutorials
           </span>
         </div>
@@ -79,13 +79,13 @@ export default function ImpactDetailSection() {
           <span className="block text-4xl md:text-5xl font-black text-green-600">
             100,000+
           </span>
-          <span className="text-gray-800 font-bold text-lg">Registered Users</span>
+          <span className="text-gray-800 font-bold text-lg 2xl:text-xl 4xl:text-3xl">Registered Users</span>
         </div>
         <div className="border-t-4 border-red-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
           <span className="block text-4xl md:text-5xl font-black text-red-600">
             1000+
           </span>
-          <span className="text-gray-800 font-bold text-lg">
+          <span className="text-gray-800 font-bold text-lg 2xl:text-xl 4xl:text-3xl">
            Entertaining and Impactful Episodes 
           </span>
         </div>
@@ -94,7 +94,7 @@ export default function ImpactDetailSection() {
       {/* Bottom Row: Safe Haven */}
       <div className="space-y-2 3xl:space-y-6">
         {/* <CommonHeader1 className="text-primary-500">{ImpactTitle.title}</CommonHeader1> */}
-      <p className="font-bold text-base  xl:text-2xl text-center">{ImpactTitle.description}</p>
+        <CommonParagraph1 className="font-bold text-center">{ImpactTitle.description}</CommonParagraph1>
       </div>
       <BottomSection />
       <div className="4xl:h-[300px] 5xl:h-[500px] "/>

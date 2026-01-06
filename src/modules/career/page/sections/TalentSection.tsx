@@ -8,6 +8,7 @@ import {
   CommonHeader4,
   CommonParagraph1,
   CommonParagraph2,
+  HrefButton,
 } from "components";
 
 export default function CreativeTalentSection() {
@@ -32,7 +33,7 @@ export default function CreativeTalentSection() {
               key={index}
               className="flex items-center gap-3 bg-purple-50 p-4 rounded-xl border border-purple-100"
             >
-              <CheckCircle2 className="w-5 h-5 text-purple-600 flex-shrink-0" />
+              <CheckCircle2 className="w-5 h-5 4xl:w-10 4xl:h-10 5xl:w-12 5xl:h-12 text-purple-600 flex-shrink-0" />
               <CommonParagraph2 className="text-gray-800 font-medium">
                 {skill}
               </CommonParagraph2>
@@ -46,15 +47,15 @@ export default function CreativeTalentSection() {
         <CommonHeader4 className="font-semibold text-orange-500 mb-4">
           How to Apply
         </CommonHeader4>
-        <CommonParagraph2 className="text-gray-600 mb-6 leading-relaxed md:max-w-2xl">
+        <CommonParagraph2 className="text-gray-600 mb-6 leading-relaxed md:max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl 4xl:max-w-6xl 5xl:max-w-7xl">
           Please submit your CV along with any relevant academic transcripts and
           certificate. We'll review your application and get back to you soon.
           Apply via provided link below.
         </CommonParagraph2>
-        <a target="_blank" href="https://forms.gle/3aF7nE6MU1ofzKdj7" className="flex items-center gap-2 bg-[#1b364d] text-white px-6 py-3 rounded-lg hover:bg-[#254a69] transition-all shadow-md w-1/4">
-          <Upload className="w-4 h-4" />
-          Submit Application
-        </a>
+        <HrefButton target="_blank" href="https://forms.gle/3aF7nE6MU1ofzKdj7" className="flex items-center gap-2 bg-[#1b364d] text-white  hover:bg-[#254a69]  w-1/4">
+            <Upload className="w-4 h-4 4xl:w-10 4xl:h-10 5xl:w-12 5xl:h-12 mr-2" />
+            Submit Application
+        </HrefButton>
       </div>
 
       {/* 3. What We Offer Card (Orange Theme) */}

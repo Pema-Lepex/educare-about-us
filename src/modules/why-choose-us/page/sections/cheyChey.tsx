@@ -3,7 +3,7 @@ import { CommonHeader3, CommonHeader4, CommonParagraph1, CommonParagraph2, Commo
 
 const GamepadIcon = () =>
   <svg
-    className="h-5 w-5 text-slate-500"
+    className="size-4 xl:size-5 2xl:size-6 4xl:size-8 5xl:size-9 text-slate-500"
     viewBox="0 0 24 24"
     fill="currentColor"
     aria-hidden="true"
@@ -53,7 +53,7 @@ const CheyCheyContent: React.FC = () => {
                 key={item}
                 className="flex items-center gap-3 rounded-xl bg-violet-50 px-4 py-3 shadow-[0_8px_16px_rgba(0,0,0,0.06)]"
               >
-                <GamepadIcon />
+                <GamepadIcon/>
                 <CommonParagraph3 className="text-sm font-semibold text-slate-700">
                   {item}
                 </CommonParagraph3>

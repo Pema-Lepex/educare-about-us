@@ -34,7 +34,7 @@ export default function ContactSection() {
             {/* Visit Us */}
             <div className="flex gap-4">
               <div className="p-3 bg-blue-50 rounded-full h-fit">
-                <MapPin className="w-5 h-5 text-[#1b364d]" />
+                <MapPin className="w-5 h-5 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 text-[#1b364d]" />
               </div>
               <div>
                 <CommonParagraph1 className="font-bold text-gray-900">
@@ -52,7 +52,7 @@ export default function ContactSection() {
             {/* Call Us */}
             <div className="flex gap-4">
               <div className="p-3 bg-blue-50 rounded-full h-fit">
-                <Phone className="w-5 h-5 text-[#1b364d]" />
+                <Phone className="w-5 h-5 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 text-[#1b364d]" />
               </div>
               <div>
                 <CommonParagraph1 className="font-bold text-gray-900">
@@ -70,7 +70,7 @@ export default function ContactSection() {
             {/* Email Us */}
             <div className="flex gap-4">
               <div className="p-3 bg-blue-50 rounded-full h-fit">
-                <Mail className="w-5 h-5 text-[#1b364d]" />
+                <Mail className="w-5 h-5 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 text-[#1b364d]" />
               </div>
               <div>
                 <CommonParagraph1 className="font-bold text-gray-900">
@@ -88,7 +88,7 @@ export default function ContactSection() {
             {/* Office Hours */}
             <div className="flex gap-4">
               <div className="p-3 bg-blue-50 rounded-full h-fit">
-                <Clock className="w-5 h-5 text-[#1b364d]" />
+                <Clock className="w-5 h-5 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 text-[#1b364d]" />
               </div>
               <div>
                 <CommonParagraph1 className="font-bold text-gray-900">
@@ -119,7 +119,7 @@ export default function ContactSection() {
       </div>
 
       {/* 3. Google Maps Section */}
-      <div className="w-full h-[450px] rounded-[2rem] overflow-hidden border border-gray-200 shadow-sm">
+      <div className="w-full h-[450px] 3xl:h-[600px] 4xl:h-[800px] 5xl:h-[900px] rounded-[2rem] overflow-hidden border border-gray-200 shadow-sm">
         <iframe
           title="Educare Skill Pvt Ltd Location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.676060529613!2d89.6438489!3d27.4615683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e1959932f5308b%3A0x97d7cd3fa717f8ef!2sEducare%20Skill%20Pvt%20Ltd!5e0!3m2!1sen!2sbt!4v1700000000000"

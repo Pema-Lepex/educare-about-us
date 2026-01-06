@@ -31,7 +31,7 @@ const GuideSection: React.FC = () => {
                     alt={`${items.info} icon`}
                     className="w-full h-auto object-cover object-center transform "
                   />
-                  <div className="absolute top-[15px] md:-top-[19px] lg:-top-[24px] xl:-top-[10px] 2xl:-top-3 3xl:top-4 4xl:top-8 5xl:top-16  flex flex-col justify-center items-center  pointer-events-none md:p-10 space-y-2 3xl:space-y-2">
+                  <div className="absolute top-[15px] md:-top-[19px] lg:-top-[30px] xl:-top-[24px] 2xl:-top-3 3xl:top-4 4xl:top-8 5xl:top-16  flex flex-col justify-center items-center  pointer-events-none md:p-10 space-y-2 3xl:space-y-2">
                     <div className="p-2 bg-white rounded-full flex items-center justify-center 4xl:mb-10">
                       <img
                         src={items.icon}
@@ -40,16 +40,16 @@ const GuideSection: React.FC = () => {
                       />
                     </div>
 
-                    <div className="px-3 md:px-4 lg:px-3 xl:px-6 2xl:px-7 3xl:px-8 4xl:px-9 5xl:px-10 6xl:px-11 space-y-1 4xl:space-y-10 text-center">
-                      <h1 className=" text-white text-lg font-black drop-shadow-md 6xl:text-6xl 5xl:text-5xl 4xl:text-4xl 2xl:text-3xl xl:text-xl lg:text-sm md:text-xs text-center">
+                    <div className="px-3 md:px-4 lg:px-1 xl:px-2 2xl:px-4 3xl:px-8 4xl:px-9 5xl:px-10 6xl:px-11 space-y-1 4xl:space-y-10 text-center">
+                      <h1 className=" text-white text-lg font-black drop-shadow-md 6xl:text-6xl 5xl:text-5xl 4xl:text-4xl 2xl:text-3xl xl:text-lg lg:text-xs md:text-xs text-center">
                       {items.title}
                     </h1>
-                    <p className="text-[14px] md:text-xs lg:text-[12px] xl:text-[16px] 2xl:text-[19px] 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl text-gray-200 font-light 4xl:px-8 2xl:px-6 lg:pb-0 pb-4 max-sm:px-6">
+                    <p className="text-[14px] md:text-xs lg:text-[10px] xl:text-[14px] 2xl:text-[19px] 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl text-gray-200 font-light lg:pb-0 pb-4 max-sm:px-6">
                       {items.info}
                     </p>
                     </div>
                   </div>
-                  <div className="absolute inset-0 -bottom-8 xl:-bottom-8 2xl:-bottom-8 3xl:-bottom-10 flex flex-col justify-end items-center  pb-4 z-50">
+                  <div className="absolute inset-0 -bottom-8 md:-bottom-10 lg:-bottom-12 xl:-bottom-8 2xl:-bottom-8 3xl:-bottom-10 flex flex-col justify-end items-center  pb-4 z-50">
                     <LearnMoreButton
                       onClick={() => navigate(items.href)}
                       className="bg-primary-500 text-white cursor-pointer font-extralight text-base md:text-base lg:text-lg  xl:text-xl 2xl:text-2xl  3xl:text-3xl 4xl:text-4xl 5xl:text-5xl 6xl:text-6xl"

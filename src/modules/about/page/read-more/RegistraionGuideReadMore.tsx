@@ -1,28 +1,28 @@
 import { RegistrationGuideBGImage, ThreeCharacterImage } from "assets";
 import { RegistrationGuideContent } from "assets/content/about/About";
-import { CommonHeader2, CommonParagraph1 } from "components";
+import { CommonHeader2, CommonParagraph1, HrefButton } from "components";
 
 const RegistraionGuideReadMore: React.FC = () => {
   return (
     <>
       {/* {website} */}
       <div className="w-full hidden lg:flex justify-center items-center relative">
-        <section id="registration-guid" className=" py-16 px-40">
+        <section id="registration-guid" className=" py-16 ">
           {RegistrationGuideContent && (
             <>
-              <div className="w-[90%] mx-auto border border-[#981AF7] rounded-3xl shadow-md p-10 bg-blue-50 space-y-4 min-h-[1000px] 3xl:h-[1700px] 4xl:h-[2000px] mb-20 ">
+              <div className="w-[78%] mx-auto border border-[#981AF7] rounded-3xl shadow-md p-10 bg-blue-50 space-y-4 min-h-[1000px] 2xl:h-[1250px] 3xl:h-[1600px] 4xl:h-[1900px] 5xl:h-[2200px] mb-20 5xl:space-y-10">
                 <CommonHeader2 className="text-[#981AF7] text-center">
                   {RegistrationGuideContent.title}
                 </CommonHeader2>
                 <CommonParagraph1>
                   {RegistrationGuideContent.description}
                 </CommonParagraph1>
-                <ol className="list-decimal list-inside space-y-2">
+                <ol className="list-decimal list-inside space-y-2 5xl:space-y-7">
                   {RegistrationGuideContent.guide.map((item, index) =>
                     Object.values(item).map((step, stepIndex) => (
                       <li
                         key={`${index}-${stepIndex}`}
-                        className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl font-light"
+                        className="text-gray-700 text-base sm:text-lg md:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-light"
                       >
                         {step}
                       </li>
@@ -30,19 +30,18 @@ const RegistraionGuideReadMore: React.FC = () => {
                   )}
                 </ol>
                 <div className="w-full flex justify-center py-4">
-                  <a
+                  <HrefButton
                     href="https://www.educareskill.com/#/signup"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="relative 3xl:text-2xl 2xl:text-xl xl:text-base  text-sm z-10 inline-flex justify-center items-center w-64 h-12  bg-[#981AF7] text-white rounded-md font-semibold transition-all duration-300 ease-in-out  hover:bg-[#7C15C9] hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
+                    className=" bg-[#981AF7] text-white hover:bg-[#7C15C9]"
                   >
                     Sign Up
-                  </a>
+                  </HrefButton>
                 </div>
               </div>
             </>
           )}
-          <div className="absolute -bottom-20 md:-bottom-40 lg:-bottom-20 xl:-bottom-40 2xl:-bottom-64 3xl:-bottom-[300px] right-3">
+          <div className="absolute -bottom-20 md:-bottom-40 lg:-bottom-14 xl:-bottom-40 2xl:-bottom-52 3xl:-bottom-[240px] 4xl:-bottom-[150px] 5xl:-bottom-[99px] 5xl:left-60 right-3">
             <img src={ThreeCharacterImage} alt="ThreeCharacterImage" />
           </div>
         </section>

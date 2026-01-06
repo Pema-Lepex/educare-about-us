@@ -17,7 +17,7 @@ export const TeamProfile = [
   },
   {
     id:2,
-    team: "Producation Team",
+    team: "Production Team",
     colorCode:"",
     prfile: "",
     teamNote: "",
