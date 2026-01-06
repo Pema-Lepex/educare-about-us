@@ -49,7 +49,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
                 <button
                   key={index}
                   onClick={() => handleNavigate(menu.ref)}
-                  className={`text-sm sm:text-base md:text-lg lg:text-sm 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl font-medium transition-all duration-300 ${
+                  className={`text-sm sm:text-base md:text-lg lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl font-medium transition-all duration-300 ${
                     isActive
                       ? "text-customOriange-100 font-semibold border-b-2 border-customOriange-100"
                       : "text-white hover:text-customOriange-100"

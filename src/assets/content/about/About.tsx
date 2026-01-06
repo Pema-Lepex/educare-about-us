@@ -35,7 +35,7 @@ export const EducareSkillGroupContent = [
   {
     id: 1,
     groupName: "CHEYCHEY",
-    redirectUrl:"cheychey",
+    redirectUrl: "cheychey",
     groupImage: CheCheyImage,
     groupIcon: CheCheyIcon,
     eligibility: "Age 3 - 12 years",
@@ -44,7 +44,7 @@ export const EducareSkillGroupContent = [
   {
     id: 2,
     groupName: "KDUCARE KIDS",
-    redirectUrl:"kids",
+    redirectUrl: "kids",
     groupImage: EducareSkillImage,
     groupIcon: EducareSkillIcon,
     eligibility: "Age 3 - 16 years",
@@ -53,7 +53,7 @@ export const EducareSkillGroupContent = [
   {
     id: 3,
     groupName: "PRIMARY LEVEL",
-    redirectUrl:"primary",
+    redirectUrl: "primary",
     groupImage: PrimaryLevelImage,
     groupIcon: PrimaryLevelIcon,
     eligibility: "Classes PP - VI",
@@ -62,7 +62,7 @@ export const EducareSkillGroupContent = [
   {
     id: 4,
     groupName: "INTERMEDIATE LEVEL",
-    redirectUrl:"intermediate",
+    redirectUrl: "intermediate",
     groupImage: IntermediateLevelImage,
     groupIcon: IntermediateLevelIcon,
     eligibility: "Classes VII - XII",
@@ -71,7 +71,7 @@ export const EducareSkillGroupContent = [
   {
     id: 5,
     groupName: "GRADUATE / BCSE",
-    redirectUrl:"graduate",
+    redirectUrl: "graduate",
     groupImage: BCSEImage,
     groupIcon: BCSEIcon,
     eligibility: "Your perfect tutor for relearning Dzongkha",
@@ -80,7 +80,7 @@ export const EducareSkillGroupContent = [
   {
     id: 6,
     groupName: "iBEST ORIGINALS",
-    redirectUrl:"ibest",
+    redirectUrl: "ibest",
     groupImage: iBESTOroginalImage,
     groupIcon: iBestOrognalIcon,
     eligibility: "Happy hours for all",
@@ -328,8 +328,7 @@ export const RegistrationGuideContent = {
       guide4: "After filling out your details, click on SIGN UP button.",
       guide5:
         "You will receive an OTP on your registered phone number or email address.",
-      guide6:
-        "Enter the OTP, and you are now registered on our platform!",
+      guide6: "Enter the OTP, and you are now registered on our platform!",
     },
   ],
 };
@@ -353,7 +352,9 @@ export const ForDCDDUsersContent = {
   },
   importentNote1:
     "If you haven't been registered or were missed during the registration process, or are facing any issues, please don't hesitate to reach out to your class teacher, ECCD facilitator, or the Educare Skill Support Team.",
-  importentNote2:"For any assistance, contact us at our Toll Free number **2016** or **+975 77718721** or email at support@educareskill.com"};
+  importentNote2:
+    "For any assistance, contact us at our Toll Free number **2016** or **+975 77718721** or email at support@educareskill.com",
+};
 
 export const GiftCouponContent = {
   title: "Gift Coupon",
@@ -372,9 +373,10 @@ export const GiftCouponContent = {
         step2: "Click on the Gift Coupon Button.",
         step3:
           "Enter the recipient's details such as email address or phone number.",
-        step4:
+        step4: "Choose a payment option and complete the payment process.",
+        step5:
           "Click on the Join Button for the desired package and select the membership duration.",
-        step5: "Choose a payment option and complete the payment process.",
+
         step6:
           "You have now purchased an Educare Skill membership plan for your loved one!",
       },
