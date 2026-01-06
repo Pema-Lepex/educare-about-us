@@ -113,6 +113,7 @@ const GiftCouponReadMore: React.FC = () => {
           />
         </div>
       </section>
+       <div className="xl:h-32 2xl:h-36 3xl:h-40 4xl:h-80"/>
     </div>
   );
 };

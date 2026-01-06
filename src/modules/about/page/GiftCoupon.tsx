@@ -10,6 +10,7 @@ const GiftCoupon: React.FC = () => {
         style={{ backgroundImage: `url(${HTGSBGImage})` }}
       >
         <GiftCouponReadMore />
+        <div className="xl:h-32 2xl:h-36 3xl:h-40 4xl:h-[30rem]"/>
       </div>
     </MainLayout>
   );

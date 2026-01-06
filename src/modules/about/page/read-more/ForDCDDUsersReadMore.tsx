@@ -70,7 +70,7 @@ const ForDCDDUsersReadMore: React.FC = () => {
                 className="h-auto w-full object-contain"
               />
               {/* Short Text Image Overlayed on Top */}
-              <div className="absolute inset-0 flex items-center justify-center lg:-bottom-[500px] xl:-bottom-[600px] 2xl:-bottom-[950px] 5xl:-bottom-[2000px]">
+              <div className="absolute inset-0 flex items-center justify-center lg:-bottom-[500px] xl:-bottom-[600px] 2xl:-bottom-[950px] 4xl:-bottom-[1500px] 5xl:-bottom-[2000px]">
                  <img
                     src={DCDDShortTextImage}
                     alt="DCDD Info"
@@ -139,7 +139,7 @@ const ForDCDDUsersReadMore: React.FC = () => {
         </div>
         </div>
       </div>
-      <div className="3xl:h-32 4xl:h-36 5xl:h-40"/>
+      <div className="3xl:h-32 4xl:h-60 5xl:h-40"/>
     </>
   );
 };
