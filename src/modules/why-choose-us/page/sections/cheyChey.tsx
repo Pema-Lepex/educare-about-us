@@ -22,41 +22,41 @@ const CheyCheyContent: React.FC = () => {
   return (
     <section className="px-4 py-10">
       <div className="mx-auto max-w-5xl 3xl:max-w-full 3xl:px-36 rounded-2xl border-2 border-violet-300 bg-white shadow-[0_12px_22px_rgba(0,0,0,0.08)]">
-        <div className="px-6 pt-6">
+        <div className="px-6 pt-6 space-y-4 xl:space-y-5 4xl:space-y-10">
           <CommonHeader4 className=" font-extrabold text-violet-600">
             {entry.title}
           </CommonHeader4>
-          <CommonParagraph2 className="mt-3 text-sm leading-relaxed text-slate-600">
+          <CommonParagraph1 className="mt-3 text-sm leading-relaxed text-slate-600">
             {entry.intro}
-          </CommonParagraph2>
+          </CommonParagraph1>
         </div>
 
         {/* Pills */}
         <div className="grid grid-cols-1 gap-4 px-6 pb-6 pt-6 md:grid-cols-2">
-          <div className="space-y-4">
+          <div className="space-y-4 xl:space-y-5 4xl:space-y-10">
             {left.map(items =>
               <div
                 key={items}
                 className="flex items-center gap-3 rounded-xl bg-violet-50 px-4 py-3 shadow-[0_8px_16px_rgba(0,0,0,0.06)]"
               >
                 <GamepadIcon />
-                <CommonParagraph3 className="text-sm font-semibold text-slate-700">
+                <CommonParagraph2 className="text-sm font-semibold text-slate-700">
                   {items}
-                </CommonParagraph3>
+                </CommonParagraph2>
               </div>
             )}
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4 xl:space-y-5 4xl:space-y-10">
             {right.map(item =>
               <div
                 key={item}
                 className="flex items-center gap-3 rounded-xl bg-violet-50 px-4 py-3 shadow-[0_8px_16px_rgba(0,0,0,0.06)]"
               >
                 <GamepadIcon/>
-                <CommonParagraph3 className="text-sm font-semibold text-slate-700">
+                <CommonParagraph2 className="text-sm font-semibold text-slate-700">
                   {item}
-                </CommonParagraph3>
+                </CommonParagraph2>
               </div>
             )}
           </div>

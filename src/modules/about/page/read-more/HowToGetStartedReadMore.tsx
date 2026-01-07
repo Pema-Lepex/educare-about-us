@@ -92,7 +92,7 @@ const HowToGetStartedReadMore: React.FC = () => {
                         <img
                           src={item.imageSrc}
                           alt={`${item.memebrshipType} Membership`}
-                          className="w-auto h-34 sm:h-42 lg:h-60 rounded-lg object-cover"
+                          className="w-auto h-28 sm:h-42 lg:h-60 rounded-lg object-cover"
                         />
                       )}
 
@@ -150,23 +150,23 @@ const HowToGetStartedReadMore: React.FC = () => {
             )}
           </div>
           <div className="flex flex-col justify-center items-center space-y-3">
-            <h4 className=" text-basic md:text-2xl  5xl:text-4xl md:px-12 px-2 font-light xl:max-w-3xl 5xl:max-w-5xl">
+            <h4 className=" text-basic md:text-2xl lg:text-3xl 3xl:text-4xl 5xl:text-4xl md:px-12 px-2 font-light xl:max-w-3xl 3xl:max-w-5xl 5xl:max-w-5xl">
               The Educare Skill App is available on both the Play Store for
               Android devices and App Store for iOS devices.
             </h4>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-4 lg:gap-6 3xl:gap-10 4xl:gap-14">
               <button onClick={redirectToAppStore}>
                 <img
                   src={AppleStoreImage}
                   alt="Apple Store"
-                  className="h-[22px] md:h-14 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                  className="h-[29px] md:h-14 2xl:h-20 4xl:h-28 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
                 />
               </button>
               <button onClick={redirectToGooglePlay}>
                 <img
                   src={AndroidStoreImage}
                   alt="Android Store"
-                  className="h-[22px] md:h-14 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                  className="h-[29px] md:h-14 2xl:h-20 4xl:h-28 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
                 />
               </button>
             </div>

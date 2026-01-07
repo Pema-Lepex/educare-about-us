@@ -15,7 +15,7 @@ export default function HrefButton({
             {...props}
             href={href}
             target="_blank"
-            className={`text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl w-64 h-12 2xl:w-80 2xl:h-20 5xl:w-[750px] 5xl:h-32 rounded-md font-semibold transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer flex justify-center items-center ${className}`}
+            className={`text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl w-64 h-12 2xl:w-80 2xl:h-20 5xl:w-[750px] 5xl:h-28 rounded-md font-semibold transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer flex justify-center items-center ${className}`}
           >
             {children}
           </a>

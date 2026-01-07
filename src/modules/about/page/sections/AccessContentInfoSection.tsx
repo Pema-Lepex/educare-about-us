@@ -9,7 +9,7 @@ const AccessContentInfoSection: React.FC = () => {
     <>
       <section
         id="access-content-info"
-        className="px-4 sm:px-8 md:px-16 lg:px-14 md:pb-16 pb-6"
+        className="px-4 sm:px-8 md:px-16 lg:px-14 lg:pb-16 pb-1"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 3xl:gap-12 items-stretch">
           {/* Left card */}

@@ -3,7 +3,7 @@ export { default as NonoImage } from "./nono new 1.png";
 export { default as GirlRunningImage } from "./newfbdfhdf 1.png";
 export { default as HTGSBGImage } from "./HowToGetStartedBackGroundImage.png";
 export { default as AnimalImage } from "./FF 1.png";
-export { default as RegistrationGuideBGImage } from "./RegistrationGuideBG.png";
+export { default as RegistrationGuideBGImage } from "./Educarekids.png";
 export { default as bronze } from "./Bronze.png";
 export { default as sliver } from "./Sliver.png";
 export { default as gold } from "./Gold.png";
@@ -41,6 +41,7 @@ export { default as MonkeyAndDragonImage } from "./Chara1.png";
 export { default as DoodleImage } from "./Doodle.png";
 export { default as DoodleLessOpacityImage } from "./Doodle_OpicityLess.png";
 export { default as K5Image } from "./K5.jpg";
+export { default as K5PhoneImage } from "./K5Phone.jpg";
 
 export * from "./logo";
 export * from "./social-media";

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { EducareKIds } from "assets/content/why-choose-us/WhyChooseUs";
 import type { educareKidsProp, educareKideItemsProps } from "props/Commonprops";
-import { CommonHeader4, CommonParagraph2, CommonParagraph3 } from "components";
+import { CommonHeader4, CommonParagraph1, CommonParagraph2, CommonParagraph3 } from "components";
 
 const Chevron = ({ open }: { open: boolean }) =>
   <svg
@@ -25,14 +25,14 @@ export default function IBESTOriginal() {
   const [openId, setOpenId] = useState<string | null>("animation"); 
 
   return (
-    <section className="mx-auto max-w-5xl 3xl:max-w-full 3xl:px-36 rounded-2xl border border-emerald-200 bg-white shadow-[0_12px_22px_rgba(0,0,0,0.08)] my-12">
-      <div className="px-6 pt-6">
+    <section className="mx-auto max-w-5xl 3xl:max-w-full 3xl:px-36 rounded-2xl border border-emerald-200 bg-white shadow-[0_12px_22px_rgba(0,0,0,0.08)] pb-10 my-12 space-y-4 xl:space-y-5 4xl:space-y-10">
+      <div className="px-6 pt-6 space-y-4 xl:space-y-5 4xl:space-y-10">
           <CommonHeader4 className=" font-extrabold text-emerald-600">
             iBEST Originals Content
           </CommonHeader4>
-          <CommonParagraph2 className="mt-2 text-slate-600">
-           Happy hours for all
-          </CommonParagraph2>
+          <CommonParagraph1 className="mt-2 text-slate-600">
+            Happy hours for all
+          </CommonParagraph1>
         </div>
       {blocks.map(item => {
         const isOpen = openId === item.id;
@@ -57,13 +57,13 @@ export default function IBESTOriginal() {
                 item.isAccordion ? "cursor-pointer" : "cursor-default"
               ].join(" ")}
             >
-              <div>
+              <div className="space-y-4 xl:space-y-5 4xl:space-y-10">
                 <CommonHeader4  className={`t font-extrabold ${item.titleClass}`}>
                   {item.title}
                 </CommonHeader4 >
-                <CommonParagraph2 className="mt-2 leading-relaxed text-slate-600">
+                <CommonParagraph1 className="mt-2 leading-relaxed text-slate-600">
                   {item.desc}
-                </CommonParagraph2>
+                </CommonParagraph1>
               </div>
 
               {item.isAccordion
@@ -89,9 +89,9 @@ export default function IBESTOriginal() {
                             key={it}
                             className={"rounded-xl px-5 py-4 shadow-[0_6px_14px_rgba(0,0,0,0.06)]"}
                           >
-                            <CommonParagraph2 className=" font-extrabold text-slate-800">
+                            <CommonParagraph1 className=" font-extrabold text-slate-800">
                               {it}
-                            </CommonParagraph2>
+                            </CommonParagraph1>
                           </div>
                         );
                       }
@@ -100,16 +100,16 @@ export default function IBESTOriginal() {
                         <div
                           key={it.title}
                           className={[
-                            "rounded-xl px-5 py-4 shadow-[0_6px_14px_rgba(0,0,0,0.06)]",
+                            "rounded-xl px-5 py-4 shadow-[0_6px_14px_rgba(0,0,0,0.06)] ",
                             it.bgClass
                           ].join(" ")}
                         >
-                          <CommonParagraph2 className="font-extrabold text-slate-800">
+                          <CommonParagraph1 className="font-extrabold text-slate-800">
                             {it.title}
-                          </CommonParagraph2>
-                          <CommonParagraph3 className="mt-2 leading-relaxed text-slate-600">
+                          </CommonParagraph1>
+                          <CommonParagraph2 className="mt-2 leading-relaxed text-slate-600">
                             {it.desc}
-                          </CommonParagraph3>
+                          </CommonParagraph2>
                         </div>
                       );
                     })}

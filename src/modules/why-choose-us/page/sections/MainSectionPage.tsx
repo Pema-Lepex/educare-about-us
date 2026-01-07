@@ -4,13 +4,26 @@ import CheyCheyContent from "./cheyChey";
 import EducareKidsSection from "./educareKids";
 import IntermediateLevelContent from "./intermidateLevel";
 import PrimaryLevelContent from "./primaryLevel";
-import { BCSEIcon, CheCheyIcon, EducareSkillIcon, iBestOrognalIcon, IntermediateLevelIcon, PrimaryLevelIcon } from "assets";
+import {
+  BCSEIcon,
+  CheCheyIcon,
+  EducareSkillIcon,
+  iBestOrognalIcon,
+  IntermediateLevelIcon,
+  PrimaryLevelIcon,
+} from "assets";
 import { useSearchParams } from "react-router-dom";
 import { CommonHeader3, CommonParagraph1, CommonParagraph2 } from "components";
 import Graduate from "./Graduate";
 import IBESTOriginal from "./IBESTOriginal";
 
-type TabKey = "cheychey" | "kids" | "primary" | "intermediate" | "graduate" | "ibest";
+type TabKey =
+  | "cheychey"
+  | "kids"
+  | "primary"
+  | "intermediate"
+  | "graduate"
+  | "ibest";
 
 const MainSectionPage: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -43,11 +56,21 @@ const MainSectionPage: React.FC = () => {
     red: "text-[#EF4444]",
     blue: "text-[#3B82F6]",
   };
-useEffect(() => {
+  useEffect(() => {
     const tabFromUrl = searchParams.get("tab") as TabKey;
-    if (tabFromUrl && ["cheychey", "kids", "primary", "intermediate" , "graduate" , "ibest"].includes(tabFromUrl)) {
+    if (
+      tabFromUrl &&
+      [
+        "cheychey",
+        "kids",
+        "primary",
+        "intermediate",
+        "graduate",
+        "ibest",
+      ].includes(tabFromUrl)
+    ) {
       setActiveTab(tabFromUrl);
-      
+
       const contentElement = document.getElementById("content-anchor");
       if (contentElement) {
         contentElement.scrollIntoView({ behavior: "smooth" });
@@ -57,15 +80,15 @@ useEffect(() => {
   return (
     <div className="bg-white ">
       <section className="-mt-16 px-4 pb-10 absolute w-full">
-        <div className="mx-auto grid max-w-6xl 3xl:max-w-full 3xl:px-36 px-0 grid-cols-2 gap-5 4xl:gap-12 md:grid-cols-6">
+        <div className="mx-auto grid max-w-6xl 3xl:max-w-full 3xl:px-36 px-0 grid-cols-1 gap-5 4xl:gap-12 lg:grid-cols-6">
           {features.map((f, idx) => {
-            const gridClasses =
+            const gridClasses = "col-span-1";
+            const gridClassess =
               idx < 3
                 ? "col-span-2"
                 : idx === 3
-                ? "col-span-2 md:col-start-2"
-                : "col-span-2 md:col-start-4";
-
+                ? "col-span-2 lg:col-start-2"
+                : "col-span-2 lg:col-start-4";
             return (
               <div
                 key={f.title}
@@ -74,7 +97,7 @@ useEffect(() => {
                 onClick={() => setActiveTab(themeToTab[f.theme])}
                 className={`rounded-2xl border-t-4 bg-white p-5 shadow-md ${
                   borderByTheme[f.theme]
-                } ${gridClasses} cursor-pointer`}
+                } ${gridClasses} ${gridClassess} cursor-pointer`}
               >
                 <div className="flex flex-col items-start gap-3 4xl:gap-6 4xl:p-8">
                   <div className="grid h-12 w-12 place-items-center rounded-xl bg-gray-50 4xl:mb-2">
@@ -92,9 +115,9 @@ useEffect(() => {
                     >
                       {f.title}
                     </CommonParagraph1>
-                    <CommonParagraph2 className="mt-1 leading-relaxed text-gray-700">
+                    <CommonParagraph1 className="mt-1 leading-relaxed text-gray-700">
                       {f.desc}
-                    </CommonParagraph2>
+                    </CommonParagraph1>
                   </div>
                 </div>
               </div>
@@ -103,7 +126,7 @@ useEffect(() => {
         </div>
       </section>
 
-      <section className="px-4 pb-16  md:pt-[800px] lg:pt-[600px] 2xl:pt-[650px] 4xl:pt-[950px] 5xl:pt-[1000px] pt-[1050px]">
+      <section className="px-4 pb-16  md:pt-[1050px] lg:pt-[600px] 2xl:pt-[650px] 4xl:pt-[950px] 5xl:pt-[1100px] pt-[1200px]">
         <CommonHeader3 className="text-center font-extrabold tracking-wide text-[#0B2A4A] 4xl:mb-12">
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>
@@ -111,13 +134,25 @@ useEffect(() => {
         <div className="md:mx-20 mt-5 grid lg:grid-cols-6 grid-cols-2 max-w-8xl flex-wrap justify-center gap-6 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
           {(
             [
-              { key: "cheychey", label: "Chey Chey",icon: CheCheyIcon },
-              { key: "kids", label: "Educare Kids", icon:EducareSkillIcon },
-              { key: "primary", label: "Primary Level", icon:PrimaryLevelIcon },
-              { key: "intermediate", label: "Intermediate Level", icon:IntermediateLevelIcon },
-              { key: "graduate", label: "Graduate/BCSE", icon:BCSEIcon },
-              { key: "ibest", label: "iBEST Originals", icon:iBestOrognalIcon },
-            ] as { key: TabKey; label: string, icon:string }[]
+              { key: "cheychey", label: "Chey Chey", icon: CheCheyIcon },
+              { key: "kids", label: "Educare Kids", icon: EducareSkillIcon },
+              {
+                key: "primary",
+                label: "Primary Level",
+                icon: PrimaryLevelIcon,
+              },
+              {
+                key: "intermediate",
+                label: "Intermediate Level",
+                icon: IntermediateLevelIcon,
+              },
+              { key: "graduate", label: "Graduate/BCSE", icon: BCSEIcon },
+              {
+                key: "ibest",
+                label: "iBEST Originals",
+                icon: iBestOrognalIcon,
+              },
+            ] as { key: TabKey; label: string; icon: string }[]
           ).map((t) => (
             <button
               key={t.key}
@@ -129,7 +164,12 @@ useEffect(() => {
                   : "border-blue-100 bg-blue-50 hover:bg-blue-100",
               ].join(" ")}
             >
-             <img src={t.icon} alt="gh" className="size-4 xl:size-5 2xl:size-6 4xl:size-8 5xl:size-9 mr-3"/> <CommonParagraph2>{t.label}</CommonParagraph2>
+              <img
+                src={t.icon}
+                alt="gh"
+                className="size-4 xl:size-5 2xl:size-6 4xl:size-8 5xl:size-9 mr-3"
+              />{" "}
+              <CommonParagraph2>{t.label}</CommonParagraph2>
             </button>
           ))}
         </div>
@@ -139,8 +179,8 @@ useEffect(() => {
           {activeTab === "kids" && <EducareKidsSection />}
           {activeTab === "primary" && <PrimaryLevelContent />}
           {activeTab === "intermediate" && <IntermediateLevelContent />}
-          {activeTab === "graduate" && <Graduate/>}
-          {activeTab === "ibest" && <IBESTOriginal/>}
+          {activeTab === "graduate" && <Graduate />}
+          {activeTab === "ibest" && <IBESTOriginal />}
         </div>
       </section>
     </div>

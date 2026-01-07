@@ -10,14 +10,14 @@ const RegistraionGuideReadMore: React.FC = () => {
         <section id="registration-guid" className=" py-16 ">
           {RegistrationGuideContent && (
             <>
-              <div className="w-[78%] mx-auto border border-[#981AF7] rounded-3xl shadow-md p-10 bg-blue-50 space-y-4 min-h-[1000px] 2xl:h-[1250px] 3xl:h-[1600px] 4xl:h-[1900px] 5xl:h-[2200px] mb-20 5xl:space-y-10">
+              <div className="w-[78%] mx-auto border border-[#981AF7] rounded-3xl shadow-md p-10 px-14 bg-blue-50 space-y-6 2xl:space-y-8 4xl:space-y-10 min-h-[1100px] 2xl:h-[1350px] 3xl:h-[1700px] 4xl:h-[2000px] 5xl:h-[2200px] mb-20">
                 <CommonHeader2 className="text-[#981AF7] text-center">
                   {RegistrationGuideContent.title}
                 </CommonHeader2>
                 <CommonParagraph1>
                   {RegistrationGuideContent.description}
                 </CommonParagraph1>
-                <ol className="list-decimal list-inside space-y-2 5xl:space-y-7">
+                <ol className="list-disc list-inside space-y-3 3xl:space-y-5 4xl:space-y-7">
                   {RegistrationGuideContent.guide.map((item, index) =>
                     Object.values(item).map((step, stepIndex) => (
                       <li
@@ -49,7 +49,7 @@ const RegistraionGuideReadMore: React.FC = () => {
       {/* {small screen} */}
       <div className="lg:hidden">
         <img src={RegistrationGuideBGImage} />
-        <div className="w-full border border-[#981AF7] rounded-3xl shadow-md py-4 px-2 bg-blue-50 pb-24 md:pb-24">
+        <div className="w-full border border-[#981AF7] rounded-3xl shadow-md py-4 px-4 bg-blue-50 pb-24 md:pb-24 space-y-2 md:space-y-4 mt-6">
           <h2 className="text-[#981AF7] text-center text-lg font-bold">
             {RegistrationGuideContent.title}
           </h2>

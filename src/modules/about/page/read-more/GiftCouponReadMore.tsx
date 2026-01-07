@@ -13,7 +13,7 @@ const GiftCouponReadMore: React.FC = () => {
     <div className="w-full flex justify-center items-center overflow-hidden px-4">
       <section className="py-10 md:py-16 w-full max-w-[90%] lg:max-w-[70%] 4xl:max-w-[60%] relative">
         <div className="border border-blue-600 bg-blue-100 py-4 rounded-xl shadow-md relative pb-16 md:pb-24 mb-32 md:mb-48 z-10">
-          <div className="w-full relative  overflow-hidden px-6 md:px-10 flex items-center justify-between gap-4">
+          <div className="w-full relative  overflow-hidden px-6 md:px-10 lg:px-11 xl:px-12 2xl:px-12 3xl:px-16 4xl:px-20 5xl:px-24 flex items-center justify-between gap-4">
             {/* Text Content Container */}
             <div className="flex flex-col items-center text-center space-y-1 md:space-y-6 flex-1 md:pb-6 pb-3">
               <h1 className="text-xl md:text-5xl lg:text-6xl 4xl:text-7xl text-[#3366FF] font-extrabold tracking-tight">
@@ -48,7 +48,7 @@ const GiftCouponReadMore: React.FC = () => {
             <div className="absolute bottom-0 left-0 w-full md:h-[6px] h-[3px] bg-blue-600"></div>
           </div>
 
-          <div className="px-4 md:px-6 space-y-4 mt-4">
+          <div className="px-4 md:px-6 lg:px-11 xl:px-12 2xl:px-12 3xl:px-16 4xl:px-20 5xl:px-24 space-y-4 mt-4">
             <CommonHeader2 className="font-bold xl:max-w-2xl 3xl:max-w-5xl 5xl:max-w-7xl">
               {GiftCouponContent.subheader}
             </CommonHeader2>
@@ -58,7 +58,7 @@ const GiftCouponReadMore: React.FC = () => {
               </CommonParagraph1>
             </div>
 
-            <div className="bg-white rounded-2xl p-3 md:p-4">
+            <div className="bg-white rounded-2xl p-3 md:p-4 lg:px-4 xl:px-6 2xl:px-8 3xl:px-10 4xl:px-12 5xl:px-12">
               <CommonParagraph2 className="text-lg md:text-xl font-semibold text-blue-500">
                 {GiftCouponContent.buyerGuide.heading}
               </CommonParagraph2>
@@ -77,8 +77,8 @@ const GiftCouponReadMore: React.FC = () => {
             </div>
           </div>
 
-          <div className="px-4 md:px-6 pt-4 md:pt-6 space-y-4">
-            <div className="bg-white rounded-2xl p-3 md:p-4">
+          <div className="px-4 md:px-6 lg:px-11 xl:px-12 2xl:px-12 3xl:px-16 4xl:px-20 5xl:px-24 pt-4 md:pt-6 space-y-4">
+            <div className="bg-white rounded-2xl p-3 md:p-4 lg:px-4 xl:px-5 2xl:px-7 3xl:px-9 4xl:px-10 5xl:px-12">
               <CommonParagraph2 className="text-lg md:text-xl font-semibold text-blue-500">
                 {GiftCouponContent.buyerGuide.heading}
               </CommonParagraph2>

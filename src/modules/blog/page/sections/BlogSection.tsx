@@ -5,14 +5,11 @@ import {
   blogPosts,
   featuredPosts,
 } from "assets/content/blog/BlogContents";
-import { Blog1 } from "assets";
 import {
   CommonHeader1,
-  CommonHeader3,
   CommonHeader4,
+  CommonParagraph1,
   CommonParagraph2,
-  CommonParagraph3,
-  HrefButton,
 } from "components";
 
 export default function BlogSection() {
@@ -23,9 +20,9 @@ export default function BlogSection() {
         <CommonHeader1 className=" font-black text-[#1b364d] tracking-tight uppercase">
           {blogHeader.header}
         </CommonHeader1>
-        <CommonParagraph2 className="text-cyan-700 mt-2 ">
+        <CommonParagraph1 className="text-cyan-700 mt-2 ">
           {blogHeader.description}
-        </CommonParagraph2>
+        </CommonParagraph1>
       </div>
 
       {/* Featured Blog Post */}
@@ -43,9 +40,9 @@ export default function BlogSection() {
               <CommonHeader4 className="font-bold text-gray-900 mb-4">
                 {items.title}
               </CommonHeader4>
-              <CommonParagraph2 className="text-gray-600 mb-6 leading-relaxed">
+              <CommonParagraph1 className="text-gray-600 mb-6 leading-relaxed">
                 {items.excerpt}
-              </CommonParagraph2>
+              </CommonParagraph1>
               <a
                 href="#"
                 className="text-blue-600 font-semibold flex items-center gap-2 hover:underline group text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl"
@@ -74,9 +71,9 @@ export default function BlogSection() {
               <CommonHeader4 className=" font-bold text-gray-900 mb-2">
                 {post.title}
               </CommonHeader4>
-              <CommonParagraph2 className="text-gray-600 mb-6 flex-grow">
+              <CommonParagraph1 className="text-gray-600 mb-6 flex-grow">
                 {post.excerpt}
-              </CommonParagraph2>
+              </CommonParagraph1>
               <a
                 href="#"
                 className="text-blue-600 font-semibold flex items-center gap-2 hover:underline group text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl"

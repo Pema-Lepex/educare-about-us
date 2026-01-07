@@ -14,7 +14,7 @@ const ForDCDDUsersReadMore: React.FC = () => {
         <section id="registration-guid" className=" py-16 px-40 5xl:py-20 lg:mb-[350px] xl:mb-[500px] 2xl:mb-[550px] 3xl:mb-[880px] 4xl:mb-[1390px] 5xl:mb-[2800px]">
           {ForDCDDUsersContent && (
             <div className=" pb-[350px] 2xl:pb-[800px] ">
-              <div className="w-[80%] mx-auto border border-customOriange-200 rounded-3xl shadow-md p-10 5xl:p-24 bg-blue-50 space-y-4 5xl:space-y-10 mb-20">
+              <div className="w-[80%] mx-auto border border-customOriange-200 rounded-3xl shadow-md p-10 2xl:p-14 5xl:p-24 bg-blue-50 space-y-6 5xl:space-y-10 mb-20">
                 <CommonHeader2 className="text-customOriange-200 text-center">
                   {ForDCDDUsersContent.title}
                 </CommonHeader2>
@@ -27,7 +27,7 @@ const ForDCDDUsersReadMore: React.FC = () => {
                 <CommonParagraph1>
                   {ForDCDDUsersContent.description3}
                 </CommonParagraph1>
-                <ol className="list-disc list-inside space-y-2 5xl:space-y-10">
+                <ol className="list-disc list-inside space-y-4 5xl:space-y-10">
                   <li className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl  font-light">
                     {renderTextWithLinks(ForDCDDUsersContent.guide.guide1)}
                   </li>
@@ -97,13 +97,13 @@ const ForDCDDUsersReadMore: React.FC = () => {
         </div>
 
         <div className="bg-white px-6 pt-9 md:pt-16">
-          <div className="w-full border border-customOriange-200 rounded-3xl shadow-md py-8 md:py-12 px-2 bg-blue-50 space-y-2">
+          <div className="w-full border border-customOriange-200 rounded-3xl shadow-md py-8 md:py-12 px-4 bg-blue-50 space-y-2">
           <h2 className="text-customOriange-200 text-center text-lg font-bold">
             {ForDCDDUsersContent.title}
           </h2>
           <p className="text-start">{ForDCDDUsersContent.description1}</p>
           <p className="text-start">{ForDCDDUsersContent.description2}</p>
-          <ol className="list-decimal list-inside space-y-2 px-2">
+          <ol className="list-disc list-inside space-y-2 px-2">
             <li className="text-gray-700 text-xs font-light">
               {renderTextWithLinks(ForDCDDUsersContent.guide.guide1)}
             </li>

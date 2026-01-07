@@ -12,9 +12,9 @@ const BottomSection: React.FC = () => {
     <>
       
         {ImpactBottomSection.map((items) => (
-          <div  key={items.id} className={`border ${items.colorCode.border} rounded-[2rem] p-8 md:p-12 shadow-sm bg-white`}>
+          <div  key={items.id} className={`border ${items.colorCode.border} rounded-[2rem] p-4 md:p-6 lg:p-8 3xl:p-10 shadow-sm bg-white`}>
           <div
-            className="flex flex-col md:flex-row items-start gap-6"
+            className="flex flex-col lg:flex-row items-start gap-2 md:gap-4"
           >
             <div className={`p-3 ${items.colorCode.iconBG} rounded-full flex-shrink-0`}>
               <ShieldCheck className={`w-8 h-8 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 ${items.colorCode.text}`} />
@@ -23,12 +23,12 @@ const BottomSection: React.FC = () => {
               <CommonHeader3 className={`font-bold ${items.colorCode.text}`}>
                 {items.title}
               </CommonHeader3>
-              <CommonParagraph2 className="text-gray-600 leading-relaxed">
+              <CommonParagraph1 className="text-gray-600 leading-relaxed">
                {items.description1}
-              </CommonParagraph2>
-              <CommonParagraph2 className="text-gray-800 leading-relaxed">
+              </CommonParagraph1>
+              <CommonParagraph1 className="text-gray-800 leading-relaxed">
                  {renderTextWithLinks(items.description2)}
-              </CommonParagraph2>
+              </CommonParagraph1>
             </div>
           </div>
           </div>
@@ -38,15 +38,15 @@ const BottomSection: React.FC = () => {
 };
 export default function ImpactDetailSection() {
   return (
-    <section className="py-16 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto space-y-8 mb-24">
+    <section className="py-8 xl:py-10 3xl:py-12 4xl:py-16 5xl:py-28 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto space-y-8 xl:space-y-10 3xl:space-y-12 4xl:space-y-16 5xl:space-y-28 mb-24">
       {/* Top Row: Approach and Audience */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {ImpactOfEducare.map((items) => (
           <div
-            className={`border ${items.colorCode.border} rounded-[2rem] p-8 shadow-sm bg-white`}
+            className={`border ${items.colorCode.border} rounded-[2rem] p-4 md:p-6 lg:p-8 3xl:p-10 shadow-sm bg-white`}
             key={items.id}
           >
-            <div className="flex items-start gap-4">
+            <div className="flex items-start flex-col lg:flex-row gap-2 md:gap-4">
               <div
                 className={`p-3 ${items.colorCode.iconBG} rounded-full flex-shrink-0`}
               >
@@ -56,9 +56,9 @@ export default function ImpactDetailSection() {
                 <CommonHeader3 className={`font-bold ${items.colorCode.text} mb-2`}>
                   {items.title}
                 </CommonHeader3>
-                <CommonParagraph2 className="text-gray-600 leading-relaxed">
+                <CommonParagraph1 className="text-gray-600 leading-relaxed">
                   {items.description}
-                </CommonParagraph2>
+                </CommonParagraph1>
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function ImpactDetailSection() {
       </div>
 
       {/* Middle Row: Statistics */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
          <div className="border-t-4 border-blue-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
           <span className="block text-4xl md:text-5xl font-black text-blue-600">
             PP-XII
