@@ -77,7 +77,7 @@ export default function LeadershipSection() {
               {founders.map((item) => (
                 <div
                   key={item.name}
-                  className="mb-4 4xl:mb-10 last:mb-0"
+                  className="mb-4 4xl:mb-10 last:mb-0 space-y-2 2xl:space-y-4 4xl:space-y-6"
                 >
                   <CommonParagraph2 className="font-light">
                     "{item.quote}"

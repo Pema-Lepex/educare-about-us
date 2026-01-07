@@ -33,7 +33,7 @@ const TeamProfileSection: React.FC = () => {
                   <img
                     src={item.prfile}
                     alt="profile "
-                    className="border border-purple-600 rounded-3xl w-full"
+                    className=" w-full"
                   />
                   <div className="rounded-3xl p-5 border border-purple-600 shadow-md bg-blue-50">
                     <CommonParagraph1 className="">
@@ -56,7 +56,7 @@ const TeamProfileSection: React.FC = () => {
                         alt="profile "
                         className="border rounded-3xl w-full"
                       />
-                      <div className="rounded-3xl p-5 border border-purple-600 shadow-md bg-blue-50">
+                      <div className="rounded-3xl p-5 border border-purple-600 shadow-md bg-blue-50 space-y-2 2xl:space-y-4 4xl:space-y-6">
                         <CommonParagraph3 className=" text-purple-600">
                           {items.team}
                         </CommonParagraph3>
