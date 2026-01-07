@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { whyChooseUsDetails } from "assets/content/why-choose-us/WhyChooseUs";
-import CheyCheyContent from "./cheyChey";
-import EducareKidsSection from "./educareKids";
-import IntermediateLevelContent from "./intermidateLevel";
-import PrimaryLevelContent from "./primaryLevel";
+import CheyCheyContent from "./CheyChey";
+import EducareKidsSection from "./EducareKids";
+import IntermediateLevelContent from "./IntermidateLevel";
+import PrimaryLevelContent from "./PrimaryLevel";
 import {
   BCSEIcon,
   CheCheyIcon,
