@@ -175,7 +175,7 @@ const HowToGetStartedReadMore: React.FC = () => {
         <img
           src={AnimalImage}
           alt="animalimage"
-          className="lg:absolute lg:flex hidden pointer-events-none lg:-left-24 xl:left-0 lg:bottom-0 3xl:w-[1200px] 2xl:w-[990px] xl:w-[840px] h-auto"
+          className="lg:absolute lg:flex hidden pointer-events-none lg:-left-24 xl:left-0 lg:bottom-0 lg:w-[840px] xl:w-[840px] 2xl:w-[990px] 3xl:w-[1200px] 4xl:w-[1600px] 5xl:w-[1950px] h-auto"
         />
       </div>
       <div className="h-0 lg:h-10 4xl:h-80 5xl:h-[28rem]"></div>

@@ -1,4 +1,4 @@
-import { cheyChey } from "assets/content/why-choose-us/WhyChooseUs";
+import { CheyCheyData } from "assets/content/why-choose-us/WhyChooseUs";
 import { CommonHeader3, CommonHeader4, CommonParagraph1, CommonParagraph2, CommonParagraph3 } from "components";
 
 const GamepadIcon = () =>
@@ -12,7 +12,7 @@ const GamepadIcon = () =>
   </svg>;
 
 const CheyCheyContent: React.FC = () => {
-  const entry = cheyChey?.[0] ?? { title: "CheyChey", intro: "", games: [] };
+  const entry = CheyCheyData?.[0] ?? { title: "CheyChey", intro: "", games: [] };
   const items = entry.games || [];
 
   // split into 2 columns (left/right)

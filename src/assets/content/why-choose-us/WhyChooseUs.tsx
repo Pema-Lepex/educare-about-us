@@ -221,7 +221,7 @@ export const GraduateContent = [
     bgClass: "bg-yellow-50",
   },
 ];
-export const cheyChey = [
+export const CheyCheyData = [
   {
     title: "Chey Chey Mobile Game - Interactive Gamified Learning",
     intro:

@@ -115,6 +115,7 @@ const FAQ: React.FC = () => {
           ))}
         </div>
       </div>
+      <div className="h-36 3xl:h-96 4xl:h-[500px] 5xl:h-[600px]" />
     </section>
   );
 };
