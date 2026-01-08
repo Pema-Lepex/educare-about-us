@@ -1,4 +1,4 @@
-export { default as Facebook } from "./facebook.png";
+export { default as Facebook } from "./facebookIcon.png";
 export { default as Instragram } from "./instragram.png";
 export { default as Messanger } from "./messanger.png";
 export { default as Telegram } from "./telegram.png";
