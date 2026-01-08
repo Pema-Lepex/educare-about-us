@@ -131,7 +131,7 @@ const MainSectionPage: React.FC = () => {
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>
 
-        <div className="md:mx-20 mt-5 grid lg:grid-cols-6 grid-cols-2 max-w-8xl flex-wrap justify-center gap-6 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
+        <div className="md:mx-20 mt-5 grid grid-cols-2 lg:grid-cols-6 max-w-8xl gap-4 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
           {(
             [
               { key: "cheychey", label: "Chey Chey", icon: CheCheyIcon },
@@ -158,7 +158,9 @@ const MainSectionPage: React.FC = () => {
               key={t.key}
               onClick={() => setActiveTab(t.key)}
               className={[
-                "rounded-full border  justify-center py-2 text-xs md:text-base font-semibold transition flex gap-1 items-center",
+                // w-full makes it fill the grid cell
+                // min-w-0 is REQUIREMENT for truncation to work inside a Grid
+                "rounded-full border py-2 px-3 text-xs md:text-base font-semibold transition flex items-center justify-center flex-nowrap w-full min-w-0 overflow-hidden",
                 activeTab === t.key
                   ? "border-violet-400 bg-white shadow-[0_10px_18px_rgba(139,92,246,0.18)]"
                   : "border-blue-100 bg-blue-50 hover:bg-blue-100",
@@ -166,10 +168,15 @@ const MainSectionPage: React.FC = () => {
             >
               <img
                 src={t.icon}
-                alt="gh"
-                className="size-4 xl:size-5 2xl:size-6 4xl:size-8 5xl:size-9 mr-3"
-              />{" "}
-              <CommonParagraph2>{t.label}</CommonParagraph2>
+                alt="icon"
+                // flex-shrink-0 keeps the icon from squishing
+                className="size-4 xl:size-5 2xl:size-6 4xl:size-8 5xl:size-9 mr-2 flex-shrink-0"
+              />
+
+              {/* This span must have truncate and min-w-0 */}
+              <span className="truncate min-w-0">
+                <CommonParagraph2>{t.label}</CommonParagraph2>
+              </span>
             </button>
           ))}
         </div>
