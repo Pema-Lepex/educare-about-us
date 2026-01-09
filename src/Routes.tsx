@@ -43,7 +43,7 @@ const AppRoutes: React.FC = () => {
         <Route path="/impact" element={<Impact />} />
          {/* Why Choose Us page routes */}
         <Route path="/why-choose-us" element={<WhyChooseUs />} />
-        <Route path="/leadership" element={<Leadership />} />
+        <Route path="/team" element={<Leadership />} />
         <Route path="/career" element={<Career />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />

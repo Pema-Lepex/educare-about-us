@@ -18,7 +18,7 @@ export const Menus = [
   {
     title: "Team",
     icon: "",
-    ref: "/leadership",
+    ref: "/team",
   },
   {
     title: "Career",
