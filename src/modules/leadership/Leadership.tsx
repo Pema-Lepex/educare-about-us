@@ -1,11 +1,11 @@
 import MainLayout from "layouts/MainLayout";
-import LeadershipSection from "./page/sections/LeadershipSection";
+import LeadershipContent from "./page/LeadershipContent";
 
-const Leadership:React.FC = () => {
+const Leadership: React.FC = () => {
   return (
-   <MainLayout>
-    <LeadershipSection/>
+    <MainLayout>
+      <LeadershipContent />
     </MainLayout>
-  )
-}
+  );
+};
 export default Leadership;

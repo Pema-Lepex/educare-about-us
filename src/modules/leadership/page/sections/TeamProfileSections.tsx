@@ -1,7 +1,6 @@
 import { TeamProfile, TeamProfileHeader } from "assets/content/team/Team";
 import {
   CommonHeader2,
-  CommonHeader3,
   CommonParagraph1,
   CommonParagraph2,
   CommonParagraph3,
