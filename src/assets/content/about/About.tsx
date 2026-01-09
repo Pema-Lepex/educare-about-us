@@ -84,7 +84,7 @@ export const EducareSkillGroupContent = [
     groupImage: iBESTOroginalImage,
     groupIcon: iBestOrognalIcon,
     eligibility: "Happy hours for all",
-    info: "Pay. Eatch. Enjoy Bhutan's Best Stories - Anytime, Your Way!",
+    info: "Pay. Watch. Enjoy Bhutan's Best Stories - Anytime, Your Way!",
   },
 ];
 export const EducareSkillGuideContent = [
