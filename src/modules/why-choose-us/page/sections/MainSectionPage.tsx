@@ -99,12 +99,10 @@ const MainSectionPage: React.FC = () => {
                 } ${gridClasses} ${gridClassess} cursor-pointer`}
               >
                 <div className="flex flex-col items-start gap-3 4xl:gap-6 4xl:p-8">
-                  <div className="grid h-12 w-12 place-items-center rounded-xl bg-gray-50 4xl:mb-2">
-                    <img
-                      src={f.icon}
-                      alt=""
-                      className="h-9 w-9 4xl:w-12 4xl:h-12 5xl:w-16 5xl:h-16 object-contain"
-                    />
+                  <div className="grid p-3 place-items-center rounded-xl bg-gray-50 4xl:mb-2">
+                    <f.icon className={`w-6 h-6 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 ${
+                        titleByTheme[f.theme]
+                      }`} />
                   </div>
                   <div>
                     <CommonParagraph1
@@ -125,7 +123,7 @@ const MainSectionPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="px-4 pb-16  pt-[1400px] xs:pt-[1500px] sm:pt-[1400px] md:pt-[1350px] lg:pt-[850px] xl:pt-[720px] 2xl:pt-[950px] 3xl:pt-[850px] 4xl:pt-[1200px] 5xl:pt-[1300px]">
+      <section className="px-4 pb-16  pt-[1850px] xs:pt-[1500px] sm:pt-[1400px] md:pt-[1350px] lg:pt-[850px] xl:pt-[720px] 2xl:pt-[950px] 3xl:pt-[850px] 4xl:pt-[1200px] 5xl:pt-[1300px]">
         <CommonHeader3 className="text-center font-extrabold tracking-wide text-[#0B2A4A] 4xl:mb-12">
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>

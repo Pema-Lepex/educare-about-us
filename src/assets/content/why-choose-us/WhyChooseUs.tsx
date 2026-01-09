@@ -5,37 +5,38 @@ import {
   personalize,
   QualityLearning,
 } from "assets";
+import { BadgeCheck, Gem, MonitorCheck, ShieldCheck, UserStar } from "lucide-react";
 
 export const whyChooseUsDetails = [
   {
     title: "Quality Content",
     desc: `Our content is not only educational but also entertaining, ensuring that learning is both effective and enjoyable. Every episode and lesson is developed by professionals and undergoes a rigorous review process by Dzongkha teachers, Dzongkha experts, and curriculum professionals from the Department of Culture and Dzongkha Development (DCDD) and the Department of School Education, MoESD—leaving no room for errors!`,
     theme: "orange",
-    icon: QualityLearning,
+    icon: ShieldCheck,
   },
   {
     title: "Interactive Learning",
     desc: `Our content is available in a wide variety of fun and engaging formats, making learning a highly interactive experience. From interactive Chey Chey mobile games to nursery rhymes, animation series, and read-aloud stories, every exam-oriented tutorial and set of solved questions is designed to be learner-centred, fun, and engaging—ensuring that learning is active rather than passive.`,
     theme: "purple",
-    icon: InteractiveLearning,
+    icon: MonitorCheck,
   },
   {
     title: "Approved by Dzongkha Experts and Curriculum-Aligned",
     desc: `Our content is developed in consultation with Dzongkha teachers, experts, and caregivers from across the country and undergoes rigorous review by professionals from DCDD and DSE, ensuring full alignment with the national Dzongkha curriculum and standards. As a result, Educare Skill has been endorsed as the “**National Dzongkha Online Learning Platform**.”`,
     theme: "green",
-    icon: Approve,
+    icon: BadgeCheck,
   },
   {
     title: "Personalized Learning",
     desc: "Our content offers a personalised learning experience, helping students in every class.",
     theme: "red",
-    icon: personalize,
+    icon: UserStar,
   },
   {
     title: "Affordable Pricing",
     desc: "Our membership plans are affordable, ensuring you gain access to high-quality Dzongkha content at minimal cost.",
     theme: "blue",
-    icon: affortable,
+    icon: Gem,
   },
 ];
 
