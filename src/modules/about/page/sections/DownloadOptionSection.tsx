@@ -1,13 +1,7 @@
 import { AndroidStoreImage, AppleStoreImage, GirlRunningImage } from "assets";
+import { RedirectToAppStore, RedirectToGooglePlay } from "utils/helpers/URLs";
 
 const DownloadOptionSection: React.FC = () => {
-  const redirectToAppStore = () => {
-    window.location.href = "https://www.apple.com/app-store/";
-  };
-  const redirectToGooglePlay = () => {
-    window.location.href = "https://play.google.com/store";
-  };
-
   return (
     <div className="w-full relative">
       <img
@@ -24,20 +18,20 @@ const DownloadOptionSection: React.FC = () => {
           Dzongkha a fun and exciting adventure.
         </p>
         <div className="flex flex-row gap-4">
-          <button onClick={redirectToAppStore}>
+          <a href={RedirectToAppStore.linkToAppStore} target="_blank">
             <img
               src={AppleStoreImage}
               alt="Apple Store"
               className="h-[22px] md:h-10 lg:h-14 4xl:h-20 6xl:h-28 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
             />
-          </button>
-          <button onClick={redirectToGooglePlay}>
+          </a>
+          <a href={RedirectToGooglePlay.linkToGooglePlay} target="_blank">
             <img
               src={AndroidStoreImage}
               alt="Android Store"
               className="h-[22px] md:h-10 lg:h-14 4xl:h-20 6xl:h-28 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
             />
-          </button>
+          </a>
         </div>
       </section>
     </div>

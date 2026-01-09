@@ -426,7 +426,7 @@ export const testimonials = [
   },
 ];
 
-export const GiftCouponLinkDetails = {
+export const GiftCouponLinkDetail = {
   icon: GiftIcon,
   linkToGiftCoupon: "https://www.educareskill.com/?tab=gift-coupon",
   buttonName: "Gift the joy of learning!",

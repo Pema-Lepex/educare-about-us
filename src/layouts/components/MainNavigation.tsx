@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Menus } from "./ManuList";
 import { whiteLogo, MenuIcon, XMarkIcon } from "assets";
+import { DCDDSignUpLinkDetails, GiftCouponLinkDetails, SignInLinkDetails } from "utils/helpers/URLs";
 
 interface Props {
   hidden?: boolean;
@@ -62,25 +63,25 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
           </div>
           <div className="lg:flex gap-2 xl:gap-4 hidden">
             <a
-              href="https://www.educareskill.com/#/signup"
+              href={DCDDSignUpLinkDetails.linkToDCDDSignIn}
               target="_blank"
               className="bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
             >
-              DCDD Sign In
+              {DCDDSignUpLinkDetails.LinkFor}
             </a>
             <a
-              href="https://www.educareskill.com/#/login"
+              href={SignInLinkDetails.linkToSignIn}
               target="_blank"
               className="bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
             >
-              Sign In
+              {SignInLinkDetails.LinkFor}
             </a>
             <a
-              href="https://www.educareskill.com/#/login"
+              href={GiftCouponLinkDetails.linkToGiftCoupon}
               target="_blank"
               className="bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
             >
-              Gift Coupon
+              {GiftCouponLinkDetails.LinkFor}
             </a>
           </div>
           <button
@@ -131,27 +132,27 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             })}
             <div className="lg:hidden gap-2 flex my-3">
               <a
-                href="https://www.educareskill.com/#/signup"
+                href={DCDDSignUpLinkDetails.linkToDCDDSignIn}
                 target="_blank"
                 className="bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
               >
-                DCDD Sign In
+                {DCDDSignUpLinkDetails.LinkFor}
               </a>
               <a
-                href="https://www.educareskill.com/#/login"
+                href={SignInLinkDetails.linkToSignIn}
                 target="_blank"
                 className="bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
               >
-                Sign In
+                {SignInLinkDetails.LinkFor}
               </a>
             </div>
             <div className={`py-3 border-t last:border-b-0 border-primary-100 dark:border-gray-800`}>
               <a
-                href="https://www.educareskill.com/#/login"
+                href={GiftCouponLinkDetails.linkToGiftCoupon}
                 target="_blank"
                 className="bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
               >
-                Gift Coupon
+                {GiftCouponLinkDetails.LinkFor}
               </a>
             </div>
           </nav>

@@ -12,17 +12,12 @@ import {
 } from "components";
 import { useState } from "react";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
+import { DCDDSignUpLinkDetails, RedirectToAppStore, RedirectToGooglePlay, SignInLinkDetails } from "utils/helpers/URLs";
 
 const HowToGetStartedReadMore: React.FC = () => {
   const [selectedType, setSelectedType] = useState(
     memebershipDetails[0].memnershipType
   );
-  const redirectToAppStore = () => {
-    window.location.href = "https://www.apple.com/app-store/";
-  };
-  const redirectToGooglePlay = () => {
-    window.location.href = "https://play.google.com/store";
-  };
   return (
     <section className="p-6 md:mb-20 mb-16" id="how-to-get-started">
       <div className="lg:flex relative">
@@ -36,11 +31,11 @@ const HowToGetStartedReadMore: React.FC = () => {
           </CommonParagraph1>
           <div className="w-full flex justify-center">
             <HrefButton
-              href="https://www.educareskill.com/#/signup"
+              href={DCDDSignUpLinkDetails.linkToDCDDSignIn}
               target="_blank"
               className=" bg-customOriange-200 text-white  hover:bg-orange-600 "
             >
-              DCDD Sign In
+              {DCDDSignUpLinkDetails.LinkFor}
             </HrefButton>
           </div>
 
@@ -49,11 +44,11 @@ const HowToGetStartedReadMore: React.FC = () => {
           </CommonParagraph1>
           <div className="w-full flex justify-center">
             <HrefButton
-              href="https://www.educareskill.com/#/signup"
+              href={SignInLinkDetails.linkToSignIn}
               target="_blank"
               className=" bg-[#215FF8] text-white hover:bg-blue-600"
             >
-              Sign Up
+              {SignInLinkDetails.LinkFor}
             </HrefButton>
           </div>
 
@@ -155,20 +150,20 @@ const HowToGetStartedReadMore: React.FC = () => {
               Android devices and App Store for iOS devices.
             </h4>
             <div className="flex flex-row gap-4 lg:gap-6 3xl:gap-10 4xl:gap-14">
-              <button onClick={redirectToAppStore}>
+              <a href={RedirectToAppStore.linkToAppStore} target="_blank">
                 <img
                   src={AppleStoreImage}
                   alt="Apple Store"
                   className="h-[29px] md:h-14 2xl:h-20 4xl:h-28 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
                 />
-              </button>
-              <button onClick={redirectToGooglePlay}>
+              </a>
+              <a href={RedirectToGooglePlay.linkToGooglePlay} target="_blank">
                 <img
                   src={AndroidStoreImage}
                   alt="Android Store"
                   className="h-[29px] md:h-14 2xl:h-20 4xl:h-28 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
                 />
-              </button>
+              </a>
             </div>
           </div>
         </div>
