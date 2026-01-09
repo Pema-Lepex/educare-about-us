@@ -42,7 +42,7 @@ const ForDCDDUsersReadMore: React.FC = () => {
                     {renderTextWithLinks(ForDCDDUsersContent.guide.guide4)}
                   </li>
                 </ol>
-                <div className="w-full flex justify-center py-4">
+                <div className="w-full flex justify-center py-4 ">
                   <HrefButton
                     href={SignInLinkDetails.linkToSignIn}
                     target="_blank"
@@ -62,7 +62,7 @@ const ForDCDDUsersReadMore: React.FC = () => {
               </div>
             </div>
           )}
-          <div className="absolute -bottom-20 md:-bottom-[20rem] lg:bottom-[16rem] xl:bottom-[12rem] 2xl:bottom-[350px] 4xl:bottom-[300px] 5xl:bottom-[650px] right-3 w-full ">
+          <div className="absolute -bottom-20 md:-bottom-[20rem] lg:bottom-[16rem] xl:bottom-[12rem] 2xl:bottom-[350px] 4xl:bottom-[300px] 5xl:bottom-[650px] right-3 w-full pointer-events-none">
             <div className="relative w-full">
               {/* Background Family Image */}
               <img

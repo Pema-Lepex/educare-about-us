@@ -42,7 +42,7 @@ const RegistraionGuideReadMore: React.FC = () => {
               </div>
             </>
           )}
-          <div className="absolute -bottom-20 md:-bottom-40 lg:-bottom-14 xl:-bottom-40 2xl:-bottom-52 3xl:-bottom-[240px] 4xl:-bottom-[150px] 5xl:-bottom-[99px] 5xl:left-60 right-3">
+          <div className="absolute -bottom-20 md:-bottom-40 lg:-bottom-14 xl:-bottom-40 2xl:-bottom-52 3xl:-bottom-[240px] 4xl:-bottom-[150px] 5xl:-bottom-[99px] 5xl:left-60 right-3 pointer-events-none">
             <img src={ThreeCharacterImage} alt="ThreeCharacterImage" />
           </div>
         </section>
