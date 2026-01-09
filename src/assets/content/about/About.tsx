@@ -75,7 +75,7 @@ export const EducareSkillGroupContent = [
     groupImage: BCSEImage,
     groupIcon: BCSEIcon,
     eligibility: "Your perfect tutor for relearning Dzongkha",
-    info: "Relearn, Refresh, and Reload nYour Dzongkha - Begin Today!",
+    info: "Relearn, Refresh, and Reload Your Dzongkha - Begin Today!",
   },
   {
     id: 6,
