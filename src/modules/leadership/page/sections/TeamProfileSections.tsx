@@ -36,9 +36,12 @@ const TeamProfileSection: React.FC = () => {
                     className=" w-full"
                   />
                   <div className="rounded-3xl p-5 border border-purple-600 shadow-md bg-blue-50">
-                    <CommonParagraph1 className="">
-                      {item.teamNote}
-                    </CommonParagraph1>
+                    <CommonParagraph3 className=" text-purple-600">
+                          {item.team}
+                        </CommonParagraph3>
+                        <CommonParagraph1 className="">
+                          {item.teamNote}
+                        </CommonParagraph1>
                   </div>
                 </div>
               ) : (

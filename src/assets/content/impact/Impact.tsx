@@ -19,12 +19,12 @@ export const ImpactOfEducare = [
       iconBG: "bg-orange-50"
     },
     icon:TrendingUp,
-    description:
-      "In accordance with this vision, Educare Skill aims to revolutionize the way people can learn our national language by creating content that simplifies Dzongkha and makes learning an engaging and interactive experience for everyone.",
+    description: 
+      `Educare Skill combines technology and education to enhance learning through entertaining content, engaging, and easy-to-understand lessons. By leveraging innovative digital solutions and an interactive learning approach, Educare Skill makes learning Dzongkha more enjoyable, effective, and accessible for everyone.`
   },
   {
     id:2,
-    title: "Who We Help",
+    title: "Our Target",
     colorCode: {
       border: "border-purple-300",
       text: "text-purple-500",
@@ -32,7 +32,7 @@ export const ImpactOfEducare = [
     },
     icon: User,
     description:
-      "Educare Skill has helped, and continues to help, students learn Dzongkha and prepare for their exams. Children can build a solid Dzongkha foundation, students can prepare for exams, and graduates can use it for their RCSE examinations.",
+      `At present, Educare Skill aims to help every Bhutanese enhance their Dzongkha competencies and continues to expand its impact. With a diverse range of content, the platform supports learners of all age groups—from foundational to advanced Dzongkha learning, exam preparation, and lifelong learning. Educare Skill is designed for anyone with the desire to learn and master our national language, Dzongkha.`,
   },
 ];
 

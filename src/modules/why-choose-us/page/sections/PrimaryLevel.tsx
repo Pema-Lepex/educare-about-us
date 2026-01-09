@@ -17,7 +17,7 @@ const PrimaryLevelContent: React.FC = () => {
             Primary Level Content
           </CommonHeader4>
           <CommonParagraph1 className="mt-2 text-slate-600">
-            Comprehensive Dzongkha lessons, excting stories and other entertaining content for Classes PP - VI
+            Comprehensive Dzongkha lessons, exam-oriented tutorials, and solved questions (MCQs and Q&As), along with other exciting and entertaining content for Classes PP - VI.
           </CommonParagraph1>
         </div>
 

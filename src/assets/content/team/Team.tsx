@@ -12,7 +12,7 @@ export const TeamProfile = [
     team: "Management Team",
     colorCode:"",
     prfile: ManagementTeamProfile,
-    teamNote: `The management team serves as the operational backbone of any organization, steering strategy and driving execution. Composed of leaders from key functional areas such as finance, operations, and marketing, this group translates vision into actionable plans. An effective team combines diverse expertise with cohesive leadership, fostering innovation, managing risk, and inspiring the broader workforce. Their collective experience, judgment, and ability to adapt are critical determinants of a company's stability, growth, and long-term success, making them pivotal to both daily excellence and future ambitions.`,
+    teamNote: `Our management team drives efficiency, growth, and excellence across the organization. The adept team oversees operations, manages finances, and ensures smooth administrative processes. The management team brings all members together to focus on achieving the company’s common goals.`,
     subTeamcategory: [],
   },
   {

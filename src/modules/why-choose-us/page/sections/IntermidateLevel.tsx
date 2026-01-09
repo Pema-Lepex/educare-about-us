@@ -32,7 +32,7 @@ const IntermediateLevelContent: React.FC = () => {
             Intermediate Level Content
           </CommonHeader4>
           <CommonParagraph1 className="mt-2 text-slate-600">
-            Comprehensive Dzongkha lessons, excting stories and other entertaining content for Classes VII - XII
+            Comprehensive Dzongkha lessons, easy-to-understand and simplified narration and explanations of difficult terminologies, exam-oriented tutorials, and solved questions (MCQs and Q&As), along with other exciting and entertaining content for Classes VII – XII.
           </CommonParagraph1>
         </div>
 

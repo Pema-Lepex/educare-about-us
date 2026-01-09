@@ -31,7 +31,7 @@ export default function IBESTOriginal() {
             iBEST Originals Content
           </CommonHeader4>
           <CommonParagraph1 className="mt-2 text-slate-600">
-            Happy hours for all
+            Happy hours for all.
           </CommonParagraph1>
         </div>
       {blocks.map(item => {

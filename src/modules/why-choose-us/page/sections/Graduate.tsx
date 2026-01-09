@@ -32,7 +32,7 @@ const Graduate: React.FC = () => {
             Graduate / BCSE
           </CommonHeader4>
           <CommonParagraph1 className="mt-2 text-slate-600">
-            Comprehensive Dzongkha lessons, exam oriented tutorials and other entertaing content for undergrades, graduates or anyone wishing to learn Dzongkha.
+           Comprehensive Dzongkha lessons covering grammar and language, reading and writing concepts, easy-to-understand and simplified narration and explanations of difficult terminologies, exam-oriented tutorials, and solved questions (MCQs and Q&As), which are mandatory Dzongkha test parameters for the RCSC examinations, and for anyone wishing to improve their Dzongkha.
           </CommonParagraph1>
         </div>
 

@@ -16,6 +16,7 @@ import { useSearchParams } from "react-router-dom";
 import { CommonHeader3, CommonParagraph1, CommonParagraph2 } from "components";
 import Graduate from "./Graduate";
 import IBESTOriginal from "./IBESTOriginal";
+import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 
 type TabKey =
   | "cheychey"
@@ -38,8 +39,6 @@ const MainSectionPage: React.FC = () => {
     red: "intermediate",
     blue: "cheychey",
   };
-
-  // content is rendered by individual section components (CheyCheyContent, EducareKidsSection, etc.)
 
   const borderByTheme: Record<string, string> = {
     orange: "border-[#FF7A00]",
@@ -116,7 +115,7 @@ const MainSectionPage: React.FC = () => {
                       {f.title}
                     </CommonParagraph1>
                     <CommonParagraph1 className="mt-1 leading-relaxed text-gray-700">
-                      {f.desc}
+                      {renderTextWithLinks(f.desc)}
                     </CommonParagraph1>
                   </div>
                 </div>
@@ -126,7 +125,7 @@ const MainSectionPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="px-4 pb-16  md:pt-[1050px] lg:pt-[600px] 2xl:pt-[650px] 4xl:pt-[950px] 5xl:pt-[1100px] pt-[1200px]">
+      <section className="px-4 pb-16  pt-[1400px] xs:pt-[1500px] sm:pt-[1400px] md:pt-[1350px] lg:pt-[850px] xl:pt-[720px] 2xl:pt-[950px] 3xl:pt-[850px] 4xl:pt-[1200px] 5xl:pt-[1300px]">
         <CommonHeader3 className="text-center font-extrabold tracking-wide text-[#0B2A4A] 4xl:mb-12">
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>
@@ -158,8 +157,6 @@ const MainSectionPage: React.FC = () => {
               key={t.key}
               onClick={() => setActiveTab(t.key)}
               className={[
-                // w-full makes it fill the grid cell
-                // min-w-0 is REQUIREMENT for truncation to work inside a Grid
                 "rounded-full border py-2 px-3 text-xs md:text-base font-semibold transition flex items-center justify-center flex-nowrap w-full min-w-0 overflow-hidden",
                 activeTab === t.key
                   ? "border-violet-400 bg-white shadow-[0_10px_18px_rgba(139,92,246,0.18)]"
@@ -169,18 +166,14 @@ const MainSectionPage: React.FC = () => {
               <img
                 src={t.icon}
                 alt="icon"
-                // flex-shrink-0 keeps the icon from squishing
                 className="size-4 xl:size-5 2xl:size-6 4xl:size-8 5xl:size-9 mr-2 flex-shrink-0"
               />
-
-              {/* This span must have truncate and min-w-0 */}
               <span className="truncate min-w-0">
                 <CommonParagraph2>{t.label}</CommonParagraph2>
               </span>
             </button>
           ))}
         </div>
-        {/* Panel - render the matching section component */}
         <div className="mx-auto mt-4 max-w-6xl 3xl:max-w-full 3xl:px-36 px-0 mb-20">
           {activeTab === "cheychey" && <CheyCheyContent />}
           {activeTab === "kids" && <EducareKidsSection />}
