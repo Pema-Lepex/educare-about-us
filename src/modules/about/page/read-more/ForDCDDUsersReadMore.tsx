@@ -57,11 +57,11 @@ const ForDCDDUsersReadMore: React.FC = () => {
                     {DCDDSignUpLinkDetails.LinkFor}
                   </HrefButton>
                 </div>
-                <div>
-                  <CommonParagraph1 className="pt-4 px-6 text-xl font-light text-customOriange-200">
+                <div className="">
+                  <CommonParagraph1 className="pt-4 px-12 text-xl font-light text-customOriange-200">
                     {ForDCDDUsersContent.importentNote1}
                   </CommonParagraph1>
-                  <CommonParagraph1 className="pb-4 pt-2 px-6 text-xl font-light text-customOriange-200">
+                  <CommonParagraph1 className="pb-4 pt-2 px-12 text-xl font-light text-customOriange-200">
                     {renderTextWithLinks(ForDCDDUsersContent.importentNote2)}
                   </CommonParagraph1>
                 </div>

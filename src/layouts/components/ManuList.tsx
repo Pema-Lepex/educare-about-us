@@ -28,7 +28,7 @@ export const Menus = [
   {
     title: "Blog",
     icon: "",
-    ref: "/blog",
+    ref: "#",
   },
   {
     title: "Contact",
