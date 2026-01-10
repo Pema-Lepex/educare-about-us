@@ -34,7 +34,7 @@ const TeamProfileSection: React.FC = () => {
                   <img
                     src={item.prfile}
                     alt="profile "
-                    className=" w-full"
+                    className="border rounded-3xl w-full"
                   />
                   <div className="rounded-3xl p-5 border border-purple-600 shadow-md bg-blue-50">
                     <CommonParagraph3 className=" text-purple-600">

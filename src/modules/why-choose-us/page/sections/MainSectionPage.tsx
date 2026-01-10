@@ -151,7 +151,7 @@ const MainSectionPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="px-4 pb-16  pt-[1850px] xs:pt-[1500px] sm:pt-[1400px] md:pt-[1350px] lg:pt-[850px] xl:pt-[720px] 2xl:pt-[950px] 3xl:pt-[850px] 4xl:pt-[1200px] 5xl:pt-[1300px]">
+      <section className="px-4 pb-16  pt-[1850px] xs:pt-[1500px] sm:pt-[1400px] md:pt-[1350px] lg:pt-[850px] xl:pt-[820px] 2xl:pt-[950px] 3xl:pt-[850px] 4xl:pt-[1200px] 5xl:pt-[1300px]">
         <CommonHeader3 className="text-center font-extrabold tracking-wide text-[#0B2A4A] 4xl:mb-12">
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>

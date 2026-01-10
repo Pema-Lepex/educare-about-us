@@ -67,17 +67,17 @@ export const TeamProfile = [
         prfile: VideographersProfile,
         teamNote: `Our videography team records video content and films footage. They dictate the visual presentation, using a wide variety of camera angles and movements to tell a story or to capture a scene.`,
       },
+       {
+        id:8,
+        team: "Visual Editors",
+        prfile: VisualEditorsProfile,
+        teamNote: `After the production process, our team of editors packages the final product by assembling footage, inserting seamless transitions, and adding visually striking effects, creating content of the highest quality.`,
+      },
       {
         id:7,
         team: "Music Director",
         prfile: MusicDirectorProfile,
         teamNote: `Every great film, short video, or animation needs music that sets the mood and builds emotion. Our music director composes powerful music and sound design that perfectly complements the content, bringing it to life.`,
-      },
-      {
-        id:8,
-        team: "Visual Editors",
-        prfile: VisualEditorsProfile,
-        teamNote: `After the production process, our team of editors packages the final product by assembling footage, inserting seamless transitions, and adding visually striking effects, creating content of the highest quality.`,
       },
     ],
   },

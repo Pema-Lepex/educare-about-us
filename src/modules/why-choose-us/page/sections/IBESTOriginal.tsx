@@ -29,7 +29,7 @@ const IBESTOriginal: React.FC = () => {
       <div className="mx-auto max-w-5xl 3xl:max-w-full 3xl:px-36 rounded-2xl border border-primary-200 bg-white shadow-[0_12px_22px_rgba(0,0,0,0.08)] pb-10 space-y-4 xl:space-y-5 4xl:space-y-10">
         <div className="px-6 pt-6 space-y-4 xl:space-y-5 4xl:space-y-10">
           <CommonHeader4 className="font-extrabold text-rose-600">
-            iBEST Originals
+            iBEST Originals Content
           </CommonHeader4>
           <CommonParagraph1 className="mt-2 text-slate-600">
            Truly Bhutanese stories and expression – purposeful entertainment and education where people of all ages can make their time worthwhile with their loved ones.

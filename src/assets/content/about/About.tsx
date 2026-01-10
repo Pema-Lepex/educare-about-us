@@ -340,10 +340,12 @@ export const ForDCDDUsersContent = {
   description2:
     "If you are eligible for the DCDD support, we are glad to inform you that you have already been registered on Educare Skill!",
   description3:
-    "In collaboration with schools and ECCD centres across the country, the Educare Skill support team has already registered all eligible users onto the platform.",
+    "In collaboration with schools and ECCD centres across the country, the Educare Skill support team has already registered all eligible users onto the platform. ",
+  description4:
+    "Collect your USER ID and PASSWORD from your respective class teacher or ECCD facilitator.",
   guide: {
-    guide1:
-      "Collect your USER ID and PASSWORD from your respective class teacher or ECCD facilitator.",
+    // guide1:
+    //   "Collect your USER ID and PASSWORD from your respective class teacher or ECCD facilitator.",
     guide2:
       "Open the Educare Skill homepage either through the website or the app. Then, click on **DCDD Sign In**.",
     guide3: "Enter your USER ID and PASSWORD and click on **Sign In**.",
