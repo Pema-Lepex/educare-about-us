@@ -1,0 +1,10 @@
+export { default as ManagementTeamProfile } from "./Management Team.jpg";
+export { default as BGArtistsProfile } from "./BG Artists.jpg";
+export { default as ContentWritersProfile } from "./Content Writers.jpg";
+export { default as IllustratorsProfile } from "./Illustrators.jpg";
+export { default as TwoDAnimatorProfile } from "./2D Animator.jpg";
+export { default as ThreeDAnimatorProfile } from "./3D Animator.jpg";
+export { default as VideographersProfile } from "./Videographers.jpg";
+export { default as MusicDirectorProfile } from "./Music Director.jpg";
+export { default as VisualEditorsProfile } from "./Visual Editors.jpg";
+export { default as SoftwareDevelopersProfile } from "./Software Developers.jpg";

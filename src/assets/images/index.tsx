@@ -50,4 +50,4 @@ export * from "./frames";
 export * from "./why-choose-us";
 export * from "./silders";
 export * from "./Box";
-export * from "./team-profile";
+export * from "./Team_New";
