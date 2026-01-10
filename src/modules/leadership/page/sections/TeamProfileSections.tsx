@@ -3,7 +3,6 @@ import {
   CommonHeader2,
   CommonHeader3,
   CommonParagraph1,
-  CommonParagraph2,
   CommonParagraph3,
 } from "components";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
@@ -13,9 +12,14 @@ const TeamProfileSection: React.FC = () => {
     <>
       <section className="space-y-10 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto">
         <div className="text-center space-y-4 4xl:space-y-10">
-          <CommonHeader2 className="text-customOriange-200">
-            {TeamProfileHeader.title}
-          </CommonHeader2>
+          <div className="relative inline-block w-full">
+            <CommonHeader2 className="text-customOriange-200 ">
+              {TeamProfileHeader.title}
+            </CommonHeader2>
+            <CommonParagraph1 className=" w-full flex justify-center text-primary-300 font-bold top-10 text-xl">
+              {TeamProfileHeader.fame}
+            </CommonParagraph1>
+          </div>
           <CommonParagraph1 className="text-primary-500 font-bold">
             {TeamProfileHeader.subTitle}
           </CommonParagraph1>
@@ -38,11 +42,11 @@ const TeamProfileSection: React.FC = () => {
                   />
                   <div className="rounded-3xl p-5 border border-purple-600 shadow-md bg-blue-50">
                     <CommonParagraph3 className=" text-purple-600">
-                          {item.team}
-                        </CommonParagraph3>
-                        <CommonParagraph1 className="">
-                          {item.teamNote}
-                        </CommonParagraph1>
+                      {item.team}
+                    </CommonParagraph3>
+                    <CommonParagraph1 className="">
+                      {item.teamNote}
+                    </CommonParagraph1>
                   </div>
                 </div>
               ) : (

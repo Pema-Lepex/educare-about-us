@@ -1,7 +1,8 @@
 import {  BGArtistsProfile, ContentWritersProfile, IllustratorsProfile, ManagementTeamProfile, MusicDirectorProfile, SoftwareDevelopersProfile, ThreeDAnimatorProfile, TwoDAnimatorProfile, VideographersProfile, VisualEditorsProfile } from "assets";
 
 export const TeamProfileHeader = {
-    title:"TEAM BEHIND EDUCARE SKILL",
+    title:"EDUCARE SKILL HALL OF FAME",
+    fame:"Tashi delek and thank you to the brave hearts behind the breakthrough Educare Skill initiative.",
     subTitle:"Educare Skill is the result of over five years of selfless dedication, creativity, and sacrifice by an extraordinary team of over 150 individuals from iBEST and various stakeholders who contributed in different capacities.",
    description: `The platform was launched on **21st February 2024**, coinciding with the Birth Anniversary of His Majesty The King. This selfless service to Bhutan and beyond—undertaken despite all odds by brave Bhutanese professionals and youth—stands as a truly ‘Made in Bhutan’ breakthrough initiative. It is an act of offering, **Buelwa**, to contribute towards the ‘**education and skilling**’ of Bhutanese and beyond, inspired by the farsighted and visionary leadership of our Beloved Monarchs and the efforts of the Royal Government of Bhutan.
                 We extend our deepest **gratitude, appreciation, and respect** to the brave hearts of iBEST who made this breakthrough in Bhutan possible in every sense of the word. **This achievement belongs to you!**`,
