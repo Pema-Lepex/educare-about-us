@@ -18,6 +18,14 @@ export const TeamProfile = [
   },
   {
     id:2,
+    team: "Technology Team",
+    colorCode:"",
+    prfile: SoftwareDevelopersProfile,
+    teamNote: `Our dedicated team of software developers designs, develops, and maintains our websites and applications, ensuring operations run smoothly and the needs of users are met. They write clean, efficient code, troubleshoot issues, and collaborate with teams to deliver reliable and scalable digital solutions.`,
+    subTeamcategory: [],
+  },
+  {
+    id:3,
     team: "Production Team",
     colorCode:"",
     prfile: "",
@@ -70,12 +78,6 @@ export const TeamProfile = [
         team: "Visual Editors",
         prfile: VisualEditorsProfile,
         teamNote: `After the production process, our team of editors packages the final product by assembling footage, inserting seamless transitions, and adding visually striking effects, creating content of the highest quality.`,
-      },
-      {
-        id:8,
-        team: "Software Developers",
-        prfile: SoftwareDevelopersProfile,
-        teamNote: `Our dedicated team of software developers designs, develops, and maintains our websites and applications, ensuring operations run smoothly and the needs of users are met. They write clean, efficient code, troubleshoot issues, and collaborate with teams to deliver reliable and scalable digital solutions.`,
       },
     ],
   },
