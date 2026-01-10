@@ -1,24 +1,26 @@
 import { TeamProfile, TeamProfileHeader } from "assets/content/team/Team";
 import {
   CommonHeader2,
+  CommonHeader3,
   CommonParagraph1,
   CommonParagraph2,
   CommonParagraph3,
 } from "components";
+import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 
 const TeamProfileSection: React.FC = () => {
   return (
     <>
       <section className="space-y-10 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto">
-        <div className="text-center">
+        <div className="text-center space-y-4 4xl:space-y-10">
           <CommonHeader2 className="text-customOriange-200">
             {TeamProfileHeader.title}
           </CommonHeader2>
-          <CommonParagraph2 className="text-white">
+          <CommonParagraph1 className="text-primary-500 font-bold">
             {TeamProfileHeader.subTitle}
-          </CommonParagraph2>
+          </CommonParagraph1>
           <CommonParagraph3 className="text-primary-500">
-            {TeamProfileHeader.description}
+            {renderTextWithLinks(TeamProfileHeader.description)}
           </CommonParagraph3>
         </div>
         <div>
@@ -26,9 +28,9 @@ const TeamProfileSection: React.FC = () => {
             <div key={item.id} className="">
               {item.subTeamcategory.length < 1 ? (
                 <div className="w-full space-y-7 mt-7">
-                  <CommonHeader2 className={`text-center text-purple-600`}>
+                  <CommonHeader3 className={`text-center text-purple-600`}>
                     {item.team}
-                  </CommonHeader2>
+                  </CommonHeader3>
                   <img
                     src={item.prfile}
                     alt="profile "
@@ -48,9 +50,9 @@ const TeamProfileSection: React.FC = () => {
               )}
               {item.subTeamcategory.length > 1 ? (
                 <>
-                  <CommonHeader2 className="text-center text-purple-600 my-7">
+                  <CommonHeader3 className="text-center text-purple-600 my-7">
                     {item.team}
-                  </CommonHeader2>
+                  </CommonHeader3>
                   {item.subTeamcategory.map((items) => (
                     <div key={items.id} className="w-full space-y-7 mt-7">
                       <img

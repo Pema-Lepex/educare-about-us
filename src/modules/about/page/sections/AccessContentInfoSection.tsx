@@ -1,7 +1,5 @@
-import { DCDDTextImage, GiftIcon } from "assets";
 import { GiftCouponLinkDetail } from "assets/content/about/About";
 import { DCDDLOGO, DCDDNEWTextImage } from "assets/images/dcdd";
-import { CommonHeader1, CommonHeader2, CommonParagraph1, CommonParagraph2 } from "components";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 import { DCDDSignUpLinkDetails, GiftCouponLinkDetails } from "utils/helpers/URLs";
 
@@ -36,7 +34,7 @@ const AccessContentInfoSection: React.FC = () => {
 
           {/* Right card */}
           <div className="border-t-8 rounded-xl border-[#215FF8] shadow-md p-6 flex flex-col items-center justify-center space-y-3 lg:space-y-8 3xl:space-y-12 h-full 3xl:px-10">
-            <img src={GiftCouponLinkDetail.icon} alt="gifticon" className="size-[60px] md:size-[55px] xl:size-[140px] 2xl:size-[160px] 3xl:size-[250px] 4xl:size-[290px] 5xl:size-[320px]" />
+            <img src={GiftCouponLinkDetail.icon} alt="gifticon" className="size-[60px] md:size-[55px] xl:size-[135px] 2xl:size-[160px] 3xl:size-[250px] 4xl:size-[290px] 5xl:size-[320px] xl:mt-3" />
 
             <a
               href={GiftCouponLinkDetails.linkToGiftCoupon}

@@ -22,7 +22,7 @@ export const whyChooseUsDetails = [
   },
   {
     title: "Approved by Dzongkha Experts and Curriculum-Aligned",
-    desc: `Our content is developed in consultation with Dzongkha teachers, experts, and caregivers from across the country and undergoes rigorous review by professionals from DCDD and DSE, ensuring full alignment with the national Dzongkha curriculum and standards. As a result, Educare Skill has been endorsed as the “**National Dzongkha Online Learning Platform**.”`,
+    desc: `Our content is developed in consultation with Dzongkha teachers, experts, and caregivers from across the country and undergoes rigorous review by professionals from DCDD and DSE, ensuring full alignment with the national Dzongkha curriculum and standards. As a result, Educare Skill has been endorsed as the “**National Online Dzongkha Learning Platform**.”`,
     theme: "green",
     icon: BadgeCheck,
   },
@@ -226,5 +226,28 @@ export const CheyCheyData = [
       "Genitive Case",
       "Making Sentence Structure",
     ],
+  },
+];
+
+export const iBESTOriginalsContent = [
+  {
+    title: "Movies & Series",
+    desc: "People can watch films and series, both live-action and animation, produced in Bhutan—primarily productions of iBEST.",
+    bgClass: "bg-orange-50",
+  },
+  {
+    title: "Documentaries",
+    desc: "We plan to bring unique and fresh documentaries based on stories, life, and experiences from Bhutan and beyond, which can help document the present while also serving the purpose of education and entertainment.",
+    bgClass: "bg-violet-50",
+  },
+  {
+    title: "Namthars & Legends",
+    desc: "Educare Skill plans to develop a series format of Namthars and Legends—stories that are not widely accessible and have been passed down orally through generations.",
+    bgClass: "bg-emerald-50",
+  },
+  {
+    title: "Mindfulness and Meditation",
+    desc: "We will have a series of content on mindfulness and meditation to promote education and awareness, so that people of all ages can use these as resources and tools in their lives for mental well-being and daily practice.",
+    bgClass: "bg-yellow-50",
   },
 ];

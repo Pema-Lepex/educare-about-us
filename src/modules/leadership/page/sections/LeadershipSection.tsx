@@ -5,6 +5,8 @@ import { CommonHeader2,  CommonParagraph1, CommonParagraph2, HrefButton } from "
 import TeamProfileSection from "./TeamProfileSections";
 import { ArrowRight } from "lucide-react";
 import LeaderCard from "../components/LeaderCard";
+import { use } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function LeadershipSection() {
   return (
@@ -61,7 +63,7 @@ export default function LeadershipSection() {
         <CommonParagraph1 className="text-gray-700  font-medium">
           If you wish to join the team, click on the link below
         </CommonParagraph1>
-        <HrefButton className="bg-[#1b364d] text-white hover:bg-[#254a69] flex justify-center items-center">
+        <HrefButton href="/career" className="bg-[#1b364d] text-white hover:bg-[#254a69] flex justify-center items-center">
           Join Our Team <ArrowRight className="w-5 h-5 lg:size-6 2xl:size-7 3xl:size-8 4xl:size-9 5xl:size-10 ml-2" />
         </HrefButton>
       </div>

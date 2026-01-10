@@ -25,6 +25,32 @@ type TabKey =
   | "intermediate"
   | "graduate"
   | "ibest";
+interface ContentButton {
+  key: TabKey;
+  label: string;
+  icon: string;
+}
+
+const ContentButtons: ContentButton[] = [
+  { key: "cheychey", label: "Chey Chey", icon: CheCheyIcon },
+  { key: "kids", label: "Educare Kids", icon: EducareSkillIcon },
+  {
+    key: "primary",
+    label: "Primary Level",
+    icon: PrimaryLevelIcon,
+  },
+  {
+    key: "intermediate",
+    label: "Intermediate Level",
+    icon: IntermediateLevelIcon,
+  },
+  { key: "graduate", label: "Graduate/BCSE", icon: BCSEIcon },
+  {
+    key: "ibest",
+    label: "iBEST Originals",
+    icon: iBestOrognalIcon,
+  },
+];
 
 const MainSectionPage: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -100,9 +126,11 @@ const MainSectionPage: React.FC = () => {
               >
                 <div className="flex flex-col items-start gap-3 4xl:gap-6 4xl:p-8">
                   <div className="grid p-3 place-items-center rounded-xl bg-gray-50 4xl:mb-2">
-                    <f.icon className={`w-6 h-6 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 ${
+                    <f.icon
+                      className={`w-6 h-6 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 ${
                         titleByTheme[f.theme]
-                      }`} />
+                      }`}
+                    />
                   </div>
                   <div>
                     <CommonParagraph1
@@ -127,47 +155,27 @@ const MainSectionPage: React.FC = () => {
         <CommonHeader3 className="text-center font-extrabold tracking-wide text-[#0B2A4A] 4xl:mb-12">
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>
-
-        <div className="md:mx-20 mt-5 grid grid-cols-2 lg:grid-cols-6 max-w-8xl gap-4 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
-          {(
-            [
-              { key: "cheychey", label: "Chey Chey", icon: CheCheyIcon },
-              { key: "kids", label: "Educare Kids", icon: EducareSkillIcon },
-              {
-                key: "primary",
-                label: "Primary Level",
-                icon: PrimaryLevelIcon,
-              },
-              {
-                key: "intermediate",
-                label: "Intermediate Level",
-                icon: IntermediateLevelIcon,
-              },
-              { key: "graduate", label: "Graduate/BCSE", icon: BCSEIcon },
-              {
-                key: "ibest",
-                label: "iBEST Originals",
-                icon: iBestOrognalIcon,
-              },
-            ] as { key: TabKey; label: string; icon: string }[]
-          ).map((t) => (
+        <div className="md:mx-20 mt-4 flex flex-wrap justify-center max-w-8xl gap-4 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
+          {ContentButtons.map((button) => (
             <button
-              key={t.key}
-              onClick={() => setActiveTab(t.key)}
+              key={button.key}
+              onClick={() => setActiveTab(button.key)}
               className={[
-                "rounded-full border py-2 px-3 text-xs md:text-base font-semibold transition flex items-center justify-center flex-nowrap w-full min-w-0 overflow-hidden",
-                activeTab === t.key
+                /* 2. Remove 'w-full' and add 'w-auto' or 'shrink-0' */
+                /* 3. Add 'whitespace-nowrap' to prevent text from breaking */
+                "rounded-full border py-2 px-4 text-xs md:text-base font-semibold transition flex items-center justify-center whitespace-nowrap ",
+                activeTab === button.key
                   ? "border-violet-400 bg-white shadow-[0_10px_18px_rgba(139,92,246,0.18)]"
                   : "border-blue-100 bg-blue-50 hover:bg-blue-100",
               ].join(" ")}
             >
               <img
-                src={t.icon}
+                src={button.icon}
                 alt="icon"
                 className="size-4 xl:size-5 2xl:size-6 4xl:size-8 5xl:size-9 mr-2 flex-shrink-0"
               />
-              <span className="truncate min-w-0">
-                <CommonParagraph2>{t.label}</CommonParagraph2>
+              <span>
+                <CommonParagraph2>{button.label}</CommonParagraph2>
               </span>
             </button>
           ))}

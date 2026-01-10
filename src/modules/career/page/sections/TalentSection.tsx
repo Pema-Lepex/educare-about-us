@@ -74,9 +74,9 @@ export default function CreativeTalentSection() {
       <div className="text-center pt-8">
         <CommonParagraph2 className="text-gray-700 text-lg flex flex-col md:flex-row items-center justify-center gap-2">
           Have questions about joining our team?
-          <span className="font-semibold text-[#1b364d] cursor-pointer hover:underline flex items-center gap-1">
+          <a href="/contact" className="font-semibold text-[#1b364d] cursor-pointer hover:underline flex items-center gap-1">
             Feel free to reach out to us!
-          </span>
+          </a>
         </CommonParagraph2>
       </div>
       <div className="w-full h-20 4xl:h-[400px] 5xl:h-[500px]"></div>
