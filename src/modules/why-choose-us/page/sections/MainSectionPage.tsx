@@ -161,8 +161,6 @@ const MainSectionPage: React.FC = () => {
               key={button.key}
               onClick={() => setActiveTab(button.key)}
               className={[
-                /* 2. Remove 'w-full' and add 'w-auto' or 'shrink-0' */
-                /* 3. Add 'whitespace-nowrap' to prevent text from breaking */
                 "rounded-full border py-2 px-4 text-xs md:text-base font-semibold transition flex items-center justify-center whitespace-nowrap ",
                 activeTab === button.key
                   ? "border-violet-400 bg-white shadow-[0_10px_18px_rgba(139,92,246,0.18)]"
