@@ -16,7 +16,7 @@ const LeaderCard = ({ name, role, image, isFounder = false }: Leader) => (
       <img
         src={image}
         alt={name}
-        className="w-full h-full object-cover rounded-xl"
+        className="w-full h-full object-cover rounded-full shadow-lg"
       />
       <div className="text-center">
         <h4 className="text-border-customOriange-200 font-bold text-sm md:text-base xl:text-lg 2xl:text-xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl leading-tight">

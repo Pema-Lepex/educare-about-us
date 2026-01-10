@@ -8,3 +8,5 @@ export { default as VideographersProfile } from "./Videographers.jpg";
 export { default as MusicDirectorProfile } from "./Music Director.jpg";
 export { default as VisualEditorsProfile } from "./Visual Editors.jpg";
 export { default as SoftwareDevelopersProfile } from "./Software Developers.jpg";
+export { default as CEOProfile } from "./Sir T.png";
+export { default as CoFounderProfile } from "./Sir S.png";
