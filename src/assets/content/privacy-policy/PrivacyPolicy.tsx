@@ -261,7 +261,7 @@ export const privacyPolicy: PrivacyPolicyProps = {
         {
           type: "paragraph",
           text: ` Our Customer Support Office shall undertake all reasonable efforts to address your grievances at the earliest possible opportunity. You may contact us at: Customer
-                 Support Office, Zamdo Lam, Changzamtok, Thimphu, Bhutan. Reach out to us on support@educareskill.com, in case of any queries.`,
+                 Support Office, Zamdo Lam, Changzamtok, Thimphu, Bhutan. Email us at support@educareskill.com, in case of any queries.`,
         },
       ],
     },
@@ -583,7 +583,7 @@ export const privacyPolicy: PrivacyPolicyProps = {
           items: [
             {
               text: `Notice: All notices served by the Company shall be provided via email to Your account or as a general notification on the Application. Any notice to be
-                     provided to the Company should be sent to support@educareskill.com.`,
+                     provided to the Company should be sent to support@educareskill.com`,
             },
             {
               text: ` Entire Agreement: The Terms, along with the Privacy Policy, and any other guidelines made applicable to the Application from time to time, constitute the

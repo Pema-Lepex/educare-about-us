@@ -5,7 +5,7 @@ import { CommonHeader2, CommonParagraph1, HrefButton } from "components";
 import {
   renderTextWithLinks,
 } from "utils/helpers/renderTextWithLinks";
-import { SignInLinkDetails } from "utils/helpers/URLs";
+import { DCDDSignUpLinkDetails, SignInLinkDetails } from "utils/helpers/URLs";
 
 const ForDCDDUsersReadMore: React.FC = () => {
   return (
@@ -44,11 +44,11 @@ const ForDCDDUsersReadMore: React.FC = () => {
                 </ol>
                 <div className="w-full flex justify-center py-4 ">
                   <HrefButton
-                    href={SignInLinkDetails.linkToSignIn}
+                    href={DCDDSignUpLinkDetails.linkToDCDDSignIn}
                     target="_blank"
                     className="bg-customOriange-200 text-white  hover:bg-orange-700 "
                   >
-                    {SignInLinkDetails.LinkFor}
+                    {DCDDSignUpLinkDetails.LinkFor}
                   </HrefButton>
                 </div>
                <div>

@@ -66,7 +66,7 @@ export const EducareKIds = [
     isAccordion: true,
     items: [
       {
-        title: "The Adventures of the Monkey King",
+        title: "Adventures of the Monkey King",
         desc: "Watch the Adventures of the Monkey King, where Zangpo, upon ascending the throne, brings calm to the chaotic forest that he rules, bestowing valuable nuggets of wisdom along the way.",
         bgClass: "bg-orange-50",
       },
@@ -122,7 +122,7 @@ export const PrimaryLevel = [
     bgClass: "bg-emerald-50",
   },
   {
-    title: "Exam-Oriented Tutorials (Class IV - VI)",
+    title: "Exam-Oriented Tutorials (Classes IV - VI)",
     desc: "In-depth Dzongkha exam-oriented tutorials and solved questions (MCQs and Q&As) on grammar and language, reading and writing, stories, essays, and poems are provided, enabling students to prepare for their exams effectively by practicing solved questions.",
     bgClass: "bg-rose-50",
   },
@@ -183,7 +183,7 @@ export const IntermediateLevel = [
 export const GraduateContent = [
   {
     title: "Grammar and Language",
-    desc: "Under the Graduates/BCSE category, one can access all Basic and Intermediate Dzongkha lessons, which help to relearn fundamental to advanced concepts and equip learners for the RCSC examinations.",
+    desc: "Under the Graduates/BCSE category, one can access all Basic and Intermediate Dzongkha grammar lessons, which help to relearn fundamental to advanced concepts and equip learners for the RCSC examinations.",
     bgClass: "bg-orange-50",
   },
   {
@@ -209,7 +209,7 @@ export const GraduateContent = [
 ];
 export const CheyCheyData = [
   {
-    title: "Chey Chey Mobile Game - Interactive Gamified Learning",
+    title: "Chey Chey Mobile Game",
     intro:
       "Our interactive gamified learning platform, Chey Chey Mobile Game provides an opportunity for your child to learn and build a solid Dzongkha foundation with 12 episodes of interactive mobile games.",
     games: [

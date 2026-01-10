@@ -110,7 +110,7 @@ export const EducareSkillGuideContent = [
     icon: RGLogo,
     frame: RedBoxImage,
     href: "/about/registration-guide",
-    info: "Do you want to register on our platform and start learning Dzongkha, but you are not quite sure how to do it? Don’t worry. We will help you get started.",
+    info: "If you are not eligible for DCDD supoort, don't worry! But you are not quite sure how to register to our platform. we will help you get started.",
   },
   {
     id: 4,
@@ -281,6 +281,7 @@ export const memebershipDetails = [
           "ID",
           "Dayig",
           "Shaytring",
+          "Nyenga",
           "Grammer Solved Questions accessible.",
         ],
       },
@@ -309,7 +310,7 @@ Under the **Classes IX - X** membership plan, users can access content such as A
 
 With the **Classes XI - XII** membership plan, users can access content such as Animation Series (AS), Read Aloud Stories (RA), Basic Dzongkha (BD), Intermediate Dzongkha (ID), and Classes XI – XII Tutorials. We recommend this membership plan to students in Classes XI- XII. With this membership plan, you can use it on **three devices** at the same time.
 
-If you are an **undergrade student or graduates sitting for RCSC’s BCSE,** we recommend this membership plan to explore and learn lessons of **grammar, letter and essay writing, Shaytring, Dayig, and solved questions.** With this plan, you can prepare for Dzongkha Exams by accessing content such as Read Aloud Stories (RA), Basic Dzongkha (BD), Intermediate Dzongkha (ID), Dayig, and Shaytring. Joining this membership, you can use it on **three devices** at the same time. 
+If you are an undergrade student or graduates sitting for RCSC’s BCSE, we recommend this membership plan to explore and learn lessons of grammar and language, letter and essay writing, and solved questions. With this plan, you can prepare for Dzongkha Exams by accessing content such as Basic Dzongkha (BD), Intermediate Dzongkha (ID), Dayig, Shaytring, Nyenga, Grammar Solved Questions, and Read Aloud Stories (RA). Joining this membership, you can use it on **three devices** at the same time. 
 
 **Before purchasing any Educare Skill Membership plan,** please know the categories of content accessible under each membership plan and select the package accordingly. **Once payment is made, there is no refund policy.**
 `,
@@ -318,17 +319,16 @@ If you are an **undergrade student or graduates sitting for RCSC’s BCSE,** we 
 export const RegistrationGuideContent = {
   title: "Registration Guide",
   description:
-    "Do you want to register on our platform and start learning Dzongkha, but you are not quite sure how to do it? Don’t worry. We will help you get started.",
+    "If you are not eligible for the DCDD subsidized support to access Educare Skill for free, don't worry! Yet you want to explore our platform and begin your Dzongkha learning and mastery journey, but you are not quite sure how to register on our platform. We are more than happy to help you get started with the following registration guide.",
   guide: [
     {
       guide1:
         "Open the Educare Skill homepage either through the website or the app. Then click on SIGN IN button.",
-      guide2: "After opening the SIGN IN page, click on the SIGN UP button.",
-      guide3: "Enter your details.",
-      guide4: "After filling out your details, click on SIGN UP button.",
-      guide5:
+      guide2: "After opening the SIGN IN page, click on the SIGN UP link.",
+      guide3: "Enter your details, then click on SIGN UP button.",
+      guide4:
         "You will receive an OTP on your registered phone number or email address.",
-      guide6: "Enter the OTP, and you are now registered on our platform!",
+      guide5: "Enter the OTP, and you are now registered on our platform!",
     },
   ],
 };
