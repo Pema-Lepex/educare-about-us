@@ -110,7 +110,7 @@ export const EducareSkillGuideContent = [
     icon: RGLogo,
     frame: RedBoxImage,
     href: "/about/registration-guide",
-    info: "If you are not eligible for DCDD supoort, don't worry! But you are not quite sure how to register to our platform. we will help you get started.",
+    info: "If you are not eligible for DCDD support, don't worry! But you are not quite sure how to register on our platform. we will help you get started.",
   },
   {
     id: 4,

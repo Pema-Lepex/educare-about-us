@@ -41,7 +41,7 @@ export { default as MonkeyAndDragonImage } from "./Chara1.png";
 export { default as DoodleImage } from "./Doodle.png";
 export { default as DoodleLessOpacityImage } from "./Doodle_OpicityLess.png";
 export { default as K5Image } from "./K5.jpg";
-export { default as K5PhoneImage } from "./K5Phone.jpg";
+export { default as K5PhoneImage } from "./K5Mobile.jpg";
 
 export * from "./logo";
 export * from "./social-media";
