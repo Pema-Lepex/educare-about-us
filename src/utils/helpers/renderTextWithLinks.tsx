@@ -1,13 +1,9 @@
-// Your existing constants
-export const DCDDSignUpLinkDetails = {
-  LinkFor: "DCDD Sign In",
-  linkToDCDDSignIn: "https://www.educareskill.com/#/dcdd-login",
-};
+import { DCDDSignUpLinkDetails } from "./URLs";
 
 // Map the text to the link
 const linkMap: Record<string, string> = {
-  "DCDD Sign In": DCDDSignUpLinkDetails.linkToDCDDSignIn,
-  "Sign In": DCDDSignUpLinkDetails.linkToDCDDSignIn, 
+  "DCDD Sign In": DCDDSignUpLinkDetails.linkTo,
+  "Sign In": DCDDSignUpLinkDetails.linkTo,
 };
 
 export const renderTextWithLinks = (text: string | undefined) => {

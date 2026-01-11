@@ -1,24 +1,32 @@
 import React from "react";
 import {
-  Facebook,
+  Facebook as FacebookIcon,
   FooterImage,
   Instragram,
   Messanger,
   Telegram,
-  Tiktok,
+  Tiktok as TiktokIcon,
   Whatsapp,
-  Youtube,
+  Youtube as YoutubeIcon,
 } from "assets";
 import { SocialMediaProps } from "props/Commonprops";
 import { useLocation } from "react-router-dom";
+import {
+  Facebook,
+  Instagram,
+  Youtube,
+  Tiktok,
+  IBESTSTUDIOS,
+  IBESTTECHNOLOGIES,
+} from "utils/helpers/URLs";
 
 const MainFooter: React.FC = () => {
   const location = useLocation();
   const followMedia: SocialMediaProps[] = [
-    { id: 1, title: "Facebook", img: Facebook, url: "https://www.facebook.com/educareskill" },
-    { id: 2, title: "Tiktok", img: Tiktok, url: "https://www.tiktok.com/@educare.skill" },
-    { id: 3, title: "Instagram", img: Instragram, url: "https://www.instagram.com/educare.skill/" },
-    { id: 4, title: "Youtube", img: Youtube, url: "https://www.youtube.com/@educareskill" },
+    { id: 1, title: "Facebook", img: FacebookIcon, url: Facebook.linkTo },
+    { id: 2, title: "Tiktok", img: TiktokIcon, url: Tiktok.linkTo },
+    { id: 3, title: "Instagram", img: Instragram, url: Instagram.linkTo },
+    { id: 4, title: "Youtube", img: YoutubeIcon, url: Youtube.linkTo },
   ];
 
   const chatMedia: SocialMediaProps[] = [
@@ -48,7 +56,7 @@ const MainFooter: React.FC = () => {
             <a
               target="_blank"
               className="hover:text-customOriange-100"
-              href="https://www.ibeststudios.com/"
+              href={IBESTSTUDIOS.linkTo}
             >
               {" "}
               STUDIOS
@@ -57,7 +65,7 @@ const MainFooter: React.FC = () => {
             <a
               target="_blank"
               className="hover:text-customOriange-100"
-              href="https://www.ibesttechnologies.bt/"
+              href={IBESTTECHNOLOGIES.linkTo}
             >
               {" "}
               TECHNOLOGIES

@@ -1,44 +1,71 @@
 export const GiftCouponLinkDetails = {
   LinkFor: "Gift Coupon",
-  linkToGiftCoupon: "http://localhost:3000/?tab=gift-coupon",
+  linkTo: "http://localhost:3000/?tab=gift-coupon",
 };
 
 export const GiftCouponAuthenticatedLinkDetails = {
   LinkFor: "Gift Coupon",
-  linkToGiftCoupon: "http://localhost:3000/gift-coupon",
+  linkTo: "http://localhost:3000/gift-coupon",
 };
 
 export const DCDDSignUpLinkDetails = {
   LinkFor: "DCDD Sign In",
-  linkToDCDDSignIn: "https://www.educareskill.com/dcdd-login",
+  linkTo: "https://www.educareskill.com/dcdd-login",
 };
 
 export const SignInLinkDetails = {
   LinkFor: "Sign In",
-  linkToSignIn: "https://www.educareskill.com/login",
+  linkTo: "https://www.educareskill.com/login",
 };
 
 export const RedirectToAppStore = {
   LinkFor: "Redirect to App Store",
-  linkToAppStore: "https://www.apple.com/app-store/",
+  linkTo: "https://www.apple.com/app-store/",
 };
 
 export const RedirectToGooglePlay = {
   LinkFor: "Redirect to Google Play",
-  linkToGooglePlay: "https://play.google.com/store",
+  linkTo: "https://play.google.com/store",
 }; 
 
 export const ApplicationFormLinkDetails = {
   LinkFor: "Submit Application",
-  linkToApplicationForm: "https://forms.gle/3aF7nE6MU1ofzKdj7",
+  linkTo: "https://forms.gle/3aF7nE6MU1ofzKdj7",
 };
 
 export const UserProfileLinkDetails = {
   LinkFor: "User Profile",
-  linkToUserProfile: "https://www.educareskill.com/profile",
+  linkTo: "https://www.educareskill.com/profile",
 };
 
 export const Home = {
   LinkFor: "Home",
-  linkToHome: "https://www.educareskill.com",
+  linkTo: "https://www.educareskill.com",
+};
+
+export const Facebook = {
+    LinkFor: 'Facebook',
+    linkTo: 'https://www.facebook.com/educareskill'
+};
+export const Instagram = {
+    LinkFor: 'Instagram',
+    linkTo: 'https://www.instagram.com/educare.skill'
+};
+export const Youtube = {
+    LinkFor: 'YouTube',
+    linkTo: 'https://www.youtube.com/@educareskill'
+};
+export const Tiktok = {
+    LinkFor: 'TikTok',
+    linkTo: 'https://www.tiktok.com/@educare.skill'
+};
+
+export const IBESTSTUDIOS = {
+    LinkFor: 'iBEST STUDIOS',
+    linkTo: 'https://www.ibeststudios.com'
+};
+
+export const IBESTTECHNOLOGIES = {
+    LinkFor: 'TECHNOLOGIES',
+    linkTo: 'https://www.ibesttechnologies.bt'
 };

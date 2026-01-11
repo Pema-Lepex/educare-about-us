@@ -47,7 +47,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             {user?.name && (
             <div onClick={(e) => {
                 e.stopPropagation();
-                handleNavigate(UserProfileLinkDetails.linkToUserProfile);
+                handleNavigate(UserProfileLinkDetails.linkTo);
             }} className="flex lg:hidden items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
                   {user?.name ?(<>{user?.profile_picture  ? (
                     <img
@@ -75,7 +75,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
           <div className="hidden lg:flex lg:space-x-2 xl:space-x-4 2xl:space-x-8">
             {[
               ...(user?.name
-                ? [{ title: "Home", icon: "", ref: Home.linkToHome }]
+                ? [{ title: "Home", icon: "", ref: Home.linkTo }]
                 : []),
               ...Menus,
             ].map((menu, index) => {
@@ -102,12 +102,12 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             {user?.name ? (
               <>
                 <a
-                  href={GiftCouponAuthenticatedLinkDetails.linkToGiftCoupon}
+                  href={GiftCouponAuthenticatedLinkDetails.linkTo}
                   className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
                 >
                   {GiftCouponAuthenticatedLinkDetails.LinkFor}
                 </a>
-                <div onClick={() => handleNavigate(UserProfileLinkDetails.linkToUserProfile)} className="flex items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
+                <div onClick={() => handleNavigate(UserProfileLinkDetails.linkTo)} className="flex items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
                   {user?.profile_picture ? (
                     <img
                       src={user?.profile_picture}
@@ -129,19 +129,19 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             ) : (
               <>
                 <a
-                  href={DCDDSignUpLinkDetails.linkToDCDDSignIn}
+                  href={DCDDSignUpLinkDetails.linkTo}
                   className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
                 >
                   {DCDDSignUpLinkDetails.LinkFor}
                 </a>
                 <a
-                  href={SignInLinkDetails.linkToSignIn}
+                  href={SignInLinkDetails.linkTo}
                   className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
                 >
                   {SignInLinkDetails.LinkFor}
                 </a>
                 <a
-                  href={GiftCouponLinkDetails.linkToGiftCoupon}
+                  href={GiftCouponLinkDetails.linkTo}
                   className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
                 >
                   {GiftCouponLinkDetails.LinkFor}
@@ -172,7 +172,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
           <nav className="px-4 py-3">
             {[
               ...(user?.name
-                ? [{ title: "Home", icon: "", ref: Home.linkToHome }]
+                ? [{ title: "Home", icon: "", ref: Home.linkTo }]
                 : []),
               ...Menus,
             ].map((menu, index) => {
@@ -203,13 +203,13 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             })}
             <div className="lg:hidden gap-2 flex my-3">
               <a
-                href={DCDDSignUpLinkDetails.linkToDCDDSignIn}
+                href={DCDDSignUpLinkDetails.linkTo}
                 className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
               >
                 {DCDDSignUpLinkDetails.LinkFor}
               </a>
               <a
-                href={SignInLinkDetails.linkToSignIn}
+                href={SignInLinkDetails.linkTo}
                 className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
               >
                 {SignInLinkDetails.LinkFor}
@@ -219,7 +219,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
               className={`py-3 border-t last:border-b-0 border-primary-100 dark:border-gray-800`}
             >
               <a
-                href={GiftCouponLinkDetails.linkToGiftCoupon}
+                href={GiftCouponLinkDetails.linkTo}
                 className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
               >
                 {GiftCouponLinkDetails.LinkFor}

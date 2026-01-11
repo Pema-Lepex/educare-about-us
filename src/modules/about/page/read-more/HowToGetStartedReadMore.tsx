@@ -27,7 +27,7 @@ const HowToGetStartedReadMore: React.FC = () => {
           </CommonParagraph1>
           <div className="w-full flex justify-center">
             <HrefButton
-              href={DCDDSignUpLinkDetails.linkToDCDDSignIn}
+              href={DCDDSignUpLinkDetails.linkTo}
               className=" bg-customOriange-200 text-white  hover:bg-orange-600 "
             >
               {DCDDSignUpLinkDetails.LinkFor}
@@ -39,7 +39,7 @@ const HowToGetStartedReadMore: React.FC = () => {
           </CommonParagraph1>
           <div className="w-full flex justify-center">
             <HrefButton
-              href={SignInLinkDetails.linkToSignIn}
+              href={SignInLinkDetails.linkTo}
               className=" bg-[#215FF8] text-white hover:bg-blue-600"
             >
               {SignInLinkDetails.LinkFor}
@@ -144,14 +144,14 @@ const HowToGetStartedReadMore: React.FC = () => {
               Android devices and App Store for iOS devices.
             </h4>
             <div className="flex flex-row gap-4 lg:gap-6 3xl:gap-10 4xl:gap-14">
-              <a href={RedirectToAppStore.linkToAppStore} target="_blank">
+              <a href={RedirectToAppStore.linkTo} target="_blank">
                 <img
                   src={AppleStoreImage}
                   alt="Apple Store"
                   className="h-[29px] md:h-14 2xl:h-20 4xl:h-28 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
                 />
               </a>
-              <a href={RedirectToGooglePlay.linkToGooglePlay} target="_blank">
+              <a href={RedirectToGooglePlay.linkTo} target="_blank">
                 <img
                   src={AndroidStoreImage}
                   alt="Android Store"

@@ -25,7 +25,7 @@ const GiftCouponReadMore: React.FC = () => {
                 {GiftCouponContent.subtitle}
               </p>
               <a
-                href={user?.name ? GiftCouponAuthenticatedLinkDetails.linkToGiftCoupon : GiftCouponLinkDetails.linkToGiftCoupon}
+                href={user?.name ? GiftCouponAuthenticatedLinkDetails.linkTo : GiftCouponLinkDetails.linkTo}
                 className="bg-[#3366FF] text-white w-full md:py-3 py-2 4xl:py-4 5xl:py-6 rounded-lg
                  text-xs md:text-2xl 4xl:text-4xl 5xl:text-5xl font-semibold
                  transition-all duration-300 ease-in-out

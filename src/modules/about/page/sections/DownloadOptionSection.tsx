@@ -18,14 +18,14 @@ const DownloadOptionSection: React.FC = () => {
           Dzongkha a fun and exciting adventure.
         </p>
         <div className="flex flex-row gap-4">
-          <a href={RedirectToAppStore.linkToAppStore} target="_blank">
+          <a href={RedirectToAppStore.linkTo} target="_blank">
             <img
               src={AppleStoreImage}
               alt="Apple Store"
               className="h-[22px] md:h-10 lg:h-14 4xl:h-20 6xl:h-28 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
             />
           </a>
-          <a href={RedirectToGooglePlay.linkToGooglePlay} target="_blank">
+          <a href={RedirectToGooglePlay.linkTo} target="_blank">
             <img
               src={AndroidStoreImage}
               alt="Android Store"
