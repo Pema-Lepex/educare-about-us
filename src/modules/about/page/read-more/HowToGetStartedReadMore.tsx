@@ -1,9 +1,5 @@
 import { AndroidStoreImage, AnimalImage, AppleStoreImage } from "assets";
-import {
-  HowToGetStartedContent,
-  memebershipDetails,
-  MemebershipImportantNotice,
-} from "assets/content/about/About";
+import { memebershipDetails, HowToGetStartedContent, MemebershipImportantNotice } from "assets/content/about/About";
 import {
   CommonHeader2,
   CommonHeader3,

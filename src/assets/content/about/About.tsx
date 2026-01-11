@@ -93,7 +93,7 @@ export const EducareSkillGuideContent = [
     title: "For DCDD Users",
     icon: FDCDDULogo,
     frame: PurpleBoxImage,
-    href: "/about/for-dcdd-users",
+    href: "/aboutus/for-dcdd-users",
     info: "With the subsidized support of DCDD, Educare Skill is FREE for children aged 3 and above, children enrolled in ECCD center, and students in Classes PP - VI.",
   },
   {
@@ -101,7 +101,7 @@ export const EducareSkillGuideContent = [
     title: "How To Get Started?",
     icon: HTGSLogo,
     frame: BlueBoxImage,
-    href: "/about/how-to-get-started?",
+    href: "/aboutus/how-to-get-started?",
     info: "If you wish to get started on Educare Skill, please Sign Up now and explore our affordable membership plans.",
   },
   {
@@ -109,7 +109,7 @@ export const EducareSkillGuideContent = [
     title: "Registration Guide",
     icon: RGLogo,
     frame: RedBoxImage,
-    href: "/about/registration-guide",
+    href: "/aboutus/registration-guide",
     info: "If you are not eligible for DCDD support, don't worry! But you are not quite sure how to register on our platform, we will help you get started.",
   },
   {
@@ -117,7 +117,7 @@ export const EducareSkillGuideContent = [
     title: "Gift Coupon The Gift of Learning!",
     icon: FCTFLLogo,
     frame: GreenBoxImage,
-    href: "/about/gift-coupon-the-gift-of-learning",
+    href: "/aboutus/gift-coupon-the-gift-of-learning",
     info: "With the Educare Skill Gift Coupon, you can gift your loved ones the affordable Educare Skill membership plans.",
   },
 ];

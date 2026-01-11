@@ -1,8 +1,6 @@
 import {
   DCDDPageWideBackGroundImage,
   FamilyWithPhoneImage,
-  MonkeyAndDragonImage,
-  ThreeCharacterImage,
 } from "assets";
 import { ForDCDDUsersContent } from "assets/content/about/About";
 import { DCDDCharacterImage, DCDDShortTextImage } from "assets/images/dcdd";

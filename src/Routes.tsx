@@ -1,9 +1,4 @@
 import { PageNotFound } from "components";
-import AboutUs from "modules/about/About";
-import ForDCDDUsers from "modules/about/page/ForDCDDUsers";
-import GiftCoupon from "modules/about/page/GiftCoupon";
-import HowToGetStarted from "modules/about/page/HowToGetStarted";
-import RegistrationGuide from "modules/about/page/RegistrationGuide";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Impact from "modules/impact/Impact";
 import WhyChooseUs from "modules/why-choose-us/WhyChooseUs";
@@ -11,32 +6,37 @@ import Leadership from "modules/leadership/Leadership";
 import Blog from "modules/blog/Blog";
 import Career from "modules/career/Career";
 import Contact from "modules/contact/Contact";
-import TermsOfUse from "modules/terms-of-use/TermsOfUse";
-import PrivacyPolicy from "modules/privacy-policy/PrivacyPolicy";
 import FAQ from "modules/faq/FAQ";
+import ForDCDDUsers from "modules/about/page/ForDCDDUsers";
+import GiftCoupon from "modules/about/page/GiftCoupon";
+import HowToGetStarted from "modules/about/page/HowToGetStarted";
+import RegistrationGuide from "modules/about/page/RegistrationGuide";
+import PrivacyPolicy from "modules/privacy-policy/PrivacyPolicy";
+import TermsOfUse from "modules/terms-of-use/TermsOfUse";
+import About from "modules/about/About";
 const AppRoutes: React.FC = () => {
   return (
     <Router>
       <Routes>
         <Route path="*" element={<PageNotFound />} />
-        <Route path="/" element={<Navigate to="/about" replace />} />
+        <Route path="/" element={<Navigate to="/aboutus" replace />} />
         {/* About page routes */}
         
-        <Route path="/about" element={<AboutUs />} />
+        <Route path="/aboutus" element={<About />} />
         <Route
-          path="/about/how-to-get-started?"
+          path="/aboutus/how-to-get-started?"
           element={<HowToGetStarted />}
         />
         <Route
-          path="/about/registration-guide"
+          path="/aboutus/registration-guide"
           element={<RegistrationGuide />}
         />
         <Route
-          path="/about/for-dcdd-users"
+          path="/aboutus/for-dcdd-users"
           element={<ForDCDDUsers />}
         />
         <Route
-          path="/about/gift-coupon-the-gift-of-learning"
+          path="/aboutus/gift-coupon-the-gift-of-learning"
           element={<GiftCoupon />}
         />
         {/* Impact page routes */}
@@ -47,8 +47,8 @@ const AppRoutes: React.FC = () => {
         <Route path="/career" element={<Career />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/terms-of-use" element={<TermsOfUse />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/termsofuse" element={<TermsOfUse />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/faq" element={<FAQ />} />
       </Routes>
     </Router>

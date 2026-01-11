@@ -3,7 +3,7 @@ export const Menus = [
   {
     title: "About",
     icon: "",
-    ref: "/about",
+    ref: "/aboutus",
   },
   {
     title: "Impact",

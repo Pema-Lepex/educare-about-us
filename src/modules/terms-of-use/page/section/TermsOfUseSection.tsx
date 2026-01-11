@@ -1,11 +1,9 @@
-import {
-  termsOfUse,
-  termsOfUseMenu,
-} from "assets/content/terms-of-use/TermsOfUse";
+
 import React, { useEffect, useState } from "react";
 import TermsContentRenderer from "../components/TermsContentRender";
 import { SectionsProps } from "props/Commonprops";
 import { CommonHeader4 } from "components";
+import { termsOfUse, termsOfUseMenu } from "assets/content/terms-of-use/TermsOfUse";
 
 const TermsOfUseSection = () => {
   const [activeSection, setActiveSection] = useState<string>("introduction");

@@ -28,11 +28,11 @@ const MainFooter: React.FC = () => {
   ];
 
   const otherPages = [
-    { id: 1, title: "About Us", url: "/about" },
+    { id: 1, title: "About Us", url: "/aboutus" },
     { id: 1, title: "FAQ", url: "/faq" },
     { id: 1, title: "Contact", url: "/contact" },
-    { id: 1, title: "Privacy Policy", url: "/privacy-policy" },
-    { id: 1, title: "Terms of Use", url: "/terms-of-use" },
+    { id: 1, title: "Privacy Policy", url: "/privacypolicy" },
+    { id: 1, title: "Terms of Use", url: "/termsofuse" },
   ];
 
   return (

@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { PolicySectionsProps, SectionsProps } from "props/Commonprops";
 import PolicyContentRenderer from "../components/PolicyContentRenderer";
-import {
-  privacyPolicy,
-  privacyPolicyMenu,
-} from "assets/content/privacy-policy/PrivacyPolicy";
 import { CommonHeader4 } from "components";
+import { privacyPolicy, privacyPolicyMenu } from "assets/content/privacy-policy/PrivacyPolicy";
 
 const PrivacyPolicySection = () => {
   const [activeSection, setActiveSection] = useState<string>("introduction");
