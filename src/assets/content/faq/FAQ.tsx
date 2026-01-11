@@ -4,7 +4,7 @@ export const educareSkillFAQ = {
     {
       question: "What is Educare Skill?",
       answer: [
-        `Educare Skill is Bhutan’s first online learning platform available both as a mobile application and a website. Our vision is to “transform learning in Bhutan and beyond.
+        `Educare Skill is Bhutan’s first online learning platform available both as a mobile application and a website. Our vision is to “transform learning in Bhutan and beyond."
 
         Our platform has thousands of episodes ranging from entertaining content to Dzongkha tutorials for children, students, and undergraduates, thereby, making Educare Skill a perfect online **'Dzongkha Tutor'**.
 
@@ -36,7 +36,7 @@ export const educareSkillFAQ = {
     {
       question: "Does Educare Skill have exam-oriented tutorials?",
       answer: [
-        `For now, Educare Skill has Dzongkha exam-oriented lessons and tutorials for Classes PP–XII and for adults preparing for RCSC BCS examinations. `,
+        `For now, Educare Skill has Dzongkha exam-oriented lessons and tutorials for Classes PP–XII and for adults preparing for RCSC examinations. `,
       ],
     },
     {
@@ -69,7 +69,7 @@ export const educareSkillFAQ = {
     {
       question: "How many devices can I log into with a membership plan?",
       answer: [
-        `Each membership plan allows access on a specific number of devices. The Basic plan supports up to three devices, the Standard plan supports four, and the Premium plan allows up to five devices simultaneously.`,
+        `Each membership plan allows access on a specific number of devices. The Basic plan supports up to three devices, the Standard plan supports four, and the Premium plan allows up to five devices simultaneously. Please read terms and conditions before buy the membership plan.`,
       ],
     },
     {
@@ -82,7 +82,7 @@ export const educareSkillFAQ = {
     {
       question: "How do I contact Educare Skill for support?",
       answer: [
-        `Educare Skill provides reliable customer and technical support. Users can contact the team via email at support@educareskill.com, by calling the **Toll Free** number **2016**, or via WhatsApp at **+975 77718721**.`,
+        `Educare Skill provides reliable customer and technical support. Users can contact the support team via email at support@educareskill.com , or by calling the **Toll Free** number **2016**, or via WhatsApp at **+975 77718721**.`,
       ],
     },
   ],

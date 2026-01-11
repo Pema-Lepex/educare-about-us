@@ -1,7 +1,4 @@
-import {
-  EducareSkillContent,
-  EducareSkillGroupContent,
-} from "assets/content/about/About";
+import { EducareSkillContent, EducareSkillGroupContent } from "assets/content/about/About";
 import { CommonHeader2, CommonParagraph1 } from "components";
 import { useNavigate } from "react-router-dom";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";

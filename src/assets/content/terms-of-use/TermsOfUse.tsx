@@ -102,7 +102,7 @@ export const termsOfUse: TermsOfUseProps = {
           type: "list",
           style: "disc",
           items: [
-            `The User must ensure they read and decide on the "membership plan" before purchasing any services on the Educare Skill platform.`,
+            `The User must ensure read terms and conditions and decide on the "membership plan" before purchasing any services on the Educare Skill platform.`,
             "The User can continue their membership plan until it is terminated.",
             "No refunds are provided for early cancellation.",
             `The User must pay for the membership plan if opting for a different membership during the continuation of their current membership plan, with no adjustment
@@ -122,7 +122,7 @@ export const termsOfUse: TermsOfUseProps = {
       content: [
         {
           type: "paragraph",
-          text: ` We reserve the right to modify/ update the whole or any part of the User Terms at any time by providing you with a 72 (seventy-two) hours’ notice. Notwithstanding
+          text: ` We reserve the right to modify/ update the whole or any part of the User Terms at any time. Notwithstanding
                   what is stated in the preceding sentence, it is your responsibility to review the User Terms for modifications/ updates and analyze its impact on yourself. In the
                    event that any update/ modification to the User Terms is not acceptable to you, please feel free to email us at
                    support@educareskill.com and if we are unable to address your concerns, please refrain from using the Website and the Application
@@ -210,8 +210,7 @@ export const termsOfUse: TermsOfUseProps = {
           type: "paragraph",
           text: `The Company, upon obtaining knowledge by itself or having been brought to actual knowledge by an affected person in writing or through email about any such
                  information as mentioned in Clause 7.2 and/or Clause 7.3 above, shall be entitled to disable such information that is in contravention of Clause 7.2 and/or
-                 Clause 7.3 and the Company shall be entitled to preserve such information and associated records for production to governmental authorities for investigation
-                 purposes.`,
+                 Clause 7.3 and the Company shall be entitled to preserve such information and associated records for any necessary action.`,
         },
       ],
     },
@@ -346,7 +345,7 @@ export const termsOfUse: TermsOfUseProps = {
       contentWithNO: [
         {
           type: "paragraph",
-          text: `Subject to Clause 12.2 below, the Company is the sole owner of all Intellectual Property rights on the Website and the Application, and it is either the owner
+          text: `Subject to Clause 2 below, the Company is the sole owner of all Intellectual Property rights on the Website and the Application, and it is either the owner
                  or the licensee of the materials/contents published therein (excluding the materials and contents published or uploaded by the users of the Website and the
                  Application. Copying, downloading, storing, distributing, transmitting or otherwise modifying any content on the Website and the Application other than as made
                  available by the Company and/ or as provided in these User Terms for your personal use is prohibited and shall amount to an infringement of the intellectual

@@ -616,7 +616,7 @@ export const privacyPolicy: PrivacyPolicyProps = {
     },
     {
       id: "Feedback",
-      heading: "Feedback:",
+      heading: "Feedback",
       content: [
         {
           type: "list",
@@ -639,7 +639,7 @@ export const privacyPolicy: PrivacyPolicyProps = {
     },
     {
       id: "customer-care",
-      heading: "Customer Care:",
+      heading: "Customer Care",
       content: [
         {
           type: "paragraph",
