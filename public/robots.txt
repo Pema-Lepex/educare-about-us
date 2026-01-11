@@ -5,6 +5,7 @@ Allow: /
 # Disallow admin or private routes if any
 Disallow: /api/
 Disallow: /admin/
+Disallow: /query/
 
 # Sitemap location
 Sitemap: https://www.educareskill.com/sitemap.xml
