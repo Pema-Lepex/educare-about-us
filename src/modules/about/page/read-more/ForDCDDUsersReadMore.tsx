@@ -51,7 +51,6 @@ const ForDCDDUsersReadMore: React.FC = () => {
                 <div className="w-full flex justify-center py-4 ">
                   <HrefButton
                     href={DCDDSignUpLinkDetails.linkToDCDDSignIn}
-                    target="_blank"
                     className="bg-customOriange-200 text-white  hover:bg-orange-700 "
                   >
                     {DCDDSignUpLinkDetails.LinkFor}
@@ -129,7 +128,6 @@ const ForDCDDUsersReadMore: React.FC = () => {
             <div className="w-full flex justify-center py-4">
               <a
                 href={SignInLinkDetails.linkToSignIn}
-                target="_blank"
                 rel="noopener noreferrer"
                 className="relative z-10 inline-flex justify-center items-center w-40 h-10  bg-customOriange-200 text-white rounded-md font-semibold transition-all duration-300 ease-in-out  hover:bg-hover:bg-orange-700 hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
               >

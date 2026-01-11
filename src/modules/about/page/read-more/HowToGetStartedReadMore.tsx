@@ -32,7 +32,6 @@ const HowToGetStartedReadMore: React.FC = () => {
           <div className="w-full flex justify-center">
             <HrefButton
               href={DCDDSignUpLinkDetails.linkToDCDDSignIn}
-              target="_blank"
               className=" bg-customOriange-200 text-white  hover:bg-orange-600 "
             >
               {DCDDSignUpLinkDetails.LinkFor}
@@ -45,7 +44,6 @@ const HowToGetStartedReadMore: React.FC = () => {
           <div className="w-full flex justify-center">
             <HrefButton
               href={SignInLinkDetails.linkToSignIn}
-              target="_blank"
               className=" bg-[#215FF8] text-white hover:bg-blue-600"
             >
               {SignInLinkDetails.LinkFor}

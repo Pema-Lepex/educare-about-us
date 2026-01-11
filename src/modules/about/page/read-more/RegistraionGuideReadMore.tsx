@@ -33,7 +33,6 @@ const RegistraionGuideReadMore: React.FC = () => {
                 <div className="w-full flex justify-center py-4">
                   <HrefButton
                     href={SignInLinkDetails.linkToSignIn}
-                    target="_blank"
                     className=" bg-[#981AF7] text-white hover:bg-[#7C15C9]"
                   >
                     {SignInLinkDetails.LinkFor}
@@ -70,7 +69,6 @@ const RegistraionGuideReadMore: React.FC = () => {
           <div className="w-full flex justify-center py-4">
             <a
               href={SignInLinkDetails.linkToSignIn}
-              target="_blank"
               rel="noopener noreferrer"
               className="relative z-10 inline-flex justify-center items-center w-40 h-10  bg-[#981AF7] text-white rounded-md font-semibold transition-all duration-300 ease-in-out  hover:bg-[#7C15C9] hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
             >
