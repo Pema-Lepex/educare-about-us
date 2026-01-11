@@ -6,6 +6,7 @@ import {
   DCDDSignUpLinkDetails,
   GiftCouponLinkDetails,
   SignInLinkDetails,
+  UserProfileLinkDetails,
 } from "utils/helpers/URLs";
 import { CommonHeader3 } from "components";
 import { jwtDecode } from "jwt-decode";
@@ -50,7 +51,10 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
         <div className="mx-auto px-4 py-4 flex items-center justify-between">
           
           <div onClick={() => handleNavigate("/")} className="cursor-pointer flex space-x-4 lg:space-x-0">
-            <div className="flex lg:hidden items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
+            <div onClick={(e) => {
+    e.stopPropagation(); 
+    handleNavigate(UserProfileLinkDetails.linkToUserProfile);
+  }}className="flex lg:hidden items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
                   {user.name ?(<>{user.profile_picture  ? (
                     <img
                       src={user.profile_picture}
@@ -110,7 +114,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
                 >
                   {GiftCouponLinkDetails.LinkFor}
                 </a>
-                <div className="flex items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
+                <div onClick={() => handleNavigate(UserProfileLinkDetails.linkToUserProfile)} className="flex items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
                   {user.profile_picture ? (
                     <img
                       src={user.profile_picture}
