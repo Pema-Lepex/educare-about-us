@@ -282,7 +282,7 @@ export const memebershipDetails = [
           "Dayig",
           "Shaytring",
           "Nyenga",
-          "Grammer Solved Questions accessible.",
+          "Grammar Solved Questions accessible.",
         ],
       },
     ],
