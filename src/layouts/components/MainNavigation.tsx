@@ -32,7 +32,11 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
     }, []);
 
     const handleNavigate = (path: string) => {
-      navigate(path);
+      if (path.startsWith("http://") || path.startsWith("https://")) {
+        window.location.href = path;
+      } else {
+        navigate(path);
+      }
       setOpen(false);
     };
     return (
@@ -43,7 +47,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
       >
         <div className="mx-auto px-4 py-4 flex items-center justify-between">
           
-          <div onClick={() => handleNavigate("/")} className="cursor-pointer flex space-x-4 lg:space-x-0">
+          <div onClick={() => handleNavigate(user?.name ? Home.linkTo : "/")} className="cursor-pointer flex space-x-4 lg:space-x-0">
             {user?.name && (
             <div onClick={(e) => {
                 e.stopPropagation();
