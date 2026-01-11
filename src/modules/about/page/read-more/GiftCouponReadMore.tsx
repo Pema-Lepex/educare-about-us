@@ -6,9 +6,11 @@ import {
 } from "assets";
 import { GiftCouponContent } from "assets/content/about/About";
 import { CommonHeader2, CommonParagraph1, CommonParagraph2 } from "components";
-import { GiftCouponLinkDetails } from "utils/helpers/URLs";
+import { useAuth } from "utils/helpers/AuthContext";
+import { GiftCouponAuthenticatedLinkDetails, GiftCouponLinkDetails } from "utils/helpers/URLs";
 
 const GiftCouponReadMore: React.FC = () => {
+  const { user } = useAuth();
   return (
     <div className="w-full flex justify-center items-center overflow-hidden px-4">
       <section className="py-10 md:py-16 w-full max-w-[90%] lg:max-w-[70%] 4xl:max-w-[60%] relative">
@@ -22,10 +24,8 @@ const GiftCouponReadMore: React.FC = () => {
               <p className="text-[8px] md:text-2xl lg:text-2xl 2xl:3xl 3xl:text-4xl 4xl:text-4xl 5xl:text-6xl font-medium text-black ">
                 {GiftCouponContent.subtitle}
               </p>
-
               <a
-                href={GiftCouponLinkDetails.linkToGiftCoupon}
-                target="_blank"
+                href={user?.name ? GiftCouponAuthenticatedLinkDetails.linkToGiftCoupon : GiftCouponLinkDetails.linkToGiftCoupon}
                 className="bg-[#3366FF] text-white w-full md:py-3 py-2 4xl:py-4 5xl:py-6 rounded-lg
                  text-xs md:text-2xl 4xl:text-4xl 5xl:text-5xl font-semibold
                  transition-all duration-300 ease-in-out

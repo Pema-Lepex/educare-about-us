@@ -1,32 +1,26 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Menus } from "./ManuList";
-import { whiteLogo, MenuIcon, XMarkIcon, CEO } from "assets";
+import { whiteLogo, MenuIcon, XMarkIcon } from "assets";
 import {
   DCDDSignUpLinkDetails,
   GiftCouponLinkDetails,
+  GiftCouponAuthenticatedLinkDetails,
+  Home,
   SignInLinkDetails,
+  UserProfileLinkDetails,
 } from "utils/helpers/URLs";
 import { CommonHeader3 } from "components";
-import { jwtDecode } from "jwt-decode";
+import { useAuth } from "utils/helpers/AuthContext";
 
 interface Props {
   hidden?: boolean;
 }
-interface DecodedToken {
-  name: string;
-  profile_picture: string;
-}
-const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIyMDI2LTA0LTExVDEwOjAwOjUwLjc3MDYzNzM0OVoiLCJpc3N1ZXIiOiJlZHVjYXJlIiwibmFtZSI6IlNvbmFtIiwicHJvZmlsZV9waWN0dXJlIjoiaHR0cHM6Ly9lZHVjYXJlLWF2YXRhci1maWxlcy5zMy5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tL2F2YXRhcl9maWxlcy8zMjdkNmYwNC01ZjhmLTRmNjYtOTM5ZS03YjE5Mzk4NWI3NTIucG5nIiwidG9rZW5faWQiOiIwYjUyZTFiMmY4ODcwMzgxMjc4NmU3MDM3YzNhMTM1Y2ViZmUzZWFhZTc5YjgyMDllOTMxZWJkM2FiYTM5YTdjIiwidXNlciI6eyJpZCI6ImIxYWMyMjM3LWFhOGQtNDE2ZC1hODY3LTE0ZDFlMDkwZDY1ZiIsInVzZXJfaWRlbnRpZmllciI6Ijg5M2NlNjQxZTI3NyIsImVtYWlsIjoiamFuZ2NodWJkb3JqaTE3QGdtYWlsLmNvbSIsIm1vYmlsZV9ubyI6IjE3ODQxMjgyIiwicGFzc3dvcmRfaGFzaCI6IiQyYSQxMiQveXEzNG1hRmd3RXllOXEzSWU5YzMuMllCNTdDSVFZYmhBaFVYU25QMmtjaDZHWGcyYXVNUyIsInN0YXR1cyI6IkFjdGl2ZSIsImNyZWF0ZWRfYXQiOiIyMDI1LTEwLTI5VDA2OjA2OjQ3LjAwNTAyNFoiLCJ1cGRhdGVkX2F0IjoiMjAyNS0xMi0zMVQyMDoyMzo1OS4zOTg2MjZaIn19.rzjOoXkiNzKrPO8SPAcV1JCu5HgFK6DdHNUMLmUYu8o";
-const decoded:DecodedToken = jwtDecode(token)
-const user:DecodedToken = {
-  name: decoded?.name || "",
-  profile_picture: decoded?.profile_picture || "",
-};
 const MainNavigation = React.forwardRef<HTMLElement, Props>(
   ({ hidden = false }, ref) => {
     const navigate = useNavigate();
     const location = useLocation();
+    const { user } = useAuth();
     const [open, setOpen] = useState(false);
 
     useEffect(() => {
@@ -50,24 +44,28 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
         <div className="mx-auto px-4 py-4 flex items-center justify-between">
           
           <div onClick={() => handleNavigate("/")} className="cursor-pointer flex space-x-4 lg:space-x-0">
-            <div className="flex lg:hidden items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
-                  {user.name ?(<>{user.profile_picture  ? (
+            {user?.name && (
+            <div onClick={(e) => {
+                e.stopPropagation();
+                handleNavigate(UserProfileLinkDetails.linkToUserProfile);
+            }} className="flex lg:hidden items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
+                  {user?.name ?(<>{user?.profile_picture  ? (
                     <img
-                      src={user.profile_picture}
+                      src={user?.profile_picture}
                       alt="User Profile"
                       className="w-8 h-8 md:w-10 md:h-10 lg:w-8 lg:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 3xl:w-14 3xl:h-14 4xl:w-16 4xl:h-16 5xl:w-20 5xl:h-20 rounded-full object-cover"
                     />
                   ) : (
                     <div
-                      className="flex items-center justify-center bg-white text-primary-500 font-bold rounded-full 
+                      className="flex items-center justify-center bg-white text-primary-500 font-bold rounded-full
                     w-8 h-8 md:w-10 md:h-10 lg:w-8 lg:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 3xl:w-14 3xl:h-14 4xl:w-16 4xl:h-16 5xl:w-20 5xl:h-20"
                     >
                       <CommonHeader3>
-                        {user.name?.charAt(0).toUpperCase()}
+                        {user?.name?.charAt(0).toUpperCase()}
                       </CommonHeader3>
                     </div>
                   )}</>):(<></>)}
-                </div>
+                </div>)}
             <img
               src={whiteLogo}
               alt="Educare Logo"
@@ -76,8 +74,8 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
           </div>
           <div className="hidden lg:flex lg:space-x-2 xl:space-x-4 2xl:space-x-8">
             {[
-              ...(user.name
-                ? [{ title: "Home", icon: "", ref: "/educareshkill.com/home" }]
+              ...(user?.name
+                ? [{ title: "Home", icon: "", ref: Home.linkToHome }]
                 : []),
               ...Menus,
             ].map((menu, index) => {
@@ -101,29 +99,28 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             })}
           </div>
           <div className="lg:flex gap-2 xl:gap-4 hidden">
-            {user.name ? (
+            {user?.name ? (
               <>
                 <a
-                  href={GiftCouponLinkDetails.linkToGiftCoupon}
-                  target="_blank"
+                  href={GiftCouponAuthenticatedLinkDetails.linkToGiftCoupon}
                   className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
                 >
-                  {GiftCouponLinkDetails.LinkFor}
+                  {GiftCouponAuthenticatedLinkDetails.LinkFor}
                 </a>
-                <div className="flex items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
-                  {user.profile_picture ? (
+                <div onClick={() => handleNavigate(UserProfileLinkDetails.linkToUserProfile)} className="flex items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
+                  {user?.profile_picture ? (
                     <img
-                      src={user.profile_picture}
+                      src={user?.profile_picture}
                       alt="User Profile"
                       className="w-8 h-8 md:w-10 md:h-10 lg:w-8 lg:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 3xl:w-14 3xl:h-14 4xl:w-16 4xl:h-16 5xl:w-20 5xl:h-20 rounded-full object-cover"
                     />
                   ) : (
                     <div
-                      className="flex items-center justify-center bg-white text-primary-500 font-bold rounded-full 
+                      className="flex items-center justify-center bg-white text-primary-500 font-bold rounded-full
                     w-8 h-8 md:w-10 md:h-10 lg:w-8 lg:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 3xl:w-14 3xl:h-14 4xl:w-16 4xl:h-16 5xl:w-20 5xl:h-20"
                     >
                       <CommonHeader3>
-                        {user.name?.charAt(0).toUpperCase()}
+                        {user?.name?.charAt(0).toUpperCase()}
                       </CommonHeader3>
                     </div>
                   )}
@@ -133,21 +130,18 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
               <>
                 <a
                   href={DCDDSignUpLinkDetails.linkToDCDDSignIn}
-                  target="_blank"
                   className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
                 >
                   {DCDDSignUpLinkDetails.LinkFor}
                 </a>
                 <a
                   href={SignInLinkDetails.linkToSignIn}
-                  target="_blank"
                   className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
                 >
                   {SignInLinkDetails.LinkFor}
                 </a>
                 <a
                   href={GiftCouponLinkDetails.linkToGiftCoupon}
-                  target="_blank"
                   className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
                 >
                   {GiftCouponLinkDetails.LinkFor}
@@ -177,8 +171,8 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
         >
           <nav className="px-4 py-3">
             {[
-              ...(user.name
-                ? [{ title: "Home", icon: "", ref: "/educareshkill.com/home" }]
+              ...(user?.name
+                ? [{ title: "Home", icon: "", ref: Home.linkToHome }]
                 : []),
               ...Menus,
             ].map((menu, index) => {
@@ -210,14 +204,12 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             <div className="lg:hidden gap-2 flex my-3">
               <a
                 href={DCDDSignUpLinkDetails.linkToDCDDSignIn}
-                target="_blank"
                 className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
               >
                 {DCDDSignUpLinkDetails.LinkFor}
               </a>
               <a
                 href={SignInLinkDetails.linkToSignIn}
-                target="_blank"
                 className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
               >
                 {SignInLinkDetails.LinkFor}
@@ -228,7 +220,6 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             >
               <a
                 href={GiftCouponLinkDetails.linkToGiftCoupon}
-                target="_blank"
                 className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
               >
                 {GiftCouponLinkDetails.LinkFor}
