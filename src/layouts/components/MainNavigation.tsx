@@ -6,12 +6,14 @@ import {
   DCDDSignUpLinkDetails,
   GiftCouponLinkDetails,
   GiftCouponAuthenticatedLinkDetails,
-  Home,
   SignInLinkDetails,
-  UserProfileLinkDetails,
 } from "utils/helpers/URLs";
 import { CommonHeader3 } from "components";
 import { useAuth } from "utils/helpers/AuthContext";
+import {
+  redirectToHome,
+  redirectToProfile,
+} from "utils/helpers/SharedAuth";
 
 interface Props {
   hidden?: boolean;
@@ -47,11 +49,11 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
       >
         <div className="mx-auto px-4 py-4 flex items-center justify-between">
           
-          <div onClick={() => handleNavigate(user?.name ? Home.linkTo : "/")} className="cursor-pointer flex space-x-4 lg:space-x-0">
+          <div onClick={() => { user?.name ? redirectToHome() : navigate("/"); }} className="cursor-pointer flex space-x-4 lg:space-x-0">
             {user?.name && (
             <div onClick={(e) => {
                 e.stopPropagation();
-                handleNavigate(UserProfileLinkDetails.linkTo);
+                redirectToProfile();
             }} className="flex lg:hidden items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
                   {user?.name ?(<>{user?.profile_picture  ? (
                     <img
@@ -77,12 +79,15 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             />
           </div>
           <div className="hidden lg:flex lg:space-x-2 xl:space-x-4 2xl:space-x-8">
-            {[
-              ...(user?.name
-                ? [{ title: "Home", icon: "", ref: Home.linkTo }]
-                : []),
-              ...Menus,
-            ].map((menu, index) => {
+            {user?.name && (
+              <button
+                onClick={() => redirectToHome()}
+                className="text-sm sm:text-base md:text-lg lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl font-medium transition-all duration-300 text-white hover:text-customOriange-100"
+              >
+                Home
+              </button>
+            )}
+            {Menus.map((menu, index) => {
               const isActive =
                 location.pathname === menu.ref ||
                 location.pathname.startsWith(menu.ref + "/");
@@ -111,7 +116,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
                 >
                   {GiftCouponAuthenticatedLinkDetails.LinkFor}
                 </a>
-                <div onClick={() => handleNavigate(UserProfileLinkDetails.linkTo)} className="flex items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
+                <div onClick={() => redirectToProfile()} className="flex items-center space-x-2 xl:space-x-4 2xl:space-x-6 cursor-pointer">
                   {user?.profile_picture ? (
                     <img
                       src={user?.profile_picture}
@@ -174,12 +179,17 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
           }`}
         >
           <nav className="px-4 py-3">
-            {[
-              ...(user?.name
-                ? [{ title: "Home", icon: "", ref: Home.linkTo }]
-                : []),
-              ...Menus,
-            ].map((menu, index) => {
+            {user?.name && (
+              <div className="py-2 border-b border-primary-100 dark:border-gray-800">
+                <button
+                  onClick={() => { redirectToHome(); setOpen(false); }}
+                  className="w-full text-left text-base font-medium transition-colors duration-200 text-white dark:text-gray-200 hover:text-primary-500"
+                >
+                  Home
+                </button>
+              </div>
+            )}
+            {Menus.map((menu, index) => {
               const isActive =
                 location.pathname === menu.ref ||
                 location.pathname.startsWith(menu.ref + "/");

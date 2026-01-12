@@ -1,10 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { jwtDecode } from "jwt-decode";
-
-interface DecodedToken {
-  name: string;
-  profile_picture: string;
-}
+import { getSharedAuthUser } from "./SharedAuth";
 
 interface User {
   name: string;
@@ -18,35 +13,25 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const getCookie = (name: string): string | null => {
-  const value = `; ${document.cookie}`;
-  const parts = value.split(`; ${name}=`);
-  if (parts.length === 2) {
-    return parts.pop()?.split(";").shift() || null;
-  }
-  return null;
-};
-
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
-    const token = getCookie("educare_token");
+    console.log("[AuthContext] useEffect running - v2");
+    const authData = getSharedAuthUser();
+    console.log("[AuthContext] getSharedAuthUser returned:", authData);
 
-    if (token) {
-      try {
-        const decoded: DecodedToken = jwtDecode(token);
-        setUser({
-          name: decoded?.name || "",
-          profile_picture: decoded?.profile_picture || "",
-        });
-      } catch (error) {
-        console.error("Failed to decode token:", error);
-        setUser(null);
-      }
+    if (authData) {
+      const userData = {
+        name: authData.profile?.name || "",
+        profile_picture: authData.profile?.profile_picture || "",
+      };
+      console.log("[AuthContext] Setting user to:", userData);
+      setUser(userData);
     } else {
+      console.log("[AuthContext] No authData, setting user to null");
       setUser(null);
     }
   }, []);
