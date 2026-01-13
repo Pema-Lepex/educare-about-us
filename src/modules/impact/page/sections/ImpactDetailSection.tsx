@@ -1,38 +1,49 @@
 import React from "react";
 import { TrendingUp, ShieldCheck } from "lucide-react";
-import { CommonHeader1, CommonHeader3, CommonParagraph1, CommonParagraph2, CommonParagraph3 } from "components";
+import {
+  CommonHeader1,
+  CommonHeader3,
+  CommonParagraph1,
+  CommonParagraph2,
+  CommonParagraph3,
+} from "components";
 import {
   ImpactBottomSection,
   ImpactOfEducare,
   ImpactTitle,
+  UnderImpactsContent,
 } from "assets/content/impact/Impact";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 const BottomSection: React.FC = () => {
   return (
     <>
-      
-        {ImpactBottomSection.map((items) => (
-          <div  key={items.id} className={`border ${items.colorCode.border} rounded-[2rem] p-4 md:p-6 lg:p-8 3xl:p-10 shadow-sm bg-white`}>
-          <div
-            className="flex flex-col lg:flex-row items-start gap-2 md:gap-4"
-          >
-            <div className={`p-3 ${items.colorCode.iconBG} rounded-full flex-shrink-0`}>
-              <ShieldCheck className={`w-8 h-8 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 ${items.colorCode.text}`} />
+      {ImpactBottomSection.map((items) => (
+        <div
+          key={items.id}
+          className={`border ${items.colorCode.border} rounded-[2rem] p-4 md:p-6 lg:p-8 3xl:p-10 shadow-sm bg-white`}
+        >
+          <div className="flex flex-col lg:flex-row items-start gap-2 md:gap-4">
+            <div
+              className={`p-3 ${items.colorCode.iconBG} rounded-full flex-shrink-0`}
+            >
+              <ShieldCheck
+                className={`w-8 h-8 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 ${items.colorCode.text}`}
+              />
             </div>
             <div className="space-y-4">
               <CommonHeader3 className={`font-bold ${items.colorCode.text}`}>
                 {items.title}
               </CommonHeader3>
               <CommonParagraph1 className="text-gray-600 leading-relaxed">
-               {items.description1}
+                {items.description1}
               </CommonParagraph1>
               <CommonParagraph1 className="text-gray-800 leading-relaxed">
-                 {renderTextWithLinks(items.description2)}
+                {renderTextWithLinks(items.description2)}
               </CommonParagraph1>
             </div>
           </div>
-          </div>
-        ))}
+        </div>
+      ))}
     </>
   );
 };
@@ -50,10 +61,14 @@ export default function ImpactDetailSection() {
               <div
                 className={`p-3 ${items.colorCode.iconBG} rounded-full flex-shrink-0`}
               >
-                <TrendingUp className={`w-6 h-6 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 ${items.colorCode.text}`} />
+                <TrendingUp
+                  className={`w-6 h-6 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 ${items.colorCode.text}`}
+                />
               </div>
               <div>
-                <CommonHeader3 className={`font-bold ${items.colorCode.text} mb-2`}>
+                <CommonHeader3
+                  className={`font-bold ${items.colorCode.text} mb-2`}
+                >
                   {items.title}
                 </CommonHeader3>
                 <CommonParagraph1 className="text-gray-600 leading-relaxed">
@@ -67,7 +82,7 @@ export default function ImpactDetailSection() {
 
       {/* Middle Row: Statistics */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-         <div className="border-t-4 border-blue-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
+        <div className="border-t-4 border-blue-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
           <span className="block text-4xl md:text-5xl font-black text-blue-600">
             PP-XII
           </span>
@@ -79,25 +94,58 @@ export default function ImpactDetailSection() {
           <span className="block text-4xl md:text-5xl font-black text-green-600">
             100,000+
           </span>
-          <span className="text-gray-800 font-bold text-lg 2xl:text-xl 4xl:text-3xl">Registered Users</span>
+          <span className="text-gray-800 font-bold text-lg 2xl:text-xl 4xl:text-3xl">
+            Registered Users
+          </span>
         </div>
         <div className="border-t-4 border-red-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
           <span className="block text-4xl md:text-5xl font-black text-red-600">
             1000+
           </span>
           <span className="text-gray-800 font-bold text-lg 2xl:text-xl 4xl:text-3xl">
-           Entertaining and Impactful Episodes 
+            Entertaining and Impactful Episodes
           </span>
         </div>
+      </div>
+      <div>
+        {UnderImpactsContent.map((items) => (
+          <div
+            key={items.id}
+            className="flex lg:flex-row flex-col gap-4 lg:gap-0 mb-8"
+          >
+            <div className="lg:w-2/6 xl:w-1/6 w-full flex  justify-center items-center">
+              <img
+                src={items.image}
+                alt="LOGO"
+                className="w-full h-auto max-w-[9rem] xs:max-[10rem] sm:max-w-[12rem] md:max-w-[14rem] lg:max-w-[30rem] xl:max-w-[] 2xl:max-w-xl 3xl:max-w-[23rem] 4xl:max-w-xs  object-contain"
+              />
+            </div>
+
+            <div className={`hidden lg:block border-r-4 ${items.borderColor} mx-6`} />
+
+            <div className="flex justify-center flex-col flex-1 space-y-2 xl:space-y-3 2xl:space-y-4 3xl:space-y-5 4xl:space-y-6 5xl:space-y-7">
+              <CommonParagraph2>
+                {renderTextWithLinks(items.des1)}
+              </CommonParagraph2>
+              <CommonParagraph2>
+                {renderTextWithLinks(items.des2)}
+              </CommonParagraph2>
+              <CommonParagraph2>
+                {renderTextWithLinks(items.des3)}
+              </CommonParagraph2>
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* Bottom Row: Safe Haven */}
       <div className="space-y-2 3xl:space-y-6">
-        {/* <CommonHeader1 className="text-primary-500">{ImpactTitle.title}</CommonHeader1> */}
-        <CommonParagraph1 className="font-bold text-center">{ImpactTitle.description}</CommonParagraph1>
+        <CommonParagraph1 className="font-bold text-center">
+          {renderTextWithLinks(ImpactTitle.description)}
+        </CommonParagraph1>
       </div>
       <BottomSection />
-      <div className="4xl:h-[300px] 5xl:h-[500px] "/>
+      <div className="4xl:h-[300px] 5xl:h-[500px] " />
     </section>
   );
 }

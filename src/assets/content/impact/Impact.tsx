@@ -1,3 +1,4 @@
+import { DCDDLogo, MoELogo } from "assets/images/dcdd";
 import { ShieldCheck, TrendingUp, User } from "lucide-react";
 
 export const impactOfEducare = {
@@ -20,7 +21,7 @@ export const ImpactOfEducare = [
     },
     icon:TrendingUp,
     description: 
-      `Educare Skill combines technology and education to enhance learning through entertaining content, engaging, and easy-to-understand lessons. By leveraging innovative digital solutions and an interactive learning approach, Educare Skill makes learning Dzongkha more enjoyable, effective, and accessible for everyone. With your continued support, we envision Educare Skill becoming a full-fledged learning and skilling platform in Bhutan and beyond.`
+      `Educare Skill combines technology and education to enhance learning through entertaining content, engaging, and easy-to-understand lessons. By leveraging innovative digital solutions and an interactive learning approach, Educare Skill makes learning Dzongkha more enjoyable, effective, and accessible for everyone. With your continued support, we envision Educare Skill becoming a full-fledged LMS in Bhutan and beyond.`
   },
   {
     id:2,
@@ -108,4 +109,24 @@ export const ImpactBottomSection = [
     description2:
       "",
   },
+];
+
+export const UnderImpactsContent = [
+  {
+    id:1,
+    image: DCDDLogo,
+    borderColor:"border-[#F34800]",
+    des1: `**Department of Culture and Dzongkha Development (DCDD)** under the Ministry of Home Affairs is the apex institution and authority responsible for the development and promotion of Bhutan’s national language, Dzongkha. After the erstwhile Dzongkha Development Commission (DDC) was merged with the Department of Culture, DCDD became the country’s foremost public institution dedicated to preserving, promoting, developing, and enhancing the rich cultural and traditional heritage of the nation.`,
+    des2:"DCDD has formalized a Memorandum of Understanding (MoU) with Educare Skill to promote and enhance online Dzongkha learning among Bhutanese children, and supports with reviewing of the Educare Skill content.",
+    des3:"To learn more about DCDD, you may visit their official website: https://doc.gov.bt/"
+  },
+  {
+    id:2,
+    image: MoELogo,
+    borderColor:"border-[#981AF7]",
+    des1: `**Department of School Education (DSE)** under the Ministry of Education and Skills Development (MoESD) is nationally mandated to provide a wholesome education to students through provisions that emphasize academic excellence, curriculum integration, effective pedagogy, and assessments that meet the diverse needs of learners. DSE ensures alignment with the ministry’s overarching national education vision of nurturing _“an educated and enlightened society of GNH, built and sustained on the unique Bhutanese values of tha-dam-tsig ley-gyu-drey.”_ `,
+    des2:"DSE supports Educare Skill by reviewing lessons and facilitating the use of the platform across schools as supplementary learning material for students and Dzongkha teachers.",
+    des3:"To learn more about DSE, you may visit their official website: https://education.gov.bt/"
+  },
+ 
 ];

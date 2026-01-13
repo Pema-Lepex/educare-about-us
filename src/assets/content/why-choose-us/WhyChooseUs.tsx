@@ -1,10 +1,3 @@
-import {
-  affortable,
-  Approve,
-  InteractiveLearning,
-  personalize,
-  QualityLearning,
-} from "assets";
 import { BadgeCheck, Gem, MonitorCheck, ShieldCheck, UserStar } from "lucide-react";
 
 export const whyChooseUsDetails = [

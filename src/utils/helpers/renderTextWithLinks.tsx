@@ -9,54 +9,68 @@ const linkMap: Record<string, string> = {
 export const renderTextWithLinks = (text: string | undefined) => {
   if (!text) return null;
 
-  // Regex to catch: 1. Bold blocks, 2. Ordinals, 3. URLs/Emails
-  const urlRegex = /(\*\*[^*]+\*\*|\d+(?:st|nd|rd|th)|support@[^\s]+|https?:\/\/[^\s]+)/gi;
+  /**
+   * Updated Regex to catch:
+   * 1. Bold (**text**)
+   * 2. Italic (*text* or _text_)
+   * 3. Ordinals (21st)
+   * 4. URLs/Emails
+   */
+  const urlRegex = /(\*\*[^*]+\*\*|\*[^*]+\*|_[^_]+_|\d+(?:st|nd|rd|th)|support@[^\s]+|https?:\/\/[^\s]+)/gi;
   
   const parts = text.split(urlRegex);
+
+  // Reusable helper to handle superscripting inside bold/italic tags
+  const processInnerContent = (content: string) => {
+    const ordinalRegex = /(\d+)(st|nd|rd|th)/gi;
+    const subParts = content.split(ordinalRegex);
+    
+    if (subParts.length === 1) return content;
+
+    return subParts.map((sub, j) => {
+      if (/^(st|nd|rd|th)$/i.test(sub)) {
+        return <sup key={j} className="text-[0.7em] leading-none">{sub}</sup>;
+      }
+      return sub;
+    });
+  };
 
   return parts.map((part, i) => {
     if (!part) return null;
 
-    // --- 1. HANDLE BOLD TEXT (potentially containing 21st) ---
+    // --- 1. HANDLE BOLD TEXT ---
     if (part.startsWith("**") && part.endsWith("**")) {
       const cleanText = part.replace(/\*\*/g, "");
       const link = linkMap[cleanText];
 
-      // Inner logic to find "21st" inside the bolded text
-      const processInnerContent = (content: string) => {
-        const ordinalRegex = /(\d+)(st|nd|rd|th)/gi;
-        const subParts = content.split(ordinalRegex);
-        
-        if (subParts.length === 1) return content; // No ordinals found
-
-        return subParts.map((sub, j) => {
-          if (/^(st|nd|rd|th)$/i.test(sub)) {
-            return <sup key={j} className="text-[0.7em] leading-none">{sub}</sup>;
-          }
-          return sub;
-        });
-      };
-
       if (link) {
         return (
-          <a key={i} href={link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-extrabold">
+          <a key={i} href={link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-bold">
             {processInnerContent(cleanText)}
           </a>
         );
       }
-      return <strong key={i} className="font-extrabold">{processInnerContent(cleanText)}</strong>;
+      return <strong key={i} className="font-semibold">{processInnerContent(cleanText)}</strong>;
     }
 
-    // --- 2. HANDLE STANDALONE SUPERSCRIPT (e.g., 21st outside bold) ---
+    // --- 2. HANDLE ITALIC TEXT ---
+    // Checks for *text* or _text_
+    if ((part.startsWith("*") && part.endsWith("*")) || (part.startsWith("_") && part.endsWith("_"))) {
+      const cleanText = part.slice(1, -1); // Removes the first and last character
+      return <em key={i} className="italic">{processInnerContent(cleanText)}</em>;
+    }
+
+    // --- 3. HANDLE STANDALONE SUPERSCRIPT ---
     if (/^\d+(st|nd|rd|th)$/i.test(part)) {
       const num = part.match(/\d+/)?.[0];
       const suffix = part.match(/[a-z]+/i)?.[0];
       return <span key={i}>{num}<sup className="text-[0.7em]">{suffix}</sup></span>;
     }
 
-    // --- 3. HANDLE LINKS & EMAILS ---
-    if (/^https?:\/\//i.test(part)) {
-      return <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{part}</a>;
+    // --- 4. HANDLE LINKS & EMAILS ---
+    if (/^https?:\/\//i.test(part) || /^support@/i.test(part)) {
+      const href = part.startsWith("support@") ? `mailto:${part}` : part;
+      return <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{part}</a>;
     }
 
     return part;
