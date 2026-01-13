@@ -13,7 +13,7 @@ const EducareSkillSection: React.FC = () => {
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8 3xl:gap-16 4xl:gap-20">
         <div className="flex-1 md:text-center lg:text-left space-y-2 4xl:space-y-8">
           <CommonHeader2>{EducareSkillContent.title}</CommonHeader2>
-          <h4 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl 5xl:text-8xl 6xl:text-[9.75rem] font-extralight italic">
+          <h4 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl 5xl:text-8xl  font-extralight italic">
             {EducareSkillContent.subTitle}
           </h4>
           <div className="space-y-4 4xl:space-y-8 pt-2">
@@ -42,13 +42,13 @@ const EducareSkillSection: React.FC = () => {
                     alt="icon"
                     className="size-9 4xl:size-16 p-2  rounded-full object-contain bg-white/90 md:mb-1 4xl:mb-4"
                   />
-                  <h1 className=" text-white text-lg 2xl:text-2xl  3xl:text-3xl 4xl:text-4xl 5xl:text-5xl 6xl:text-6xl font-black drop-shadow-md tracking-wide">
+                  <h1 className=" text-white text-lg 2xl:text-2xl  3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-black drop-shadow-md tracking-wide">
                     {items.groupName}
                   </h1>
-                  <h5 className="mb-[2px] 4xl:my-3 text-white text-[14px] 2xl:text-lg 3xl:text-xl 4xl:text-2xl 5xl:text-3xl 6xl:text-4xl">
+                  <h5 className="mb-[2px] 4xl:my-3 text-white text-[14px] 2xl:text-lg 3xl:text-xl 4xl:text-2xl 5xl:text-3xl">
                     {items.eligibility}
                   </h5>
-                  <p className="text-[12px] 2xl:text-base 3xl:text-lg 4xl:text-xl 5xl:text-2xl 6xl:text-3xl text-gray-200 leading-tight font-bold">
+                  <p className="text-[12px] 2xl:text-base 3xl:text-lg 4xl:text-xl 5xl:text-2xl text-gray-200 leading-tight font-bold">
                     {items.info}
                   </p>
                 </div>

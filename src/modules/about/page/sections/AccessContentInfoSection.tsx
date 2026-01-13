@@ -22,7 +22,7 @@ const AccessContentInfoSection: React.FC = () => {
             />
             <a
               href={DCDDSignUpLinkDetails.linkTo}
-              className=" bg-customOriange-200 text-white px-8 py-2 4xl:py-4 4xl:px-16 rounded-lg text-base md:text-base lg:text-xl  xl:text-2xl 2xl:text-3xl  3xl:text-4xl 4xl:text-5xl 5xl:text-6xl 6xl:text-7xl transition-all duration-300 ease-in-out hover:bg-orange-700 hover:shadow-lg hover:scale-105 my-4 4xl:my-8"
+              className=" bg-customOriange-200 text-white px-8 py-2 4xl:py-4 4xl:px-16 rounded-lg text-base md:text-base lg:text-xl  xl:text-2xl 2xl:text-3xl  3xl:text-4xl 4xl:text-5xl 5xl:text-6xl  transition-all duration-300 ease-in-out hover:bg-orange-700 hover:shadow-lg hover:scale-105 my-4 4xl:my-8"
             >
               {DCDDSignUpLinkDetails.LinkFor}
             </a>

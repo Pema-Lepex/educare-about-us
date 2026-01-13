@@ -59,7 +59,7 @@ const RegistraionGuideReadMore: React.FC = () => {
               Object.values(item).map((step, stepIndex) => (
                 <li
                   key={`${index}-${stepIndex}`}
-                  className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl  font-light"
+                  className="text-gray-700 text-xs sm:text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl  font-light"
                 >
                   {step}
                 </li>

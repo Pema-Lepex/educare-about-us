@@ -11,7 +11,7 @@ const GuideSection: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center gap-5 md:gap-16">
           <div className="relative flex-shrink-0 lg:w-1/3">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-[170px] md:w-[240px] lg:w-[200px] xl:w-[250px] 2xl:w-[440px] 3xl:w-[644px]  4xl:w-[700px] 5xl:w-[800px] 6xl:w-[900px] h-[170px] md:h-[240px] lg:h-[200px] xl:h-[250px] 2xl:h-[440px] 3xl:h-[644px] 4xl:h-[700px] 5xl:h-[800px] 6xl:h-[900px] bg-[#F1E8FF] rounded-full" />
+              <div className="w-[170px] md:w-[240px] lg:w-[200px] xl:w-[250px] 2xl:w-[440px] 3xl:w-[644px]  4xl:w-[700px] 5xl:w-[800px]  h-[170px] md:h-[240px] lg:h-[200px] xl:h-[250px] 2xl:h-[440px] 3xl:h-[644px] 4xl:h-[700px] 5xl:h-[800px]  bg-[#F1E8FF] rounded-full" />
             </div>
             <img
               src={NonoImage}
@@ -36,15 +36,15 @@ const GuideSection: React.FC = () => {
                       <img
                         src={items.icon}
                         alt={items.title}
-                        className="size-9 md:size-9 lg:size-5 xl:size-8 2xl:size-10 3xl:size-14 4xl:size-16 5xl:size-20 6xl:size-24 object-contain"
+                        className="size-9 md:size-9 lg:size-5 xl:size-8 2xl:size-10 3xl:size-14 4xl:size-16 5xl:size-20  object-contain"
                       />
                     </div>
 
-                    <div className="px-3 md:px-4 lg:px-1 xl:px-1 2xl:px-4 3xl:px-8 4xl:px-9 5xl:px-10 6xl:px-11 space-y-1 4xl:space-y-10 text-center">
-                      <h1 className=" text-white text-lg font-black drop-shadow-md 6xl:text-6xl 5xl:text-5xl 4xl:text-4xl 2xl:text-3xl xl:text-lg lg:text-xs md:text-xs text-center">
+                    <div className="px-3 md:px-4 lg:px-1 xl:px-1 2xl:px-4 3xl:px-8 4xl:px-9 5xl:px-10 space-y-1 4xl:space-y-10 text-center">
+                      <h1 className=" text-white text-lg font-black drop-shadow-md  5xl:text-5xl 4xl:text-4xl 2xl:text-3xl xl:text-lg lg:text-xs md:text-xs text-center">
                         {items.title}
                       </h1>
-                      <p className="text-[14px] md:text-xs lg:text-[10px] xl:text-[16px] 2xl:text-[19px] 3xl:text-3xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl text-gray-200 font-medium lg:pb-0 pb-4 max-sm:px-6">
+                      <p className="text-[21px] sm:text-[30px] md:text-[10px] lg:text-[10px] xl:text-[13px] 2xl:text-[16px] 3xl:text-[20px] 4xl:text-[30px] 5xl:text-[38px] text-gray-200 font-medium lg:pb-0 pb-4 max-sm:px-6">
                         {items.info}
                       </p>
                     </div>
@@ -52,7 +52,7 @@ const GuideSection: React.FC = () => {
                   <div className="absolute inset-0 -bottom-8 md:-bottom-10 lg:-bottom-12 xl:-bottom-8 2xl:-bottom-8 3xl:-bottom-10 flex flex-col justify-end items-center  pb-4 z-50">
                     <LearnMoreButton
                       onClick={() => navigate(items.href)}
-                      className="bg-primary-500 text-white cursor-pointer font-extralight text-base md:text-base lg:text-lg  xl:text-xl 2xl:text-2xl  3xl:text-3xl 4xl:text-4xl 5xl:text-5xl 6xl:text-6xl"
+                      className="bg-primary-500 text-white cursor-pointer font-extralight text-base md:text-base lg:text-lg  xl:text-xl 2xl:text-2xl  3xl:text-3xl 4xl:text-4xl 5xl:text-5xl "
                     >
                       Learn More
                     </LearnMoreButton>
