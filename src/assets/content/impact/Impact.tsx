@@ -20,7 +20,7 @@ export const ImpactOfEducare = [
     },
     icon:TrendingUp,
     description: 
-      `Educare Skill combines technology and education to enhance learning through entertaining content, engaging, and easy-to-understand lessons. By leveraging innovative digital solutions and an interactive learning approach, Educare Skill makes learning Dzongkha more enjoyable, effective, and accessible for everyone.`
+      `Educare Skill combines technology and education to enhance learning through entertaining content, engaging, and easy-to-understand lessons. By leveraging innovative digital solutions and an interactive learning approach, Educare Skill makes learning Dzongkha more enjoyable, effective, and accessible for everyone. With your continued support, we envision Educare Skill becoming a full-fledged learning and skilling platform in Bhutan and beyond.`
   },
   {
     id:2,

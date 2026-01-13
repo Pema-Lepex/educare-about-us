@@ -30,7 +30,29 @@ export const educareSkillFAQ = {
       answer: [
         `Educare Skill provides entertaining and educational content such as read-aloud stories, animated series, nursery rhymes, interactive gamified learning, and Dzongkha lessons for Classes PP–XII.
 
-        With over a thousand episodes available, Educare Skill is the ultimate one-stop shop for learning and mastering our national language, Dzongkha, catering to people of all walks of life, regardless of age. The platform features animated series like Dr. Carrot, Tales of Four Friends, and Adventures of the Monkey King. It also includes 24 nursery rhyme episodes featuring Nono and Daza, and over 360 colourful read-aloud stories in Dzongkha and English. The platform further offers Dzongkha curriculum-aligned lessons such as Gakyid Lobdra, Basic Dzongkha, Intermediate Dzongkha, and exam-oriented tutorials. Chey Chey, the interactive gamified feature, helps children explore foundational concepts like alphabets, colours, shapes, and more.`,
+        With over a thousand episodes available, Educare Skill is the ultimate one-stop shop for learning and mastering our national language, Dzongkha, catering to people of all walks of life, regardless of age.
+        
+        The platform features animated series like Dr. Carrot, Tales of Four Friends, and Adventures of the Monkey King. It also includes 24 nursery rhyme episodes featuring Nono and Daza, and over 360 colourful read-aloud stories in Dzongkha and English. The platform further offers Dzongkha curriculum-aligned lessons such as Gakyid Lobdra, Basic Dzongkha, Intermediate Dzongkha, and exam-oriented tutorials. Chey Chey, the interactive gamified feature, helps children explore foundational concepts like alphabets, colours, shapes, and more.`,
+      ],
+    },
+    {
+      question: "Who are the experts reviewing Educare Skill content, and is the content aligned with the national curriculum?",
+      answer: [
+        `Since Educare Skill primarily focuses on Dzongkha, a wide range of Dzongkha teachers, language professionals, and multimedia production experts have been involved in developing its content. From the inception of a lesson idea to the final output, every content goes through a series of internal reviews to ensure high-quality video production (visuals, sound, music, voice, etc.) as well as strong lesson outcomes, including grammar, language accuracy, and pronunciation, etc.,
+
+        All content on Educare Skill has been reviewed by Dzongkha experts from the Department of Culture and Dzongkha Development (DCDD), Ministry of Home Affairs, along with professionals from Educare Skill.,
+
+        For academic Dzongkha lessons developed for students, content is designed according to grade-wise competencies and is jointly reviewed by Dzongkha curriculum professionals from the Department of School Education, Ministry of Education and Skills Development (MoESD), Dzongkha experts from the Department of Culture and Dzongkha Development (DCDD), and professionals from Educare Skill.`,
+      ],
+    },
+    {
+      question: "How does DCDD support our children and students in learning Dzongkha?",
+      answer: [
+        `Following the formalization of a Memorandum of Understanding (MoU) with Educare Skill, the Department of Culture and Dzongkha Development (DCDD) has provided subsidized support to enable free access to Educare Skill for children aged three and above, children enrolled in ECCD centres, and students in Classes PP–VI residing in Bhutan.,
+
+        For your information, DCDD is the apex institution and authority responsible for the development and promotion of Bhutan’s national language, Dzongkha. After the erstwhile Dzongkha Development Commission (DDC) was merged with the Department of Culture, DCDD became the country’s most important public institution dedicated to preserving, promoting, developing, and enhancing the rich cultural and traditional heritage of our Nation.,
+
+        To learn more about DCDD, you may visit their official website: https://doc.gov.bt/ `,
       ],
     },
     {

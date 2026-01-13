@@ -41,7 +41,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       >
         <div className="w-full flex items-center justify-between">
           <h4
-            className="md:text-2xl text:lg  font-bold text-slate-800"
+            className="md:text-2xl text:lg  font-bold text-slate-800 pr-2"
             style={{ color: accentColor }}
           >
             {header && renderTextWithLinks(header)}
