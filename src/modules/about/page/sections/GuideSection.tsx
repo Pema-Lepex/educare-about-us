@@ -44,7 +44,7 @@ const GuideSection: React.FC = () => {
                       <h1 className=" text-white text-lg font-black drop-shadow-md  5xl:text-5xl 4xl:text-4xl 2xl:text-3xl xl:text-lg lg:text-xs md:text-xs text-center">
                         {items.title}
                       </h1>
-                      <p className="text-[21px] sm:text-[30px] md:text-[10px] lg:text-[10px] xl:text-[13px] 2xl:text-[16px] 3xl:text-[20px] 4xl:text-[30px] 5xl:text-[38px] text-gray-200 font-medium lg:pb-0 pb-4 max-sm:px-6">
+                      <p className="text-[13px] xs:text-[22px] sm:text-[30px] md:text-[10px] lg:text-[10px] xl:text-[13px] 2xl:text-[16px] 3xl:text-[20px] 4xl:text-[30px] 5xl:text-[38px] text-gray-200 font-medium lg:pb-0 pb-4 max-sm:px-6">
                         {items.info}
                       </p>
                     </div>

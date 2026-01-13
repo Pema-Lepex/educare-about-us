@@ -54,7 +54,7 @@ const RegistraionGuideReadMore: React.FC = () => {
             {RegistrationGuideContent.title}
           </h2>
           <p className="text-start">{RegistrationGuideContent.description}</p>
-          <ol className="list-disc list-inside space-y-2 px-2">
+          <ol className="list-disc list-outside space-y-2 px-4">
             {RegistrationGuideContent.guide.map((item, index) =>
               Object.values(item).map((step, stepIndex) => (
                 <li

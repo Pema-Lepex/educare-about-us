@@ -109,7 +109,7 @@ const ForDCDDUsersReadMore: React.FC = () => {
             <p className="text-start">{ForDCDDUsersContent.description2}</p>
             <p className="text-start">{ForDCDDUsersContent.description3}</p>
             <p className="text-start">{ForDCDDUsersContent.description4}</p>
-            <ol className="list-disc list-inside space-y-2 px-2">
+            <ol className="list-disc list-outside space-y-2 px-4">
               {/* <li className="text-gray-700 text-xs font-light">
               {renderTextWithLinks(ForDCDDUsersContent.guide.guide1)}
             </li> */}
