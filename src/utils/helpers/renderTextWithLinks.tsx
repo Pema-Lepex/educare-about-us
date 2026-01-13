@@ -70,7 +70,7 @@ export const renderTextWithLinks = (text: string | undefined) => {
     // --- 4. HANDLE LINKS & EMAILS ---
     if (/^https?:\/\//i.test(part) || /^support@/i.test(part)) {
       const href = part.startsWith("support@") ? `mailto:${part}` : part;
-      return <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{part}</a>;
+      return <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="font-medium hover:underline">{part}</a>;
     }
 
     return part;
