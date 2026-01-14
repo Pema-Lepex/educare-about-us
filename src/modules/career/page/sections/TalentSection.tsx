@@ -11,7 +11,7 @@ import { ApplicationFormLinkDetails } from "utils/helpers/URLs";
 
 export default function CreativeTalentSection() {
   return (
-    <section className="py-16 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto space-y-12">
+    <section className="md:py-16 py-7 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto space-y-12">
       {/* Main Section Heading */}
       <CommonHeader1 className=" font-bold text-center text-[#1b364d] mb-8">
         {WeArelookingFor.title}
@@ -71,7 +71,7 @@ export default function CreativeTalentSection() {
       </div>
 
       {/* Bottom Text */}
-      <div className="text-center pt-8">
+      <div className="text-center md:pt-8">
         <CommonParagraph2 className="text-gray-700 text-lg flex flex-col md:flex-row items-center justify-center gap-2">
           Have questions about joining our team?
           <a href="/contact" className="font-semibold text-[#1b364d] cursor-pointer hover:underline flex items-center gap-1">
@@ -79,7 +79,7 @@ export default function CreativeTalentSection() {
           </a>
         </CommonParagraph2>
       </div>
-      <div className="w-full h-20 4xl:h-[400px] 5xl:h-[500px]"></div>
+      <div className="w-full lg:h-20 4xl:h-[400px] 5xl:h-[500px]"></div>
     </section>
   );
 }

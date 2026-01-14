@@ -104,7 +104,7 @@ const MainSectionPage: React.FC = () => {
   }, [searchParams]);
   return (
     <div className="bg-white ">
-      <section className="-mt-16 px-4 pb-10 absolute w-full">
+      <section className="px-4 pb-10 absolute w-full">
         <div className="mx-auto grid max-w-6xl 3xl:max-w-full 3xl:px-36 px-0 grid-cols-1 gap-5 4xl:gap-12 lg:grid-cols-6">
           {features.map((f, idx) => {
             const gridClasses = "col-span-1";
@@ -150,8 +150,55 @@ const MainSectionPage: React.FC = () => {
           })}
         </div>
       </section>
+      {/* hide this content */}
+       <section className="-mt-16 px-4 pb-10 w-full invisible pointer-events-none select-none" aria-hidden="true">
+         <div className="mx-auto grid max-w-6xl 3xl:max-w-full 3xl:px-36 px-0 grid-cols-1 gap-5 4xl:gap-12 lg:grid-cols-6">
+          {features.map((f, idx) => {
+            const gridClasses = "col-span-1";
+            const gridClassess =
+              idx < 3
+                ? "col-span-2"
+                : idx === 3
+                ? "col-span-2 lg:col-start-2"
+                : "col-span-2 lg:col-start-4";
+            return (
+              <div
+                key={f.title}
+                role="button"
+                tabIndex={0}
+                onClick={() => setActiveTab(themeToTab[f.theme])}
+                className={`rounded-2xl border-t-4 bg-white p-5 shadow-md ${
+                  borderByTheme[f.theme]
+                } ${gridClasses} ${gridClassess} cursor-pointer`}
+              >
+                <div className="flex flex-col items-start gap-3 4xl:gap-6 4xl:p-8">
+                  <div className="grid p-3 place-items-center rounded-xl bg-gray-50 4xl:mb-2">
+                    <f.icon
+                      className={`w-6 h-6 4xl:w-10 4xl:h-10 5xl:w-14 5xl:h-14 ${
+                        titleByTheme[f.theme]
+                      }`}
+                    />
+                  </div>
+                  <div>
+                    <CommonParagraph1
+                      className={` font-extrabold 4xl:mb-4 ${
+                        titleByTheme[f.theme]
+                      }`}
+                    >
+                      {f.title}
+                    </CommonParagraph1>
+                    <CommonParagraph1 className="mt-1 leading-relaxed text-gray-700">
+                      {renderTextWithLinks(f.desc)}
+                    </CommonParagraph1>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
 
-      <section className="px-4 pb-16  pt-[1850px] xs:pt-[1500px] sm:pt-[1380px] md:pt-[1320px] lg:pt-[850px] xl:pt-[820px] 2xl:pt-[950px] 3xl:pt-[920px] 4xl:pt-[1250px] 5xl:pt-[1400px]">
+      <section className="px-4 md:pb-16  ">
         <CommonHeader3 className="text-center font-extrabold tracking-wide text-[#0B2A4A] 4xl:mb-12">
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>

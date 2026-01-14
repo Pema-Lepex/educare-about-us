@@ -93,7 +93,7 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section className="relative z-20 overflow-hidden pb-20 pt-16 lg:pb-[90px] md:mb-10">
+    <section className="relative z-20 overflow-hidden  pt-16 lg:pb-[90px] md:mb-10">
       <div className="container mx-auto px-4">
         <div className="mb-16 text-center">
           <CommonHeader1 className=" font-extrabold text-slate-900 ">
@@ -115,7 +115,7 @@ const FAQ: React.FC = () => {
           ))}
         </div>
       </div>
-      <div className="h-36 3xl:h-96 4xl:h-[500px] 5xl:h-[600px]" />
+      <div className="h-16 sm:h-20 3xl:h-96 4xl:h-[500px] 5xl:h-[600px]" />
     </section>
   );
 };
