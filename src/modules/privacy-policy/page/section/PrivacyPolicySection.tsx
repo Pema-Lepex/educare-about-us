@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { PolicySectionsProps, SectionsProps } from "props/Commonprops";
 import PolicyContentRenderer from "../components/PolicyContentRenderer";
-import { CommonHeader4 } from "components";
+import { CommonHeader4, CommonParagraph2, CommonParagraph3 } from "components";
 import { privacyPolicy, privacyPolicyMenu } from "assets/content/privacy-policy/PrivacyPolicy";
 
 const PrivacyPolicySection = () => {
@@ -44,7 +44,7 @@ const PrivacyPolicySection = () => {
     <div className="flex bg-white min-h-screen">
       {/* LEFT NAVIGATION */}
       <aside className="hidden lg:block w-1/4 border-r px-6 py-8 sticky top-0 h-screen overflow-y-auto mb-28 hide-scrollbar">
-        <h2 className="text-lg font-semibold mb-6">Contents</h2>
+        <CommonParagraph2 className="text-lg font-semibold mb-6">Contents</CommonParagraph2>
 
         <ul className="space-y-4 text-sm">
           {privacyPolicyMenu.sections.map((section) => (
@@ -64,7 +64,8 @@ const PrivacyPolicySection = () => {
           }
         `}
             >
-              {section.heading}
+              <CommonParagraph3>{section.heading}</CommonParagraph3>
+              
             </li>
           ))}
         </ul>
@@ -92,7 +93,7 @@ const PrivacyPolicySection = () => {
             />
           </section>
         ))}
-        <div className=" h-20"></div>
+        <div className=" h-20 4xl:h-[20rem] 5xl:h-[30rem]"></div>
       </main>
     </div>
   );

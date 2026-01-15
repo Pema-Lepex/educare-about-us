@@ -28,7 +28,7 @@ const ImpactHeaderSection: React.FC = () => {
               and compete in the world. We must give utmost priority to skill,
               up-skill, and re-skill our people to make them world-ready.
             </p>
-            <p className="flex gap-2 text-[10px] sm:text-base md:text-base xl:text-2xl 2xl:text-3xl 3xl:text-4xl 4xl:text-5xl 5xl:text-6xl font-bold text-yellow-400">
+            <p className="flex gap-2 text-[10px] sm:text-base md:text-base lg:text-lg xl:text-2xl 2xl:text-3xl 3xl:text-4xl 4xl:text-5xl 5xl:text-6xl font-bold text-yellow-400 mb-2 sm:mb-4 leading-tight px-5 lg:px-0">
               <span>-</span>
               <span>
                 His Majesty The King of Bhutan, 2021 National Day Royal Address

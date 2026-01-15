@@ -6,11 +6,31 @@ import {
 } from "assets";
 import { GiftCouponContent } from "assets/content/about/About";
 import { CommonHeader2, CommonParagraph1, CommonParagraph2 } from "components";
+import { useState, useEffect } from "react";
 import { useAuth } from "utils/helpers/AuthContext";
 import { GiftCouponAuthenticatedLinkDetails, GiftCouponLinkDetails } from "utils/helpers/URLs";
 
 const GiftCouponReadMore: React.FC = () => {
   const { user } = useAuth();
+   const [isMobile, setIsMobile] = useState(false);
+  
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+  
+    checkScreenSize();
+  
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+  
+  const getHref = () => {
+    if (isMobile) {
+      return GiftCouponAuthenticatedLinkDetails.linkTo;
+    }
+    return user?.name ? GiftCouponAuthenticatedLinkDetails.linkTo : GiftCouponLinkDetails.linkTo;
+  };
   return (
     <div className="w-full flex justify-center items-center overflow-hidden px-4">
       <section className="py-10 md:py-16 w-full max-w-[90%] lg:max-w-[70%] 4xl:max-w-[60%] relative">
@@ -25,7 +45,7 @@ const GiftCouponReadMore: React.FC = () => {
                 {GiftCouponContent.subtitle}
               </p>
               <a
-                href={user?.name ? GiftCouponAuthenticatedLinkDetails.linkTo : GiftCouponLinkDetails.linkTo}
+                href={getHref()}
                 className="bg-[#3366FF] text-white w-full md:py-3 py-2 4xl:py-4 5xl:py-6 rounded-lg
                  text-xs md:text-2xl 4xl:text-4xl 5xl:text-5xl font-semibold
                  transition-all duration-300 ease-in-out

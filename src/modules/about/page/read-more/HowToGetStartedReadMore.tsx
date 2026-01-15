@@ -15,7 +15,7 @@ const HowToGetStartedReadMore: React.FC = () => {
     memebershipDetails[0].memnershipType
   );
   return (
-    <section className="p-6 md:mb-20 mb-16" id="how-to-get-started">
+    <section className="p-6" id="how-to-get-started">
       <div className="lg:flex relative">
         <div className="lg:flex lg:w-1/3"></div>
         <div className="flex-1 lg:w-2/3 w-full border border-customOriange-100 rounded-2xl bg-blue-50 text-center py-6 md:px-10 px-3 space-y-6 5xl:space-y-10 shadow-md">
@@ -167,7 +167,7 @@ const HowToGetStartedReadMore: React.FC = () => {
           className="lg:absolute lg:flex hidden pointer-events-none lg:-left-24 xl:left-0 lg:bottom-0 lg:w-[840px] xl:w-[840px] 2xl:w-[990px] 3xl:w-[1200px] 4xl:w-[1600px] 5xl:w-[1950px] h-auto"
         />
       </div>
-      <div className="h-0 lg:h-10 4xl:h-80 5xl:h-[28rem]"></div>
+      <div className="h-16 lg:h-24 4xl:h-96 5xl:h-[31rem]"></div>
     </section>
   );
 };

@@ -1,6 +1,7 @@
 import {
   DCDDPageWideBackGroundImage,
   FamilyWithPhoneImage,
+  SmallScreenForDcddPageBG,
 } from "assets";
 import { ForDCDDUsersContent } from "assets/content/about/About";
 import { DCDDCharacterImage, DCDDShortTextImage } from "assets/images/dcdd";
@@ -87,20 +88,13 @@ const ForDCDDUsersReadMore: React.FC = () => {
       </div>
       {/* {small screen} */}
       <div className="lg:hidden">
-        <div className="relative">
           <img
-            src={DCDDPageWideBackGroundImage}
+            src={SmallScreenForDcddPageBG}
             alt="image"
             className="w-full"
           />
-          <img
-            src={FamilyWithPhoneImage}
-            alt="imag"
-            className="absolute -bottom-20 md:-bottom-36"
-          />
-        </div>
 
-        <div className="bg-white px-6 pt-9 md:pt-16">
+        <div className="bg-white px-6 pt-7 md:pt-16">
           <div className="w-full border border-customOriange-200 rounded-3xl shadow-md py-8 md:py-12 px-4 bg-blue-50 space-y-2">
             <h2 className="text-customOriange-200 text-center text-lg font-bold">
               {ForDCDDUsersContent.title}
@@ -110,9 +104,6 @@ const ForDCDDUsersReadMore: React.FC = () => {
             <p className="text-start">{ForDCDDUsersContent.description3}</p>
             <p className="text-start">{ForDCDDUsersContent.description4}</p>
             <ol className="list-disc list-outside space-y-2 px-4">
-              {/* <li className="text-gray-700 text-xs font-light">
-              {renderTextWithLinks(ForDCDDUsersContent.guide.guide1)}
-            </li> */}
               <li className="text-gray-700 text-xs font-light">
                 {renderTextWithLinks(ForDCDDUsersContent.guide.guide2)}
               </li>
