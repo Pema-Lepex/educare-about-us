@@ -64,7 +64,7 @@ const PrivacyPolicySection = () => {
           }
         `}
             >
-              <CommonParagraph3>{section.heading}</CommonParagraph3>
+              <CommonParagraph3>{section.heading}</CommonParagraph3>``
               
             </li>
           ))}
