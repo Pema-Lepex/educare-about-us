@@ -1,21 +1,21 @@
 export const GiftCouponLinkDetails = {
   LinkFor: "Gift Coupon",
-  linkTo: "https://test.educareskill.com/?tab=gift-coupon",
+  linkTo: "https://educareskill.com/?tab=gift-coupon",
 };
 
 export const GiftCouponAuthenticatedLinkDetails = {
   LinkFor: "Gift Coupon",
-  linkTo: "https://test.educareskill.com/gift-coupon",
+  linkTo: "https://educareskill.com/gift-coupon",
 };
 
 export const DCDDSignUpLinkDetails = {
   LinkFor: "DCDD Sign In",
-  linkTo: "https://test.educareskill.com/dcdd-login",
+  linkTo: "https://educareskill.com/dcdd-login",
 };
 
 export const SignInLinkDetails = {
   LinkFor: "Sign In",
-  linkTo: "https://test.educareskill.com/login",
+  linkTo: "https://educareskill.com/login",
 };
 
 export const RedirectToAppStore = {
@@ -35,12 +35,12 @@ export const ApplicationFormLinkDetails = {
 
 export const UserProfileLinkDetails = {
   LinkFor: "User Profile",
-  linkTo: "https://test.educareskill.com/profile",
+  linkTo: "https://educareskill.com/profile",
 };
 
 export const Home = {
   LinkFor: "Home",
-  linkTo: "https://test.educareskill.com",
+  linkTo: "https://educareskill.com",
 };
 
 export const Facebook = {

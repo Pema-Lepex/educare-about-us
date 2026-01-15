@@ -233,7 +233,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
               className={`py-3 border-t last:border-b-0 border-primary-100 dark:border-gray-800`}
             >
               <a
-                href={GiftCouponLinkDetails.linkTo}
+                href={GiftCouponAuthenticatedLinkDetails.linkTo}
                 className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
               >
                 {GiftCouponLinkDetails.LinkFor}

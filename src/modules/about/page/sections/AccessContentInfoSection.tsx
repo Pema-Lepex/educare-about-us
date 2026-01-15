@@ -1,11 +1,31 @@
 import { GiftCouponLinkDetail } from "assets/content/about/About";
 import { DCDDLOGO, DCDDNEWTextImage } from "assets/images/dcdd";
+import { useState, useEffect } from "react";
 import { useAuth } from "utils/helpers/AuthContext";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 import { DCDDSignUpLinkDetails, GiftCouponAuthenticatedLinkDetails, GiftCouponLinkDetails } from "utils/helpers/URLs";
 
 const AccessContentInfoSection: React.FC = () => {
   const { user } = useAuth();
+  const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  const checkScreenSize = () => {
+    setIsMobile(window.innerWidth < 768);
+  };
+
+  checkScreenSize();
+
+  window.addEventListener('resize', checkScreenSize);
+  return () => window.removeEventListener('resize', checkScreenSize);
+}, []);
+
+const getHref = () => {
+  if (isMobile) {
+    return GiftCouponAuthenticatedLinkDetails.linkTo;
+  }
+  return user?.name ? GiftCouponAuthenticatedLinkDetails.linkTo : GiftCouponLinkDetails.linkTo;
+};
   return (
     <>
       <section
@@ -37,7 +57,7 @@ const AccessContentInfoSection: React.FC = () => {
           <div className="border-t-8 rounded-xl border-[#215FF8] shadow-md p-6 flex flex-col items-center justify-center space-y-3 lg:space-y-8 3xl:space-y-12 h-full 3xl:px-10">
             <img src={GiftCouponLinkDetail.icon} alt="gifticon" className="size-[60px] md:size-[55px] xl:size-[135px] 2xl:size-[160px] 3xl:size-[250px] 4xl:size-[290px] 5xl:size-[320px] xl:mt-3" />
              <a
-                href={user?.name ? GiftCouponAuthenticatedLinkDetails.linkTo : GiftCouponLinkDetails.linkTo}
+                href={getHref()}
                 className="bg-[#215FF8] text-white px-8 py-2 4xl:py-4 4xl:px-16 rounded-lg text-base md:text-base lg:text-xl  xl:text-2xl 2xl:text-3xl  3xl:text-4xl 4xl:text-5xl 5xl:text-6xl transition-all duration-300 ease-in-out hover:bg-[#1a4fd0] hover:shadow-lg hover:scale-105"
               >
                 {GiftCouponLinkDetail.buttonName}
