@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import TermsContentRenderer from "../components/TermsContentRender";
 import { SectionsProps } from "props/Commonprops";
-import { CommonHeader4 } from "components";
+import { CommonHeader4, CommonParagraph2, CommonParagraph3 } from "components";
 import { termsOfUse, termsOfUseMenu } from "assets/content/terms-of-use/TermsOfUse";
 
 const TermsOfUseSection = () => {
@@ -45,7 +45,7 @@ const TermsOfUseSection = () => {
     <div className="flex bg-white min-h-screen ">
       {/* LEFT NAVIGATION */}
       <aside className="hidden lg:block w-1/4 border-r px-6 py-8 sticky top-0 h-screen overflow-y-auto mb-28 hide-scrollbar">
-        <h2 className="text-lg font-semibold mb-6">Contents</h2>
+        <CommonParagraph2 className="text-lg font-semibold mb-6">Contents</CommonParagraph2>
 
         <ul className="space-y-4 text-sm">
           {termsOfUseMenu.sections.map((section) => (
@@ -65,7 +65,7 @@ const TermsOfUseSection = () => {
           }
         `}
             >
-              {section.heading}
+              <CommonParagraph3>{section.heading}</CommonParagraph3>
             </li>
           ))}
         </ul>
