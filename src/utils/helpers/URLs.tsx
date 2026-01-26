@@ -20,12 +20,12 @@ export const SignInLinkDetails = {
 
 export const RedirectToAppStore = {
   LinkFor: "Redirect to App Store",
-  linkTo: "https://www.apple.com/app-store/",
+  linkTo: "https://apps.apple.com/us/app/educare-skill/id6479234341",
 };
 
 export const RedirectToGooglePlay = {
   LinkFor: "Redirect to Google Play",
-  linkTo: "https://play.google.com/store",
+  linkTo: "https://play.google.com/store/apps/details?id=com.skill.educare&hl=en",
 }; 
 
 export const ApplicationFormLinkDetails = {
