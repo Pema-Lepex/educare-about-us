@@ -9,7 +9,6 @@ import {
   CommonHeader1,
   CommonHeader4,
   CommonParagraph1,
-  CommonParagraph2,
 } from "components";
 
 export default function BlogSection() {
