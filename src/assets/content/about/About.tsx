@@ -43,7 +43,7 @@ export const EducareSkillGroupContent = [
   },
   {
     id: 2,
-    groupName: "KDUCARE KIDS",
+    groupName: "EDUCARE KIDS",
     redirectUrl: "kids",
     groupImage: EducareSkillImage,
     groupIcon: EducareSkillIcon,

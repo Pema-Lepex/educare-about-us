@@ -90,7 +90,7 @@ const TermsOfUseSection = () => {
             <TermsContentRenderer content={section?.content } contentWithNO={section?.contentWithNO}/>
           </section>
         ))}
-        <div className=" h-20"></div>
+        <div className="4xl:h-[20rem] 5xl:h-[30rem] lg:h-20 md:h-10 h-5"></div>
       </main>
     </div>
   );

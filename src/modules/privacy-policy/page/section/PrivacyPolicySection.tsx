@@ -64,7 +64,7 @@ const PrivacyPolicySection = () => {
           }
         `}
             >
-              <CommonParagraph3>{section.heading}</CommonParagraph3>``
+              <CommonParagraph3>{section.heading}</CommonParagraph3>
               
             </li>
           ))}
@@ -93,7 +93,7 @@ const PrivacyPolicySection = () => {
             />
           </section>
         ))}
-        <div className=" h-20 4xl:h-[20rem] 5xl:h-[30rem]"></div>
+        <div className="  4xl:h-[20rem] 5xl:h-[30rem] lg:h-20 md:h-10 h-5"></div>
       </main>
     </div>
   );
