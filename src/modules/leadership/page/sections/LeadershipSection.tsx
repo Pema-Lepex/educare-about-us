@@ -69,7 +69,7 @@ export default function LeadershipSection() {
       </div>
         
       </section>
-      <div className="w-full lg:h-28 h-12 3xl:h-32 4xl:h-[500px]"></div>
+      <div className="w-full lg:h-28 md:h-12 h-5 3xl:h-32 4xl:h-[500px]"></div>
     </div>
   );
 }

@@ -48,7 +48,7 @@ const RegistraionGuideReadMore: React.FC = () => {
       </div>
       {/* {small screen} */}
       <div className="lg:hidden">
-        <img src={RegistrationGuideBGImage} className=""/>
+        <img src={RegistrationGuideBGImage} className="mb-7"/>
         <div className="w-full border border-[#981AF7] rounded-3xl shadow-md py-4 px-4 bg-blue-50 pb-24 md:pb-24 space-y-2 md:space-y-4">
           <h2 className="text-[#981AF7] text-center text-lg font-bold">
             {RegistrationGuideContent.title}

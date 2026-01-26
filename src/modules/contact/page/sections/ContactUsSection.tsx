@@ -130,7 +130,7 @@ export default function ContactSection() {
           referrerPolicy="no-referrer-when-downgrade"
         />
       </div>
-      <div className="w-full h-28 4xl:h-[800px] 5xl:h-[900px]"></div>
+      <div className="w-full lg:h-28 md:h-7 h-5 4xl:h-[800px] 5xl:h-[900px]"></div>
     </section>
   );
 }
