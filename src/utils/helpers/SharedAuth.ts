@@ -2,7 +2,7 @@
  * Shared Auth Utility
  *
  * This utility provides session sharing between the Educare app and AboutUs static pages app.
- * Both apps must be on the same domain (e.g., test.educareskill.com) for localStorage sharing.
+ * Both apps must be on the same domain (e.g., educareskill.com) for localStorage sharing.
  *
  * The Educare app sets 'educare_shared_auth' in localStorage on login
  * and removes it on logout.
@@ -30,7 +30,7 @@ export interface SharedAuthUser {
 
 const SHARED_AUTH_KEY = "educare_shared_auth";
 const MAIN_APP_URL =
-  process.env.REACT_APP_MAIN_APP_URL || "https://test.educareskill.com";
+  process.env.REACT_APP_MAIN_APP_URL || "https://educareskill.com";
 
 /**
  * Get the shared auth user from localStorage
