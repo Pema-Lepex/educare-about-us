@@ -72,7 +72,7 @@ export const IBESTTECHNOLOGIES = {
 export const MoEWebSiteLink = {
     LinkFor: 'MoE',
     linkTo: 'https://education.gov.bt'
-};
+};``
 
 export const DCDDWebSiteLink = {
     LinkFor: 'DCDD',
