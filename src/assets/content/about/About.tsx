@@ -391,7 +391,7 @@ export const GiftCouponContent = {
       {
         step1:
           "Sign In to the Educare Skill platform either through the website or the app.",
-        step2: "Click on Membership Plan.",
+        step2: "Click on Redeem Coupon.",
         step3: "Enter your Coupon Code.",
         step4: "Click on Redeem.",
         step5: "You have now received an Educare Skill membership!",
