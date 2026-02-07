@@ -80,7 +80,7 @@ const GiftCouponReadMore: React.FC = () => {
 
             <div className="bg-white rounded-2xl p-3 md:p-4 lg:px-4 xl:px-6 2xl:px-8 3xl:px-10 4xl:px-12 5xl:px-12">
               <CommonParagraph2 className="text-lg md:text-xl font-semibold text-blue-500">
-                {GiftCouponContent.buyerGuide.heading}
+                {GiftCouponContent.buyerGuide.heading} 
               </CommonParagraph2>
               <ol className="list-disc list-outside px-4 space-y-2 5xl:space-y-7 mt-2">
                 {GiftCouponContent.buyerGuide.steps.map((item, index) =>
@@ -100,7 +100,7 @@ const GiftCouponReadMore: React.FC = () => {
           <div className="px-4 md:px-6 lg:px-11 xl:px-12 2xl:px-12 3xl:px-16 4xl:px-20 5xl:px-24 pt-4 md:pt-6 space-y-4">
             <div className="bg-white rounded-2xl p-3 md:p-4 lg:px-4 xl:px-5 2xl:px-7 3xl:px-9 4xl:px-10 5xl:px-12">
               <CommonParagraph2 className="text-lg md:text-xl font-semibold text-blue-500">
-                {GiftCouponContent.buyerGuide.heading}
+                {GiftCouponContent.recipientGuide.heading}
               </CommonParagraph2>
               <ol className="list-disc list-outside px-4 space-y-2 5xl:space-y-7 mt-2">
                 {GiftCouponContent.recipientGuide.steps.map((item, index) =>
