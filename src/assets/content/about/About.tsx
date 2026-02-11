@@ -9,9 +9,6 @@ import {
   IntermediateLevelImage,
   IntermediateLevelIcon,
   FCTFLLogo,
-  FDCDDULogo,
-  HTGSLogo,
-  RGLogo,
   GiftIcon,
   BCSEImage,
   iBESTOroginalImage,
@@ -21,14 +18,17 @@ import {
   RedBoxImage,
   PurpleBoxImage,
   GreenBoxImage,
+  RegisterIcon,
+  ExploreEducareIcon,
+  BellIcon,
 } from "assets/images";
 
 export const EducareSkillContent = {
   title: "EDUCARE SKILL",
   subTitle: "Your Perfect Dzongkha Tutor!",
-  content1: `Introducing Bhutan's pioneering online learning platform, Educare Skill, developed with a mission to transform learning and skilling in Bhutan and beyond. Educare Skill enables learners to master our national language, Dzongkha, like never before through more than 1000 engaging, entertaining, and curriculum-aligned episodes. `,
-  content2: `From catchy nursery rhymes and captivating animation series to immersive read-aloud stories and comprehensive, exam-oriented tutorials, the platform offers something for everyone. Whether you are a young child beginning your Dzongkha journey, a student preparing for school examinations, a parent or teacher seeking quality learning resources, or a graduate sitting for the RCSC examinations, our carefully curated content supports you at every stage. `,
-  content3: `All content is reviewed by Dzongkha experts and aligned with the national curriculum to ensure relevance, quality, and impact. In the future, the platform will also offer professional courses leading to recognized certifications.`,
+  content1: `Educare Skill is Bhutan’s first online learning platform with a wide variety of entertaining and educational content catering to all learners, from children in ECCD centres, students studying in Classes PP to XII, to graduates preparing for their RCSE Examinations, as well as anyone interested in learning and mastering our national language, Dzongkha.`,
+  content2: `Educare Skill is officially endorsed by the Department of Culture and Dzongkha Development as the National Dzongkha Learning platform, making it the apex platform for Dzongkha learning not only for those residing in the country but also for those living abroad.`,
+  content3: `Educare Skill is officially endorsed by the Department of Culture and Dzongkha Development as the National Dzongkha Learning platform, making it the apex platform for Dzongkha learning not only for those residing in the country but also for those living abroad. `,
 };
 
 export const EducareSkillGroupContent = [
@@ -90,27 +90,32 @@ export const EducareSkillGroupContent = [
 export const EducareSkillGuideContent = [
   {
     id: 1,
-    title: "For DCDD Users",
-    icon: FDCDDULogo,
+    title: "Registration Guide",
+    icon: RegisterIcon,
     frame: PurpleBoxImage,
-    href: "/aboutus/for-dcdd-users",
-    info: "With the subsidized support of DCDD, Educare Skill is FREE for children aged 3 and above, children enrolled in ECCD center, and students in Classes PP - VI.",
+    href: "/aboutus/registration-guide",
+    buttonName: "Sign Up Now",
+    info: "Want to learn and improve your overall Dzongkha competencies? But you are not quite sure how to go about it. Follow the guide provided here to unlock 1000s of Dzongkha lessons and tutorials.",
   },
+  // change the url
   {
     id: 2,
-    title: "How To Get Started?",
-    icon: HTGSLogo,
-    frame: BlueBoxImage,
-    href: "/aboutus/how-to-get-started?",
-    info: "If you wish to get started on Educare Skill, please Sign Up now and explore our affordable membership plans.",
+    title: "Explore Educare Skill Content",
+    icon: ExploreEducareIcon,
+    frame: RedBoxImage,
+    href: "/aboutus/explore-educare-content",
+    buttonName: "Explore Now",
+    info: "Educare Skill enables learners to master our national language, Dzongkha, like never before through more than 1000 engaging, entertaining, and curriculum-aligned episodes, which are reviewed by Dzongkha experts from DCDD and DSE",
   },
   {
     id: 3,
-    title: "Registration Guide",
-    icon: RGLogo,
-    frame: RedBoxImage,
-    href: "/aboutus/registration-guide",
-    info: "If you are not eligible for DCDD support, don't worry! But you are not quite sure how to register on our platform, we will help you get started.",
+    title: "Affordable Membership Plans",
+    icon: BellIcon,
+    frame: BlueBoxImage,
+    href: "/aboutus/how-to-get-started?",
+    buttonName: "Join Now",
+
+    info: "Join a membership plan of your choice based on your needs. It is simple to make a payment without any hassle. Join today to unlock 1000s episodes of Dzongkha lessons and exam-oriented content to begin your Dzongkha learning journey.",
   },
   {
     id: 4,
@@ -118,16 +123,15 @@ export const EducareSkillGuideContent = [
     icon: FCTFLLogo,
     frame: GreenBoxImage,
     href: "/aboutus/gift-coupon-the-gift-of-learning",
+    buttonName: "Learn More",
     info: "With the Educare Skill Gift Coupon, you can gift your loved ones the affordable Educare Skill membership plans.",
   },
 ];
 
 export const HowToGetStartedContent = {
-  title: "How To Get Started?",
-  description1:
-    "With the subsidized support of Department of Culture and Dzongkha Development (DCDD) under Ministry of Home Affairs, Educare Skill is FREE for children aged 3 and above, children enrolled in ECCD center, and students in Classes PP - VI. If you are eligible for the DCDD support, you can click on DCDD Sign In to access free Dzongkha content.",
-  description2:
-    "If you are not eligible for the DCDD support and wish to start learning and mastering Dzongkha with Educare Skill, please **Sign Up** now and explore our affordable membership plans.",
+  title: "Explore Affordable Membership Plans",
+  description1: `Once you have successfully signed up and signed in to Educare Skill, 
+it is easy to make a payment to join the membership plan that fits your needs. Membership plans are designed as Standard Plans (such as Basic, Standard, and Premium) and Grade-wise Plans, both of which offer value and optimum benefits for your investment.`,
 };
 
 export const memebershipDetails = [
@@ -319,16 +323,15 @@ If you are an undergrade student or graduates sitting for RCSC’s BCSE, we reco
 export const RegistrationGuideContent = {
   title: "Registration Guide",
   description:
-    "If you are not eligible for the DCDD subsidized support to access Educare Skill for free, don't worry! Yet you want to explore our platform and begin your Dzongkha learning and mastery journey, but you are not quite sure how to register on our platform. We are more than happy to help you get started with the following registration guide.",
+    "Worried about not being proficient in Dzongkha and afraid of failing in Dzongkha exams? You are not alone or without support in this struggle. You may want to explore our platform and begin your Dzongkha learning and mastery journey, but you are not quite sure how to register on our platform. We are more than happy to help you get started with the following registration guide.",
   guide: [
     {
       guide1:
-        "Open the Educare Skill homepage either through the website or the app. Then click on SIGN IN button.",
-      guide2: "After opening the SIGN IN page, click on the SIGN UP link.",
-      guide3: "Enter your details, then click on SIGN UP button.",
+        "Open the Educare Skill homepage either through the website or the app. Then click on SIGN UP button.",
+      guide2: "Enter your details, then click on SIGN UP button.",
+      guide3: "You will receive an OTP on your registered phone number or email address.",
       guide4:
-        "You will receive an OTP on your registered phone number or email address.",
-      guide5: "Enter the OTP, and you are now registered on our platform!",
+        "Enter the OTP, and you are now registered on our platform!",
     },
   ],
 };
@@ -437,4 +440,9 @@ export const GiftCouponLinkDetail = {
     "Choosing the right gift is never easy—but some gifts last far beyond toys or trends. An **Educare Skill Gift Coupon** is one such gift.",
   info2:
     "It keeps young minds connected to our national language, Dzongkha, through stories rooted in Bhutanese culture, shaping confident, compassionate citizens ready for the world.",
+};
+
+export const content = {
+    content1: "Educare Skill is officially endorsed as the \"National Online Dzongkha Learning Platform\" by the Department of Culture and Dzongkha Development (DCDD) under the Ministry of Home Affairs. All content is reviewed by Dzongkha experts and aligned with the national curriculum to ensure relevance, quality, and impact.",
+    content2: "From catchy nursery rhymes and captivating animated series to immersive read-aloud stories and comprehensive, exam-oriented tutorials, the platform offers something for everyone. In the future, the platform will also offer STEM subjects tutorials."
 };

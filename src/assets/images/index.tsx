@@ -43,6 +43,10 @@ export { default as DoodleLessOpacityImage } from "./Doodle_OpicityLess.png";
 export { default as K5Image } from "./K5.jpg";
 export { default as K5PhoneImage } from "./K5Mobile.jpg";
 export { default as SmallScreenForDcddPageBG } from "./Web_Photo_Editor (1).jpg";
+export { default as RegisterIcon} from "./about-us/Register.png"
+export { default as ExploreEducareIcon} from "./about-us/ExploreEducareIcon.png"
+export { default as MembershipIconAboutUs} from "./about-us/ExploreEducareIcon.png"
+export { default as BellIcon} from "./about-us/BellIcon.png"
 
 export * from "./logo";
 export * from "./social-media";

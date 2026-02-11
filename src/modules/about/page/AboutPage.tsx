@@ -1,7 +1,5 @@
 import React from "react";
-import { Slider1 } from "assets";
 import AnimateOnScroll from "utils/helpers/AnimationOnScroll";
-import { SlideProps } from "props/Commonprops";
 import Carousel from "components/Carousel";
 import MissionSection from "./sections/MissionSection";
 import EducareSkillSection from "./sections/EducareSkillSection";

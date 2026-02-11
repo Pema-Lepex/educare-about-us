@@ -8,7 +8,7 @@ import {
 } from "components";
 import { useState } from "react";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
-import { DCDDSignUpLinkDetails, RedirectToAppStore, RedirectToGooglePlay, SignInLinkDetails } from "utils/helpers/URLs";
+import { DCDDSignUpLinkDetails, RedirectToAppStore, RedirectToGooglePlay, SignInLinkDetails, SignUpLinkDetails } from "utils/helpers/URLs";
 
 const HowToGetStartedReadMore: React.FC = () => {
   const [selectedType, setSelectedType] = useState(
@@ -27,22 +27,10 @@ const HowToGetStartedReadMore: React.FC = () => {
           </CommonParagraph1>
           <div className="w-full flex justify-center">
             <HrefButton
-              href={DCDDSignUpLinkDetails.linkTo}
+              href={SignUpLinkDetails.linkTo}
               className=" bg-customOriange-200 text-white  hover:bg-orange-600 "
             >
-              {DCDDSignUpLinkDetails.LinkFor}
-            </HrefButton>
-          </div>
-
-          <CommonParagraph1 className="font-light">
-            {renderTextWithLinks(HowToGetStartedContent.description2)}
-          </CommonParagraph1>
-          <div className="w-full flex justify-center">
-            <HrefButton
-              href={SignInLinkDetails.linkTo}
-              className=" bg-[#215FF8] text-white hover:bg-blue-600"
-            >
-              {SignInLinkDetails.LinkFor}
+              Join Now
             </HrefButton>
           </div>
 

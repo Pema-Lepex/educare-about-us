@@ -3,10 +3,10 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { Menus } from "./ManuList";
 import { whiteLogo, MenuIcon, XMarkIcon } from "assets";
 import {
-  DCDDSignUpLinkDetails,
   GiftCouponLinkDetails,
   GiftCouponAuthenticatedLinkDetails,
   SignInLinkDetails,
+  SignUpLinkDetails,
 } from "utils/helpers/URLs";
 import { CommonHeader3 } from "components";
 import { useAuth } from "utils/helpers/AuthContext";
@@ -137,18 +137,19 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
               </>
             ) : (
               <>
-                <a
-                  href={DCDDSignUpLinkDetails.linkTo}
-                  className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
-                >
-                  {DCDDSignUpLinkDetails.LinkFor}
-                </a>
-                <a
+              <a
                   href={SignInLinkDetails.linkTo}
                   className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
                 >
                   {SignInLinkDetails.LinkFor}
                 </a>
+                <a
+                  href={SignUpLinkDetails.linkTo}
+                  className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
+                >
+                  {SignUpLinkDetails.LinkFor}
+                </a>
+                
                 <a
                   href={GiftCouponLinkDetails.linkTo}
                   className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-3 xl:px-5 py-2 xl:py-1 3xl:py-3 text-sm sm:text-base md:text-lg lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl rounded-md cursor-pointer"
@@ -217,17 +218,18 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
             })}
             <div className="lg:hidden gap-2 flex my-3">
               <a
-                href={DCDDSignUpLinkDetails.linkTo}
-                className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
-              >
-                {DCDDSignUpLinkDetails.LinkFor}
-              </a>
-              <a
                 href={SignInLinkDetails.linkTo}
                 className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
               >
                 {SignInLinkDetails.LinkFor}
               </a>
+              <a
+                href={SignUpLinkDetails.linkTo}
+                className="flex justify-center items-center bg-white text-primary-600 hover:bg-primary-100 px-5 py-2 rounded-md cursor-pointer"
+              >
+                {SignUpLinkDetails.LinkFor}
+              </a>
+              
             </div>
             <div
               className={`py-3 border-t last:border-b-0 border-primary-100 dark:border-gray-800`}

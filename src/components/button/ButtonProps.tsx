@@ -14,4 +14,5 @@ export interface ButtonProps {
   onVideo?:boolean;
   href?:string;
   target?:string;
+  buttonText?: string;
 }

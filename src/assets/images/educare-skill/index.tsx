@@ -6,3 +6,4 @@ export { default as CheCheyIcon } from "./CheyChey-icon_PNG.png";
 export { default as EducareSkillIcon } from "./Educare kids icon_PNG.png";
 export { default as PrimaryLevelIcon } from "./Primary-Level-icon_PNG.png";
 export { default as IntermediateLevelIcon } from "./Intermediate-Level-icon_PNG.png";
+export { default as EducareSkillLogo } from "./EducareSkillLogo.png";

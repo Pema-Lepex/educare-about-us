@@ -14,6 +14,7 @@ import RegistrationGuide from "modules/about/page/RegistrationGuide";
 import PrivacyPolicy from "modules/privacy-policy/PrivacyPolicy";
 import TermsOfUse from "modules/terms-of-use/TermsOfUse";
 import About from "modules/about/About";
+import ExploreEducareContent from "modules/about/page/ExploreEducareContent";
 const AppRoutes: React.FC = () => {
   return (
     <Router>
@@ -38,6 +39,10 @@ const AppRoutes: React.FC = () => {
         <Route
           path="/aboutus/gift-coupon-the-gift-of-learning"
           element={<GiftCoupon />}
+        />
+        <Route
+          path="/aboutus/explore-educare-content"
+          element={<ExploreEducareContent />}
         />
         {/* Impact page routes */}
         <Route path="/impact" element={<Impact />} />
