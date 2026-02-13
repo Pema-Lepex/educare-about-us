@@ -93,7 +93,7 @@ export const GiftCouponAuthenticatedLinkDetails = {
 
 export const DCDDSignUpLinkDetails = {
   LinkFor: "DCDD Sign In",
-  linkTo: "https://educareskill.com/dcdd-login",
+  linkTo: "https://educareskill.com/dcdd-signin",
 };
 
 export const SignInLinkDetails = {
