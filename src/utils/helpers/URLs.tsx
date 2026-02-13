@@ -98,7 +98,7 @@ export const DCDDSignUpLinkDetails = {
 
 export const SignInLinkDetails = {
   LinkFor: "Sign In",
-  linkTo: "https://educareskill.com/login",
+  linkTo: "https://educareskill.com/signin",
 };
 
 export const RedirectToAppStore = {
