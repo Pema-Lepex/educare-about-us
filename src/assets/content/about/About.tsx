@@ -112,7 +112,7 @@ export const EducareSkillGuideContent = [
     title: "Affordable Membership Plans",
     icon: BellIcon,
     frame: BlueBoxImage,
-    href: "/aboutus/how-to-get-started?",
+    href: "/aboutus/membership",
     buttonName: "Join Now",
 
     info: "Join a membership plan of your choice based on your needs. It is simple to make a payment without any hassle. Join today to unlock 1000s episodes of Dzongkha lessons and exam-oriented content to begin your Dzongkha learning journey.",
@@ -393,7 +393,7 @@ export const GiftCouponContent = {
     steps: [
       {
         step1:
-          "Sign In to the Educare Skill platform either through the website or the app.",
+          "Log in to the Educare Skill platform either through the website or the app.",
         step2: "Click on Membership Plan.",
         step3: "Enter your Coupon Code.",
         step4: "Click on Redeem.",

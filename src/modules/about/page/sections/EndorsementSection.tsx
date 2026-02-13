@@ -1,28 +1,19 @@
-import React from "react";
+import { EducareMissionContent, EndorsementSectionContent } from "assets/content/VissionAndMission";
+import { CommonParagraph1 } from "components";
+import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 
-interface EndorsementSectionProps {
-  paragraphs: React.ReactNode;
-}
-
-const EndorsementSection = ({ paragraphs }: EndorsementSectionProps) => {
+const EndorsementSection: React.FC = () => {
   return (
-    <section className="px-6 py-12 md:px-12 lg:px-20 bg-white">
-      <div className="mx-auto max-w-6xl">
-        <div
-          className="relative p-8 md:p-14 lg:p-20 
-                        bg-white 
-                        border border-gray-200 
-                        border-t-[12px] border-t-orange-500 
-                        rounded-[40px] 
-                        shadow-xl shadow-gray-100/50"
-        >
-          <div className="space-y-8 text-center text-gray-700 leading-relaxed md:text-lg">
-            {paragraphs}
-          </div>
+    <section
+      id="about-mission"
+      className="px-4 sm:px-8 md:px-16 lg:px-14 md:py-16 py-6"
+    >
+      {EndorsementSectionContent && (
+        <div className="border-t-8 border-customOriange-200 rounded-2xl shadow-sm shadow-primary-200 p-4 md:p-8 4xl:p-14 text-center space-y-2">
+          <CommonParagraph1 className="whitespace-break-spaces">{renderTextWithLinks(EndorsementSectionContent.content)}</CommonParagraph1>
         </div>
-      </div>
+      )}
     </section>
   );
 };
-
 export default EndorsementSection;
