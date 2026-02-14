@@ -1,4 +1,4 @@
-import {  BGArtistsProfile, ContentWritersProfile, IllustratorsProfile, ManagementTeamProfile, MusicDirectorProfile, NewIllustratorsProfile, NewManagementTeam, NewProductionTeam, NewSoftwareDeveloperTeam, NewThreeDAnimatorProfile, NewVideographersProfile, SoftwareDevelopersProfile, ThreeDAnimatorProfile, TwoDAnimatorProfile, VideographersProfile, VisualEditorsProfile } from "assets";
+import {  BGArtistsProfile, MusicDirectorProfile, NewIllustratorsProfile, NewManagementTeam, NewProductionTeam, NewSoftwareDeveloperTeam, NewThreeDAnimatorProfile, NewVideographersProfile, TwoDAnimatorProfile,  VisualEditorsProfile } from "assets";
 
 export const TeamProfileHeader = {
     title:"EDUCARE SKILL HALL OF FAME",

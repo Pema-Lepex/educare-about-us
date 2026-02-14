@@ -214,10 +214,11 @@ const MainSectionPage: React.FC<Props> = ({ isEducareContent }) => {
         </section>
       )}
 
-      <section className="px-4 md:pb-16  ">
+      <section className="px-4   ">
         <CommonHeader3 className="text-center font-extrabold tracking-wide text-[#0B2A4A] 4xl:mb-12">
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>
+        <CommonParagraph2 className="text-center font-extrabold tracking-wide text-[#0B2A4A] 4xl:mb-12 md:pt-5 lg:pb-10">Content information</CommonParagraph2>
         <div className="md:mx-20 mt-4 flex flex-wrap justify-center max-w-8xl gap-4 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
           {ContentButtons.map((button) => (
             <button

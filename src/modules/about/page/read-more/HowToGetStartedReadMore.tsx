@@ -25,6 +25,10 @@ const HowToGetStartedReadMore: React.FC = () => {
           <CommonParagraph1 className="font-light">
             {renderTextWithLinks(HowToGetStartedContent.description1)}
           </CommonParagraph1>
+          <CommonParagraph1>
+            {renderTextWithLinks(HowToGetStartedContent.description2)}
+          </CommonParagraph1>
+          
           <div className="w-full flex justify-center">
             <HrefButton
               href={SignUpLinkDetails.linkTo}
@@ -35,7 +39,7 @@ const HowToGetStartedReadMore: React.FC = () => {
           </div>
 
           <div className="border border-customOriange-100 rounded-2xl bg-white md:space-y-5 space-y-4 p-4 shadow-md">
-            <CommonHeader3 className="">Membership Plan</CommonHeader3>
+            <CommonHeader3 className="">Membership Plan infos</CommonHeader3>
             <div className="flex justify-center items-center gap-4">
               {memebershipDetails.map((type) => (
                 <button

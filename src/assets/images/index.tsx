@@ -47,6 +47,7 @@ export { default as RegisterIcon} from "./about-us/Register.png"
 export { default as ExploreEducareIcon} from "./about-us/ExploreEducareIcon.png"
 export { default as MembershipIconAboutUs} from "./about-us/ExploreEducareIcon.png"
 export { default as BellIcon} from "./about-us/BellIcon.png"
+export { default as GC_New} from "./about-us/GC_New.png"
 
 export * from "./logo";
 export * from "./social-media";

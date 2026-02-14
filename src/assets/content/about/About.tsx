@@ -25,10 +25,11 @@ import {
 
 export const EducareSkillContent = {
   title: "EDUCARE SKILL",
-  subTitle: "Your Perfect Dzongkha Tutor!",
-  content1: `Educare Skill is Bhutan’s first online learning platform with a wide variety of entertaining and educational content catering to all learners, from children in ECCD centres, students studying in Classes PP to XII, to graduates preparing for their RCSE Examinations, as well as anyone interested in learning and mastering our national language, Dzongkha.`,
-  content2: `Educare Skill is officially endorsed by the Department of Culture and Dzongkha Development as the National Dzongkha Learning platform, making it the apex platform for Dzongkha learning not only for those residing in the country but also for those living abroad.`,
-  content3: `Educare Skill is officially endorsed by the Department of Culture and Dzongkha Development as the National Dzongkha Learning platform, making it the apex platform for Dzongkha learning not only for those residing in the country but also for those living abroad. `,
+  subTitle: "Know Your Perfect Dzongkha Tutor",
+  content1: `Educare Skill is officially endorsed as the **“National Online Dzongkha Learning Platform”** by the Department of Culture and Dzongkha Development (DCDD) under the Ministry of Home Affairs.`,
+  content2: `All content is reviewed by Dzongkha experts from the DCDD and curriculum professionals from the Department of School Education (DSE) and is aligned with the national curriculum to ensure relevance, quality, and impact. Educare Skill enables learners to master our national language, Dzongkha, like never before through more than **1000 engaging, entertaining, and curriculum-aligned episodes**.`,
+  content3: `From catchy nursery rhymes and captivating animated series to immersive read-aloud stories and comprehensive, exam-oriented tutorials, the platform offers something for everyone. Whether you are a young child beginning your Dzongkha journey, a student struggling with learning Dzongkha and preparing for exams, a parent or teacher seeking quality learning resources, or a graduate sitting for the RCSC examinations, our carefully curated content supports you at every stage.`,
+  content4: `In the future, the platform will also offer STEM subject tutorials and professional courses leading to recognized certifications.`
 };
 
 export const EducareSkillGroupContent = [
@@ -95,7 +96,7 @@ export const EducareSkillGuideContent = [
     frame: PurpleBoxImage,
     href: "/aboutus/registration-guide",
     buttonName: "Sign Up Now",
-    info: "Want to learn and improve your overall Dzongkha competencies? But you are not quite sure how to go about it. Follow the guide provided here to unlock 1000s of Dzongkha lessons and tutorials.",
+    info: "Want to learn and improve your overall Dzongkha competencies? But you are not quite sure how to go about it. Follow the guide provided here.",
   },
   // change the url
   {
@@ -105,7 +106,7 @@ export const EducareSkillGuideContent = [
     frame: RedBoxImage,
     href: "/aboutus/explore-educare-content",
     buttonName: "Explore Now",
-    info: "Educare Skill enables learners to master our national language, Dzongkha, like never before through more than 1000 engaging, entertaining, and curriculum-aligned episodes, which are reviewed by Dzongkha experts from DCDD and DSE",
+    info: "Educare Skill enables learners to master Dzongkha like never before! Explore over 1000 engaging, curriculum-aligned episodes that are reviewed by experts.",
   },
   {
     id: 3,
@@ -115,7 +116,7 @@ export const EducareSkillGuideContent = [
     href: "/aboutus/membership",
     buttonName: "Join Now",
 
-    info: "Join a membership plan of your choice based on your needs. It is simple to make a payment without any hassle. Join today to unlock 1000s episodes of Dzongkha lessons and exam-oriented content to begin your Dzongkha learning journey.",
+    info: "Join a membership plan of your choice based on your needs. It is simple to make a payment without any hassle. Join today to begin your Dzongkha learning journey!",
   },
   {
     id: 4,
@@ -132,6 +133,7 @@ export const HowToGetStartedContent = {
   title: "Explore Affordable Membership Plans",
   description1: `Once you have successfully signed up and signed in to Educare Skill, 
 it is easy to make a payment to join the membership plan that fits your needs. Membership plans are designed as Standard Plans (such as Basic, Standard, and Premium) and Grade-wise Plans, both of which offer value and optimum benefits for your investment.`,
+  description2: `We wish you happy Dzongkha learning, and thank you for trusting Educare Skill with your Dzongkha learning and mastery journey!`
 };
 
 export const memebershipDetails = [
@@ -329,7 +331,7 @@ export const RegistrationGuideContent = {
       guide1:
         "Open the Educare Skill homepage either through the website or the app. Then click on SIGN UP button.",
       guide2: "Enter your details, then click on SIGN UP button.",
-      guide3: "You will receive an OTP on your registered phone number or email address.",
+      guide3: "You will receive an OTP on your registered phone number or email address. (Note: For people residing outside of Bhutan, you will receive an OTP in your email ID.)",
       guide4:
         "Enter the OTP, and you are now registered on our platform!",
     },

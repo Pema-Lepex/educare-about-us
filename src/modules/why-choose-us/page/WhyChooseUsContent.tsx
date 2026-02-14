@@ -1,7 +1,7 @@
 import { CommonHeader2, CommonParagraph1 } from "components";
 import MainSectionPage from "./sections/MainSectionPage";
 import { aPlus2, APlus, BgYChooseUsImage, girlMascot } from "assets";
-import { DCDDCharacterImage, DCDDShortTextImage } from "assets/images/dcdd";
+import { CartoonCharacter, DCDDImage } from "assets/images/dcdd";
 
 const WhyChooseUsContent: React.FC = () => {
   return (
@@ -53,16 +53,12 @@ const WhyChooseUsContent: React.FC = () => {
       <MainSectionPage />
       <div className="flex items-center flex-col justify-center ">
         <div className="px-5">
-          <img
-            src={DCDDShortTextImage}
-            alt="dcdd image"
-            className="border border-customOriange-200 bg-primary-400 rounded-[30px]"
-          />
+          <img src={DCDDImage} alt="dcdd image" />
         </div>
         <img
-          src={DCDDCharacterImage}
+          src={CartoonCharacter}
           alt="Family"
-          className="h-auto w-full object-contain"
+          className="h-auto lg:pb-28 pb-8 w-full object-contain"
         />
       </div>
       <div className="3xl:h-[200px] 4xl:h-[350px] 5xl:h-[450px]" />

@@ -1,9 +1,9 @@
+import { GC_New } from "assets";
 import { GiftCouponLinkDetail } from "assets/content/about/About";
 import { DCDDTextContents } from "assets/images/dcdd";
 import { EducareSkillLogo } from "assets/images/educare-skill";
 import { useState, useEffect } from "react";
 import { useAuth } from "utils/helpers/AuthContext";
-import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 import {
   EducareSignUpLinkDetails,
   GiftCouponAuthenticatedLinkDetails,
@@ -61,8 +61,10 @@ const AccessContentInfoSection: React.FC = () => {
           </div>
 
           {/* Right card */}
-          <div className="border-t-8 rounded-xl border-[#215FF8] shadow-md p-6 flex flex-col items-center justify-center  space-y-3 lg:space-y-3
-          2xl:space-y-6 3xl:space-y-10 h-full 3xl:px-10 4xl:space-y-5 5xl:space-y-6">
+          <div
+            className="border-t-8 rounded-xl border-[#215FF8] shadow-md p-6 flex flex-col items-center justify-center  space-y-3 lg:space-y-3
+          2xl:space-y-3 3xl:space-y-2 h-full 3xl:px-10 4xl:space-y-5 5xl:space-y-6"
+          >
             <img
               src={GiftCouponLinkDetail.icon}
               alt="gifticon"
@@ -74,18 +76,11 @@ const AccessContentInfoSection: React.FC = () => {
             >
               {GiftCouponLinkDetail.buttonName}
             </a>
-
-            <h1 className="text-center text-2xl sm:text-4xl md:text-[15px] md:leading-4 lg:text-base xl:text-[20px] 2xl:text-[30px] 3xl:text-[30px] 4xl:text-[50px] 4xl:leading-[1.5] 5xl:text-[60px] font-extrabold 3xl:leading-3">
-              {GiftCouponLinkDetail.title}
-            </h1>
-
-            <p className="text-center text-base sm:text-lg md:text-[10px] md:leading-3 lg:text-xs xl:text-sm 2xl:text-xl 3xl:text-xl 4xl:text-4xl 5xl:text-5xl">
-              {renderTextWithLinks(GiftCouponLinkDetail.info1)}
-            </p>
-
-            <p className="text-center  text-base sm:text-lg md:text-[10px] md:leading-3 lg:text-xs  xl:text-sm 2xl:text-xl 3xl:text-xl 4xl:text-4xl 5xl:text-5xl ">
-              {renderTextWithLinks(GiftCouponLinkDetail.info2)}
-            </p>
+            <img
+              src={GC_New}
+              alt="DCDD image"
+              className="max-h-full object-contain 4xl:w-[1200px]"
+            />
           </div>
         </div>
       </section>
