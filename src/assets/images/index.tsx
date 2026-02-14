@@ -52,4 +52,4 @@ export * from "./why-choose-us";
 export * from "./silders";
 export * from "./Box";
 export * from "./Team_New";
-export * from "./Team_Updated";
+export * from "./Team Updated";

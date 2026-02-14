@@ -101,7 +101,7 @@ export const EducareSkillGuideContent = [
     title: "How To Get Started?",
     icon: HTGSLogo,
     frame: BlueBoxImage,
-    href: "/aboutus/how-to-get-started?",
+    href: "/aboutus/membership-plan",
     info: "If you wish to get started on Educare Skill, please Sign Up now and explore our affordable membership plans.",
   },
   {

@@ -24,7 +24,7 @@ const AppRoutes: React.FC = () => {
         
         <Route path="/aboutus" element={<About />} />
         <Route
-          path="/aboutus/how-to-get-started?"
+          path="/aboutus/membership-plan"
           element={<HowToGetStarted />}
         />
         <Route
