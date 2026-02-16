@@ -20,7 +20,7 @@ export const SignUpLinkDetails = {
 
 export const EducareSignUpLinkDetails = {
   LinkFor: "Register Now",
-  linkTo: "https://educareskill.com/dcdd-login",
+  linkTo: "https://educareskill.com/signup/step/personal-detail",
 };
 
 export const SignInLinkDetails = {
