@@ -1,4 +1,4 @@
-import {  BGArtistsProfile, ContentWritersProfile, IllustratorsProfile, ManagementTeamProfile, MusicDirectorProfile, SoftwareDevelopersProfile, ThreeDAnimatorProfile, TwoDAnimatorProfile, VideographersProfile, VisualEditorsProfile } from "assets";
+import {  BGArtistsProfile, MusicDirectorProfile, NewIllustratorsProfile, NewManagementTeam, NewProductionTeam, NewSoftwareDeveloperTeam, NewThreeDAnimatorProfile, NewVideographersProfile, TwoDAnimatorProfile,  VisualEditorsProfile } from "assets";
 
 export const TeamProfileHeader = {
     title:"EDUCARE SKILL HALL OF FAME",
@@ -13,7 +13,7 @@ export const TeamProfile = [
     id:1,
     team: "Management Team",
     colorCode:"",
-    prfile: ManagementTeamProfile,
+    prfile: NewManagementTeam,
     teamNote: `Our management team drives efficiency, growth, and excellence across the organization. The adept team oversees operations, manages finances, and ensures smooth administrative processes. The management team brings all members together to focus on achieving the company’s common goals.`,
     subTeamcategory: [],
   },
@@ -21,7 +21,7 @@ export const TeamProfile = [
     id:2,
     team: "Technology Team",
     colorCode:"",
-    prfile: SoftwareDevelopersProfile,
+    prfile: NewSoftwareDeveloperTeam,
     teamNote: `Our dedicated team of software developers designs, develops, and maintains our websites and applications, ensuring operations run smoothly and the needs of users are met. They write clean, efficient code, troubleshoot issues, and collaborate with teams to deliver reliable and scalable digital solutions.`,
     subTeamcategory: [],
   },
@@ -35,13 +35,13 @@ export const TeamProfile = [
       {
         id:1,
         team: "Creative Director / Content Writers",
-        prfile: ContentWritersProfile,
+        prfile: NewProductionTeam,
         teamNote: `After the inception of an idea, the creative director/content writer writes a script, which undergoes a series of reviews until it is solidified into a fully-fledged screenplay. Creative Director/Content Writer acts as project coordinator or director, working with the team, ensuring that the desired quality is met.`,
       },
       {
         id:2,
         team: "Storyboard Artists / Illustrators",
-        prfile: IllustratorsProfile,
+        prfile: NewIllustratorsProfile,
         teamNote: `After the script/screenplay has been developed, the storyboard artist/illustrator works on the storyboard, which is used as a visual and chronological guide for the production team.`,
       },
       {
@@ -59,13 +59,13 @@ export const TeamProfile = [
       {
         id:5,
         team: "3D Animators",
-        prfile: ThreeDAnimatorProfile,
+        prfile: NewThreeDAnimatorProfile,
         teamNote: `After the storyboard is completed, it is then pushed to our team of Animators, where every action and dialogue is animated frame-by-frame, bringing characters and stories to life.`,
       },
       {
         id:6,
         team: "Videographers",
-        prfile: VideographersProfile,
+        prfile: NewVideographersProfile,
         teamNote: `Our videography team records video content and films footage. They dictate the visual presentation, using a wide variety of camera angles and movements to tell a story or to capture a scene.`,
       },
        {

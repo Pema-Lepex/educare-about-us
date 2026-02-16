@@ -5,8 +5,6 @@ import { CommonHeader2,  CommonParagraph1, CommonParagraph2, HrefButton } from "
 import TeamProfileSection from "./TeamProfileSections";
 import { ArrowRight } from "lucide-react";
 import LeaderCard from "../components/LeaderCard";
-import { use } from "react";
-import { useNavigate } from "react-router-dom";
 
 export default function LeadershipSection() {
   return (

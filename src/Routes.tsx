@@ -1,5 +1,10 @@
 import { PageNotFound } from "components";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import Impact from "modules/impact/Impact";
 import WhyChooseUs from "modules/why-choose-us/WhyChooseUs";
 import Leadership from "modules/leadership/Leadership";
@@ -14,6 +19,7 @@ import RegistrationGuide from "modules/about/page/RegistrationGuide";
 import PrivacyPolicy from "modules/privacy-policy/PrivacyPolicy";
 import TermsOfUse from "modules/terms-of-use/TermsOfUse";
 import About from "modules/about/About";
+import ExploreEducareContent from "modules/about/page/ExploreEducareContent";
 const AppRoutes: React.FC = () => {
   return (
     <Router>
@@ -21,27 +27,28 @@ const AppRoutes: React.FC = () => {
         <Route path="*" element={<PageNotFound />} />
         <Route path="/" element={<Navigate to="/aboutus" replace />} />
         {/* About page routes */}
-        
+
         <Route path="/aboutus" element={<About />} />
         <Route
-          path="/aboutus/how-to-get-started?"
+          path="/aboutus/membership"
           element={<HowToGetStarted />}
         />
         <Route
           path="/aboutus/registration-guide"
           element={<RegistrationGuide />}
         />
+        <Route path="/aboutus/for-dcdd-users" element={<ForDCDDUsers />} />
         <Route
-          path="/aboutus/for-dcdd-users"
-          element={<ForDCDDUsers />}
+          path="/aboutus/gift-coupon"
+          element={<GiftCoupon />}
         />
         <Route
-          path="/aboutus/gift-coupon-the-gift-of-learning"
-          element={<GiftCoupon />}
+          path="/aboutus/explore-educare-content"
+          element={<ExploreEducareContent />}
         />
         {/* Impact page routes */}
         <Route path="/impact" element={<Impact />} />
-         {/* Why Choose Us page routes */}
+        {/* Why Choose Us page routes */}
         <Route path="/why-choose-us" element={<WhyChooseUs />} />
         <Route path="/team" element={<Leadership />} />
         <Route path="/career" element={<Career />} />

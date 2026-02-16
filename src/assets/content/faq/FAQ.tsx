@@ -20,9 +20,13 @@ export const educareSkillFAQ = {
     {
       question: "Is Educare Skill free?",
       answer: [
-        `Not exactly. However, if you are a **child aged 3 and above or a student in Classes PP–VI residing in Bhutan**, you can access and use Educare Skill for **free since you are eligible for subsidized support from the Department of Culture and Dzongkha Development (DCDD)**, Ministry of Home Affairs. To avail this support, you must get in touch with Educare Skill support team to register. Once registered, you will receive a User ID and Password. You must then sign in via the DCDD Sign In section using the credentials provided.
-        
-        If **you are not eligible for the DCDD support**, you have to choose membership plan of choice to access content on Educare Skill and begin your Dzongkha learning journey.`,
+        `Not exactly. From **17 February 2026 onwards**, target beneficiaries previously supported by the Department of Culture and Dzongkha Development (DCDD) will no longer be able to access and use Educare Skill free of charge until further notice.
+
+        For your information, the DCDD provided subsidized subscription support from **August 2024 to December 2025** to children aged 3 and above and students in Classes PP–VI residing in Bhutan.
+
+        To continue learning Dzongkha through our platform, you will need to purchase a membership plan of your choice to access Dzongkha content on Educare Skill.
+
+        Explore our affordable membership plans at: https://educareskill.com/aboutus/membership`,
       ],
     },
     {
@@ -36,7 +40,8 @@ export const educareSkillFAQ = {
       ],
     },
     {
-      question: "Who are the experts reviewing Educare Skill content, and is the content aligned with the national curriculum?",
+      question:
+        "Who are the experts reviewing Educare Skill content, and is the content aligned with the national curriculum?",
       answer: [
         `Since Educare Skill primarily focuses on Dzongkha, a wide range of Dzongkha teachers, language professionals, and multimedia production experts have been involved in developing its content. From the inception of a lesson idea to the final output, every content goes through a series of internal reviews to ensure high-quality video production (visuals, sound, music, voice, etc.) as well as strong lesson outcomes, including grammar, language accuracy, and pronunciation, etc.,
 
@@ -46,13 +51,14 @@ export const educareSkillFAQ = {
       ],
     },
     {
-      question: "How does DCDD support our children and students in learning Dzongkha?",
+      question:
+        "How does DCDD support our children and students in learning Dzongkha?",
       answer: [
-        `Following the formalization of a Memorandum of Understanding (MoU) with Educare Skill, the Department of Culture and Dzongkha Development (DCDD) has provided subsidized support to enable free access to Educare Skill for children aged three and above, children enrolled in ECCD centres, and students in Classes PP–VI residing in Bhutan.,
+        `Following the formalization of a Memorandum of Understanding (MoU) with Educare Skill in August 2024, the Department of Culture and Dzongkha Development (DCDD) has provided subsidized support to enable free access to Educare Skill for children aged three and above, children enrolled in ECCD centres, and students in Classes PP–VI residing in Bhutan.
 
-        For your information, DCDD is the apex institution and authority responsible for the development and promotion of Bhutan’s national language, Dzongkha. After the erstwhile Dzongkha Development Commission (DDC) was merged with the Department of Culture, DCDD became the country’s most important public institution dedicated to preserving, promoting, developing, and enhancing the rich cultural and traditional heritage of our Nation.,
+        However, from 17 February 2026 onwards, target beneficiaries previously supported by the DCDD will no longer be able to access and use Educare Skill free of charge until further notice.
 
-        To learn more about DCDD, you may visit their official website: https://doc.gov.bt/ `,
+        For your information, DCDD is the apex institution and authority responsible for the development and promotion of Bhutan’s national language, Dzongkha. After the erstwhile Dzongkha Development Commission (DDC) was merged with the Department of Culture, DCDD became the country’s most important public institution dedicated to preserving, promoting, developing, and enhancing the rich cultural and traditional heritage of our Nation. To learn more about DCDD, you may visit its official website: https://doc.gov.bt/ `,
       ],
     },
     {

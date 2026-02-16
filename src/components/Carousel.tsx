@@ -11,7 +11,7 @@ const Carousel: React.FC<Props> = ({ slides = [] }) => {
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -49,12 +49,12 @@ const Carousel: React.FC<Props> = ({ slides = [] }) => {
         ❯
       </button>
 
-      <div className="absolute flex justify-center py-2 z-100 bottom-0 w-full gap-3">
+      <div className="absolute flex justify-center py-2 z-100 bottom-0 w-full lg:gap-3 md:gap-2 gap-1">
         {slides.map((_, index) => (
           <div
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`cursor-pointer text-5xl ${
+            className={`cursor-pointer lg:text-5xl md:text-5xl text-3xl ${
               index === currentIndex ? "text-blue-500" : "text-gray-400"
             }`}
           >
