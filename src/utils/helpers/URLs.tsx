@@ -25,7 +25,7 @@ export const EducareSignUpLinkDetails = {
 
 export const SignInLinkDetails = {
   LinkFor: "Sign In",
-  linkTo: "https://educareskill.com/login",
+  linkTo: "https://www.educareskill.com/signin",
 };
 
 export const RedirectToAppStore = {
