@@ -20,7 +20,6 @@ const EducareSkillSection: React.FC = () => {
             <CommonParagraph1>{renderTextWithLinks(EducareSkillContent.content1)}</CommonParagraph1>
             <CommonParagraph1>{renderTextWithLinks(EducareSkillContent.content2)}</CommonParagraph1>
             <CommonParagraph1>{renderTextWithLinks(EducareSkillContent.content3)}</CommonParagraph1>
-            <CommonParagraph1>{renderTextWithLinks(EducareSkillContent.content4)}</CommonParagraph1>
           </div>
         </div>
 

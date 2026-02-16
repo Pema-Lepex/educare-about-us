@@ -53,12 +53,12 @@ const WhyChooseUsContent: React.FC = () => {
       <MainSectionPage />
       <div className="flex items-center flex-col justify-center ">
         <div className="px-5">
-          <img src={DCDDImage} alt="dcdd image" />
+          <img className="md:w-[500px] lg:w-[700px] xl:w-[900px] 2xl:w-[1100px] 3xl:w-[1200px] 4xl:w-[1500px]" src={DCDDImage} alt="dcdd image" />
         </div>
         <img
           src={CartoonCharacter}
           alt="Family"
-          className="h-auto lg:pb-28 pb-8 w-full object-contain"
+          className="h-auto lg:pb-28 pb-8 w-full object-contain px-24s sm:px-10"
         />
       </div>
       <div className="3xl:h-[200px] 4xl:h-[350px] 5xl:h-[450px]" />

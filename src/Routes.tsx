@@ -39,7 +39,7 @@ const AppRoutes: React.FC = () => {
         />
         <Route path="/aboutus/for-dcdd-users" element={<ForDCDDUsers />} />
         <Route
-          path="/aboutus/gift-coupon-the-gift-of-learning"
+          path="/aboutus/gift-coupon"
           element={<GiftCoupon />}
         />
         <Route

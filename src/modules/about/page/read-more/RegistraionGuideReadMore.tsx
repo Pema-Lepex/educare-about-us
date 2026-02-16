@@ -18,7 +18,7 @@ const RegistraionGuideReadMore: React.FC = () => {
                 <CommonParagraph1>
                   {RegistrationGuideContent.description}
                 </CommonParagraph1>
-                <ol className="list-disc list-inside space-y-3 3xl:space-y-5 4xl:space-y-7">
+                <ol className="list-disc list-outside space-y-3 3xl:space-y-5 4xl:space-y-7">
                   {RegistrationGuideContent.guide.map((item, index) =>
                     Object.values(item).map((step, stepIndex) => (
                       <li

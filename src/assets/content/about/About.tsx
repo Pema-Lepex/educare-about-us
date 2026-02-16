@@ -23,13 +23,20 @@ import {
   BellIcon,
 } from "assets/images";
 
-export const EducareSkillContent = {
-  title: "EDUCARE SKILL",
-  subTitle: "Know Your Perfect Dzongkha Tutor",
+export const ExploreEducareSkillContent = {
+  title: "Know Your Perfect Dzongkha Tutor",
   content1: `Educare Skill is officially endorsed as the **“National Online Dzongkha Learning Platform”** by the Department of Culture and Dzongkha Development (DCDD) under the Ministry of Home Affairs.`,
   content2: `All content is reviewed by Dzongkha experts from the DCDD and curriculum professionals from the Department of School Education (DSE) and is aligned with the national curriculum to ensure relevance, quality, and impact. Educare Skill enables learners to master our national language, Dzongkha, like never before through more than **1000 engaging, entertaining, and curriculum-aligned episodes**.`,
   content3: `From catchy nursery rhymes and captivating animated series to immersive read-aloud stories and comprehensive, exam-oriented tutorials, the platform offers something for everyone. Whether you are a young child beginning your Dzongkha journey, a student struggling with learning Dzongkha and preparing for exams, a parent or teacher seeking quality learning resources, or a graduate sitting for the RCSC examinations, our carefully curated content supports you at every stage.`,
   content4: `In the future, the platform will also offer STEM subject tutorials and professional courses leading to recognized certifications.`
+};
+
+export const EducareSkillContent = {
+  title: "EDUCARE SKILL",
+  subTitle: "Your Perfect Dzongkha Tutor!",
+  content1: `Introducing Bhutan's pioneering online learning platform, Educare Skill, developed with a mission to transform learning and skilling in Bhutan and beyond. Educare Skill enables learners to master our national language, Dzongkha, like never before through more than 1000 engaging, entertaining, and curriculum-aligned episodes. `,
+  content2: `From catchy nursery rhymes and captivating animation series to immersive read-aloud stories and comprehensive, exam-oriented tutorials, the platform offers something for everyone. Whether you are a young child beginning your Dzongkha journey, a student preparing for school examinations, a parent or teacher seeking quality learning resources, or a graduate sitting for the RCSC examinations, our carefully curated content supports you at every stage. `,
+  content3: `All content is reviewed by Dzongkha experts and aligned with the national curriculum to ensure relevance, quality, and impact. In the future, the platform will also offer professional courses leading to recognized certifications.`,
 };
 
 export const EducareSkillGroupContent = [
@@ -123,7 +130,7 @@ export const EducareSkillGuideContent = [
     title: "Gift Coupon The Gift of Learning!",
     icon: FCTFLLogo,
     frame: GreenBoxImage,
-    href: "/aboutus/gift-coupon-the-gift-of-learning",
+    href: "/aboutus/gift-coupon",
     buttonName: "Learn More",
     info: "With the Educare Skill Gift Coupon, you can gift your loved ones the affordable Educare Skill membership plans.",
   },
@@ -380,9 +387,9 @@ export const GiftCouponContent = {
         step2: "Click on the Gift Coupon Button.",
         step3:
           "Enter the recipient's details such as email address or phone number.",
-        step4: "Choose a payment option and complete the payment process.",
+        step4: "Choose a payment option and select the mebership plan by clicking Join Button for the desired package.",
         step5:
-          "Click on the Join Button for the desired package and select the membership duration.",
+          "Select the membership duration.",
 
         step6:
           "You have now purchased an Educare Skill membership plan for your loved one!",
@@ -395,8 +402,8 @@ export const GiftCouponContent = {
     steps: [
       {
         step1:
-          "Log in to the Educare Skill platform either through the website or the app.",
-        step2: "Click on Membership Plan.",
+          "Sign in to the Educare Skill platform either through the website or the app.",
+        step2: "Click on Rdeem Coupon.",
         step3: "Enter your Coupon Code.",
         step4: "Click on Redeem.",
         step5: "You have now received an Educare Skill membership!",
