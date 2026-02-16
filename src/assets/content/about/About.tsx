@@ -402,7 +402,7 @@ export const GiftCouponContent = {
     steps: [
       {
         step1:
-          "Sign in to the Educare Skill platform either through the website or the app.",
+          "Sign In to the Educare Skill platform either through the website or the app.",
         step2: "Click on Rdeem Coupon.",
         step3: "Enter your Coupon Code.",
         step4: "Click on Redeem.",
