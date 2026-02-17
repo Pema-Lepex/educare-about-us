@@ -6,6 +6,8 @@
  *
  * The Educare app sets 'educare_shared_auth' in localStorage on login
  * and removes it on logout.
+ *
+ * Logout is synced across subdomains using BroadcastChannel.
  */
 
 export interface SharedAuthUser {
@@ -29,13 +31,21 @@ export interface SharedAuthUser {
 }
 
 const SHARED_AUTH_KEY = "educare_shared_auth";
+const AUTH_CHANNEL = "educare_auth_channel";
 const MAIN_APP_URL =
   process.env.REACT_APP_MAIN_APP_URL || "https://educareskill.com";
-  
+
+/**
+ * Clear shared auth from localStorage (this subdomain's copy)
+ */
+export const clearSharedAuthUser = (): void => {
+  localStorage.removeItem(SHARED_AUTH_KEY);
+};
 
 /**
  * Get the shared auth user from localStorage
  * Returns null if not authenticated or token is expired
+ * Also clears stale/expired data instead of silently ignoring it
  */
 export const getSharedAuthUser = (): SharedAuthUser | null => {
   try {
@@ -43,6 +53,7 @@ export const getSharedAuthUser = (): SharedAuthUser | null => {
     if (!data) return null;
 
     const authData = JSON.parse(data) as SharedAuthUser;
+
     // Check if token is expired
     if (authData.expires_in) {
       const currentTime = Date.now();
@@ -53,12 +64,46 @@ export const getSharedAuthUser = (): SharedAuthUser | null => {
           : authData.expires_in * 1000;
 
       if (expiresTime < currentTime) {
+        // Clear expired data so it doesn't linger on subdomain
+        clearSharedAuthUser();
         return null;
       }
     }
+
     return authData;
   } catch {
+    clearSharedAuthUser(); // Clear corrupt data
     return null;
+  }
+};
+
+/**
+ * Listen for logout events broadcast from the main app or other subdomains.
+ * Call this once on app init (e.g. inside AuthContext useEffect).
+ * Returns a cleanup function — call it on unmount.
+ *
+ * @example
+ * useEffect(() => {
+ *   const cleanup = listenForAuthChanges(() => setUser(null));
+ *   return cleanup;
+ * }, []);
+ */
+export const listenForAuthChanges = (onLogout: () => void): (() => void) => {
+  try {
+    const channel = new BroadcastChannel(AUTH_CHANNEL);
+
+    channel.onmessage = (event) => {
+      if (event.data?.type === "LOGOUT") {
+        clearSharedAuthUser(); // Clear this subdomain's localStorage copy
+        onLogout();
+      }
+    };
+
+    // Return cleanup to close channel on component unmount
+    return () => channel.close();
+  } catch {
+    // BroadcastChannel not supported — degrade gracefully
+    return () => {};
   }
 };
 
@@ -127,6 +172,3 @@ export const redirectToSignup = (): void => {
 export const redirectToProfile = (): void => {
   window.location.href = `${MAIN_APP_URL}/profile`;
 };
-
-
-
