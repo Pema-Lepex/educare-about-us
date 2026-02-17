@@ -23,6 +23,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
 
     // Initial auth check on mount
     const authData = getSharedAuthUser();
+    // clearSharedAuthUser()
     console.log("[AuthContext] getSharedAuthUser returned:", authData);
 
     if (authData) {
