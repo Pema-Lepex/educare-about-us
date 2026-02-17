@@ -12,6 +12,7 @@ const TopNotification: React.FC = () => {
     const handleClose = () => {
         setVisible(false);
         sessionStorage.removeItem('storedNotification');
+        window.location.reload();
     };
     if (!visible) return null;
     return (
