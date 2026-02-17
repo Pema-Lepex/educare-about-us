@@ -127,6 +127,6 @@ export const redirectToSignup = (): void => {
 export const redirectToProfile = (): void => {
   window.location.href = `${MAIN_APP_URL}/profile`;
 };
-
-
-
+export const clearSharedAuthUser = (): void => {
+  localStorage.removeItem(SHARED_AUTH_KEY);
+};

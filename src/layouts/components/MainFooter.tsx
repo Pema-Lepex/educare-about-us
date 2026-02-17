@@ -37,10 +37,10 @@ const MainFooter: React.FC = () => {
 
   const otherPages = [
     { id: 1, title: "About Us", url: "/aboutus" },
-    { id: 1, title: "FAQ", url: "/faq" },
-    { id: 1, title: "Contact", url: "/contact" },
-    { id: 1, title: "Privacy Policy", url: "/privacypolicy" },
-    { id: 1, title: "Terms of Use", url: "/termsofuse" },
+    { id: 2, title: "FAQ", url: "/faq" },
+    { id: 3, title: "Contact", url: "/contact" },
+    { id: 4, title: "Privacy Policy", url: "/privacypolicy" },
+    { id: 5, title: "Terms of Use", url: "/termsofuse" },
   ];
 
   return (

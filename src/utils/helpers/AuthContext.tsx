@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { getSharedAuthUser } from "./SharedAuth";
+import { clearSharedAuthUser, getSharedAuthUser } from "./SharedAuth";
 
 interface User {
   name: string;
@@ -21,6 +21,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   useEffect(() => {
     console.log("[AuthContext] useEffect running - v2");
     const authData = getSharedAuthUser();
+    // clearSharedAuthUser()
     console.log("[AuthContext] getSharedAuthUser returned:", authData);
 
     if (authData) {
