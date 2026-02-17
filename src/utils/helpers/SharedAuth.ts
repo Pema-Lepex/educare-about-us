@@ -31,6 +31,7 @@ export interface SharedAuthUser {
 }
 
 const SHARED_AUTH_KEY = "educare_shared_auth";
+console.log(SHARED_AUTH_KEY, 'SHARED_AUTH_KEY')
 const AUTH_CHANNEL = "educare_auth_channel";
 const MAIN_APP_URL =
   process.env.REACT_APP_MAIN_APP_URL || "https://educareskill.com";

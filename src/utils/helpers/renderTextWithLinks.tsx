@@ -8,7 +8,6 @@ const linkMap: Record<string, string> = {
 
 export const renderTextWithLinks = (text: string | undefined) => {
   if (!text) return null;
-
   /**
    * Updated Regex to catch:
    * 1. Bold (**text**)
@@ -69,10 +68,12 @@ export const renderTextWithLinks = (text: string | undefined) => {
 
     // --- 4. HANDLE LINKS & EMAILS ---
     if (/^https?:\/\//i.test(part) || /^support@/i.test(part)) {
-      const href = part.startsWith("support@") ? `mailto:${part}` : part;
-      return <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="font-medium hover:underline">{part}</a>;
+      const href = part.startsWith("support@") ? `mailto:${part}` :(() => {
+      const url = new URL(part);
+      return `${url.pathname}${url.search}${url.hash}`; // /path?query=x#section
+    })();
+      return <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="font-medium hover:underline">{href}</a>;
     }
-
     return part;
   });
 };
@@ -100,9 +101,11 @@ export const renderFormattedText = (
       const isEmail = part.includes("@");
       const href = isEmail
         ? `mailto:${part}`
-        : part.startsWith("http")
-        ? part
-        : `https://${part}`;
+        : part.includes("educareskill.com")? (() => {
+          const url = new URL(part);
+          return `${url.pathname}${url.search}${url.hash}`; // /path?query#hash
+        })()
+      : part;
 
       return (
         <a
@@ -117,7 +120,6 @@ export const renderFormattedText = (
         </a>
       );
     }
-
     // Return plain text
     return part;
   });

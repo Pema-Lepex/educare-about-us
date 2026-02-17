@@ -374,7 +374,7 @@ export const GiftCouponContent = {
   title: "Gift Coupon",
   subtitle: "The Best Gift You Can Give, The Gift of Learning!",
   buttonName: "Gift the Joy of Learning!",
-  linkTo: "https://www.educareskill.com/?tab=gift-coupon",
+  linkTo: "/?tab=gift-coupon",
   subheader: "A meaningful gift for those who think beyond today.",
   description:
     "With the Educare Skill Gift Coupon, you can gift your loved ones the affordable Educare Skill membership plans.",
@@ -442,7 +442,7 @@ export const testimonials = [
 
 export const GiftCouponLinkDetail = {
   icon: GiftIcon,
-  linkTo: "https://www.educareskill.com/?tab=gift-coupon",
+  linkTo: "/?tab=gift-coupon",
   buttonName: "Gift the joy of learning!",
   title: "A meaningful gift for those who think beyond today.",
   info1:

@@ -26,7 +26,7 @@ export const educareSkillFAQ = {
 
         To continue learning Dzongkha through our platform, you will need to purchase a membership plan of your choice to access Dzongkha content on Educare Skill.
 
-        Explore our affordable membership plans at: https://educareskill.com/aboutus/membership`,
+        Explore our affordable membership plans at: https://www.educareskill.com/aboutus/membership`,
       ],
     },
     {
