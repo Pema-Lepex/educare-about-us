@@ -34,6 +34,10 @@ const AppRoutes: React.FC = () => {
           element={<HowToGetStarted />}
         />
         <Route
+          path="/aboutus/how-to-get-started"
+          element={<HowToGetStarted />}
+        />
+        <Route
           path="/aboutus/registration-guide"
           element={<RegistrationGuide />}
         />

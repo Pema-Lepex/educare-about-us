@@ -31,6 +31,7 @@ export interface SharedAuthUser {
 const SHARED_AUTH_KEY = "educare_shared_auth";
 const MAIN_APP_URL =
   process.env.REACT_APP_MAIN_APP_URL || "https://educareskill.com";
+  
 
 /**
  * Get the shared auth user from localStorage
@@ -42,7 +43,6 @@ export const getSharedAuthUser = (): SharedAuthUser | null => {
     if (!data) return null;
 
     const authData = JSON.parse(data) as SharedAuthUser;
-
     // Check if token is expired
     if (authData.expires_in) {
       const currentTime = Date.now();
@@ -56,7 +56,6 @@ export const getSharedAuthUser = (): SharedAuthUser | null => {
         return null;
       }
     }
-
     return authData;
   } catch {
     return null;
@@ -128,3 +127,6 @@ export const redirectToSignup = (): void => {
 export const redirectToProfile = (): void => {
   window.location.href = `${MAIN_APP_URL}/profile`;
 };
+
+
+
