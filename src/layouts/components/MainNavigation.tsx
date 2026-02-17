@@ -14,6 +14,7 @@ import {
   redirectToHome,
   redirectToProfile,
 } from "utils/helpers/SharedAuth";
+import TopNotification from "modules/notification/pages/TopNotification";
 
 interface Props {
   hidden?: boolean;
@@ -42,11 +43,13 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
       setOpen(false);
     };
     return (
+     <>
       <header
         ref={ref as any}
-        className="fixed top-0 5xl:w-[3200px] mx-auto w-full bg-primary-500 dark:bg-bgColor-900 shadow-md dark:shadow-gray-800 z-50 transition-transform duration-300 px-4 "
+        className="fixed top-0 5xl:w-[3200px] mx-auto w-full bg-primary-500 dark:bg-bgColor-900 shadow-md dark:shadow-gray-800 z-50 transition-transform duration-300 "
         style={{ transform: hidden ? "translateY(-100%)" : "translateY(0)" }}
       >
+        <TopNotification />
         <div className="mx-auto px-4 py-4 flex items-center justify-between">
           
           <div onClick={() => { user?.name ? redirectToHome() : navigate("/"); }} className="cursor-pointer flex space-x-4 lg:space-x-0">
@@ -244,6 +247,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
           </nav>
         </div>
       </header>
+     </>
     );
   }
 );
