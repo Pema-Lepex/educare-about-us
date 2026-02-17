@@ -20,10 +20,18 @@ import PrivacyPolicy from "modules/privacy-policy/PrivacyPolicy";
 import TermsOfUse from "modules/terms-of-use/TermsOfUse";
 import About from "modules/about/About";
 import ExploreEducareContent from "modules/about/page/ExploreEducareContent";
+
+const REDIRECTS: Record<string, string> = {
+    '/aboutus/how-to-get-started': '/aboutus/membership',
+    // add more as needed
+};
 const AppRoutes: React.FC = () => {
   return (
     <Router>
       <Routes>
+        {Object.entries(REDIRECTS).map(([oldPath, newPath]) => (
+            <Route key={oldPath} path={oldPath} element={<Navigate to={newPath} replace />} />
+        ))}
         <Route path="*" element={<PageNotFound />} />
         <Route path="/" element={<Navigate to="/aboutus" replace />} />
         {/* About page routes */}
@@ -31,10 +39,6 @@ const AppRoutes: React.FC = () => {
         <Route path="/aboutus" element={<About />} />
         <Route
           path="/aboutus/membership"
-          element={<HowToGetStarted />}
-        />
-        <Route
-          path="/aboutus/how-to-get-started"
           element={<HowToGetStarted />}
         />
         <Route
