@@ -37,21 +37,7 @@ export default function CreativeTalentSection() {
           ))}
         </div>
       </div>
-
-      {/* 2. How to Apply Card (Orange Theme) */}
-      <div className="border border-customOriange-200 rounded-2xl p-6 md:p-10 bg-white shadow-sm">
-        <CommonHeader4 className="font-semibold text-orange-500 mb-4">
-          {HowToApply.title}
-        </CommonHeader4>
-        <CommonParagraph1 className="text-gray-600 mb-6 leading-relaxed md:max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl 4xl:max-w-7xl 5xl:max-w-[120rem]">
-         {HowToApply.subTitle}
-        </CommonParagraph1>
-        <a target="_blank" href={ApplicationFormLinkDetails.linkTo} className=" text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl w-full md:w-1/2 xl:w-1/4 bg-[#1b364d] text-white  hover:bg-[#254a69] flex items-center justify-center px-4 py-3 rounded-md shadow-md">
-            <Upload className="w-4 h-4 md:size-5 lg:size-5 xl:size-5 2xl:size-6 3xl:size-7 4xl:w-10 4xl:h-10 5xl:w-12 5xl:h-12 mr-2" />
-            {ApplicationFormLinkDetails.LinkFor}
-        </a>
-      </div>
-
+      
       {/* 3. What We Offer Card (Orange Theme) */}
       <div className="border border-customOriange-200 rounded-2xl p-6 md:p-10 bg-white shadow-sm">
         <CommonHeader4 className=" font-semibold text-orange-500 mb-6">
@@ -68,6 +54,20 @@ export default function CreativeTalentSection() {
             </li>
           ))}
         </ul>
+      </div>
+
+      {/* 2. How to Apply Card (Orange Theme) */}
+      <div className="border border-customOriange-200 rounded-2xl p-6 md:p-10 bg-white shadow-sm">
+        <CommonHeader4 className="font-semibold text-orange-500 mb-4">
+          {HowToApply.title}
+        </CommonHeader4>
+        <CommonParagraph1 className="text-gray-600 mb-6 leading-relaxed md:max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl 4xl:max-w-7xl 5xl:max-w-[120rem]">
+         {HowToApply.subTitle}
+        </CommonParagraph1>
+        <a target="_blank" href={ApplicationFormLinkDetails.linkTo} className=" text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl w-full md:w-1/2 xl:w-1/4 bg-[#1b364d] text-white  hover:bg-[#254a69] flex items-center justify-center px-4 py-3 rounded-md shadow-md">
+            <Upload className="w-4 h-4 md:size-5 lg:size-5 xl:size-5 2xl:size-6 3xl:size-7 4xl:w-10 4xl:h-10 5xl:w-12 5xl:h-12 mr-2" />
+            {ApplicationFormLinkDetails.LinkFor}
+        </a>
       </div>
 
       {/* Bottom Text */}
