@@ -107,11 +107,11 @@ const MainSectionPage: React.FC<Props> = ({ isEducareContent }) => {
     }
   }, [searchParams]);
   return (
-    <div className="bg-white ">
+    <div className="bg-white">
       {isEducareContent ? (
         <></>
       ) : (
-        <section className="px-4 pb-10 absolute w-full">
+        <section className="px-4  absolute w-full">
           <div className="mx-auto grid max-w-6xl 3xl:max-w-full 3xl:px-36 px-0 grid-cols-1 gap-5 4xl:gap-12 lg:grid-cols-6">
             {features.map((f, idx) => {
               const gridClasses = "col-span-1";
@@ -214,7 +214,7 @@ const MainSectionPage: React.FC<Props> = ({ isEducareContent }) => {
         </section>
       )}
 
-      <section className="px-4   ">
+      <section className="px-4">
         <CommonHeader3 className="text-center font-extrabold tracking-wide text-[#0B2A4A] pb-3 4xl:mb-12">
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>
@@ -241,7 +241,7 @@ const MainSectionPage: React.FC<Props> = ({ isEducareContent }) => {
             </button>
           ))}
         </div>
-        <div className="mx-auto mt-4 max-w-6xl 3xl:max-w-full 3xl:px-36 px-0 mb-20">
+        <div className="mx-auto mt-4 max-w-6xl 3xl:max-w-full 3xl:px-36 px-0 ">
           {activeTab === "cheychey" && <CheyCheyContent />}
           {activeTab === "kids" && <EducareKidsSection />}
           {activeTab === "primary" && <PrimaryLevelContent />}

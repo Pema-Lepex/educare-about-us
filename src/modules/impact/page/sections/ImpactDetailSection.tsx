@@ -79,7 +79,6 @@ export default function ImpactDetailSection() {
           </div>
         ))}
       </div>
-
       {/* Middle Row: Statistics */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="border-t-4 border-blue-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
@@ -119,15 +118,13 @@ export default function ImpactDetailSection() {
                   src={items.image}
                   alt="LOGO"
                   loading="lazy"
-                  className="w-full h-auto max-w-[9rem] xs:max-[10rem] sm:max-w-[12rem] md:max-w-[14rem] lg:max-w-[30rem] xl:max-w-[] 2xl:max-w-xl 3xl:max-w-[23rem] 4xl:max-w-xs  object-contain"
+                  className="w-full h-auto max-w-[6rem] sm:max-w-[8rem] md:max-w-[10rem] lg:max-w-[12rem] object-contain"
                 />
               </a>
             </div>
-
             <div
               className={`hidden lg:block border-r-4 ${items.borderColor} mx-6`}
             />
-
             <div className="flex justify-center flex-col flex-1 space-y-2 xl:space-y-3 2xl:space-y-4 3xl:space-y-5 4xl:space-y-6 5xl:space-y-7">
               <CommonParagraph2>
                 {renderTextWithLinks(items.des1)}
@@ -142,7 +139,6 @@ export default function ImpactDetailSection() {
           </div>
         ))}
       </div>
-
       {/* Bottom Row: Safe Haven */}
       <div className="space-y-2 3xl:space-y-6">
         <CommonParagraph1 className="font-bold text-center">

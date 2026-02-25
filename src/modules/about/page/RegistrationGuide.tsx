@@ -27,5 +27,4 @@ const RegistrationGuide: React.FC = () => {
     </MainLayout>
   );
 };
-
 export default RegistrationGuide;

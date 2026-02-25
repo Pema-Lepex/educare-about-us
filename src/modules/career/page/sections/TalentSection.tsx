@@ -11,18 +11,16 @@ import { ApplicationFormLinkDetails } from "utils/helpers/URLs";
 
 export default function CreativeTalentSection() {
   return (
-    <section className="md:py-16 py-7 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto space-y-12">
+    <section className="md:py-16 py-7 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto space-y-6 md:space-y-8 lg:space-y-10">
       {/* Main Section Heading */}
-      <CommonHeader1 className=" font-bold text-center text-[#1b364d] mb-8">
+      <CommonHeader1 className="font-bold text-center text-[#1b364d] mb-8">
         {WeArelookingFor.title}
       </CommonHeader1>
-
       {/* 1. Areas of Interest Card (Purple Theme) */}
       <div className="border border-purple-300 rounded-2xl p-6 md:p-10 bg-white shadow-sm">
         <CommonParagraph1 className="text-gray-700 mb-8 ">
           {WeArelookingFor.subTitle}
         </CommonParagraph1>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {WeArelookingFor.skills.map((skill, index) => (
             <div
@@ -37,7 +35,6 @@ export default function CreativeTalentSection() {
           ))}
         </div>
       </div>
-      
       {/* 3. What We Offer Card (Orange Theme) */}
       <div className="border border-customOriange-200 rounded-2xl p-6 md:p-10 bg-white shadow-sm">
         <CommonHeader4 className=" font-semibold text-orange-500 mb-6">
@@ -55,7 +52,6 @@ export default function CreativeTalentSection() {
           ))}
         </ul>
       </div>
-
       {/* 2. How to Apply Card (Orange Theme) */}
       <div className="border border-customOriange-200 rounded-2xl p-6 md:p-10 bg-white shadow-sm">
         <CommonHeader4 className="font-semibold text-orange-500 mb-4">
@@ -69,7 +65,6 @@ export default function CreativeTalentSection() {
             {ApplicationFormLinkDetails.LinkFor}
         </a>
       </div>
-
       {/* Bottom Text */}
       <div className="text-center md:pt-8">
         <CommonParagraph2 className="text-gray-700 text-lg flex flex-col md:flex-row items-center justify-center gap-2">
