@@ -51,7 +51,7 @@ const Testimonial: React.FC = () => {
           } 
           h-16 w-16`}
               >
-                <img src={t.avatar} className="w-full h-full object-cover" />
+                <img src={t.avatar} loading="lazy" className="w-full h-full object-cover" />
               </div>
             ))}
           </div>
@@ -63,13 +63,14 @@ const Testimonial: React.FC = () => {
                 key={`left-${i}`}
                 className="rounded-full overflow-hidden lg:w-36 lg:h-36 md:w-20 md:h-20 h-12 w-12 opacity-60"
               >
-                <img src={t.avatar} className="w-full h-full object-cover" />
+                <img src={t.avatar} loading="lazy" className="w-full h-full object-cover" />
               </div>
             ))}
 
             <div className="rounded-full overflow-hidden border-primary-500 shadow-xl scale-110 border lg:w-52 lg:h-52 md:w-36 md:h-36 h-20 w-20">
               <img
                 src={rotated[0].avatar}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -79,7 +80,7 @@ const Testimonial: React.FC = () => {
                 key={`right-${i}`}
                 className="rounded-full overflow-hidden lg:w-36 lg:h-36 h-12 md:w-20 md:h-20 w-12 opacity-60"
               >
-                <img src={t.avatar} className="w-full h-full object-cover" />
+                <img src={t.avatar} loading="lazy" className="w-full h-full object-cover" />
               </div>
             ))}
           </div>

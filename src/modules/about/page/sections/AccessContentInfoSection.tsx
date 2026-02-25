@@ -45,6 +45,7 @@ const AccessContentInfoSection: React.FC = () => {
             <img
               src={EducareSkillLogo}
               alt="DCDD image"
+              loading="lazy"
               className="max-h-full md:w-[120px] lg:w-[200px] object-contain 4xl:w-[400px]"
             />
             <a
@@ -56,6 +57,7 @@ const AccessContentInfoSection: React.FC = () => {
             <img
               src={DCDDTextContents}
               alt="DCDD image"
+              loading="lazy"
               className="max-h-full object-contain 4xl:w-[1200px]"
             />
           </div>
@@ -68,6 +70,7 @@ const AccessContentInfoSection: React.FC = () => {
             <img
               src={GiftCouponLinkDetail.icon}
               alt="gifticon"
+              loading="lazy"
               className="size-[60px] md:size-[60px] lg:size-[100px] xl:size-[120px] 2xl:size-[100px] 3xl:size-[100px] 4xl:size-[250px] 5xl:size-[300px] xl:mt-3"
             />
             <a
@@ -79,6 +82,7 @@ const AccessContentInfoSection: React.FC = () => {
             <img
               src={GC_New}
               alt="DCDD image"
+              loading="lazy"
               className="max-h-full object-contain 4xl:w-[1200px]"
             />
           </div>

@@ -118,6 +118,7 @@ export default function ImpactDetailSection() {
                 <img
                   src={items.image}
                   alt="LOGO"
+                  loading="lazy"
                   className="w-full h-auto max-w-[9rem] xs:max-[10rem] sm:max-w-[12rem] md:max-w-[14rem] lg:max-w-[30rem] xl:max-w-[] 2xl:max-w-xl 3xl:max-w-[23rem] 4xl:max-w-xs  object-contain"
                 />
               </a>

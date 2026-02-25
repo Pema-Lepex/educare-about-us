@@ -7,6 +7,7 @@ const DownloadOptionSection: React.FC = () => {
       <img
         src={GirlRunningImage}
         alt="Girl Running"
+        loading="lazy"
         className="w-full h-auto object-cover"
       />
       <section
@@ -22,6 +23,7 @@ const DownloadOptionSection: React.FC = () => {
             <img
               src={AppleStoreImage}
               alt="Apple Store"
+              loading="lazy"
               className="h-[22px] sm:h-10 lg:h-14 4xl:h-20 5xl:h-24 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
             />
           </a>
@@ -29,6 +31,7 @@ const DownloadOptionSection: React.FC = () => {
             <img
               src={AndroidStoreImage}
               alt="Android Store"
+              loading="lazy"
               className="h-[22px] sm:h-10 lg:h-14 4xl:h-20 5xl:h-24 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
             />
           </a>

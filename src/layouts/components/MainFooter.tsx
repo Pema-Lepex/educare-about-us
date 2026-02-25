@@ -21,59 +21,44 @@ import {
 } from "utils/helpers/URLs";
 import BottomNotification from "modules/notification/pages/BottomNotification";
 
+const followMedia: SocialMediaProps[] = [
+  { id: 1, title: "Facebook", img: FacebookIcon, url: Facebook.linkTo },
+  { id: 2, title: "Tiktok", img: TiktokIcon, url: Tiktok.linkTo },
+  { id: 3, title: "Instagram", img: Instragram, url: Instagram.linkTo },
+  { id: 4, title: "Youtube", img: YoutubeIcon, url: Youtube.linkTo },
+];
+
+const chatMedia: SocialMediaProps[] = [
+  { id: 1, title: "Messenger", img: Messanger, url: "https://www.facebook.com/educareskill" },
+  { id: 2, title: "Telegram", img: Telegram, url: "https://t.me/+97577718721" },
+  { id: 3, title: "Whatsapp", img: Whatsapp, url: "https://wa.me/97577718721" },
+];
+
+const otherPages = [
+  { id: 1, title: "About Us", url: "/aboutus" },
+  { id: 2, title: "FAQ", url: "/faq" },
+  { id: 3, title: "Contact", url: "/contact" },
+  { id: 4, title: "Privacy Policy", url: "/privacypolicy" },
+  { id: 5, title: "Terms of Use", url: "/termsofuse" },
+];
+
 const MainFooter: React.FC = () => {
   const location = useLocation();
-  const followMedia: SocialMediaProps[] = [
-    { id: 1, title: "Facebook", img: FacebookIcon, url: Facebook.linkTo },
-    { id: 2, title: "Tiktok", img: TiktokIcon, url: Tiktok.linkTo },
-    { id: 3, title: "Instagram", img: Instragram, url: Instagram.linkTo },
-    { id: 4, title: "Youtube", img: YoutubeIcon, url: Youtube.linkTo },
-  ];
-
-  const chatMedia: SocialMediaProps[] = [
-    {
-      id: 1,
-      title: "Messenger",
-      img: Messanger,
-      url: "https://www.facebook.com/educareskill",
-    },
-    {
-      id: 2,
-      title: "Telegram",
-      img: Telegram,
-      url: "https://t.me/+97577718721",
-    },
-    {
-      id: 3,
-      title: "Whatsapp",
-      img: Whatsapp,
-      url: "https://wa.me/97577718721",
-    },
-  ];
-
-  const otherPages = [
-    { id: 1, title: "About Us", url: "/aboutus" },
-    { id: 2, title: "FAQ", url: "/faq" },
-    { id: 3, title: "Contact", url: "/contact" },
-    { id: 4, title: "Privacy Policy", url: "/privacypolicy" },
-    { id: 5, title: "Terms of Use", url: "/termsofuse" },
-  ];
   const [notificationHeight, setNotificationHeight] = useState<number>(0);
-  const lastY = useRef<number>(0);
   const [showBottomNotification, setShowBottomNotification] =
     useState<boolean>(false);
-  const [lastScrollY, setLastScrollY] = useState<number>(0);
+  const lastScrollYRef = useRef<number>(0);
   const notificationRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      if (currentScrollY > lastScrollYRef.current && currentScrollY > 100) {
         setShowBottomNotification(true);
-      } else if (currentScrollY < lastScrollY) {
+      } else if (currentScrollY < lastScrollYRef.current) {
         setShowBottomNotification(false);
       }
-      setLastScrollY(currentScrollY);
+      lastScrollYRef.current = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -81,7 +66,7 @@ const MainFooter: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, []);
   useEffect(() => {
     if (showBottomNotification && notificationRef.current) {
       setNotificationHeight(notificationRef.current.offsetHeight);
@@ -158,6 +143,7 @@ const MainFooter: React.FC = () => {
                     <img
                       src={item.img}
                       alt={item.title}
+                      loading="lazy"
                       className="object-contain 4xl:size-9"
                     />
                   </a>
@@ -181,6 +167,7 @@ const MainFooter: React.FC = () => {
                     <img
                       src={item.img}
                       alt={item.title}
+                      loading="lazy"
                       className="object-contain 4xl:size-9"
                     />
                   </a>

@@ -1,7 +1,6 @@
 "use client";
 import { FC } from "react";
 import { ButtonProps } from "./ButtonProps";
-import { CircularProgress } from "@mui/material";
 
 const SubmitButton: FC<ButtonProps> = ({
   children,
@@ -23,7 +22,7 @@ const SubmitButton: FC<ButtonProps> = ({
       <span className="flex items-center space-x-2 justify-center">
         {loading ? (
           <>
-            <CircularProgress size={20} thickness={5} className="text-white mr-2" />
+            <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin mr-2" />
             {loadingText ? loadingText : " Submitting..."}
           </>
         ) : (

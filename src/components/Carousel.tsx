@@ -1,5 +1,5 @@
 import { SlideProps } from "props/Commonprops";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 interface Props {
   slides: SlideProps[];
 }
@@ -16,37 +16,44 @@ const Carousel: React.FC<Props> = ({ slides = [] }) => {
     return () => clearInterval(interval);
   }, [slides.length]);
 
+  const prevSlide = useCallback(() => {
+    setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  }, [slides.length]);
+
+  const nextSlide = useCallback(() => {
+    setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  }, [slides.length]);
+
   if (slides.length === 0) return null;
 
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  };
+  // Preload the next slide for smoother transitions
+  const nextIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-  };
   return (
     <div className="w-full m-auto relative group ">
       <div className="w-full overflow-hidden">
         <img
           src={slides[currentIndex].img}
-          alt="slide"
+          alt={slides[currentIndex].title || "slide"}
           className="w-full h-auto object-contain duration-700"
+          fetchPriority={currentIndex === 0 ? "high" : undefined}
         />
+        {/* Hidden preload for the next slide */}
+        <link rel="preload" as="image" href={slides[nextIndex].img} />
       </div>
 
       <button
         onClick={prevSlide}
         className="hidden size-10 text-xl group-hover:flex justify-center items-center absolute top-1/2 -translate-y-1/2 left-5 text-white bg-black/30 hover:bg-black/50 p-2 rounded-full"
       >
-        ❮
+        &#10094;
       </button>
 
       <button
         onClick={nextSlide}
         className="hidden size-10 text-xl group-hover:flex justify-center items-center absolute top-1/2 -translate-y-1/2 right-5 text-white bg-black/30 hover:bg-black/50 p-2 rounded-full"
       >
-        ❯
+        &#10095;
       </button>
 
       <div className="absolute flex justify-center py-2 z-100 bottom-0 w-full lg:gap-3 md:gap-2 gap-1">
@@ -58,7 +65,7 @@ const Carousel: React.FC<Props> = ({ slides = [] }) => {
               index === currentIndex ? "text-blue-500" : "text-gray-400"
             }`}
           >
-            •
+            &bull;
           </div>
         ))}
       </div>

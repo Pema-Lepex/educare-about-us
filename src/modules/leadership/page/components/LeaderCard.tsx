@@ -16,6 +16,7 @@ const LeaderCard = ({ name, role, image, isFounder = false }: Leader) => (
       <img
         src={image}
         alt={name}
+        loading="lazy"
         className="w-full h-full object-cover rounded-full shadow-lg"
       />
       <div className="text-center">
