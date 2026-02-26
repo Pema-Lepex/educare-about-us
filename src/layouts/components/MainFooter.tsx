@@ -179,7 +179,6 @@ const MainFooter: React.FC = () => {
               ref={notificationRef}
               className={`fixed bottom-0 right-0 z-50 transition-transform duration-300 ease-in-out w-full ${showBottomNotification ? "translate-y-0" : "translate-y-full"}`}
             >
-              <BottomNotification />
             </div>
           </div>
         </div>

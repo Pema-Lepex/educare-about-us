@@ -10,26 +10,33 @@ const BottomNotification: React.FC = () => {
     const navigate = useNavigate();
     const [visible, setVisible] = useState(true);
     const [openPopup, setOpenPopup] = useState<TabKey | null>(null);
-   const notificationData: NotificationProps[] = JSON.parse(sessionStorage.getItem('storedNotification') || '[]');
-       const notification = notificationData?.find((n) => n.position === 'Bottom');
-       const handleClose = () => {
-           setVisible(false);
-           sessionStorage.removeItem('storedNotification');
-           window.location.reload();
-       };
-   
-        if (!visible) return null;
+    const notificationData: NotificationProps[] = JSON.parse(sessionStorage.getItem('storedNotification') || '[]');
+    const notification = notificationData?.find((n) => n.position === 'Bottom');
+    const handleClose = () => {
+        setVisible(false);
+        sessionStorage.removeItem('storedNotification');
+        window.location.reload();
+    };
+// className="
+//                 w-full p-4 text-white 
+//                 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500
+//                 shadow-lg flex flex-col 
+//                 transition-all duration-500
+//                 animate-slideDown
+//             "
+    if (!visible) return null;
     return (
         <>
             {visible && notification && (
                 <div
                     className="
-                w-full p-4 text-white 
-                bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500
-                shadow-lg flex flex-col 
-                transition-all duration-500
-                animate-slideDown
-            "
+                    fixed bottom-0 left-0 right-0 z-50
+                    w-full p-4 text-white 
+                    bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500
+                    shadow-lg flex flex-col 
+                    transition-all duration-500
+                    animate-slideDown
+                     "
                 >
                     <div className="flex justify-between items-center w-full">
                         <span />
