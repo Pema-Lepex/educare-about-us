@@ -1,7 +1,7 @@
 import { RegistrationGuideBGImage, ThreeCharacterImage } from "assets";
 import { RegistrationGuideContent } from "assets/content/about/About";
 import { CommonHeader2, CommonParagraph1, HrefButton } from "components";
-import { SignInLinkDetails } from "utils/helpers/URLs";
+import { SignInLinkDetails, SignUpNowLinkDetails } from "utils/helpers/URLs";
 
 const RegistraionGuideReadMore: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const RegistraionGuideReadMore: React.FC = () => {
                 <CommonParagraph1>
                   {RegistrationGuideContent.description}
                 </CommonParagraph1>
-                <ol className="list-disc list-inside space-y-3 3xl:space-y-5 4xl:space-y-10">
+                <ol className="list-disc list-outside pl-5  space-y-3 3xl:space-y-5 4xl:space-y-10">
                   {RegistrationGuideContent.guide.map((item, index) =>
                     Object.values(item).map((step, stepIndex) => (
                       <li
@@ -32,10 +32,10 @@ const RegistraionGuideReadMore: React.FC = () => {
                 </ol>
                 <div className="w-full flex justify-center py-4">
                   <HrefButton
-                    href={SignInLinkDetails.linkTo}
+                    href={SignUpNowLinkDetails.linkTo}
                     className=" bg-[#981AF7] text-white hover:bg-[#7C15C9]"
                   >
-                    {SignInLinkDetails.LinkFor}
+                    {SignUpNowLinkDetails.LinkFor}
                   </HrefButton>
                 </div>
               </div>
@@ -68,11 +68,11 @@ const RegistraionGuideReadMore: React.FC = () => {
           </ol>
           <div className="w-full flex justify-center py-4">
             <a
-              href={SignInLinkDetails.linkTo}
+              href={SignUpNowLinkDetails.linkTo}
               rel="noopener noreferrer"
               className="relative z-10 inline-flex justify-center items-center w-40 h-10  bg-[#981AF7] text-white rounded-md font-semibold transition-all duration-300 ease-in-out  hover:bg-[#7C15C9] hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
             >
-              {SignInLinkDetails.LinkFor}
+              {SignUpNowLinkDetails.LinkFor}
             </a>
           </div>
         </div>

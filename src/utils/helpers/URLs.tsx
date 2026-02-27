@@ -117,6 +117,10 @@ export const SignInLinkDetails = {
   LinkFor: "Sign In",
   linkTo: "/signin",
 };
+export const SignUpNowLinkDetails = {
+  LinkFor: "Sign Up Now",
+  linkTo: "/signup/step/personal-detail",
+};
 
 export const RedirectToAppStore = {
   LinkFor: "Redirect to App Store",
