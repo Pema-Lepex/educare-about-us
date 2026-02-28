@@ -16,14 +16,14 @@ export const renderTextWithLinks = (text: string | undefined) => {
    * 4. URLs/Emails
    */
   const urlRegex = /(\*\*[^*]+\*\*|\*[^*]+\*|_[^_]+_|\d+(?:st|nd|rd|th)|support@[^\s]+|https?:\/\/[^\s]+)/gi;
-  
+
   const parts = text.split(urlRegex);
 
   // Reusable helper to handle superscripting inside bold/italic tags
   const processInnerContent = (content: string) => {
     const ordinalRegex = /(\d+)(st|nd|rd|th)/gi;
     const subParts = content.split(ordinalRegex);
-    
+
     if (subParts.length === 1) return content;
 
     return subParts.map((sub, j) => {
@@ -68,15 +68,22 @@ export const renderTextWithLinks = (text: string | undefined) => {
 
     // --- 4. HANDLE LINKS & EMAILS ---
     if (/^https?:\/\//i.test(part) || /^support@/i.test(part)) {
-      const href = part.startsWith("support@") ? `mailto:${part}` :(() => {
-      const url = new URL(part);
-      return `${url.pathname}${url.search}${url.hash}`; // /path?query=x#section
-    })();
-      return <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="font-medium hover:underline">{href}</a>;
+      if (/^https?:\/\//i.test(part) || /^support@/i.test(part)) {
+        const href = part.startsWith("support@")
+          ? `mailto:${part}`
+          : part; // ✅ Just use the full URL as-is
+
+        return (
+          <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="font-medium hover:underline">
+            {part}
+          </a>
+        );
+      }
     }
     return part;
   });
 };
+
 export const renderFormattedText = (
   text: string | string[] | undefined,
   accentColor: string
@@ -101,11 +108,11 @@ export const renderFormattedText = (
       const isEmail = part.includes("@");
       const href = isEmail
         ? `mailto:${part}`
-        : part.includes("educareskill.com")? (() => {
+        : part.includes("educareskill.com") ? (() => {
           const url = new URL(part);
           return `${url.pathname}${url.search}${url.hash}`; // /path?query#hash
         })()
-      : part;
+          : part;
 
       return (
         <a
