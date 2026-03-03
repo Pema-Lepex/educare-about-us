@@ -56,7 +56,7 @@ export const ImpactBottomSection = [
     description1:
       " In a technologically driven world where everyone, including your child, has access to smartphones and devices, Educare Skill provides a safe haven, making screentime both productive and educational.",
     description2:
-      "**Educare Skill is not just an online learning platform — it is a service to our nation.** We believe that the antidote to protecting our national identity lies in our national language, Dzongkha. We hope that by preserving our national language, our content will continue to help children and adults alike for generations to come.`",
+      "**Educare Skill is not just an online learning platform — it is a service to our nation.** We believe that the antidote to protecting our national identity lies in our national language, Dzongkha. We hope that by preserving our national language, our content will continue to help children and adults alike for generations to come.",
   },
   {
     id:2,
