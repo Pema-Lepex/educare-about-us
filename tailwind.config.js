@@ -54,9 +54,6 @@ module.exports = {
         },
         "light-brown": "#C4A484",
       },
-      fontFamily: {
-        "sf-pro": ["SF Pro", "sans-serif"],
-      },
     },
   },
   plugins: [],
