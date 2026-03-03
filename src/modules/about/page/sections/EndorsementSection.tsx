@@ -6,7 +6,7 @@ const EndorsementSection: React.FC = () => {
   return (
     <section
       id="about-mission"
-      className="px-4 sm:px-8 md:px-16 lg:px-14 md:py-16 py-6"
+      className="px-4 sm:px-8 md:px-16 lg:px-14 md:py-16 pb-6"
     >
       {ExploreEducareSkillContent && (
         <div className="border-t-8 lg:space-y-8 border-customOriange-200 rounded-2xl shadow-sm shadow-primary-200 p-4 md:p-8 4xl:p-14 text-center space-y-2">

@@ -218,7 +218,7 @@ const MainSectionPage: React.FC<Props> = ({ isEducareContent }) => {
         <CommonHeader3 className="text-center font-extrabold tracking-wide text-[#0B2A4A] pb-3 4xl:mb-12">
           CONTENT AVAILABLE ON EDUCARE SKILL
         </CommonHeader3>
-        <div className="md:mx-20 mt-4 flex flex-wrap justify-center max-w-8xl gap-4 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
+        <div className="md:mx-20 md:mt-4 flex flex-wrap justify-center max-w-8xl gap-4 lg:rounded-full rounded-lg border bg-blue-50 px-3 py-2">
           {ContentButtons.map((button) => (
             <button
               key={button.key}

@@ -12,7 +12,7 @@ const ExploreEducareContentReadMore: React.FC = () => {
         <EndorsementSection/>
       </section>
       <MainSectionPage isEducareContent />
-      <div className="w-full lg:h-40 4xl:h-[500px] 5xl:h-[700px]"></div>
+      <div className="w-full h-[60px] md:h-[100px] lg:h-40 4xl:h-[500px] 5xl:h-[700px]"></div>
     </>
   );
 };
