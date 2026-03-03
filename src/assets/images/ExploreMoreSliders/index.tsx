@@ -1,0 +1,11 @@
+export { default as Slider01 } from "./1. Chey Chey.jpg";
+export { default as Slider02 } from "./2. Educare Kids.jpg";
+export { default as Slider03 } from "./3. Primary Level.jpg";
+export { default as Slider04 } from "./4. Intermediate level.jpg";
+export { default as Slider05 } from "./5. Undergraduite BG.jpg";
+export { default as Slider06 } from "./6. Daza.jpg";
+export { default as Slider07 } from "./7. Nono.jpg";
+export { default as Slider08 } from "./8. Dr. Carrot.jpg";
+export { default as Slider09 } from "./9. Four Friends.jpg";
+export { default as Slider010 } from "./10. MK Series.jpg";
+export { default as Slider011 } from "./11. MK & DT.jpg";

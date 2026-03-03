@@ -14,18 +14,19 @@ export const WeArelookingFor = {
   ],
 };
 export const HowToApply = {
-  title: "How to Apply",
-  subTitle: `Please submit your CV along with any relevant academic transcripts and
-          certificate. We'll review your application and get back to you soon.
-          Apply via provided link below.`,
+  title: "Want to Apply?",
+  subTitle: `You're welcome at iBEST and Educare Skill if you share our vision! We'd love to have you join our
+          team as we work together toward our shared passion and purpose. Simply submit your application
+          through the link below — we look forward to hearing from you!`,
   link: "https://forms.gle/3aF7nE6MU1ofzKdj7",
 };
 export const WhatWeOffer = {
   title: "What We Offer",
   offers: [
-    "Work on meaningful projects that preserve Bhutan's national language and culture",
-    "Collaborate with a passionate team of young Bhutanese professionals",
-    "Opportunity to develop your creative skills and contribute to national development",
-    "Be part of Bhutan's first and leading online Dzongkha learning platform",
+    `Be part of Bhutan's pioneering edtech company, envisioning ‘transforming learning in Bhutan and beyond’ through a world-class learning management system.`,
+    `Work on meaningful, impactful projects that promote our national language, Dzongkha — making learning more enjoyable and accessible anytime, anywhere.`,
+    `Collaborate with skilled and passionate iBEST professionals and industry leaders who share your drive.`,
+    `Grow professionally and personally through deep mentorship and guidance, empowering you to contribute to nation-building and beyond.`,
+    `Ready to make an impact and leave a lasting legacy? Working with us isn't a fallback — it's your first choice. If you share our vision, you belong here!`
   ],
 };

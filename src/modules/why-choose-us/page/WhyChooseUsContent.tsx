@@ -1,6 +1,7 @@
 import { CommonHeader2, CommonParagraph1 } from "components";
 import MainSectionPage from "./sections/MainSectionPage";
 import { aPlus2, APlus, BgYChooseUsImage, girlMascot } from "assets";
+import { CartoonCharacter, DCDDImage } from "assets/images/dcdd";
 
 const WhyChooseUsContent: React.FC = () => {
   return (
@@ -11,11 +12,9 @@ const WhyChooseUsContent: React.FC = () => {
           alt="Why Choose Us Background"
           className="absolute inset-0 h-full w-full object-cover object-center opacity-70"
         />
-
         <div className="pointer-events-none absolute inset-0 opacity-15">
           <div className="h-full w-full bg-[radial-gradient(circle_at_20%_20%,white_0,transparent_35%),radial-gradient(circle_at_80%_30%,white_0,transparent_35%),radial-gradient(circle_at_60%_80%,white_0,transparent_40%)]" />
         </div>
-
         <div className="relative mx-auto flex lg:flex-row  max-w-8xl  gap-6 3xl:gap-24 4xl:gap-[10rem] px-4 pb-24 pt-12  md:pt-14 justify-center items-center">
           <div className="hidden lg:flex">
             <img
@@ -24,7 +23,6 @@ const WhyChooseUsContent: React.FC = () => {
               className="hidden sm:block h-auto w-[140px] md:w-[160px] 4xl:w-[350px]"
             />
           </div>
-
           <div className="text-center">
             <img
               src={girlMascot}
@@ -39,7 +37,6 @@ const WhyChooseUsContent: React.FC = () => {
               interactive, and engaging for every learner.
             </CommonParagraph1>
           </div>
-
           <div className="hidden lg:flex">
             <img
               src={aPlus2}
@@ -49,9 +46,18 @@ const WhyChooseUsContent: React.FC = () => {
           </div>
         </div>
       </section>
-
       <MainSectionPage />
-      <div className="3xl:h-[200px] 4xl:h-[350px] 5xl:h-[450px]"/>
+      <div className="flex items-center flex-col justify-center ">
+        <div className="px-5">
+          <img className="md:w-[500px] lg:w-[700px] xl:w-[900px] 2xl:w-[1100px] 3xl:w-[1200px] 4xl:w-[1500px]" src={DCDDImage} alt="dcdd image" />
+        </div>
+        <img
+          src={CartoonCharacter}
+          alt="Family"
+          className="h-auto lg:pb-28 pb-8 w-full object-contain px-24s sm:px-10"
+        />
+      </div>
+      <div className="3xl:h-[200px] 4xl:h-[350px] 5xl:h-[450px]" />
     </>
   );
 };

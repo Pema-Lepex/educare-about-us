@@ -32,6 +32,7 @@ export default function BlogSection() {
               <img
                 src={items.image}
                 alt="Bringing Ideas to Life"
+                loading="lazy"
                 className="w-full h-64 md:h-full object-cover"
               />
             </div>
@@ -64,6 +65,7 @@ export default function BlogSection() {
             <img
               src={post.image}
               alt={post.title}
+              loading="lazy"
               className="w-full h-auto object-cover"
             />
             <div className="p-5 flex flex-col flex-grow">

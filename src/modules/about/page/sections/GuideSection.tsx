@@ -16,6 +16,7 @@ const GuideSection: React.FC = () => {
             <img
               src={NonoImage}
               alt="Nono"
+              loading="lazy"
               className="relative w-full h-[15rem] md:h-[20rem] lg:h-auto object-contain z-10"
             />
           </div>
@@ -29,6 +30,7 @@ const GuideSection: React.FC = () => {
                   <img
                     src={items?.frame}
                     alt={`${items.info} icon`}
+                    loading="lazy"
                     className="w-full h-auto object-cover object-center transform "
                   />
                   <div className="absolute top-[15px] md:-top-[19px] lg:-top-[30px] xl:-top-[24px] 2xl:-top-3 3xl:top-4 4xl:top-8 5xl:top-16  flex flex-col justify-center items-center  pointer-events-none md:p-10 space-y-2 3xl:space-y-2">
@@ -36,6 +38,7 @@ const GuideSection: React.FC = () => {
                       <img
                         src={items.icon}
                         alt={items.title}
+                        loading="lazy"
                         className="size-9 md:size-9 lg:size-5 xl:size-8 2xl:size-10 3xl:size-14 4xl:size-16 5xl:size-20  object-contain"
                       />
                     </div>
@@ -52,10 +55,8 @@ const GuideSection: React.FC = () => {
                   <div className="absolute inset-0 -bottom-8 md:-bottom-10 lg:-bottom-12 xl:-bottom-8 2xl:-bottom-8 3xl:-bottom-10 flex flex-col justify-end items-center  pb-4 z-50">
                     <LearnMoreButton
                       onClick={() => navigate(items.href)}
-                      className="bg-primary-500 text-white cursor-pointer font-extralight text-base md:text-base lg:text-lg  xl:text-xl 2xl:text-2xl  3xl:text-3xl 4xl:text-4xl 5xl:text-5xl "
-                    >
-                      Learn More
-                    </LearnMoreButton>
+                      className="bg-primary-500 text-white cursor-pointer font-extralight text-base md:text-base lg:text-lg  xl:text-xl 2xl:text-2xl  3xl:text-3xl 4xl:text-4xl 5xl:text-5xl " buttonText= {items.buttonName}
+                   />
                   </div>
                 </div>
               ))}

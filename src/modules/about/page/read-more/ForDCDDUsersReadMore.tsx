@@ -1,13 +1,11 @@
 import {
-  DCDDPageWideBackGroundImage,
-  FamilyWithPhoneImage,
   SmallScreenForDcddPageBG,
 } from "assets";
 import { ForDCDDUsersContent } from "assets/content/about/About";
 import { DCDDCharacterImage, DCDDShortTextImage } from "assets/images/dcdd";
 import { CommonHeader2, CommonParagraph1, HrefButton } from "components";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
-import { DCDDSignUpLinkDetails, SignInLinkDetails } from "utils/helpers/URLs";
+import { DCDDSignUpLinkDetails } from "utils/helpers/URLs";
 
 const ForDCDDUsersReadMore: React.FC = () => {
   return (

@@ -34,12 +34,14 @@ const EducareSkillSection: React.FC = () => {
                 <img
                   src={items?.groupImage}
                   alt={`${items.info} icon`}
+                  loading="lazy"
                   className="w-fullh-full object-cover object-center transform hover:scale-105 transition-transform duration-300 ease-in-out"
                 />
                 <div className="absolute p-2 inset-0 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent pointer-events-none md:p-4 ">
                   <img
                     src={items.groupIcon}
                     alt="icon"
+                    loading="lazy"
                     className="size-9 4xl:size-16 p-2  rounded-full object-contain bg-white/90 md:mb-1 4xl:mb-4"
                   />
                   <h1 className=" text-white text-lg 2xl:text-2xl  3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-black drop-shadow-md tracking-wide">

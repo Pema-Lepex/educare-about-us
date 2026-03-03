@@ -85,7 +85,7 @@ const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({
     transitionDelay: `${delay}ms`,
     opacity: visible ? 1 : 0,
     transform: visible ? "none" : hiddenTransform,
-    willChange: "transform, opacity",
+    willChange: visible ? "auto" : "transform, opacity",
   };
 
   return (

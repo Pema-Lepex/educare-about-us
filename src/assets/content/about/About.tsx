@@ -9,9 +9,6 @@ import {
   IntermediateLevelImage,
   IntermediateLevelIcon,
   FCTFLLogo,
-  FDCDDULogo,
-  HTGSLogo,
-  RGLogo,
   GiftIcon,
   BCSEImage,
   iBESTOroginalImage,
@@ -21,7 +18,18 @@ import {
   RedBoxImage,
   PurpleBoxImage,
   GreenBoxImage,
+  RegisterIcon,
+  ExploreEducareIcon,
+  BellIcon,
 } from "assets/images";
+
+export const ExploreEducareSkillContent = {
+  title: "Know Your Perfect Dzongkha Tutor",
+  content1: `Educare Skill is officially endorsed as the **“National Online Dzongkha Learning Platform”** by the Department of Culture and Dzongkha Development (DCDD) under the Ministry of Home Affairs.`,
+  content2: `All content is reviewed by Dzongkha experts from the DCDD and curriculum professionals from the Department of School Education (DSE) and is aligned with the national curriculum to ensure relevance, quality, and impact. Educare Skill enables learners to master our national language, Dzongkha, like never before through more than **1000 engaging, entertaining, and curriculum-aligned episodes**.`,
+  content3: `From catchy nursery rhymes and captivating animated series to immersive read-aloud stories and comprehensive, exam-oriented tutorials, the platform offers something for everyone. Whether you are a young child beginning your Dzongkha journey, a student struggling with learning Dzongkha and preparing for exams, a parent or teacher seeking quality learning resources, or a graduate sitting for the RCSC examinations, our carefully curated content supports you at every stage.`,
+  content4: `In the future, the platform will also offer STEM subject tutorials and professional courses leading to recognized certifications.`
+};
 
 export const EducareSkillContent = {
   title: "EDUCARE SKILL",
@@ -90,44 +98,49 @@ export const EducareSkillGroupContent = [
 export const EducareSkillGuideContent = [
   {
     id: 1,
-    title: "For DCDD Users",
-    icon: FDCDDULogo,
+    title: "Registration Guide",
+    icon: RegisterIcon,
     frame: PurpleBoxImage,
-    href: "/aboutus/for-dcdd-users",
-    info: "With the subsidized support of DCDD, Educare Skill is FREE for children aged 3 and above, children enrolled in ECCD center, and students in Classes PP - VI.",
+    href: "/aboutus/registration-guide",
+    buttonName: "Sign Up Now",
+    info: "Want to learn and improve your overall Dzongkha competencies? But you are not quite sure how to go about it. Follow the guide provided here.",
   },
+  // change the url
   {
     id: 2,
-    title: "How To Get Started?",
-    icon: HTGSLogo,
-    frame: BlueBoxImage,
-    href: "/aboutus/membership",
-    info: "If you wish to get started on Educare Skill, please Sign Up now and explore our affordable membership plans.",
+    title: "Explore Educare Skill Content",
+    icon: ExploreEducareIcon,
+    frame: RedBoxImage,
+    href: "/aboutus/explore-educare-content",
+    buttonName: "Explore Now",
+    info: "Educare Skill enables learners to master Dzongkha like never before! Explore over 1000 engaging, curriculum-aligned episodes that are reviewed by experts.",
   },
   {
     id: 3,
-    title: "Registration Guide",
-    icon: RGLogo,
-    frame: RedBoxImage,
-    href: "/aboutus/registration-guide",
-    info: "If you are not eligible for DCDD support, don't worry! But you are not quite sure how to register on our platform, we will help you get started.",
+    title: "Affordable Membership Plans",
+    icon: BellIcon,
+    frame: BlueBoxImage,
+    href: "/aboutus/membership",
+    buttonName: "Join Now",
+
+    info: "Join a membership plan of your choice based on your needs. It is simple to make a payment without any hassle. Join today to begin your Dzongkha learning journey!",
   },
   {
     id: 4,
     title: "Gift Coupon The Gift of Learning!",
     icon: FCTFLLogo,
     frame: GreenBoxImage,
-    href: "/aboutus/gift-coupon-the-gift-of-learning",
+    href: "/aboutus/gift-coupon",
+    buttonName: "Learn More",
     info: "With the Educare Skill Gift Coupon, you can gift your loved ones the affordable Educare Skill membership plans.",
   },
 ];
 
 export const HowToGetStartedContent = {
-  title: "How To Get Started?",
-  description1:
-    "With the subsidized support of Department of Culture and Dzongkha Development (DCDD) under Ministry of Home Affairs, Educare Skill is FREE for children aged 3 and above, children enrolled in ECCD center, and students in Classes PP - VI. If you are eligible for the DCDD support, you can click on DCDD Sign In to access free Dzongkha content.",
-  description2:
-    "If you are not eligible for the DCDD support and wish to start learning and mastering Dzongkha with Educare Skill, please **Sign Up** now and explore our affordable membership plans.",
+  title: "Explore Affordable Membership Plans",
+  description1: `Once you have successfully signed up and signed in to Educare Skill, 
+it is easy to make a payment to join the membership plan that fits your needs. Membership plans are designed as Standard Plans (such as Basic, Standard, and Premium) and Grade-wise Plans, both of which offer value and optimum benefits for your investment.`,
+  description2: `We wish you happy Dzongkha learning, and thank you for trusting Educare Skill with your Dzongkha learning and mastery journey!`
 };
 
 export const memebershipDetails = [
@@ -319,16 +332,15 @@ If you are an undergrade student or graduates sitting for RCSC’s BCSE, we reco
 export const RegistrationGuideContent = {
   title: "Registration Guide",
   description:
-    "If you are not eligible for the DCDD subsidized support to access Educare Skill for free, don't worry! Yet you want to explore our platform and begin your Dzongkha learning and mastery journey, but you are not quite sure how to register on our platform. We are more than happy to help you get started with the following registration guide.",
+    "Worried about not being proficient in Dzongkha and afraid of failing in Dzongkha exams? You are not alone or without support in this struggle. You may want to explore our platform and begin your Dzongkha learning and mastery journey, but you are not quite sure how to register on our platform. We are more than happy to help you get started with the following registration guide.",
   guide: [
     {
       guide1:
-        "Open the Educare Skill homepage either through the website or the app. Then click on SIGN IN button.",
-      guide2: "After opening the SIGN IN page, click on the SIGN UP link.",
-      guide3: "Enter your details, then click on SIGN UP button.",
+        "Open the Educare Skill homepage either through the website or the app. Then click on SIGN UP button.",
+      guide2: "Enter your details, then click on SIGN UP button.",
+      guide3: "You will receive an OTP on your registered phone number or email address. (Note: For people residing outside of Bhutan, you will receive an OTP in your email ID.)",
       guide4:
-        "You will receive an OTP on your registered phone number or email address.",
-      guide5: "Enter the OTP, and you are now registered on our platform!",
+        "Enter the OTP, and you are now registered on our platform!",
     },
   ],
 };
@@ -362,7 +374,7 @@ export const GiftCouponContent = {
   title: "Gift Coupon",
   subtitle: "The Best Gift You Can Give, The Gift of Learning!",
   buttonName: "Gift the Joy of Learning!",
-  linkTo: "https://www.educareskill.com/?tab=gift-coupon",
+  linkTo: "/?tab=gift-coupon",
   subheader: "A meaningful gift for those who think beyond today.",
   description:
     "With the Educare Skill Gift Coupon, you can gift your loved ones the affordable Educare Skill membership plans.",
@@ -375,9 +387,9 @@ export const GiftCouponContent = {
         step2: "Click on the Gift Coupon Button.",
         step3:
           "Enter the recipient's details such as email address or phone number.",
-        step4: "Choose a payment option and complete the payment process.",
+        step4: "Choose a payment option and select the mebership plan by clicking Join Button for the desired package.",
         step5:
-          "Click on the Join Button for the desired package and select the membership duration.",
+          "Select the membership duration.",
 
         step6:
           "You have now purchased an Educare Skill membership plan for your loved one!",
@@ -391,7 +403,7 @@ export const GiftCouponContent = {
       {
         step1:
           "Sign In to the Educare Skill platform either through the website or the app.",
-        step2: "Click on Redeem Coupon.",
+        step2: "Click on Rdeem Coupon.",
         step3: "Enter your Coupon Code.",
         step4: "Click on Redeem.",
         step5: "You have now received an Educare Skill membership!",
@@ -430,11 +442,16 @@ export const testimonials = [
 
 export const GiftCouponLinkDetail = {
   icon: GiftIcon,
-  linkTo: "https://www.educareskill.com/?tab=gift-coupon",
+  linkTo: "/?tab=gift-coupon",
   buttonName: "Gift the joy of learning!",
   title: "A meaningful gift for those who think beyond today.",
   info1:
     "Choosing the right gift is never easy—but some gifts last far beyond toys or trends. An **Educare Skill Gift Coupon** is one such gift.",
   info2:
     "It keeps young minds connected to our national language, Dzongkha, through stories rooted in Bhutanese culture, shaping confident, compassionate citizens ready for the world.",
+};
+
+export const content = {
+    content1: "Educare Skill is officially endorsed as the \"National Online Dzongkha Learning Platform\" by the Department of Culture and Dzongkha Development (DCDD) under the Ministry of Home Affairs. All content is reviewed by Dzongkha experts and aligned with the national curriculum to ensure relevance, quality, and impact.",
+    content2: "From catchy nursery rhymes and captivating animated series to immersive read-aloud stories and comprehensive, exam-oriented tutorials, the platform offers something for everyone. In the future, the platform will also offer STEM subjects tutorials."
 };

@@ -1,4 +1,4 @@
-import { CEO, CEOProfile, CoFounderProfile, Founder, PIC } from "assets/images";
+import { CEOProfile, CoFounderProfile, PIC } from "assets/images";
 
 export const founders = [
   {

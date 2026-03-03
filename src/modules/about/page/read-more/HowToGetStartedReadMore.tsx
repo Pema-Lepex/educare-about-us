@@ -8,7 +8,7 @@ import {
 } from "components";
 import { useState } from "react";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
-import { DCDDSignUpLinkDetails, RedirectToAppStore, RedirectToGooglePlay, SignInLinkDetails } from "utils/helpers/URLs";
+import { DCDDSignUpLinkDetails, RedirectToAppStore, RedirectToGooglePlay, SignInLinkDetails, SignUpLinkDetails } from "utils/helpers/URLs";
 
 const HowToGetStartedReadMore: React.FC = () => {
   const [selectedType, setSelectedType] = useState(
@@ -25,29 +25,21 @@ const HowToGetStartedReadMore: React.FC = () => {
           <CommonParagraph1 className="font-light">
             {renderTextWithLinks(HowToGetStartedContent.description1)}
           </CommonParagraph1>
-          <div className="w-full flex justify-center">
-            <HrefButton
-              href={DCDDSignUpLinkDetails.linkTo}
-              className=" bg-customOriange-200 text-white  hover:bg-orange-600 "
-            >
-              {DCDDSignUpLinkDetails.LinkFor}
-            </HrefButton>
-          </div>
-
-          <CommonParagraph1 className="font-light">
+          <CommonParagraph1>
             {renderTextWithLinks(HowToGetStartedContent.description2)}
           </CommonParagraph1>
+          
           <div className="w-full flex justify-center">
             <HrefButton
-              href={SignInLinkDetails.linkTo}
-              className=" bg-[#215FF8] text-white hover:bg-blue-600"
+              href={SignUpLinkDetails.linkTo}
+              className=" bg-customOriange-200 text-white  hover:bg-orange-600 "
             >
-              {SignInLinkDetails.LinkFor}
+              Join Now
             </HrefButton>
           </div>
 
           <div className="border border-customOriange-100 rounded-2xl bg-white md:space-y-5 space-y-4 p-4 shadow-md">
-            <CommonHeader3 className="">Membership Plan</CommonHeader3>
+            <CommonHeader3 className="">Membership Plan infos</CommonHeader3>
             <div className="flex justify-center items-center gap-4">
               {memebershipDetails.map((type) => (
                 <button

@@ -43,7 +43,7 @@ const PrivacyPolicySection = () => {
   return (
     <div className="flex bg-white min-h-screen">
       {/* LEFT NAVIGATION */}
-      <aside className="hidden lg:block w-1/4 border-r px-6 py-8 sticky top-0 h-screen overflow-y-auto mb-28 hide-scrollbar">
+      <aside className="hidden lg:block w-1/4 border-r px-6 py-8 sticky top-0 h-screen overflow-y-auto hide-scrollbar">
         <CommonParagraph2 className="text-lg font-semibold mb-6">Contents</CommonParagraph2>
 
         <ul className="space-y-4 text-sm">
@@ -69,6 +69,7 @@ const PrivacyPolicySection = () => {
             </li>
           ))}
         </ul>
+         <div className="4xl:h-[20rem] 5xl:h-[30rem] lg:h-24 md:h-10 h-5"></div>
       </aside>
 
       {/* RIGHT CONTENT */}

@@ -10,12 +10,22 @@
 
 // export const DCDDSignUpLinkDetails = {
 //   LinkFor: "DCDD Sign In",
-//   linkTo: "http://localhost:8090/dcdd-login",
+//   linkTo: "https://educareskill.com/dcdd-login",
+// };
+
+// export const SignUpLinkDetails = {
+//   LinkFor: "Sign Up",
+//   linkTo: "https://www.educareskill.com/signup/step/personal-detail",
+// };
+
+// export const EducareSignUpLinkDetails = {
+//   LinkFor: "Register Now",
+//   linkTo: "https://educareskill.com/signup/step/personal-detail",
 // };
 
 // export const SignInLinkDetails = {
 //   LinkFor: "Sign In",
-//   linkTo: "http://localhost:8090/login",
+//   linkTo: "https://www.educareskill.com/signin",
 // };
 
 // export const RedirectToAppStore = {
@@ -78,27 +88,38 @@
 //     LinkFor: 'DCDD',
 //     linkTo: 'https://doc.gov.bt'
 // };
-
-
-
 export const GiftCouponLinkDetails = {
   LinkFor: "Gift Coupon",
-  linkTo: "https://educareskill.com/?tab=gift-coupon",
+  linkTo: "/?tab=gift-coupon",
 };
 
 export const GiftCouponAuthenticatedLinkDetails = {
   LinkFor: "Gift Coupon",
-  linkTo: "https://educareskill.com/gift-coupon",
+  linkTo: "/gift-coupon",
 };
 
 export const DCDDSignUpLinkDetails = {
   LinkFor: "DCDD Sign In",
-  linkTo: "https://educareskill.com/dcdd-signin",
+  linkTo: "/dcdd-login",
+};
+
+export const SignUpLinkDetails = {
+  LinkFor: "Sign Up",
+  linkTo: "/signup/step/personal-detail",
+};
+
+export const EducareSignUpLinkDetails = {
+  LinkFor: "Register Now",
+  linkTo: "/signup/step/personal-detail",
 };
 
 export const SignInLinkDetails = {
   LinkFor: "Sign In",
-  linkTo: "https://educareskill.com/signin",
+  linkTo: "/signin",
+};
+export const SignUpNowLinkDetails = {
+  LinkFor: "Sign Up Now",
+  linkTo: "/signup/step/personal-detail",
 };
 
 export const RedirectToAppStore = {
@@ -118,12 +139,12 @@ export const ApplicationFormLinkDetails = {
 
 export const UserProfileLinkDetails = {
   LinkFor: "User Profile",
-  linkTo: "https://educareskill.com/profile",
+  linkTo: "/profile",
 };
 
 export const Home = {
   LinkFor: "Home",
-  linkTo: "https://educareskill.com",
+  linkTo: "",
 };
 
 export const Facebook = {

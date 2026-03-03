@@ -76,7 +76,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         }`}
       >
         <div className="pb-6 px-5">
-          <CommonParagraph1 className="text-base font-medium leading-relaxed whitespace-pre-line">
+          <CommonParagraph1 className="text-base font-medium leading-relaxed whitespace-pre-line truncate">
             {text && renderFormattedText(text, accentColor)}
           </CommonParagraph1>
         </div>
