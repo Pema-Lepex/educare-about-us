@@ -3,7 +3,7 @@ import AboutPage from "./page/AboutPage";
 
 const About:React.FC = () => {
   return (
-   <MainLayout>
+   <MainLayout isHomePage={true}>
       <AboutPage/>
     </MainLayout>
   )

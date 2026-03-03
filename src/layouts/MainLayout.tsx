@@ -7,8 +7,9 @@ import BottomNotification from "modules/notification/pages/BottomNotification";
 
 interface MainLayoutProps {
   children: React.ReactNode;
+  isHomePage?:boolean
 }
-const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+const MainLayout: React.FC<MainLayoutProps> = ({ children,isHomePage }) => {
   const headerRef = useRef<HTMLElement | null>(null);
   const [navHidden, setNavHidden] = useState(false);
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -66,7 +67,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
         {children}
       </main>
       {showBottomNotification && <BottomNotification />}
-      <MainFooter />
+      <MainFooter isHomePage={isHomePage} />
     </div>
   );
 };
