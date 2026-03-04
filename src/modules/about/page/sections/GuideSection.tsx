@@ -33,7 +33,7 @@ const GuideSection: React.FC = () => {
                     loading="lazy"
                     className="w-full h-auto object-cover object-center transform "
                   />
-                  <div className="absolute top-[15px] md:-top-[19px] lg:-top-[30px] xl:-top-[24px] 2xl:-top-3 3xl:top-4 4xl:top-8 5xl:top-16  flex flex-col justify-center items-center  pointer-events-none md:p-10 space-y-2 3xl:space-y-2">
+                  {/* <div className="absolute top-[15px] md:-top-[19px] lg:-top-[30px] xl:-top-[24px] 2xl:-top-3 3xl:top-4 4xl:top-8 5xl:top-16  flex flex-col justify-center items-center  pointer-events-none md:p-10 space-y-2 3xl:space-y-2">
                     <div className="p-2 bg-white rounded-full flex items-center justify-center 4xl:mb-10">
                       <img
                         src={items.icon}
@@ -51,7 +51,7 @@ const GuideSection: React.FC = () => {
                         {items.info}
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="absolute inset-0 -bottom-8 md:-bottom-10 lg:-bottom-12 xl:-bottom-8 2xl:-bottom-8 3xl:-bottom-10 flex flex-col justify-end items-center  pb-4 z-50">
                     <LearnMoreButton
                       onClick={() => navigate(items.href)}
