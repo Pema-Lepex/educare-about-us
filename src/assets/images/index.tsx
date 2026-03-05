@@ -1,6 +1,6 @@
 export { default as FooterImage } from "./Footer.webp";
 export { default as NonoImage } from "./nono new 1.webp";
-export { default as GirlRunningImage } from "./newfbdfhdf 1.webp";
+export { default as GirlRunningImage } from "./girlRunning.webp";
 export { default as HTGSBGImage } from "./HowToGetStartedBackGroundImage.webp";
 export { default as AnimalImage } from "./FF With Shadow.webp";
 export { default as RegistrationGuideBGImage } from "./Educare kids_New.webp";
