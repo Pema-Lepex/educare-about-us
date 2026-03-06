@@ -100,7 +100,7 @@ export const EducareSkillGuideContent = [
     id: 1,
     title: "Registration Guide",
     icon: RegisterIcon,
-    frame: PurpleBoxImage,
+    frame: BlueBoxImage,
     href: "/aboutus/registration-guide",
     buttonName: "Sign Up Now",
     info: "Want to learn and improve your overall Dzongkha competencies? But you are not quite sure how to go about it. Follow the guide provided here.",
@@ -119,7 +119,7 @@ export const EducareSkillGuideContent = [
     id: 3,
     title: "Affordable Membership Plans",
     icon: BellIcon,
-    frame: BlueBoxImage,
+    frame: PurpleBoxImage,
     href: "/aboutus/membership",
     buttonName: "Join Now",
 

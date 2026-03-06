@@ -107,6 +107,10 @@ export const SignUpLinkDetails = {
   LinkFor: "Sign Up",
   linkTo: "/signup/step/personal-detail",
 };
+export const PurchaseMembershipLinkDetails = {
+  LinkFor: "Purchase Membership",
+  linkTo: "/membership",
+};
 
 export const EducareSignUpLinkDetails = {
   LinkFor: "Register Now",

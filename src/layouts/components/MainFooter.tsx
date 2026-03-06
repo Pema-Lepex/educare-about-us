@@ -82,7 +82,7 @@ const MainFooter: React.FC<MainFooterProps> = ({isHomePage}) => {
         className="absolute bottom-0 left-0 w-full bg-cover bg-top bg-no-repeat z-40"
         style={{ backgroundImage: `url(${FooterImage})` }}
       >
-        <div className={`xl:max-w-full xl:px-20 4xl:px-52  max-w-7xl mx-auto px-6 4xl:p-48 pb-12 relative 5xl:pt-64 z-10 space-y-4 ${isHomePage ? "pt-36 xl:pt-64":"pt-32"}`}>
+        <div className={`xl:max-w-full xl:px-20 4xl:px-52  max-w-7xl mx-auto px-6 4xl:p-48 pb-12 relative 5xl:pt-64 z-10 space-y-4 ${isHomePage ? "pt-36 ":"pt-32"}`}>
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center justify-start gap-6">
             <p className="text-white text-[8px] lg:text-[11px] 2xl:text-base 3xl:text-xl 4xl:text-2xl 5xl:text-4xl tracking-wider lg:text-center md:text-left">
               © {new Date().getFullYear()} Educare Skill Pvt. Ltd. | All rights
@@ -105,7 +105,6 @@ const MainFooter: React.FC<MainFooterProps> = ({isHomePage}) => {
                 TECHNOLOGIES
               </a>
             </p>
-
             <nav className="flex lg:space-x-3 xl:space-x-8 space-x-2">
               {otherPages.map((items) => {
                 const isActive =

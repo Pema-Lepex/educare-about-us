@@ -8,7 +8,7 @@ import {
 } from "components";
 import { useState } from "react";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
-import { DCDDSignUpLinkDetails, RedirectToAppStore, RedirectToGooglePlay, SignInLinkDetails, SignUpLinkDetails } from "utils/helpers/URLs";
+import { DCDDSignUpLinkDetails, PurchaseMembershipLinkDetails, RedirectToAppStore, RedirectToGooglePlay, SignInLinkDetails, SignUpLinkDetails } from "utils/helpers/URLs";
 
 const HowToGetStartedReadMore: React.FC = () => {
   const [selectedType, setSelectedType] = useState(
@@ -31,7 +31,7 @@ const HowToGetStartedReadMore: React.FC = () => {
           
           <div className="w-full flex justify-center">
             <HrefButton
-              href={SignUpLinkDetails.linkTo}
+              href={PurchaseMembershipLinkDetails.linkTo}
               className=" bg-customOriange-200 text-white  hover:bg-orange-600 "
             >
               Join Now
