@@ -8,6 +8,7 @@ import {
 } from "components";
 import { useState } from "react";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
+import { redirectToMembership } from "utils/helpers/SharedAuth";
 import { DCDDSignUpLinkDetails, PurchaseMembershipLinkDetails, RedirectToAppStore, RedirectToGooglePlay, SignInLinkDetails, SignUpLinkDetails } from "utils/helpers/URLs";
 
 const HowToGetStartedReadMore: React.FC = () => {
@@ -28,16 +29,15 @@ const HowToGetStartedReadMore: React.FC = () => {
           <CommonParagraph1>
             {renderTextWithLinks(HowToGetStartedContent.description2)}
           </CommonParagraph1>
-          
           <div className="w-full flex justify-center">
-            <HrefButton
-              href={PurchaseMembershipLinkDetails.linkTo}
+            <button onClick={() => redirectToMembership()} >
+    <HrefButton
               className=" bg-customOriange-200 text-white  hover:bg-orange-600 "
             >
               Join Now
             </HrefButton>
+            </button>
           </div>
-
           <div className="border border-customOriange-100 rounded-2xl bg-white md:space-y-5 space-y-4 p-4 shadow-md">
             <CommonHeader3 className="">Membership Plan infos</CommonHeader3>
             <div className="flex justify-center items-center gap-4">

@@ -173,3 +173,6 @@ export const redirectToSignup = (): void => {
 export const redirectToProfile = (): void => {
   window.location.href = `${MAIN_APP_URL}/profile`;
 };
+export const redirectToMembership = (): void => {
+  window.location.href = `${MAIN_APP_URL}/membership`;
+};
