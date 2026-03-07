@@ -26,7 +26,7 @@ import {
 export const ExploreEducareSkillContent = {
   title: "Know Your Perfect Dzongkha Tutor",
   content1: `Educare Skill is officially endorsed as the **“National Online Dzongkha Learning Platform”** by the Department of Culture and Dzongkha Development (DCDD) under the Ministry of Home Affairs.`,
-  content2: `All content is reviewed by Dzongkha experts from the DCDD and curriculum professionals from the Department of School Education (DSE) and is aligned with the national curriculum to ensure relevance, quality, and impact. Educare Skill enables learners to master our national language, Dzongkha, like never before through more than **1000 engaging, entertaining, and curriculum-aligned episodes**.`,
+  content2: `All content is reviewed by Dzongkha experts from the DCDD and curriculum professionals from the Department of School Education (DSE) and is aligned with the national curriculum to ensure relevance, quality, and impact. Educare Skill enables learners to master our national language, Dzongkha, like never before through more than **1200 engaging, entertaining, and curriculum-aligned episodes**.`,
   content3: `From catchy nursery rhymes and captivating animated series to immersive read-aloud stories and comprehensive, exam-oriented tutorials, the platform offers something for everyone. Whether you are a young child beginning your Dzongkha journey, a student struggling with learning Dzongkha and preparing for exams, a parent or teacher seeking quality learning resources, or a graduate sitting for the RCSC examinations, our carefully curated content supports you at every stage.`,
   content4: `In the future, the platform will also offer STEM subject tutorials and professional courses leading to recognized certifications.`
 };
@@ -34,7 +34,7 @@ export const ExploreEducareSkillContent = {
 export const EducareSkillContent = {
   title: "EDUCARE SKILL",
   subTitle: "Your Perfect Dzongkha Tutor!",
-  content1: `Introducing Bhutan's pioneering online learning platform, Educare Skill, developed with a mission to transform learning and skilling in Bhutan and beyond. Educare Skill enables learners to master our national language, Dzongkha, like never before through more than 1000 engaging, entertaining, and curriculum-aligned episodes. `,
+  content1: `Introducing Bhutan's pioneering online learning platform, Educare Skill, developed with a mission to transform learning and skilling in Bhutan and beyond. Educare Skill enables learners to master our national language, Dzongkha, like never before through more than 1200 engaging, entertaining, and curriculum-aligned episodes. `,
   content2: `From catchy nursery rhymes and captivating animation series to immersive read-aloud stories and comprehensive, exam-oriented tutorials, the platform offers something for everyone. Whether you are a young child beginning your Dzongkha journey, a student preparing for school examinations, a parent or teacher seeking quality learning resources, or a graduate sitting for the RCSC examinations, our carefully curated content supports you at every stage. `,
   content3: `All content is reviewed by Dzongkha experts and aligned with the national curriculum to ensure relevance, quality, and impact. In the future, the platform will also offer professional courses leading to recognized certifications.`,
 };
@@ -113,7 +113,7 @@ export const EducareSkillGuideContent = [
     frame: RedBoxImage,
     href: "/aboutus/explore-educare-content",
     buttonName: "Explore Now",
-    info: "Educare Skill enables learners to master Dzongkha like never before! Explore over 1000 engaging, curriculum-aligned episodes that are reviewed by experts.",
+    info: "Educare Skill enables learners to master Dzongkha like never before! Explore over 1200 engaging, curriculum-aligned episodes that are reviewed by experts.",
   },
   {
     id: 3,

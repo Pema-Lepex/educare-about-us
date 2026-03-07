@@ -26,7 +26,7 @@ export default function ContentAccordionSection() {
   const [openId, setOpenId] = useState<string | null>("animation");
 
   return (
-    <section className="mx-auto max-w-5xl 3xl:max-w-full 3xl:px-36 rounded-2xl border border-emerald-200 bg-white shadow-[0_12px_22px_rgba(0,0,0,0.08)] my-12 pb-10 space-y-4 xl:space-y-5 4xl:space-y-10">
+    <section className="mx-auto max-w-5xl 3xl:max-w-full 3xl:px-36 rounded-2xl border border-emerald-200 bg-white shadow-[0_12px_22px_rgba(0,0,0,0.08)] mt-12 pb-10 space-y-4 xl:space-y-5 4xl:space-y-10">
       <div className="px-6 pt-6 space-y-4 xl:space-y-5 4xl:space-y-10">
           <CommonHeader4 className=" font-extrabold text-emerald-600">
             Educare Kids Content
@@ -66,7 +66,6 @@ export default function ContentAccordionSection() {
                   {b.desc}
                 </CommonParagraph1>
               </div>
-
               {b.isAccordion ? (
                 <div className="mt-1 text-slate-500">
                   <Chevron open={isOpen} />

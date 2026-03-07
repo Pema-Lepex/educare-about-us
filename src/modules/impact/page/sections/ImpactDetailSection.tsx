@@ -99,7 +99,7 @@ export default function ImpactDetailSection() {
         </div>
         <div className="border-t-4 border-red-400 rounded-[2rem] p-8 text-center bg-white shadow-md">
           <span className="block text-4xl md:text-5xl font-black text-red-600">
-            1000+
+            1200+
           </span>
           <span className="text-gray-800 font-bold text-lg 2xl:text-xl 4xl:text-3xl">
             Entertaining and Impactful Episodes
