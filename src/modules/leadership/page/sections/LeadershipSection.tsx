@@ -24,13 +24,13 @@ export default function LeadershipSection() {
         />
 
         <div className="max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto relative z-10 mb-10">
-          <CommonHeader2 className="text-customOriange-200 font-bold text-center mb-10">
+          <CommonHeader2 className="text-customOriange-200 font-bold text-center lg:mb-10 mb-6">
             OUR FOUNDER
           </CommonHeader2>
 
           {/* --- FOUNDER SECTION --- */}
-          <div className="mb-10">
-            <div className="flex flex-wrap justify-center gap-10 md:gap-16">
+          <div className="lg:mb-10 mb-6">
+            <div className="flex flex-wrap justify-center gap-6 lg:gap-16">
               {founders.map((founder, index) => (
                 <LeaderCard key={index} {...founder} isFounder={true} />
               ))}
