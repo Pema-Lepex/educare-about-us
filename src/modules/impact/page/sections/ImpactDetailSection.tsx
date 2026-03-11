@@ -49,7 +49,7 @@ const BottomSection: React.FC = () => {
 };
 export default function ImpactDetailSection() {
   return (
-    <section className="py-8 xl:py-10 3xl:py-12 4xl:py-16 5xl:py-28 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto space-y-8 xl:space-y-10 3xl:space-y-12 4xl:space-y-16 5xl:space-y-28 mb-4 md:mb-24">
+    <section className="py-3 md:py-0 lg:py-8 xl:py-10 3xl:py-12 4xl:py-16 5xl:py-28 px-4 max-w-7xl 3xl:max-w-full 3xl:px-36 mx-auto space-y-8 xl:space-y-10 3xl:space-y-12 4xl:space-y-16 5xl:space-y-28 mb-4 md:mb-24">
       {/* Top Row: Approach and Audience */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {ImpactOfEducare.map((items) => (
