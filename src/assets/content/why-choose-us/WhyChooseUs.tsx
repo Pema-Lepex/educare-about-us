@@ -3,7 +3,7 @@ import { BadgeCheck, Gem, MonitorCheck, ShieldCheck, UserStar } from "lucide-rea
 export const whyChooseUsDetails = [
   {
     title: "Quality Content",
-    desc: `Our content is not only educational but also entertaining, ensuring that learning is both effective and enjoyable. Every episode and lesson is developed by professionals and undergoes a rigorous review process by Dzongkha teachers, Dzongkha experts, and curriculum professionals from the Department of Culture and Dzongkha Development (DCDD) and the Department of School Education, MoESD—leaving no room for errors!`,
+    desc: `Our content is not only educational but also entertaining, ensuring that learning is both effective and enjoyable. Every episode and lesson is developed by professionals and undergoes a rigorous review process by Dzongkha teachers, Dzongkha experts, and curriculum professionals from the DCDD and the Department of School Education, MoESD—leaving no room for errors!`,
     theme: "orange",
     icon: ShieldCheck,
   },
