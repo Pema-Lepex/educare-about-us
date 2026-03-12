@@ -15,7 +15,7 @@ export const whyChooseUsDetails = [
   },
   {
     title: "Approved by Dzongkha Experts and Curriculum-Aligned",
-    desc: `Our content is developed in consultation with Dzongkha teachers, experts, and caregivers from across the country and undergoes rigorous review by professionals from DCDD and DSE, ensuring full alignment with the national Dzongkha curriculum and standards. As a result, Educare Skill has been endorsed as the “**National Online Dzongkha Learning Platform**.”`,
+    desc: `Our content is developed in consultation with Dzongkha teachers, experts, and ECCD facilitators. Following a rigorous review by professionals from DCDD and DSE to ensure alignment with curriculum and national standards, Educare Skill has been officially endorsed as the “**National Online Dzongkha Learning Platform.**”`,
     theme: "green",
     icon: BadgeCheck,
   },

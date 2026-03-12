@@ -12,3 +12,5 @@ export { default as Slider11 } from "./11.Dr.Carrot.webp";
 export { default as Slider12 } from "./12.FourFriends.webp";
 export { default as Slider13 } from "./13.MKSeries.webp";
 export { default as Slider14 } from "./14.MK&DT.webp";
+export { default as Slider15 } from "./4. No of Content.webp";
+export { default as Slider16 } from "./5. Category.webp";
