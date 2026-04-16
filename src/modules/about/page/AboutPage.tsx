@@ -19,6 +19,12 @@ const AboutPage: React.FC = () => {
 
   return (
     <div>
+      <SEO
+          title="About Us | The Mission Behind Educare Skill Bhutan"
+          description="Learn about Educare Skill's journey to modernize education in Bhutan. Our team is dedicated to providing high-quality Dzongkha tutorials and interactive digital learning."
+          url="https://www.educareskill.com/aboutus"
+          keywords="About Educare Skill, Bhutan EdTech, Dzongkha digital learning, Education mission Bhutan"
+      />
       <AnimateOnScroll animation="zoom-in" delay={300}>
         <section className="relative space-y-4" id="about-carousel">
           <Carousel slides={slides} />
