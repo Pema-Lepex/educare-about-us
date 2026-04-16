@@ -11,11 +11,10 @@ interface SEOProps {
 }
 
 const DEFAULTS = {
-    title: 'Educare Skill | #1 Online Dzongkha Tutorials & Learning in Bhutan',
-    description:
-        "Educare Skill is Bhutan's leading online learning platform offering Dzongkha tutorials, engaging educational content such as games, nursery rhymes, animations, and read-aloud stories, along with a comprehensive learning management system for learners of all ages.",
+    title: 'About Us | The Vision Behind Educare Skill',
+    description:"Learn about Educare Skill's journey to modernize education in Bhutan. Our team is dedicated to providing high-quality Dzongkha tutorials and interactive digital learning.",
     image: 'https://www.educareskill.com/og-image.jpg',
-    url: 'https://www.educareskill.com'
+    url: 'https://www.educareskill.com/aboutus'
 };
 
 const SEO: React.FC<SEOProps> = ({ title, description, keywords, image, url, type = 'website', noindex }) => {
