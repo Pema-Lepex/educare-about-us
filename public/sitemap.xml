@@ -39,22 +39,22 @@
 
   <!-- About Sub-pages -->
   <url>
-    <loc>https://www.educareskill.com/about/how-to-get-started</loc>
+    <loc>https://www.educareskill.com/aboutus/how-to-get-started</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.educareskill.com/about/registration-guide</loc>
+    <loc>https://www.educareskill.com/aboutus/registration-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.educareskill.com/about/for-dcdd-users</loc>
+    <loc>https://www.educareskill.com/aboutus/for-dcdd-users</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.educareskill.com/about/gift-coupon-the-gift-of-learning</loc>
+    <loc>https://www.educareskill.com/aboutus/gift-coupon-the-gift-of-learning</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -52,7 +52,7 @@ const MainNavigation = React.forwardRef<HTMLElement, Props>(
         <TopNotification />
         <div className="mx-auto px-4 py-4 flex items-center justify-between">
           
-          <div onClick={() => { user?.name ? redirectToHome() : navigate("/"); }} className="cursor-pointer flex space-x-4 lg:space-x-0">
+          <div onClick={() => { user?.name ? redirectToHome() : (window.location.href = "/") }} className="cursor-pointer flex space-x-4 lg:space-x-0">
             {user?.name && (
             <div onClick={(e) => {
                 e.stopPropagation();
