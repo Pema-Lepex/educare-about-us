@@ -7,6 +7,7 @@ import GuideSection from "./sections/GuideSection";
 import DownloadOptionSection from "./sections/DownloadOptionSection";
 import { slides } from "./components/SliderContent";
 import AccessContentInfoSection from "./sections/AccessContentInfoSection";
+import SEO from "components/SEO";
 
 const AboutPage: React.FC = () => {
   const sections = [
@@ -23,7 +24,7 @@ const AboutPage: React.FC = () => {
           title="About Us | The Mission Behind Educare Skill Bhutan"
           description="Learn about Educare Skill's journey to modernize education in Bhutan. Our team is dedicated to providing high-quality Dzongkha tutorials and interactive digital learning."
           url="https://www.educareskill.com/aboutus"
-          keywords="About Educare Skill, Bhutan EdTech, Dzongkha digital learning, Education mission Bhutan"
+          keywords="About Educare Skill, Bhutan EdTech, Dzongkha digital learning, Dzonkha tutorials, Education mission Bhutan"
       />
       <AnimateOnScroll animation="zoom-in" delay={300}>
         <section className="relative space-y-4" id="about-carousel">
