@@ -1,5 +1,9 @@
 import { AndroidStoreImage, AnimalImage, AppleStoreImage } from "assets";
-import { memebershipDetails, HowToGetStartedContent, MemebershipImportantNotice } from "assets/content/about/About";
+import {
+  memebershipDetails,
+  HowToGetStartedContent,
+  MemebershipImportantNotice,
+} from "assets/content/about/About";
 import {
   CommonHeader2,
   CommonHeader3,
@@ -7,14 +11,24 @@ import {
   HrefButton,
 } from "components";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 import { redirectToMembership } from "utils/helpers/SharedAuth";
-import { DCDDSignUpLinkDetails, PurchaseMembershipLinkDetails, RedirectToAppStore, RedirectToGooglePlay, SignInLinkDetails, SignUpLinkDetails } from "utils/helpers/URLs";
+import {
+  DCDDSignUpLinkDetails,
+  PurchaseMembershipLinkDetails,
+  RedirectToAppStore,
+  RedirectToGooglePlay,
+  SignInLinkDetails,
+  SignUpLinkDetails,
+} from "utils/helpers/URLs";
 
 const HowToGetStartedReadMore: React.FC = () => {
   const [selectedType, setSelectedType] = useState(
-    memebershipDetails[0].memnershipType
+    memebershipDetails[0].memnershipType,
   );
+  const location = useLocation();
+  const isApp = location.pathname.includes("app-");
   return (
     <section className="p-6" id="how-to-get-started">
       <div className="lg:flex relative">
@@ -30,13 +44,17 @@ const HowToGetStartedReadMore: React.FC = () => {
             {renderTextWithLinks(HowToGetStartedContent.description2)}
           </CommonParagraph1>
           <div className="w-full flex justify-center">
-            <button onClick={() => redirectToMembership()} >
-    <HrefButton
-              className=" bg-customOriange-200 text-white  hover:bg-orange-600 "
-            >
-              Join Now
-            </HrefButton>
-            </button>
+            {isApp ? (
+              <p className=" text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl w-64 h-12 2xl:w-80 2xl:h-20 5xl:w-[750px] 5xl:h-28 rounded-md font-semibold transition-all duration-300 ease-in-out flex justify-center items-center ">
+                Join Now
+              </p>
+            ) : (
+              <button onClick={() => redirectToMembership()}>
+                <HrefButton className=" bg-customOriange-200 text-white  hover:bg-orange-600 ">
+                  Join Now
+                </HrefButton>
+              </button>
+            )}
           </div>
           <div className="border border-customOriange-100 rounded-2xl bg-white md:space-y-5 space-y-4 p-4 shadow-md">
             <CommonHeader3 className="">Membership Plan infos</CommonHeader3>
@@ -60,7 +78,8 @@ const HowToGetStartedReadMore: React.FC = () => {
             {memebershipDetails
               .filter(
                 (items) =>
-                  selectedType === null || items.memnershipType === selectedType
+                  selectedType === null ||
+                  items.memnershipType === selectedType,
               )
               .map((items) => (
                 <div className="grid md:grid-cols-3 gap-6" key={items.id}>
@@ -135,22 +154,26 @@ const HowToGetStartedReadMore: React.FC = () => {
               The Educare Skill App is available on both the Play Store for
               Android devices and App Store for iOS devices.
             </h4>
-            <div className="flex flex-row gap-4 lg:gap-6 3xl:gap-10 4xl:gap-14">
-              <a href={RedirectToAppStore.linkTo} target="_blank">
-                <img
-                  src={AppleStoreImage}
-                  alt="Apple Store"
-                  className="h-[29px] md:h-14 2xl:h-20 4xl:h-28 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
-                />
-              </a>
-              <a href={RedirectToGooglePlay.linkTo} target="_blank">
-                <img
-                  src={AndroidStoreImage}
-                  alt="Android Store"
-                  className="h-[29px] md:h-14 2xl:h-20 4xl:h-28 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
-                />
-              </a>
-            </div>
+            {isApp ? (
+              <></>
+            ) : (
+              <div className="flex flex-row gap-4 lg:gap-6 3xl:gap-10 4xl:gap-14">
+                <a href={RedirectToAppStore.linkTo} target="_blank">
+                  <img
+                    src={AppleStoreImage}
+                    alt="Apple Store"
+                    className="h-[29px] md:h-14 2xl:h-20 4xl:h-28 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                  />
+                </a>
+                <a href={RedirectToGooglePlay.linkTo} target="_blank">
+                  <img
+                    src={AndroidStoreImage}
+                    alt="Android Store"
+                    className="h-[29px] md:h-14 2xl:h-20 4xl:h-28 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                  />
+                </a>
+              </div>
+            )}
           </div>
         </div>
         <img

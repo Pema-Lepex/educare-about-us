@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { educareSkillFAQ } from "assets/content/faq/FAQ";
 import {
   renderFormattedText,
@@ -12,6 +13,7 @@ interface AccordionItemProps {
   isActive: boolean;
   onToggle: () => void;
   accentColor: string; // New prop for dynamic coloring
+  isApp: boolean; // Cut off within-page redirect links in the app context
 }
 
 const colors = [
@@ -29,6 +31,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   isActive,
   onToggle,
   accentColor,
+  isApp,
 }) => {
   return (
     <div
@@ -77,7 +80,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       >
         <div className="pb-6 px-5">
           <CommonParagraph1 className="text-base font-medium leading-relaxed whitespace-pre-line truncate">
-            {text && renderFormattedText(text, accentColor)}
+            {text && renderFormattedText(text, accentColor, isApp)}
           </CommonParagraph1>
         </div>
       </div>
@@ -87,6 +90,8 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
 
 const FAQ: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const location = useLocation();
+  const isApp = location.pathname.includes("app-");
 
   const handleToggle = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -111,6 +116,7 @@ const FAQ: React.FC = () => {
               isActive={activeIndex === index}
               onToggle={() => handleToggle(index)}
               accentColor={colors[index % colors.length]}
+              isApp={isApp}
             />
           ))}
         </div>

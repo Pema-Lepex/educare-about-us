@@ -8,6 +8,10 @@ import {
 } from "react-router-dom";
 import LoadingIndicator from "layouts/components/Loading";
 import AppAbout from "app/app-about/AppAbout";
+import AppFAQ from "app/app-faq/AppFAQ";
+import AppPrivacyPolicy from "app/app-privacy-policy/AppPrivacyPolicy";
+import AppTermsOfUse from "app/app-terms-of-use/AppTermsOfUse";
+import AppMembership from "app/app-membership/AppMembership";
 
 // Lazy-loaded page components — each becomes a separate JS chunk
 const About = lazy(() => import("modules/about/About"));
@@ -72,6 +76,11 @@ const AppRoutes: React.FC = () => {
           <Route path="/termsofuse" element={<TermsOfUse />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/faq" element={<FAQ />} />
+          {/* App (embedded) page routes — internal redirects cut off */}
+          <Route path="/app-membership" element={<AppMembership />} />
+          <Route path="/app-faq" element={<AppFAQ />} />
+          <Route path="/app-privacypolicy" element={<AppPrivacyPolicy />} />
+          <Route path="/app-termsofuse" element={<AppTermsOfUse />} />
         </Routes>
       </Suspense>
     </Router>

@@ -86,7 +86,8 @@ export const renderTextWithLinks = (text: string | undefined) => {
 
 export const renderFormattedText = (
   text: string | string[] | undefined,
-  accentColor: string
+  accentColor: string,
+  isApp = false
 ) => {
   if (!text) return null;
 
@@ -106,9 +107,17 @@ export const renderFormattedText = (
 
     if (part.match(/(https?:\/\/[^\s]+|www\.[^\s]+|support@[^\s]+)/)) {
       const isEmail = part.includes("@");
+      const isInternal = !isEmail && part.includes("educareskill.com");
+
+      // In the app context internal (within-page) redirects are cut off:
+      // render the internal link as plain text while external links remain.
+      if (isApp && isInternal) {
+        return part;
+      }
+
       const href = isEmail
         ? `mailto:${part}`
-        : part.includes("educareskill.com") ? (() => {
+        : isInternal ? (() => {
           const url = new URL(part);
           return `${url.pathname}${url.search}${url.hash}`; // /path?query#hash
         })()
