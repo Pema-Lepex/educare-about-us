@@ -7,6 +7,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import LoadingIndicator from "layouts/components/Loading";
+import AppAbout from "app/app-about/AppAbout";
 
 // Lazy-loaded page components — each becomes a separate JS chunk
 const About = lazy(() => import("modules/about/About"));
@@ -42,6 +43,7 @@ const AppRoutes: React.FC = () => {
           {/* About page routes */}
 
           <Route path="/aboutus" element={<About />} />
+          <Route path="/app-aboutus" element={<AppAbout />} />
           <Route
             path="/aboutus/membership"
             element={<HowToGetStarted />}

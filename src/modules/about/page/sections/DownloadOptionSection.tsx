@@ -1,7 +1,10 @@
 import { AndroidStoreImage, AppleStoreImage, GirlRunningImage } from "assets";
+import { useLocation } from "react-router-dom";
 import { RedirectToAppStore, RedirectToGooglePlay } from "utils/helpers/URLs";
 
 const DownloadOptionSection: React.FC = () => {
+  const location = useLocation();
+  const isAboutUs = location.pathname.includes("app-aboutus");
   return (
     <div className="w-full relative">
       <img
@@ -18,7 +21,7 @@ const DownloadOptionSection: React.FC = () => {
           Download the <strong className="font-semibold">Educare Skill App</strong> and make learning
           Dzongkha a fun and exciting adventure.
         </p>
-        <div className="flex flex-row gap-2 md:gap-4">
+        {isAboutUs?<></>:<div className="flex flex-row gap-2 md:gap-4">
           <a href={RedirectToAppStore.linkTo} target="_blank">
             <img
               src={AppleStoreImage}
@@ -35,7 +38,7 @@ const DownloadOptionSection: React.FC = () => {
               className="h-[22px] sm:h-10 lg:h-14 4xl:h-20 5xl:h-24 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition"
             />
           </a>
-        </div>
+        </div>}
       </section>
     </div>
   );

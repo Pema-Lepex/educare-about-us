@@ -1,10 +1,15 @@
-import { EducareSkillContent, EducareSkillGroupContent } from "assets/content/about/About";
+import {
+  EducareSkillContent,
+  EducareSkillGroupContent,
+} from "assets/content/about/About";
 import { CommonHeader2, CommonParagraph1 } from "components";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { renderTextWithLinks } from "utils/helpers/renderTextWithLinks";
 
 const EducareSkillSection: React.FC = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const isAboutUs = location.pathname.includes("app-aboutus");
   return (
     <section
       id="about-educare-skill"
@@ -17,9 +22,15 @@ const EducareSkillSection: React.FC = () => {
             {EducareSkillContent.subTitle}
           </h4>
           <div className="space-y-4 4xl:space-y-8 pt-2">
-            <CommonParagraph1>{renderTextWithLinks(EducareSkillContent.content1)}</CommonParagraph1>
-            <CommonParagraph1>{renderTextWithLinks(EducareSkillContent.content2)}</CommonParagraph1>
-            <CommonParagraph1>{renderTextWithLinks(EducareSkillContent.content3)}</CommonParagraph1>
+            <CommonParagraph1>
+              {renderTextWithLinks(EducareSkillContent.content1)}
+            </CommonParagraph1>
+            <CommonParagraph1>
+              {renderTextWithLinks(EducareSkillContent.content2)}
+            </CommonParagraph1>
+            <CommonParagraph1>
+              {renderTextWithLinks(EducareSkillContent.content3)}
+            </CommonParagraph1>
           </div>
         </div>
 
@@ -29,7 +40,11 @@ const EducareSkillSection: React.FC = () => {
               <div
                 className=" relative aspect-[9/5] w-full shadow-md transform transition duration-500 hover:scale-105 hover:rotate-1 hover:shadow-xl rounded-lg overflow-hidden"
                 key={items.id}
-                onClick={() =>  navigate(`/why-choose-us?tab=${items.redirectUrl}`)}
+                onClick={
+                  isAboutUs
+                    ? undefined
+                    : () => navigate(`/why-choose-us?tab=${items.redirectUrl}`)
+                }
               >
                 <img
                   src={items?.groupImage}

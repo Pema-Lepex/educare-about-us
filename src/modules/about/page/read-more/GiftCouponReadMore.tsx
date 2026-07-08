@@ -7,29 +7,37 @@ import {
 import { GiftCouponContent } from "assets/content/about/About";
 import { CommonHeader2, CommonParagraph1, CommonParagraph2 } from "components";
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { useAuth } from "utils/helpers/AuthContext";
-import { GiftCouponAuthenticatedLinkDetails, GiftCouponLinkDetails } from "utils/helpers/URLs";
+import {
+  GiftCouponAuthenticatedLinkDetails,
+  GiftCouponLinkDetails,
+} from "utils/helpers/URLs";
 
 const GiftCouponReadMore: React.FC = () => {
   const { user } = useAuth();
-   const [isMobile, setIsMobile] = useState(false);
-  
+  const [isMobile, setIsMobile] = useState(false);
+  const location = useLocation();
+  const isAboutUs = location.pathname.includes("app-aboutus");
+
   useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-  
+
     checkScreenSize();
-  
-    window.addEventListener('resize', checkScreenSize);
-    return () => window.removeEventListener('resize', checkScreenSize);
+
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
-  
+
   const getHref = () => {
     if (isMobile) {
       return GiftCouponAuthenticatedLinkDetails.linkTo;
     }
-    return user?.name ? GiftCouponAuthenticatedLinkDetails.linkTo : GiftCouponLinkDetails.linkTo;
+    return user?.name
+      ? GiftCouponAuthenticatedLinkDetails.linkTo
+      : GiftCouponLinkDetails.linkTo;
   };
   return (
     <div className="w-full flex justify-center items-center overflow-hidden px-4">
@@ -44,15 +52,26 @@ const GiftCouponReadMore: React.FC = () => {
               <p className="text-[8px] md:text-2xl lg:text-2xl 2xl:3xl 3xl:text-4xl 4xl:text-4xl 5xl:text-6xl font-medium text-black ">
                 {GiftCouponContent.subtitle}
               </p>
-              <a
-                href={getHref()}
-                className="bg-[#3366FF] text-white w-full md:py-3 py-2 4xl:py-4 5xl:py-6 rounded-lg
+              {isAboutUs ? (
+                <span
+                  className="bg-[#3366FF] text-white w-full md:py-3 py-2 4xl:py-4 5xl:py-6 rounded-lg
                  text-xs md:text-2xl 4xl:text-4xl 5xl:text-5xl font-semibold
                  transition-all duration-300 ease-in-out
                  hover:bg-[#1a4fd0] hover:shadow-lg hover:scale-105"
-              >
-                {GiftCouponContent.buttonName}
-              </a>
+                >
+                  {GiftCouponContent.buttonName}
+                </span>
+              ) : (
+                <a
+                  href={getHref()}
+                  className="bg-[#3366FF] text-white w-full md:py-3 py-2 4xl:py-4 5xl:py-6 rounded-lg
+                 text-xs md:text-2xl 4xl:text-4xl 5xl:text-5xl font-semibold
+                 transition-all duration-300 ease-in-out
+                 hover:bg-[#1a4fd0] hover:shadow-lg hover:scale-105"
+                >
+                  {GiftCouponContent.buttonName}
+                </a>
+              )}
             </div>
 
             {/* Icon Container */}
@@ -80,7 +99,7 @@ const GiftCouponReadMore: React.FC = () => {
 
             <div className="bg-white rounded-2xl p-3 md:p-4 lg:px-4 xl:px-6 2xl:px-8 3xl:px-10 4xl:px-12 5xl:px-12">
               <CommonParagraph2 className="text-lg md:text-xl font-semibold text-blue-500">
-                {GiftCouponContent.buyerGuide.heading} 
+                {GiftCouponContent.buyerGuide.heading}
               </CommonParagraph2>
               <ol className="list-disc list-outside px-4 space-y-2 5xl:space-y-7 mt-2">
                 {GiftCouponContent.buyerGuide.steps.map((item, index) =>
@@ -91,7 +110,7 @@ const GiftCouponReadMore: React.FC = () => {
                     >
                       {step}
                     </li>
-                  ))
+                  )),
                 )}
               </ol>
             </div>
@@ -111,7 +130,7 @@ const GiftCouponReadMore: React.FC = () => {
                     >
                       {step}
                     </li>
-                  ))
+                  )),
                 )}
               </ol>
             </div>
@@ -133,7 +152,7 @@ const GiftCouponReadMore: React.FC = () => {
           />
         </div>
       </section>
-       <div className="xl:h-32 2xl:h-36 3xl:h-40 4xl:h-80"/>
+      <div className="xl:h-32 2xl:h-36 3xl:h-40 4xl:h-80" />
     </div>
   );
 };

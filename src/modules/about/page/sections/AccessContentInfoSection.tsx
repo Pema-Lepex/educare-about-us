@@ -3,6 +3,7 @@ import { GiftCouponLinkDetail } from "assets/content/about/About";
 import { DCDDTextContents } from "assets/images/dcdd";
 import { EducareSkillLogo } from "assets/images/educare-skill";
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { useAuth } from "utils/helpers/AuthContext";
 import {
   EducareSignUpLinkDetails,
@@ -13,7 +14,8 @@ import {
 const AccessContentInfoSection: React.FC = () => {
   const { user } = useAuth();
   const [isMobile, setIsMobile] = useState(false);
-
+  const location = useLocation();
+  const isAboutUs = location.pathname.includes("app-aboutus");
   useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -48,12 +50,19 @@ const AccessContentInfoSection: React.FC = () => {
               loading="lazy"
               className="max-h-full md:w-[120px] lg:w-[200px] object-contain 4xl:w-[400px]"
             />
-            <a
-              href={EducareSignUpLinkDetails.linkTo}
-              className=" bg-customOriange-200 text-white px-8 py-2 4xl:py-4 4xl:px-16 rounded-lg text-base md:text-base lg:text-xl  xl:text-2xl 2xl:text-3xl  3xl:text-4xl 4xl:text-5xl 5xl:text-6xl  transition-all duration-300 ease-in-out hover:bg-orange-700 hover:shadow-lg hover:scale-105 my-4 4xl:my-8"
-            >
-              {EducareSignUpLinkDetails.LinkFor}
-            </a>
+            {isAboutUs ? (
+              <span className="  text-black px-8 py-2 4xl:py-4 4xl:px-16 rounded-lg text-base md:text-base lg:text-xl  xl:text-2xl 2xl:text-3xl  3xl:text-4xl 4xl:text-5xl 5xl:text-6xl  transition-all duration-300 ease-in-out my-4 4xl:my-8">
+                {EducareSignUpLinkDetails.LinkFor}
+              </span>
+            ) : (
+              <a
+                href={EducareSignUpLinkDetails.linkTo}
+                className=" bg-customOriange-200 text-white px-8 py-2 4xl:py-4 4xl:px-16 rounded-lg text-base md:text-base lg:text-xl  xl:text-2xl 2xl:text-3xl  3xl:text-4xl 4xl:text-5xl 5xl:text-6xl  transition-all duration-300 ease-in-out hover:bg-orange-700 hover:shadow-lg hover:scale-105 my-4 4xl:my-8"
+              >
+                {EducareSignUpLinkDetails.LinkFor}
+              </a>
+            )}
+
             <img
               src={DCDDTextContents}
               alt="DCDD image"
@@ -73,12 +82,18 @@ const AccessContentInfoSection: React.FC = () => {
               loading="lazy"
               className="size-[60px] md:size-[60px] lg:size-[100px] xl:size-[120px] 2xl:size-[100px] 3xl:size-[100px] 4xl:size-[250px] 5xl:size-[300px] xl:mt-3"
             />
-            <a
-              href={getHref()}
-              className="bg-[#215FF8] text-white px-8 py-2 4xl:py-4 4xl:px-16 rounded-lg text-base md:text-base lg:text-xl  xl:text-2xl 2xl:text-3xl  3xl:text-4xl 4xl:text-5xl 5xl:text-6xl transition-all duration-300 ease-in-out hover:bg-[#1a4fd0] hover:shadow-lg hover:scale-105"
-            >
-              {GiftCouponLinkDetail.buttonName}
-            </a>
+            {isAboutUs ? (
+              <span className=" text-black px-8 py-2 4xl:py-4 4xl:px-16 rounded-lg text-base md:text-base lg:text-xl  xl:text-2xl 2xl:text-3xl  3xl:text-4xl 4xl:text-5xl 5xl:text-6xl transition-all duration-300 ease-in-out">
+                {GiftCouponLinkDetail.buttonName}
+              </span>
+            ) : (
+              <a
+                href={getHref()}
+                className="bg-[#215FF8] text-white px-8 py-2 4xl:py-4 4xl:px-16 rounded-lg text-base md:text-base lg:text-xl  xl:text-2xl 2xl:text-3xl  3xl:text-4xl 4xl:text-5xl 5xl:text-6xl transition-all duration-300 ease-in-out hover:bg-[#1a4fd0] hover:shadow-lg hover:scale-105"
+              >
+                {GiftCouponLinkDetail.buttonName}
+              </a>
+            )}
             <img
               src={GC_New}
               alt="DCDD image"
